@@ -48,6 +48,8 @@ const { privacidadeHref = '/politica-de-privacidade/' } = Astro.props;
     origem = fonte || '';
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'whatsapp_form_abriu', cta_source: origem || 'indefinido' });
     form.querySelector('input[name=nome]').focus();
   };
   const fechar = () => {
