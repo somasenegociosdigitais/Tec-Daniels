@@ -149,6 +149,7 @@ a:hover{color:var(--accent-strong)}
 .cab__acoes{display:flex;align-items:center;gap:var(--sp-4);flex-shrink:0}
 .cab__tel{display:inline-flex;align-items:center;gap:var(--sp-2);white-space:nowrap;font-family:var(--font-narrow);font-size:var(--fs-body-lg);font-weight:var(--fw-bold);color:var(--ink-900)}
 .cab__tel svg{color:var(--ink-500)}
+.so-estreito{display:none}
 @media (max-width:1100px){
   .cab__nav{gap:var(--sp-5)}
   .cab__tel{display:none}
@@ -167,7 +168,19 @@ a:hover{color:var(--accent-strong)}
   .assinatura__nome .p{font-size:15px}
 }
 @media (max-width:600px){
-  .cab__acoes .btn{font-size:var(--fs-xs);padding:9px 13px}
+  .cab__acoes .btn{font-size:var(--fs-xs);padding:9px 12px}
+  /* Faixa superior em uma linha: o telefone repete no herói. */
+  .cab__faixa .env>span:first-child{display:none}
+  .cab__faixa .env{justify-content:flex-start;padding:7px var(--gutter)}
+  .cab__logo img{width:34px;height:34px}
+  .assinatura__nome .g{font-size:18px}
+  .assinatura__nome .p{font-size:13.5px}
+  .so-largo{display:none}
+  .so-estreito{display:inline}
+  /* Trilha: uma linha só, rolando se não couber. */
+  .trilha ol{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .trilha ol::-webkit-scrollbar{display:none}
+  .trilha li{white-space:nowrap}
 }
 
 /* --- SiteFooter ------------------------------------------------------- */
@@ -256,7 +269,8 @@ a:hover{color:var(--accent-strong)}
 .trilha{font-size:var(--fs-xs);color:var(--text-muted);padding:var(--sp-4) 0;border-bottom:var(--bw-hair) solid var(--border-hairline)}
 .trilha ol{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-2);list-style:none;margin:0;padding:0}
 .trilha li{display:inline-flex;align-items:center;gap:var(--sp-2)}
-.trilha__sep{line-height:0;color:inherit;opacity:.8}
+.trilha__sep{display:inline-flex;align-items:center;line-height:1;color:inherit;opacity:.55}
+.trilha__sep svg{display:block}
 .trilha a{color:inherit}
 .trilha a:hover{color:var(--accent-strong)}
 .trilha [aria-current]{color:var(--text-title);font-weight:var(--fw-semibold)}
