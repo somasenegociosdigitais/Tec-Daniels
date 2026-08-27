@@ -1,3 +1,4 @@
+
 name: Deploy para Hostinger
 
 on:
@@ -13,10 +14,13 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - run: npm install
       - run: npm run build
+
+      - name: Copiar .htaccess para o dist
+        run: cp public/.htaccess dist/.htaccess
 
       - name: Enviar dist/ por FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -28,3 +32,8 @@ jobs:
           port: 21
           local-dir: ./dist/
           server-dir: /public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            googleed523001b3cdf1bd.html
