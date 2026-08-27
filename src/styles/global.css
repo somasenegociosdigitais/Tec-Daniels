@@ -123,7 +123,7 @@ a:hover{color:var(--accent-strong)}
 /* --- Wordmark --------------------------------------------------------- */
 .assinatura{display:inline-flex;flex-direction:column;gap:6px;line-height:1;font-family:var(--font-narrow)}
 .assinatura__topo{display:inline-flex;align-items:center;gap:10px}
-.assinatura__marca{display:block;height:40px;width:auto;flex-shrink:0}
+.assinatura__marca{display:block;height:38px;width:auto;flex-shrink:0}
 .assinatura__filete{width:1px;align-self:stretch;background:var(--ink-300)}
 .assinatura__nome{display:inline-flex;align-items:baseline;color:var(--ink-900);font-weight:var(--fw-bold);letter-spacing:.01em}
 .assinatura__nome .g{font-size:24px}
@@ -180,9 +180,8 @@ a:hover{color:var(--accent-strong)}
   .assinatura__nome .p{font-size:13.5px}
   .so-largo{display:none}
   .so-estreito{display:inline}
-  /* No celular fica só o mascote + nome; o filete some. */
-  .cab__logo .assinatura__filete{display:none}
-  .cab__logo .assinatura__marca{height:34px}
+  /* Cabeçalho estreito: fica o mascote + nome; o "TD" e o filete somem. */
+  .cab__logo .assinatura__marca,.cab__logo .assinatura__filete{display:none}
   .cab__acoes .btn svg{display:none}
   /* Trilha: uma linha só, rolando se não couber. */
   .trilha ol{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
