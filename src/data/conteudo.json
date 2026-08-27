@@ -1902,25 +1902,33 @@
       "nome": "Lorenzetti PL-09",
       "nota": "9 m.c.a. Um ponto: chuveiro ou aquecedor de apartamento pequeno.",
       "slot": "lor-pl9",
-      "foto": "Foto do Pressurizador Lorenzetti PL-09"
+      "foto": "Foto do Pressurizador Lorenzetti PL-09",
+      "src": "/assets/modelos/lorenzetti-pl-09.webp",
+      "alt": "Pressurizador de água Lorenzetti PL-09 — 9 m"
      },
      {
       "nome": "Lorenzetti PL-12",
       "nota": "12 m.c.a. Um a dois banheiros. O modelo que mais sai.",
       "slot": "lor-pl12",
-      "foto": "Foto do Pressurizador Lorenzetti PL-12"
+      "foto": "Foto do Pressurizador Lorenzetti PL-12",
+      "src": "/assets/modelos/lorenzetti-pl-12.webp",
+      "alt": "Pressurizador de água Lorenzetti PL-12 — 12 m"
      },
      {
       "nome": "Lorenzetti PL-20",
       "nota": "20 m.c.a. Coluna mais alta ou casa com vários pontos. Sob consulta.",
       "slot": "lor-pl20",
-      "foto": "Foto do Pressurizador Lorenzetti PL-20"
+      "foto": "Foto do Pressurizador Lorenzetti PL-20",
+      "src": "/assets/modelos/lorenzetti-pl-20.webp",
+      "alt": "Pressurizador de água Lorenzetti PL-20 — 20 m"
      },
      {
       "nome": "Lorenzetti PL-400",
       "nota": "40 m.c.a. Instalação exigente, com fluxostato e pressostato. Sob consulta.",
       "slot": "lor-pl400",
-      "foto": "Foto do Pressurizador Lorenzetti PL-400"
+      "foto": "Foto do Pressurizador Lorenzetti PL-400",
+      "src": "/assets/modelos/lorenzetti-pl-400.webp",
+      "alt": "Pressurizador de água Lorenzetti PL-400 — 40 m"
      }
     ]
    },
@@ -1932,25 +1940,33 @@
       "nome": "Komeco TP40",
       "nota": "11 m.c.a. Casa com dois a três pontos abrindo ao mesmo tempo.",
       "slot": "kom-tp40",
-      "foto": "Foto do Pressurizador Komeco TP40"
+      "foto": "Foto do Pressurizador Komeco TP40",
+      "src": "/assets/modelos/komeco-tp-40.webp",
+      "alt": "Pressurizador de água Komeco TP40 — 11 m"
      },
      {
       "nome": "Komeco TP80",
       "nota": "15 m.c.a. Coluna alta, casa maior e uso mais intenso.",
       "slot": "kom-tp80",
-      "foto": "Foto do Pressurizador Komeco TP80"
+      "foto": "Foto do Pressurizador Komeco TP80",
+      "src": "/assets/modelos/komeco-tp-80.webp",
+      "alt": "Pressurizador de água Komeco TP80 — 15 m"
      },
      {
       "nome": "Komeco TP820",
       "nota": "Linha com pressostato, para rede com variação de consumo. Sob consulta.",
       "slot": "kom-tp820",
-      "foto": "Foto do Pressurizador Komeco TP820"
+      "foto": "Foto do Pressurizador Komeco TP820",
+      "src": "/assets/modelos/komeco-tp-820.webp",
+      "alt": "Pressurizador de água Komeco TP820 — Linha com pressostato, para rede com variação de consumo"
      },
      {
       "nome": "Komeco TP825",
       "nota": "Maior vazão da linha TP. Sob consulta.",
       "slot": "kom-tp825",
-      "foto": "Foto do Pressurizador Komeco TP825"
+      "foto": "Foto do Pressurizador Komeco TP825",
+      "src": "/assets/modelos/komeco-tp-825.webp",
+      "alt": "Pressurizador de água Komeco TP825 — Maior vazão da linha TP"
      }
     ]
    },
@@ -1962,37 +1978,49 @@
       "nome": "7,5 a 10 litros",
       "nota": "Um ponto de uso com conforto. Ideal para apartamento pequeno, lavabo ou um único chuveiro.",
       "slot": "venda-075",
-      "foto": "Foto do aparelho de 7,5 a 10 litros"
+      "foto": "Foto do aparelho de 7,5 a 10 litros",
+      "src": "/assets/modelos/rinnai-7-5-litros.webp",
+      "alt": "Aquecedor a gás Rinnai de 7,5 litros, com controle de temperatura por botão giratório"
      },
      {
       "nome": "15 litros",
       "nota": "Ideal para um chuveiro com folga ou um chuveiro e uma torneira simultaneamente. Uma das capacidades mais vendidas para uso residencial.",
       "slot": "venda-15",
-      "foto": "Foto do aparelho de 15 litros"
+      "foto": "Foto do aparelho de 15 litros",
+      "src": "/assets/modelos/rheem-15-litros.webp",
+      "alt": "Aquecedor a gás Rheem de 15 litros com painel digital"
      },
      {
       "nome": "21 a 23 litros",
       "nota": "Para dois chuveiros funcionando simultaneamente. Uma escolha comum para casas e famílias que precisam de mais vazão.",
       "slot": "venda-21",
-      "foto": "Foto do aparelho de 21 a 23 litros"
+      "foto": "Foto do aparelho de 21 a 23 litros",
+      "src": "/assets/modelos/komeco-21-litros.webp",
+      "alt": "Aquecedor a gás Komeco de 21 litros com painel digital marcando 42 graus"
      },
      {
       "nome": "26 a 32 litros",
       "nota": "Para maior demanda de água quente, com três ou mais pontos de uso, banheira ou uso simultâneo mais intenso.",
       "slot": "venda-26",
-      "foto": "Foto do aparelho de 26 a 32 litros"
+      "foto": "Foto do aparelho de 26 a 32 litros",
+      "src": "/assets/modelos/rheem-26-litros.webp",
+      "alt": "Aquecedor a gás Rheem de 26 litros com painel digital"
      },
      {
       "nome": "Digital",
       "nota": "Controle preciso da temperatura pelo painel, proporcionando mais conforto e facilidade no dia a dia.",
       "slot": "venda-digital",
-      "foto": "Foto do aparelho digital"
+      "foto": "Foto do aparelho digital",
+      "src": "/assets/modelos/lorenzetti-lz1600de-digital.webp",
+      "alt": "Aquecedor a gás Lorenzetti LZ 1600DE com painel digital mostrando a temperatura da água em 42 graus"
      },
      {
       "nome": "Fluxo balanceado",
       "nota": "Câmara de combustão fechada e maior segurança, ideal para ambientes que não permitem ventilação externa convencional.",
       "slot": "venda-fb",
-      "foto": "Foto do aparelho de fluxo balanceado"
+      "foto": "Foto do aparelho de fluxo balanceado",
+      "src": "/assets/modelos/aquecedor-fluxo-balanceado.webp",
+      "alt": "Aquecedor a gás Komeco de fluxo balanceado, com câmara de combustão fechada"
      }
     ]
    }
@@ -2047,7 +2075,7 @@
     "distancia": "um trajeto direto",
     "h2": "Aquecedor de alta vazão exige mais que uma boa máquina",
     "p1": "O conserto de aquecedor a gás na Barra da Tijuca envolve muitos aparelhos de alta vazão, instalados para atender dois ou três banheiros. Em apartamentos altos, também são comuns instalações em varanda técnica, com a exaustão passando pelo shaft.",
-    "p2": "Quando o aquecedor não liga, o defeito nem sempre está nele. Pressão de água insuficiente pode impedir o sensor de fluxo de acionar, enquanto pressão de gás inadequada pode fazer um aparelho de alta vazão desarmar. Medimos as condições de funcionamento antes de indicar troca de peça.",
+    "p2": "Quando o aquecedor não liga, o defeito nem sempre está nele. Pressão de água insuficiente pode impedir o aparelho de ligar, enquanto pressão de gás inadequada pode fazer um aparelho de alta vazão desarmar. Medimos as condições de funcionamento antes de indicar troca de peça.",
     "p3": "Atendemos condomínios como Península, Barra Bonita e Jardim Oceânico, além de casas no Itanhangá. Para condomínios, podemos emitir nota fiscal e laudo do serviço e organizar manutenção programada.",
     "checklist": [
      "Conserto de aquecedor a gás",
@@ -2105,7 +2133,7 @@
      },
      {
       "q": "Meu aquecedor não liga e moro em andar alto. É defeito?",
-      "a": "Nem sempre. Pressão de água insuficiente pode impedir o sensor de fluxo de acionar, mesmo com o aquecedor funcionando corretamente. Medimos a pressão antes de indicar reparos."
+      "a": "Nem sempre. Pressão de água insuficiente pode impedir o o aquecedor precisa de um mínimo de pressão de água para ligar de acionar, mesmo com o aquecedor funcionando corretamente. Medimos a pressão antes de indicar reparos."
      },
      {
       "q": "Em quanto tempo o técnico chega na Barra?",
@@ -2116,7 +2144,8 @@
       "a": "Sim, de 26 a 45 litros. Nesses aparelhos verificamos a pressão de gás durante o funcionamento para identificar se a rede suporta o consumo."
      }
     ],
-    "ctaTitulo": "Aquecedor com problema na Barra? Fale conosco."
+    "ctaTitulo": "Aquecedor com problema na Barra? Fale conosco.",
+    "promessa": "Visita técnica em até 24 horas"
    },
    "jacarepagua": {
     "seoTitulo": "Gasista e aquecedor a gás em Jacarepaguá | TecDaniel's",
@@ -2130,10 +2159,10 @@
     "resumo": "Somos de Jacarepaguá. Fazemos serviço de gasista em tubulação e rede de gás, além de conserto e manutenção de aquecedor, com atendimento no mesmo dia na região.",
     "baseTexto": "Rua Candido Benício 1381, sala 205 — na Praça Seca, em Jacarepaguá.",
     "distancia": "poucos quarteirões",
-    "h2": "Base na Praça Seca para atender Jacarepaguá com rapidez",
-    "p1": "O serviço de gasista em Jacarepaguá sai da nossa base na Praça Seca. Isso facilita o atendimento em boa parte da região, inclusive para reparos que não podem esperar, como vazamento ou cheiro de gás.",
-    "p2": "Os chamados mais comuns envolvem substituição de tubulação, remanejamento do ponto de gás durante reformas e teste de estanqueidade. Avaliamos a rede, executamos o serviço necessário e testamos antes da liberação.",
-    "p3": "Também fazemos conserto, manutenção preventiva e instalação de aquecedores, além de assistência autorizada Rinnai. Atendemos casas, apartamentos, condomínios e pontos comerciais.",
+    "h2": "Aquecedor a gás em Jacarepaguá: casa, apartamento e condomínio",
+    "p1": "Jacarepaguá é grande e mistura tudo: casa com dois banheiros, apartamento novo com aquecedor na varanda técnica e condomínio com rede de gás para dezenas de unidades. Cada um pede uma solução diferente, e é por isso que o diagnóstico vem antes do orçamento.",
+    "p2": "Nossa base fica na região, o que encurta o prazo de chegada — inclusive nos casos que não podem esperar, como cheiro de gás. Consertamos, revisamos e instalamos aquecedor a gás, e fazemos o serviço de gasista na rede.",
+    "p3": "A rede de gás é boa parte do que fazemos por aqui: substituição de tubulação, remanejamento de ponto em reforma e teste de estanqueidade com laudo. Avaliamos a instalação, executamos o serviço e testamos antes de entregar.",
     "checklist": [
      "Gasista para rede de gás",
      "Substituição de tubulação em cobre",
@@ -2148,16 +2177,17 @@
      "Assistência autorizada Rinnai",
      "Garantia de 90 dias no serviço"
     ],
-    "introCobertura": "Estamos na Praça Seca e atendemos toda Jacarepaguá, com possibilidade de atendimento no mesmo dia em boa parte da região.",
+    "introCobertura": "Nossa base fica em Jacarepaguá e atendemos toda a região administrativa, com possibilidade de atendimento no mesmo dia em boa parte dela.",
     "cobertura": [
      "Praça Seca",
-     "Campinho",
      "Pechincha",
      "Curicica",
      "Anil",
      "Gardênia Azul",
      "Cidade de Deus",
-     "Rio das Pedras"
+     "Rio das Pedras",
+     "Tanque",
+     "Freguesia"
     ],
     "tituloServicos": "Serviços mais pedidos em Jacarepaguá",
     "servicos": [
@@ -2216,7 +2246,7 @@
     "h2": "Maresia acelera a corrosão: a instalação e a revisão fazem diferença",
     "p1": "No Recreio, o conserto de aquecedor a gás muitas vezes envolve corrosão provocada pela maresia. Aparelhos instalados em áreas externas ou varandas abertas ficam mais expostos, e a oxidação pode atingir carcaça, parafusos e componentes do trocador de calor.",
     "p2": "Por isso, aparelhos expostos à maresia podem precisar de revisão a cada seis meses, em vez da revisão anual. O local de instalação também importa: proteger o equipamento da brisa direta reduz a exposição e ajuda a preservar seus componentes.",
-    "p3": "Atendemos as casas de condomínio da Gleba, o Pontal e os prédios da orla. Fazemos conserto, manutenção e instalação, além de assistência autorizada Rinnai.",
+    "p3": "Nas casas de condomínio da Gleba e nos prédios da orla, indicamos revisão a cada seis meses em vez de uma vez por ano. O intervalo menor é o que segura a oxidação antes de ela chegar ao trocador de calor.",
     "checklist": [
      "Conserto de aquecedor a gás",
      "Revisão semestral por maresia",
@@ -2281,7 +2311,8 @@
       "a": "Sim. Atendemos moradores e administradoras, com nota fiscal, laudo e contrato de manutenção programada quando necessário."
      }
     ],
-    "ctaTitulo": "Aquecedor com problema no Recreio? Fale conosco."
+    "ctaTitulo": "Aquecedor com problema no Recreio? Fale conosco.",
+    "promessa": "Visita técnica em até 24 horas"
    },
    "freguesia": {
     "seoTitulo": "Gasista e aquecedor a gás na Freguesia | TecDaniel's",
@@ -2296,7 +2327,7 @@
     "h2": "Teste de estanqueidade identifica problemas antes do vazamento",
     "p1": "Na Freguesia, muitos chamados de gasista envolvem redes antigas de gás. Tubulações de ferro galvanizado podem sofrer corrosão com o tempo, por isso o teste de estanqueidade é uma forma objetiva de verificar se a instalação continua sem vazamentos.",
     "p2": "Fazemos o teste com manômetro calibrado, registramos as condições da instalação e emitimos o laudo. Se houver reprovação, localizamos o problema e apresentamos o reparo indicado, inclusive alternativas que reduzam a necessidade de quebra quando tecnicamente viáveis.",
-    "p3": "Também fazemos conserto, manutenção preventiva e instalação de aquecedores, além de assistência autorizada Rinnai, em apartamentos, casas e condomínios da região.",
+    "p3": "Quando o laudo aponta reparo, executamos na mesma visita se a peça estiver disponível. Quando aponta substituição de trecho, apresentamos o orçamento com o que será trocado e o prazo, antes de começar.",
     "checklist": [
      "Teste de estanqueidade com laudo",
      "Teste de vazamento de gás",
@@ -2311,13 +2342,12 @@
      "Assistência autorizada Rinnai",
      "Garantia de 90 dias no serviço"
     ],
-    "introCobertura": "A Freguesia é vizinha da nossa base, na Praça Seca. Atendemos o bairro e as regiões próximas.",
+    "introCobertura": "A Freguesia é vizinha da nossa base. Atendemos o bairro e os sub-bairros ao redor.",
     "cobertura": [
      "Pechincha",
      "Anil",
      "Araguaia",
-     "Curicica",
-     "Praça Seca"
+     "Curicica"
     ],
     "tituloServicos": "Serviços mais pedidos na Freguesia",
     "servicos": [
@@ -2361,7 +2391,8 @@
       "a": "A Freguesia é vizinha da nossa base, na Praça Seca, e em boa parte dos casos conseguimos atender no mesmo dia."
      }
     ],
-    "ctaTitulo": "Precisa de laudo ou gasista na Freguesia? Fale conosco."
+    "ctaTitulo": "Precisa de laudo ou gasista na Freguesia? Fale conosco.",
+    "promessa": "Atendimento no mesmo dia, bairro vizinho"
    },
    "taquara": {
     "seoTitulo": "Aquecedor a gás e gasista na Taquara | TecDaniel's",
@@ -2374,8 +2405,8 @@
     "h1": "Conserto de aquecedor a gás e gasista na Taquara e no Tanque",
     "resumo": "Atendimento no mesmo dia na Taquara e no Tanque para conserto de aquecedor, serviço de gasista, teste de estanqueidade e conversão de fogão.",
     "distancia": "poucos quarteirões",
-    "h2": "Taquara e Tanque: atendimento rápido para aquecedor e gás",
-    "p1": "O serviço de aquecedor a gás e gasista na Taquara e no Tanque sai da nossa base na Praça Seca, o que facilita o atendimento no mesmo dia. Isso é especialmente importante em situações como cheiro de gás, que exigem atenção imediata.",
+    "h2": "Conserto de aquecedor na Taquara e no Tanque, com peça em mãos",
+    "p1": "Boa parte dos chamados na Taquara e no Tanque se resolve na primeira visita, porque as peças de maior giro — sensor, placa, membrana e eletrodo de ignição — saem com o técnico. Quando a peça é específica, informamos o prazo antes de você decidir.",
     "p2": "Os chamados mais comuns são aquecedor que parou de esquentar, conversão de fogão após mudança de imóvel e reparo de tubulação durante reforma de cozinha. Avaliamos a instalação antes de definir o serviço.",
     "p3": "Fazemos conserto, manutenção e instalação de aquecedores, serviço de gasista, teste de estanqueidade e teste de vazamento, com laudo do serviço realizado.",
     "checklist": [
@@ -2392,14 +2423,14 @@
      "Assistência autorizada Rinnai",
      "Garantia de 90 dias no serviço"
     ],
-    "introCobertura": "A oficina fica na Praça Seca. Atendemos Taquara, Tanque e a região próxima.",
+    "introCobertura": "A oficina fica na região. Atendemos Taquara, Tanque e os bairros contíguos.",
     "cobertura": [
      "Praça Seca",
-     "Campinho",
      "Pechincha",
      "Curicica",
      "Anil",
-     "Cidade de Deus"
+     "Cidade de Deus",
+     "Tanque"
     ],
     "tituloServicos": "Serviços mais pedidos na Taquara e no Tanque",
     "servicos": [
@@ -2447,7 +2478,7 @@
    },
    "vila-valqueire": {
     "seoTitulo": "Conserto de aquecedor a gás em Vila Valqueire | TecDaniel's",
-    "seoDescricao": "Conserto e revisão de aquecedor, inclusive aparelho de piloto, além de gasista para rede de gás. Visita em até 24 horas.",
+    "seoDescricao": "Conserto, manutenção e instalação de aquecedor a gás em Vila Valqueire, com dimensionamento para casa de mais de um banheiro. Visita em até 24 horas.",
     "nome": "Vila Valqueire",
     "nomeCom": "em Vila Valqueire",
     "nomeDe": "de Vila Valqueire",
@@ -2455,9 +2486,9 @@
     "h1": "Conserto de aquecedor a gás e gasista em Vila Valqueire",
     "resumo": "Conserto, manutenção e instalação de aquecedor a gás em Vila Valqueire, além de serviço de gasista. Nossa base fica na Praça Seca, bairro vizinho.",
     "distancia": "um trajeto direto",
-    "h2": "Aquecedor antigo: reparar ou trocar?",
-    "p1": "Em Vila Valqueire, é comum encontrar casas com aquecedor e rede de gás de muitos anos de uso. Nesses aparelhos, uma revisão ajuda a identificar desgaste antes que ele vire falha ou problema de segurança.",
-    "p2": "Consertamos e revisamos aquecedores de linha antiga, inclusive aparelhos de piloto com termopar. Quando o equipamento já tem muitos anos, apresentamos o custo do reparo e o da troca por um aparelho novo instalado.",
+    "h2": "Casa com mais de um banheiro pede aquecedor bem dimensionado",
+    "p1": "Vila Valqueire é bairro de casa, e casa costuma ter mais de um ponto de água quente. Quando dois banhos acontecem ao mesmo tempo, ou quando há banheira, é a litragem do aparelho que decide se a água sai quente ou morna. Dimensionamos pelo uso real da casa antes de instalar ou trocar.",
+    "p2": "A região também tem muita casa estabelecida, com aquecedor e rede de gás de anos de uso. Nesses casos a revisão identifica desgaste antes de virar falha, e quando o aparelho já não compensa, apresentamos o custo do reparo e o da troca por um novo instalado, para você comparar.",
     "p3": "Na parte de gás, fazemos substituição de tubulação, remanejamento de ponto, conversão de fogão e teste de estanqueidade com laudo.",
     "checklist": [
      "Conserto de aquecedor a gás",
@@ -2473,7 +2504,7 @@
      "Assistência autorizada Rinnai",
      "Garantia de 90 dias no serviço"
     ],
-    "introCobertura": "Vila Valqueire é vizinha da nossa base, na Praça Seca. Atendemos o bairro e as regiões próximas.",
+    "introCobertura": "Vila Valqueire é vizinha da nossa base. Atendemos o bairro e as regiões próximas.",
     "cobertura": [
      "Campinho",
      "Praça Seca",
@@ -2511,8 +2542,8 @@
       "a": "Depende do estado do aparelho e do custo da peça. Apresentamos o valor do reparo e o de um aparelho novo instalado para você comparar."
      },
      {
-      "q": "Vocês atendem aquecedor de piloto?",
-      "a": "Sim. Atendemos aparelhos antigos de piloto, incluindo problemas de termopar e injetor do piloto."
+      "q": "Qual aquecedor para dois banheiros?",
+      "a": "Dois chuveiros usados ao mesmo tempo pedem de 15 a 20 litros por minuto. Se houver torneira de água quente em uso junto, vá para 23 litros ou mais. Conferimos os pontos de água na visita antes de indicar o aparelho."
      },
      {
       "q": "Minha rede de gás é antiga. Precisa trocar?",
@@ -2521,9 +2552,14 @@
      {
       "q": "Em quanto tempo o técnico chega a Vila Valqueire?",
       "a": "Fazemos visita em até 24 horas. Nossa base fica na Praça Seca, bairro vizinho."
+     },
+     {
+      "q": "Vocês atendem aquecedor de chama piloto?",
+      "a": "Sim, inclusive os modelos antigos que ficam com a chama acesa o tempo todo. Atendemos problemas do injetor e da peça de segurança que corta o gás quando a chama apaga."
      }
     ],
-    "ctaTitulo": "Aquecedor com defeito em Vila Valqueire? Fale conosco."
+    "ctaTitulo": "Aquecedor com defeito em Vila Valqueire? Fale conosco.",
+    "promessa": "Atendimento no mesmo dia, bairro vizinho"
    },
    "tijuca": {
     "seoTitulo": "Conserto de aquecedor a gás na Tijuca | TecDaniel's",
@@ -2538,7 +2574,7 @@
     "h2": "Apartamento sem parede externa: avalie a exaustão antes de trocar o aparelho",
     "p1": "O conserto de aquecedor a gás na Tijuca muitas vezes começa pela instalação. Há apartamentos com área de serviço fechada, pouca ventilação ou limitações para a passagem do duto de exaustão. Nesses casos, trocar o aparelho sem avaliar o ambiente pode não resolver.",
     "p2": "Em instalações compatíveis, o aquecedor de fluxo balanceado pode ser uma alternativa porque capta o ar necessário à combustão e conduz os gases para fora por um sistema próprio. Na visita verificamos o ambiente, a exaustão e o modelo adequado antes da instalação.",
-    "p3": "Fazemos conserto, manutenção preventiva, instalação com adequação de exaustão e assistência autorizada Rinnai em apartamentos e condomínios de toda a região.",
+    "p3": "Nos prédios antigos da região, a limitação costuma ser a passagem do duto. Medimos o ambiente e a saída disponível antes de indicar aparelho — em alguns casos o fluxo balanceado resolve, em outros basta adequar a exaustão existente.",
     "checklist": [
      "Conserto de aquecedor a gás",
      "Adequação de exaustão",
@@ -2553,7 +2589,7 @@
      "Assistência autorizada Rinnai",
      "Garantia de 90 dias no serviço"
     ],
-    "introCobertura": "Atendemos a Tijuca e os bairros próximos, com equipe saindo da Praça Seca.",
+    "introCobertura": "Atendemos a Tijuca e os bairros próximos, com equipe saindo da Zona Oeste.",
     "cobertura": [
      "Alto da Boa Vista",
      "Usina",
@@ -2604,7 +2640,8 @@
       "a": "Sim. Atendemos moradores e administradoras, com nota fiscal, laudo e cronograma por unidade quando o serviço envolve prumada."
      }
     ],
-    "ctaTitulo": "Aquecedor com problema na Tijuca? Fale conosco."
+    "ctaTitulo": "Aquecedor com problema na Tijuca? Fale conosco.",
+    "promessa": "Visita técnica em até 24 horas"
    }
   },
   "AVALIACOES": {
@@ -3568,11 +3605,11 @@
    },
    "contato": {
     "seoTitulo": "Contato TecDaniel's | Aquecedores a gás no Rio",
-    "seoDescricao": "Fale direto com um técnico por WhatsApp, telefone ou e-mail. Envie modelo, defeito e bairro para agilizar o orçamento.",
+    "seoDescricao": "Fale direto com um técnico por WhatsApp ou telefone. Envie modelo, defeito e bairro para agilizar o orçamento.",
     "menuAtivo": "Contato",
     "rotulo": "Contato",
     "h1": "Contato — TecDaniel's aquecedores a gás",
-    "resumo": "WhatsApp, telefone e e-mail. Quem atende é técnico, e o orçamento é feito sem compromisso.",
+    "resumo": "WhatsApp e telefone. Quem atende é técnico, e o orçamento é feito sem compromisso.",
     "trilha": [
      "Início",
      "Contato"
@@ -3580,7 +3617,7 @@
     "eyebrow": "Como falar conosco",
     "h2": "O WhatsApp é o jeito mais rápido de começar",
     "p1": "Envie o modelo do aparelho, descreva o problema e informe seu bairro. Com essas três informações, o técnico já consegue avaliar a situação, indicar a causa mais provável e orientar sobre a faixa de preço antes da visita.",
-    "p2": "Prefere ligar? O número é o mesmo e o atendimento também é feito por técnico. Para condomínios e administradoras, o e-mail facilita o envio da demanda, dos documentos e das informações necessárias para preparar a proposta e o cronograma.",
+    "p2": "Prefere ligar? O número é o mesmo e o atendimento também é feito por técnico. Para condomínios e administradoras, o WhatsApp facilita o envio da demanda, dos documentos e das informações necessárias para preparar a proposta e o cronograma.",
     "p3": "Fazemos atendimento em domicílio em todo o Rio de Janeiro, Grande Rio e Baixada Fluminense. A visita técnica é feita em até 24 horas e, no eixo de Jacarepaguá, geralmente conseguimos atender no mesmo dia.",
     "tituloLista": "O que agiliza o atendimento",
     "lista": [
@@ -3672,10 +3709,6 @@
    {
     "rotulo": "WhatsApp e telefone",
     "valor": "(21) 98617-1050"
-   },
-   {
-    "rotulo": "E-mail",
-    "valor": "suporte@tecdaniels.com.br"
    },
    {
     "rotulo": "Endereço",

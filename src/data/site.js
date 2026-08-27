@@ -5,7 +5,8 @@ export const NEGOCIO = {
   telefone: '(21) 98617-1050',
   telefoneE164: '+5521986171050',
   whatsapp: '5521986171050',
-  email: 'suporte@tecdaniels.com.br',
+  // Sem e-mail: o cliente não usa a caixa. Contato é WhatsApp e telefone.
+  email: null,
   cnpj: '16.962.952/0001-26',
   endereco: {
     rua: 'Rua Candido Benício 1381, sala 205',

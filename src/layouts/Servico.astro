@@ -149,7 +149,9 @@ const fotos = FOTOS_POR_PAGINA[slug];
 <div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
 {modelos.itens.map((m) => (
   <div class="modelo">
-  <div class="modelo__foto">{m.foto}</div>
+  {m.src
+    ? <img src={m.src} alt={m.alt || m.nome} width="480" height="360" loading="lazy" decoding="async">
+    : <div class="modelo__foto">{m.foto}</div>}
   <div class="modelo__texto"><b>{m.nome}</b><span>{m.nota}</span></div>
   </div>
 ))}

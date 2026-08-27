@@ -155,10 +155,19 @@ a:hover{color:var(--accent-strong)}
 }
 @media (max-width:900px){
   .cab__faixa-dir span{display:none}
-  .cab__linha{gap:var(--sp-3) var(--sp-5)}
-  .cab__nav{order:3;width:100%;margin-left:0;gap:var(--sp-4);flex-wrap:wrap}
-  .cab__acoes{margin-left:auto}
+  .cab__linha{gap:var(--sp-3) var(--sp-4);padding:var(--sp-3) var(--gutter)}
+  .cab__logo{flex:1 1 auto;min-width:0}
+  .cab__logo img{width:38px;height:38px}
+  .cab__acoes{flex:0 0 auto;margin-left:auto}
+  /* Nav em uma linha só, rolando na horizontal se não couber. */
+  .cab__nav{order:3;width:100%;margin-left:0;gap:var(--sp-4);flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+  .cab__nav::-webkit-scrollbar{display:none}
   .assinatura__linha{display:none}
+  .assinatura__nome .g{font-size:20px}
+  .assinatura__nome .p{font-size:15px}
+}
+@media (max-width:600px){
+  .cab__acoes .btn{font-size:var(--fs-xs);padding:9px 13px}
 }
 
 /* --- SiteFooter ------------------------------------------------------- */
@@ -301,6 +310,8 @@ a:hover{color:var(--accent-strong)}
 /* --- Cartão de modelo ------------------------------------------------- */
 .modelo{display:flex;flex-direction:column;background:var(--surface-card);border:var(--bw-hair) solid var(--border-hairline);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow-card)}
 .modelo__foto{display:grid;place-items:center;aspect-ratio:4/3;background:var(--surface-alt);border-bottom:var(--bw-hair) solid var(--border-hairline);color:var(--ink-400);font-size:var(--fs-xs);text-align:center;padding:var(--sp-4)}
+/* Foto de produto: fundo branco, sem cortar o aparelho. */
+.modelo>img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;border-bottom:var(--bw-hair) solid var(--border-hairline);padding:var(--sp-4)}
 .modelo__texto{padding:18px 20px;display:flex;flex-direction:column;gap:5px}
 .modelo__texto b{font-family:var(--font-narrow);font-size:var(--fs-h4);color:var(--ink-900)}
 .modelo__texto span{font-size:var(--fs-sm);line-height:1.45}
@@ -364,6 +375,11 @@ a:hover{color:var(--accent-strong)}
 /* --- WhatsApp: botão flutuante + modal de contato --------------------- */
 .zap-fab{position:fixed;right:24px;bottom:24px;z-index:50;width:64px;height:64px;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:var(--r-pill);background:var(--whatsapp);color:#fff;box-shadow:0 10px 28px rgba(0,155,58,.38);cursor:pointer;padding:0}
 .zap-fab:hover{background:var(--green-600)}
+/* Menor no celular: 64px cobria o texto do herói. */
+@media (max-width:600px){
+  .zap-fab{width:54px;height:54px;right:14px;bottom:14px}
+  .zap-fab svg{width:28px;height:28px}
+}
 .zap-modal{position:fixed;inset:0;z-index:60;background:rgba(18,32,44,.55);display:flex;align-items:center;justify-content:center;padding:var(--sp-6)}
 .zap-modal[hidden]{display:none}
 .zap-form{position:relative;width:100%;max-width:520px;background:var(--white);border-radius:var(--r-lg);box-shadow:var(--shadow-float);padding:var(--sp-8);display:flex;flex-direction:column;gap:var(--sp-5)}
@@ -405,5 +421,8 @@ a:hover{color:var(--accent-strong)}
 .indice a:hover{color:var(--accent-strong)}
 @media (max-width:900px){
   .heroi__grade{padding:var(--sp-8) var(--gutter) var(--sp-7);gap:var(--sp-7)}
+  /* No celular a coluna lateral acompanha o alinhamento do texto. */
   .heroi__lado{align-items:flex-start;text-align:left}
+  .heroi__lado>.linha{justify-content:flex-start!important}
+  .heroi__rinnai{max-width:none}
 }
