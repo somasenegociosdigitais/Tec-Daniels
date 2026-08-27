@@ -218,20 +218,26 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 </div>
 </section>
 
+<section class="secao secao--tint secao--curta">
+<div class="env pil" style="gap:var(--sp-6)">
+<div class="pil" style="gap:var(--sp-3);max-width:52ch">
+<p class="olho">Começar pelo problema</p>
+<h2 class="t-h2">Qual é a sua situação?</h2>
+</div>
+<div class="linha" style="gap:var(--sp-3)">
+{sintomas.map((s) => (
+  <a href={s.href} class="ficha">{s.label}<Icone nome="arrow-right" tam={14} /></a>
+))}
+</div>
+</div>
+</section>
+
 <section id="todos-os-servicos" class="secao">
 <div class="env pil" style="gap:var(--sp-7)">
 <div class="pil" style="gap:var(--sp-3)">
 <p class="olho">Todos os serviços</p>
 <h2 class="t-h2">Tudo o que fazemos, em um só lugar</h2>
 <p class="t-corpo" style="max-width:64ch">Escolha pelo serviço, pela marca do seu aquecedor ou pelo seu bairro.</p>
-</div>
-<div class="pil" style="gap:var(--sp-4)">
-<h3 class="t-h3">Qual é o seu problema?</h3>
-<div class="linha" style="gap:var(--sp-3)">
-{sintomas.map((s) => (
-  <a href={s.href} class="ficha">{s.label}<Icone nome="arrow-right" tam={14} /></a>
-))}
-</div>
 </div>
 <div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--sp-6)">
 {colunas.map((c) => (
