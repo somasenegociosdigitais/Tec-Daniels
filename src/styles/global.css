@@ -123,7 +123,7 @@ a:hover{color:var(--accent-strong)}
 /* --- Wordmark --------------------------------------------------------- */
 .assinatura{display:inline-flex;flex-direction:column;gap:6px;line-height:1;font-family:var(--font-narrow)}
 .assinatura__topo{display:inline-flex;align-items:center;gap:10px}
-.assinatura__marca{display:block;height:38px;width:auto;flex-shrink:0}
+.assinatura__marca{display:block;height:40px;width:auto;flex-shrink:0}
 .assinatura__filete{width:1px;align-self:stretch;background:var(--ink-300)}
 .assinatura__nome{display:inline-flex;align-items:baseline;color:var(--ink-900);font-weight:var(--fw-bold);letter-spacing:.01em}
 .assinatura__nome .g{font-size:24px}
@@ -144,7 +144,7 @@ a:hover{color:var(--accent-strong)}
 .cab__faixa a{color:#fff;font-weight:var(--fw-semibold);white-space:nowrap}
 .cab__linha{padding:var(--sp-4) var(--gutter);display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-5) var(--sp-7)}
 .cab__logo{display:flex;align-items:center;gap:var(--sp-3);line-height:1}
-.cab__logo img{display:block;flex-shrink:0;mix-blend-mode:multiply}
+.cab__logo img{display:block;flex-shrink:0}
 .cab__nav{display:flex;gap:var(--sp-6);margin-left:auto;align-items:center;flex-shrink:0}
 .cab__nav a{font-size:var(--fs-sm);white-space:nowrap;font-weight:var(--fw-medium);color:var(--ink-600);padding-bottom:2px;border-bottom:var(--bw-thick) solid transparent}
 .cab__nav a[aria-current='page']{font-weight:var(--fw-semibold);color:var(--brand);border-bottom-color:var(--accent)}
@@ -176,13 +176,13 @@ a:hover{color:var(--accent-strong)}
   /* Faixa superior em uma linha: o telefone repete no herói. */
   .cab__faixa .env>span:first-child{display:none}
   .cab__faixa .env{justify-content:flex-start;padding:7px var(--gutter)}
-  .cab__logo img{width:34px;height:34px}
-  .assinatura__nome .g{font-size:18px}
+  .cab__logo img{width:34px;height:34px}  .assinatura__nome .g{font-size:18px}
   .assinatura__nome .p{font-size:13.5px}
   .so-largo{display:none}
   .so-estreito{display:inline}
-  /* Mascote fica; o "TD" sai no celular — redundante ao lado do nome escrito. */
-  .cab__logo .assinatura__marca,.cab__logo .assinatura__filete{display:none}
+  /* No celular fica só o mascote + nome; o filete some. */
+  .cab__logo .assinatura__filete{display:none}
+  .cab__logo .assinatura__marca{height:34px}
   .cab__acoes .btn svg{display:none}
   /* Trilha: uma linha só, rolando se não couber. */
   .trilha ol{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
