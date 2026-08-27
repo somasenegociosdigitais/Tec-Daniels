@@ -176,13 +176,15 @@ a:hover{color:var(--accent-strong)}
   /* Faixa superior em uma linha: o telefone repete no herói. */
   .cab__faixa .env>span:first-child{display:none}
   .cab__faixa .env{justify-content:flex-start;padding:7px var(--gutter)}
-  .cab__logo img{width:34px;height:34px}  .assinatura__nome .g{font-size:18px}
-  .assinatura__nome .p{font-size:13.5px}
+  .cab__logo img{width:34px;height:34px}  .assinatura__nome .g{font-size:17px}
+  .assinatura__nome .p{font-size:13px}
+  /* Mascote + TD + nome + botão na mesma linha: tudo encolhe um pouco. */
+  .cab__logo{gap:var(--sp-2)}
+  .cab__logo .assinatura__topo{gap:6px}
+  .cab__logo .assinatura__marca{height:26px}
+  .cab__acoes .btn svg{display:none}
   .so-largo{display:none}
   .so-estreito{display:inline}
-  /* Cabeçalho estreito: fica o mascote + nome; o "TD" e o filete somem. */
-  .cab__logo .assinatura__marca,.cab__logo .assinatura__filete{display:none}
-  .cab__acoes .btn svg{display:none}
   /* Trilha: uma linha só, rolando se não couber. */
   .trilha ol{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .trilha ol::-webkit-scrollbar{display:none}
