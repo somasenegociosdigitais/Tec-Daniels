@@ -437,7 +437,11 @@ a:hover{color:var(--accent-strong)}
 .heroi__confianca{position:relative;border-top:var(--bw-hair) solid rgba(255,255,255,.2)}
 .heroi__confianca .env{padding-top:18px;padding-bottom:18px}
 .convite{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--sp-5);padding:var(--sp-6);background:var(--surface-tint);border:var(--bw-hair) solid var(--blue-200);border-radius:var(--r-md)}
-.indice{display:flex;flex-direction:column;gap:10px;font-size:var(--fs-sm)}
+.indice{display:flex;flex-direction:column;gap:0;font-size:var(--fs-sm)}
+.indice a{display:flex;align-items:flex-start;gap:var(--sp-2);padding:11px 0;border-bottom:var(--bw-hair) solid var(--border-hairline);color:var(--accent-strong);font-weight:var(--fw-semibold);line-height:var(--lh-snug)}
+.indice a::before{content:'›';font-size:1.15em;line-height:1.1;color:var(--accent);font-weight:var(--fw-bold);flex:0 0 auto}
+.indice a:hover{color:var(--brand)}
+.indice a:hover::before{color:var(--brand)}
 .indice h3{font-size:var(--fs-sm);padding-bottom:var(--sp-2);border-bottom:var(--bw-thick) solid var(--ink-900)}
 .indice a{color:var(--text-body)}
 .indice a:hover{color:var(--accent-strong)}
