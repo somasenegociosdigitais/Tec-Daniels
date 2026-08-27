@@ -1,0 +1,49 @@
+---
+/** Prova social do perfil do Google — espelha Reviews.jsx:
+ *  resumo da nota (número grande + estrelas + total) e link para avaliar,
+ *  seguido dos depoimentos selecionados. */
+import Icone from './Icone.astro';
+import { NEGOCIO, AVALIACOES } from '../data/site.js';
+
+const {
+  itens = AVALIACOES,
+  nota = 5,
+  total = NEGOCIO.google.total,
+  href = NEGOCIO.google.review,
+} = Astro.props;
+
+const cheias = Math.round(nota);
+---
+<div class="pil" style="gap:var(--sp-6)">
+
+<div class="nota">
+<div class="nota__resumo">
+<span class="nota__valor">{Number(nota).toFixed(1).replace('.', ',')}</span>
+<div class="pil" style="gap:5px">
+<span class="estrelas" role="img" aria-label={cheias + ' de 5 estrelas'}>
+{[0, 1, 2, 3, 4].map((i) => (
+  <Icone nome="star" tam={16} largura={2.25} cor={i < cheias ? '#F5A623' : '#D8DDE3'} />
+))}
+</span>
+<span class="t-sm">{total} avaliações no Google</span>
+</div>
+</div>
+<a href={href} target="_blank" rel="noopener" class="nota__link">Avaliar no Google<Icone nome="arrow-up-right" tam={16} /></a>
+</div>
+
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--sp-5)">
+{itens.map((r) => (
+  <figure class="aval">
+  <span class="estrelas" role="img" aria-label="5 de 5 estrelas">
+  {[0, 1, 2, 3, 4].map(() => (<Icone nome="star" tam={15} largura={2.25} cor="#F5A623" />))}
+  </span>
+  <blockquote>{r.texto}</blockquote>
+  <figcaption>
+  <span class="aval__nome">{r.nome}</span>
+  {r.quando && <span class="aval__quando">{r.quando}</span>}
+  </figcaption>
+  </figure>
+))}
+</div>
+
+</div>

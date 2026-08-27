@@ -1,0 +1,220 @@
+---
+/** Página de serviço — mesma estrutura do template original:
+ *  herói azul com breadcrumb e cartão de resumo, texto + checklist,
+ *  preços, modelos, sinais, FAQ, avaliações, relacionados e faixa de CTA. */
+import Base from './Base.astro';
+import Icone from '../components/Icone.astro';
+import Trilha from '../components/Trilha.astro';
+import FaixaCta from '../components/FaixaCta.astro';
+import Faq from '../components/Faq.astro';
+import Avaliacoes from '../components/Avaliacoes.astro';
+import { NEGOCIO } from '../data/site.js';
+import conteudo from '../data/conteudo.json';
+
+const { slug } = Astro.props;
+const { PAGINAS, SINAIS, RELACIONADOS, AVALIACOES, MODELOS, ICONES, SITUACOES } = conteudo.servico;
+const p = PAGINAS[slug];
+
+const trilha = [
+  { nome: 'Início', href: '/' },
+  { nome: 'Serviços', href: '/#todos-os-servicos' },
+  { nome: p.rotulo },
+];
+
+const garantias = [
+  { icone: 'file-check', label: 'Orçamento sem compromisso' },
+  { icone: 'home', label: 'Atendemos em domicílio' },
+  { icone: 'clock', label: 'Visita técnica em até 24 horas' },
+  { icone: 'shield-check', label: 'Garantia de 90 dias' },
+];
+
+const situacao = SITUACOES.includes(slug);
+const sinais = (SINAIS[slug] || []).map((s) => ({ icone: s.icon, titulo: s.title, texto: s.t }));
+const modelos = MODELOS[slug];
+const aval = AVALIACOES[slug];
+const relacionados = (RELACIONADOS[slug] || []).map((k) => ({
+  icone: ICONES[k], titulo: PAGINAS[k].rotulo, texto: PAGINAS[k].curto, href: '/' + k + '/',
+}));
+const temSelo = slug === 'manutencao-para-condominios' || slug === 'venda-de-aquecedor-a-gas';
+---
+<Base
+  titulo={p.seoTitulo || p.h1 + " | TecDaniel's"}
+  descricao={p.seoDescricao || p.resumo}
+  trilha={trilha}
+  servico={p.rotulo}
+  faq={p.faq}
+>
+
+<section class="cabeca">
+<div class="env cabeca__env">
+<Trilha itens={trilha} claro={true} />
+<div class="cabeca__grade">
+<div class="pil" style="gap:var(--sp-5)">
+<p class="olho olho--claro">{p.rotulo}</p>
+<h1 class="t-h1" style="color:#fff;max-width:24ch">{p.h1}</h1>
+<div class="linha" style="gap:var(--sp-5);margin-top:var(--sp-1)">
+<button type="button" class="btn btn--zap btn--lg js-whatsapp-cta" data-whatsapp-source="hero-servico"><Icone nome="message-circle" tam={19} />Falar no WhatsApp</button>
+<a href={'tel:' + NEGOCIO.telefoneE164} class="cabeca__tel">
+<span>Ou ligue agora</span>
+<span>{NEGOCIO.telefone}</span>
+</a>
+</div>
+</div>
+
+<div class="cabeca__resumo">
+<p class="t-corpo" style="color:#E4ECF8">{p.resumo}</p>
+<div class="linha" style="gap:var(--sp-2)">
+<span class="heroi__estrelas">★★★★★</span>
+<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · {NEGOCIO.google.total} avaliações · {NEGOCIO.anos} anos no Rio de Janeiro</span>
+</div>
+{temSelo && (
+  <a href={NEGOCIO.rinnai} target="_blank" rel="noopener" class="heroi__rinnai" style="width:fit-content">
+  <img src="https://www.rinnai.com.br/content/img/selo-parceiro-rinnai.jpg" alt="Selo de Parceiro Credenciado Rinnai" width="84" height="84" loading="lazy">
+  <span class="pil" style="gap:3px;max-width:22ch">
+  <b>Parceiro Credenciado Rinnai</b>
+  <span>Ficha oficial no diretório da Rinnai, com endereço e categorias</span>
+  </span>
+  </a>
+)}
+<div class="linha" style="gap:var(--sp-2)">
+<span class="tag tag--sobre-brand">Garantia de 90 dias</span>
+<span class="tag tag--sobre-brand">Visita em até 24 horas</span>
+<span class="tag tag--sobre-brand">Autorizada Rinnai</span>
+</div>
+</div>
+</div>
+</div>
+<div class="cabeca__garantias">
+<div class="env linha" style="gap:var(--sp-5) var(--sp-9)">
+{garantias.map((g) => (<span class="confia"><Icone nome={g.icone} tam={18} />{g.label}</span>))}
+</div>
+</div>
+</section>
+
+<section class="secao">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">O que fazemos</p>
+<h2 class="t-h2">{p.h2}</h2>
+</div>
+<div class="texto-e-lista">
+<div class="prosa">
+<p>{p.p1}</p>
+<p>{p.p2}</p>
+<p>{p.p3}</p>
+<p class="prosa__nota">Este é um dos serviços da TecDaniel's — veja também <a href="/"><b>todos os nossos serviços de aquecedor e gás no Rio de Janeiro</b></a>.</p>
+</div>
+<div class="lista-cartao">
+<h3 class="t-h3" style="font-size:var(--fs-h4)">{p.tituloChecklist || 'O serviço inclui'}</h3>
+<ul>
+{p.checklist.map((item) => (
+  <li><span class="lista-cartao__check"><Icone nome="check" tam={17} /></span>{item}</li>
+))}
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+{p.temPrecos && (
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-4);max-width:56ch">
+<p class="olho">Faixas de preço</p>
+<h2 class="t-h2">{p.tituloPrecos}</h2>
+<p class="t-corpo">{p.introPrecos}</p>
+</div>
+<div class="tabela">
+<div class="tabela__cab"><span>Serviço</span><span>O que faz o preço variar</span><span>Faixa</span></div>
+{(p.precos || []).map((pr) => (
+  <div class="tabela__linha"><span class="tabela__servico">{pr.servico}</span><span>{pr.fator}</span><span class="tabela__faixa">{pr.faixa}</span></div>
+))}
+</div>
+<p class="t-apoio" style="max-width:76ch">{p.notaPrecos}</p>
+</div>
+</section>
+)}
+
+{modelos && (
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:56ch">
+<p class="olho">Modelos</p>
+<h2 class="t-h2">{modelos.titulo}</h2>
+<p class="t-corpo">{modelos.intro}</p>
+</div>
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+{modelos.itens.map((m) => (
+  <div class="modelo">
+  <div class="modelo__foto">{m.foto}</div>
+  <div class="modelo__texto"><b>{m.nome}</b><span>{m.nota}</span></div>
+  </div>
+))}
+</div>
+</div>
+</section>
+)}
+
+{sinais.length > 0 && (
+<section class="secao secao--alt" style="border-bottom:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">{situacao ? 'Quando chamar' : 'Sinais de alerta'}</p>
+<h2 class="t-h2">{p.tituloSinais}</h2>
+<p class="t-corpo">{situacao ? 'Está em uma destas situações? Fale com um técnico antes de decidir.' : 'Notou algum destes sintomas? Chame um técnico antes que o prejuízo aumente.'}</p>
+</div>
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+{sinais.map((s) => (
+  <div class="sinal">
+  <span class="sinal__icone"><Icone nome={s.icone} tam={22} /></span>
+  <div class="pil" style="gap:var(--sp-1)"><b>{s.titulo}</b><span class="t-sm">{s.texto}</span></div>
+  </div>
+))}
+</div>
+</div>
+</section>
+)}
+
+<section class="secao">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Perguntas frequentes</p>
+<h2 class="t-h2">{p.tituloFaq}</h2>
+</div>
+<Faq itens={p.faq} />
+</div>
+</section>
+
+<section class="secao secao--curta" style="border-top:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Avaliações</p>
+<h2 class="t-h2">{aval.titulo}</h2>
+</div>
+<Avaliacoes itens={aval.itens} />
+</div>
+</section>
+
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Outros serviços</p>
+<h2 class="t-h2">Conheça também</h2>
+</div>
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+{relacionados.map((r) => (
+  <a href={r.href} class="cartao servico-cartao">
+  <span class="cartao__icone"><Icone nome={r.icone} tam={24} largura={1.6} /></span>
+  <h3 class="cartao__titulo" style="font-size:var(--fs-h4)">{r.titulo}</h3>
+  <p class="cartao__desc">{r.texto}</p>
+  <span class="cartao__cta">Ver serviço<Icone nome="arrow-right" tam={16} /></span>
+  </a>
+))}
+</div>
+<p class="t-corpo texto-links">Precisa de outro serviço? Fale com <a href="/"><b>a TecDaniel's, soluções em aquecedores a gás</b></a>, ou chame um técnico agora mesmo.</p>
+</div>
+</section>
+
+<FaixaCta titulo={p.ctaTitulo} subtitulo="Orçamento sem compromisso. Visita técnica em até 24 horas no Rio, Grande Rio e Baixada Fluminense." secundario="Ver outros serviços" fonte={'cta-' + slug} />
+
+</Base>

@@ -1,0 +1,22 @@
+---
+import { MARCAS } from '../data/site.js';
+// A lista é duplicada para o loop da esteira fechar sem salto.
+const loop = [...MARCAS, ...MARCAS];
+---
+<section class="secao secao--curta" style="border-top:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:16px;max-width:56ch">
+<p class="olho">Marcas</p>
+<h2 class="t-h2">Marcas de aquecedor que atendemos</h2>
+<p class="t-corpo">Assistência autorizada Rinnai, rede integrada Lorenzetti, Komeco e Rheem, além de Bosch e Orbis. Clique na marca para ver o atendimento específico.</p>
+</div>
+<div class="esteira" style="margin-top:32px">
+<div class="esteira__trilho">
+{loop.map((m, i) => (
+  <a href={m.href} class="marca-cartao" aria-hidden={i >= MARCAS.length ? 'true' : undefined} tabindex={i >= MARCAS.length ? -1 : undefined}>
+  <img src={m.logo} alt={'Logo ' + m.nome} width="150" height="60" loading="lazy">
+  <span>{m.nome}</span>
+  </a>
+))}
+</div>
+</div>
+</section>

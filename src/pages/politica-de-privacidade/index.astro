@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import Trilha from '../../components/Trilha.astro';
+import { NEGOCIO } from '../../data/site.js';
+
+const trilha = [{ nome: 'Início', href: '/' }, { nome: 'Política de privacidade' }];
+---
+<Base
+  titulo="Política de privacidade | TecDaniel's"
+  descricao="Como a TecDaniel's coleta, usa e protege os dados de quem pede orçamento pelo site, telefone ou WhatsApp."
+  trilha={trilha}
+  noindex={true}
+>
+
+<Trilha itens={trilha} />
+
+<section class="secao">
+<div class="env prosa" style="max-width:72ch">
+<h1 class="t-h1" style="margin-bottom:var(--sp-2)">Política de privacidade</h1>
+
+<p>Esta política explica quais dados a {NEGOCIO.nome} coleta quando você pede um orçamento por este site, e o que fazemos com eles.</p>
+
+<h2 class="t-h3" style="margin-top:var(--sp-5)">Quais dados coletamos</h2>
+<p>Quando você usa o formulário para falar no WhatsApp, pedimos <strong>nome</strong> e <strong>telefone</strong>. Esses dados são enviados para a nossa conta de WhatsApp junto com a sua mensagem, e servem apenas para responder ao seu pedido de orçamento e agendar a visita técnica.</p>
+<p>Se você nos escreve por e-mail ou liga, ficamos com o dado que você mesmo informou no contato.</p>
+
+<h2 class="t-h3" style="margin-top:var(--sp-5)">Como usamos</h2>
+<p>Usamos seus dados para responder ao contato, elaborar o orçamento, executar o serviço e cumprir a garantia. Não vendemos nem cedemos seus dados para terceiros.</p>
+
+<h2 class="t-h3" style="margin-top:var(--sp-5)">Medição de audiência</h2>
+<p>O site usa ferramentas de medição para saber quantas pessoas o visitam e por quais páginas chegam. Esses dados são agregados e não identificam você pessoalmente. Você pode bloquear cookies nas configurações do seu navegador.</p>
+
+<h2 class="t-h3" style="margin-top:var(--sp-5)">Seus direitos</h2>
+<p>Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento, escrevendo para <a href={'mailto:' + NEGOCIO.email}>{NEGOCIO.email}</a>. Atendemos o pedido em até 15 dias.</p>
+
+<h2 class="t-h3" style="margin-top:var(--sp-5)">Responsável</h2>
+<p>{NEGOCIO.nome}<br>CNPJ {NEGOCIO.cnpj}<br>{NEGOCIO.endereco.rua} — {NEGOCIO.endereco.cidade}, {NEGOCIO.endereco.estado}<br><a href={'mailto:' + NEGOCIO.email}>{NEGOCIO.email}</a> · {NEGOCIO.telefone}</p>
+
+<p class="prosa__nota">Voltar para <a href="/">aquecedores a gás no Rio de Janeiro</a>.</p>
+</div>
+</section>
+
+</Base>

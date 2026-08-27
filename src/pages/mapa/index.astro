@@ -1,0 +1,71 @@
+---
+/** Mapa do site — página de apresentação, não indexável.
+ *  Lista as 37 páginas com a palavra-chave e o volume real de busca
+ *  (Planejador de Palavras-Chave, geo Rio de Janeiro). */
+import Base from '../../layouts/Base.astro';
+import Trilha from '../../components/Trilha.astro';
+import Icone from '../../components/Icone.astro';
+import secoes from '../../data/mapa.json';
+
+const trilha = [{ nome: 'Início', href: '/' }, { nome: 'Mapa do site' }];
+const total = secoes.reduce((s, x) => s + x.cards.length, 0);
+// No site publicado a URL é a própria rota; o mapa antigo apontava para os templates.
+const rota = (url) => (url === '/' ? '/' : url.replace(/\/$/, '') + '/');
+---
+<Base
+  titulo="Mapa do site | TecDaniel's"
+  descricao="As páginas do site da TecDaniel's, com a palavra-chave principal e o volume de busca de cada uma."
+  trilha={trilha}
+  noindex={true}
+>
+
+<Trilha itens={trilha} />
+
+<section class="secao secao--curta">
+<div class="env pil" style="gap:var(--sp-4);max-width:60ch">
+<p class="olho">TecDaniel's</p>
+<h1 class="t-h1">Mapa do site</h1>
+<p class="t-corpo">{total} páginas estruturadas para SEO. Cada uma tem H1 próprio, conteúdo exclusivo e FAQ com a formulação real da busca. O volume vem do Planejador de Palavras-Chave com geo do Rio de Janeiro — nunca volume nacional.</p>
+</div>
+</section>
+
+{secoes.map((s) => (
+<section class="secao secao--curta" style="padding-top:0">
+<div class="env pil" style="gap:var(--sp-5)">
+<div class="pil" style="gap:var(--sp-2);max-width:70ch">
+<h2 class="t-h3">{s.titulo} <span class="mapa__conta">{s.cards.length}</span></h2>
+{s.nota && <p class="t-sm">{s.nota}</p>}
+</div>
+<div class="mapa__grade">
+{s.cards.map((c) => (
+  <a href={rota(c.url)} class="mapa__card">
+  <b>{c.nome}</b>
+  <span class="mapa__vol">{c.nota}</span>
+  <code>{c.url}</code>
+  <span class="mapa__seta"><Icone nome="arrow-right" tam={15} /></span>
+  </a>
+))}
+</div>
+</div>
+</section>
+))}
+
+<section class="secao secao--curta" style="padding-top:0">
+<div class="env">
+<p class="t-corpo texto-links">Voltar para <a href="/">aquecedores a gás no Rio de Janeiro</a>.</p>
+</div>
+</section>
+
+<style>
+.mapa__conta{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:22px;padding:0 7px;margin-left:6px;border-radius:var(--r-pill);background:var(--surface-tint);border:var(--bw-hair) solid var(--blue-200);color:var(--accent-strong);font-size:var(--fs-xs);font-weight:var(--fw-bold);vertical-align:middle}
+.mapa__grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--sp-3)}
+.mapa__card{position:relative;display:flex;flex-direction:column;gap:5px;padding:16px 40px 16px 18px;background:var(--surface-card);border:var(--bw-hair) solid var(--border-hairline);border-radius:var(--r-md);box-shadow:var(--shadow-card);transition:all var(--dur-base) var(--ease-out)}
+.mapa__card:hover{border-color:var(--blue-200);box-shadow:var(--shadow-card-hover);transform:translateY(var(--lift))}
+.mapa__card b{font-family:var(--font-narrow);font-size:var(--fs-body);color:var(--ink-900)}
+.mapa__vol{font-size:var(--fs-xs);line-height:1.45;color:var(--text-muted)}
+.mapa__card code{font-family:var(--font-mono);font-size:12px;color:var(--accent-strong);word-break:break-all}
+.mapa__seta{position:absolute;top:16px;right:14px;color:var(--ink-300);line-height:0}
+.mapa__card:hover .mapa__seta{color:var(--accent)}
+</style>
+
+</Base>

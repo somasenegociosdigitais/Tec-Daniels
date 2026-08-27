@@ -1,0 +1,34 @@
+/* Estados de interação: foco visível e o FAQ em <details> nativo. */
+
+/* Anel de foco único para todo elemento operável por teclado.
+   :focus-visible não aparece no clique de mouse, só na navegação por teclado. */
+:where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--accent, #0994DC);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Alvo de toque mínimo de 44px em links de navegação e ações,
+   sem alterar links dentro de um parágrafo de texto corrido. */
+@media (pointer: coarse) {
+  :where(nav, footer, header) a,
+  button:not([data-td-inline]) {
+    min-height: 44px;
+  }
+}
+
+/* FAQ nativo: some o triângulo padrão e gira a seta quando aberto. */
+.td-faq > summary { list-style: none; }
+.td-faq > summary::-webkit-details-marker { display: none; }
+.td-faq > summary::marker { content: ""; }
+.td-faq[open] > summary .td-faq-seta { transform: rotate(180deg); }
+
+/* Respeita quem pediu menos movimento no sistema. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

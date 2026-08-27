@@ -1,0 +1,217 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icone from '../../components/Icone.astro';
+import Trilha from '../../components/Trilha.astro';
+import FaixaCta from '../../components/FaixaCta.astro';
+import Faq from '../../components/Faq.astro';
+import { NEGOCIO } from '../../data/site.js';
+
+const trilha = [
+  { nome: 'Início', href: '/' },
+  { nome: 'Serviços', href: '/#todos-os-servicos' },
+  { nome: 'Dimensionamento' },
+];
+
+const FAQ = [
+  { q: 'Qual aquecedor a gás para 2 chuveiros?', a: 'Para dois chuveiros usados ao mesmo tempo, a referência é de 15 a 20 litros por minuto. Se junto com os dois chuveiros houver torneira de cozinha em uso, vá para 23 litros ou mais. Aparelho de 10 ou 12 litros não sustenta dois banhos simultâneos.' },
+  { q: 'Um aquecedor de 20 litros atende dois chuveiros?', a: 'Pode não atender. Dois chuveiros simultâneos somam de 15 a 18 litros por minuto, e no inverno a vazão útil cai porque a água entra mais fria. Se houver torneira em uso junto, o aparelho de 20 litros fica no limite.' },
+  { q: 'Uma casa com 3 banheiros precisa de aquecedor maior?', a: 'Não necessariamente. O que define a litragem é quantos pontos funcionam ao mesmo tempo, não quantos banheiros existem. Três banheiros com um banho por vez pedem menos aparelho que dois banheiros com dois banhos simultâneos.' },
+  { q: 'O que significa a litragem do aquecedor?', a: 'É a vazão: quantos litros de água o aparelho aquece por minuto. Um aquecedor de 20 litros entrega 20 litros por minuto continuamente, enquanto houver gás e água — não é o volume de um reservatório.' },
+  { q: 'Aquecedor grande gasta mais gás?', a: 'Não pelo tamanho. O aparelho consome conforme a água que está aquecendo no momento; um aquecedor de 23 litros aquecendo um chuveiro gasta praticamente o mesmo que um de 15 na mesma situação. O que pesa no aparelho maior é o preço de compra e a exigência de rede de gás.' },
+  { q: 'Preciso de aquecedor maior no inverno?', a: 'A água entra mais fria e o aparelho precisa de mais potência para a mesma temperatura de saída — na prática, a vazão útil cai. É por isso que o cálculo já inclui folga: dimensionar no limite significa banho morno em julho.' },
+  { q: 'Meu chuveiro é fraco. Um aquecedor maior resolve?', a: 'Não. Chuveiro fraco é falta de pressão de água, e sem vazão mínima o sensor de fluxo nem aciona o aquecedor. O que resolve é pressurizador, dimensionado junto com o aparelho.' },
+  { q: 'A litragem muda conforme o tipo de gás?', a: 'Não. A litragem indicada depende dos pontos de água usados ao mesmo tempo. Os aquecedores que instalamos são para gás natural, o padrão dos imóveis que atendemos no Rio. Conversão entre gás natural e botijão nós fazemos em fogão, cooktop e forno.' },
+  { q: 'Vocês instalam o aparelho que eu comprar?', a: 'Sim, e também vendemos com instalação. Nos dois casos o dimensionamento é conferido na visita antes de qualquer compra.' },
+];
+
+const CONSUMOS = [
+  { ponto: 'Chuveiro comum', vazao: '6 a 9 L/min' },
+  { ponto: 'Ducha ou chuveirão', vazao: '10 a 14 L/min' },
+  { ponto: 'Torneira de cozinha', vazao: '3 a 4 L/min' },
+  { ponto: 'Torneira de lavatório', vazao: '2 a 3 L/min' },
+  { ponto: 'Banheira comum', vazao: '12 a 15 L/min' },
+  { ponto: 'Máquina de lavar louça', vazao: '2 a 3 L/min' },
+];
+
+const RELACIONADOS = [
+  { icone: 'flame', titulo: 'Instalação de aquecedor a gás', texto: 'Dimensionamento, exaustão e ligação conforme norma.', href: '/instalacao-de-aquecedor-a-gas/' },
+  { icone: 'waves', titulo: 'Pressurizador de água', texto: 'Chuveiro fraco e aquecedor que não aciona.', href: '/pressurizador-de-agua/' },
+  { icone: 'wind', titulo: 'Aquecedor de fluxo balanceado', texto: 'Para apartamento sem ventilação externa.', href: '/aquecedor-de-fluxo-balanceado/' },
+  { icone: 'thermometer', titulo: 'Conserto de aquecedor a gás', texto: 'Aquecedor que não acende ou água que sai fria.', href: '/conserto-de-aquecedor-a-gas/' },
+];
+
+const garantias = [
+  { icone: 'file-check', label: 'Orçamento sem compromisso' },
+  { icone: 'home', label: 'Atendemos em domicílio' },
+  { icone: 'clock', label: 'Visita técnica em até 24 horas' },
+  { icone: 'shield-check', label: 'Garantia de 90 dias' },
+];
+---
+<Base
+  titulo="Calculadora de aquecedor para 2 chuveiros | TecDaniel's"
+  descricao="Calcule a litragem do aquecedor pelos pontos de água usados ao mesmo tempo e confirme o dimensionamento com um técnico no Rio."
+  trilha={trilha}
+  servico="Dimensionamento de aquecedor a gás"
+  faq={FAQ}
+>
+
+<section class="cabeca">
+<div class="env cabeca__env" style="padding-bottom:var(--sp-10)">
+<Trilha itens={trilha} claro={true} />
+<div class="cabeca__grade">
+<div class="pil" style="gap:var(--sp-5)">
+<p class="olho olho--claro">Dimensionamento</p>
+<h1 class="t-h1" style="color:#fff;max-width:26ch">Qual aquecedor a gás para 2 chuveiros: calcule a litragem</h1>
+<p class="t-corpo sobre-brand" style="max-width:52ch">Aparelho pequeno demais não dá banho quente em dois pontos ao mesmo tempo. Grande demais é dinheiro parado na parede. Informe os pontos de água da sua casa e veja a vazão recomendada.</p>
+<div class="linha" style="gap:var(--sp-2)">
+<span class="heroi__estrelas">★★★★★</span>
+<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · {NEGOCIO.google.total} avaliações · {NEGOCIO.anos} anos no Rio de Janeiro</span>
+</div>
+</div>
+
+<div class="calc">
+<div class="calc__campos">
+<div class="calc__campo">
+<label id="rot-chuveiros">Chuveiros usados ao mesmo tempo</label>
+<div class="calc__botoes" role="group" aria-labelledby="rot-chuveiros" data-grupo="chuveiros">
+<button type="button" data-valor="1">1</button>
+<button type="button" data-valor="2" aria-pressed="true">2</button>
+<button type="button" data-valor="3">3</button>
+<button type="button" data-valor="4">4+</button>
+</div>
+</div>
+<div class="calc__campo">
+<label id="rot-torneiras">Torneiras de água quente ao mesmo tempo</label>
+<div class="calc__botoes" role="group" aria-labelledby="rot-torneiras" data-grupo="torneiras">
+<button type="button" data-valor="0">Nenhuma</button>
+<button type="button" data-valor="1" aria-pressed="true">1</button>
+<button type="button" data-valor="2">2</button>
+<button type="button" data-valor="3">3+</button>
+</div>
+</div>
+<div class="calc__campo">
+<label id="rot-local">Onde o aparelho fica</label>
+<div class="calc__botoes" role="group" aria-labelledby="rot-local" data-grupo="local">
+<button type="button" data-valor="externa" aria-pressed="true">Área ventilada</button>
+<button type="button" data-valor="interna">Ambiente fechado</button>
+</div>
+</div>
+</div>
+<div class="calc__saida">
+<p class="calc__numero"><span id="calc-litros">15</span><span>litros por minuto</span></p>
+<p class="t-sm sobre-brand" id="calc-explicacao">Seus pontos somam cerca de 18,5 litros por minuto. Com a folga de inverno, o aparelho indicado é o de 15 litros.</p>
+<div class="calc__alertas">
+<span class="rotulinho">Também considere</span>
+<ul id="calc-alertas"></ul>
+</div>
+<button type="button" class="btn btn--zap btn--lg js-whatsapp-cta" data-whatsapp-source="calculadora" style="width:100%"><Icone nome="message-circle" tam={19} />Confirmar com um técnico</button>
+</div>
+</div>
+</div>
+</div>
+<div class="cabeca__garantias">
+<div class="env linha" style="gap:var(--sp-5) var(--sp-9)">
+{garantias.map((g) => (<span class="confia"><Icone nome={g.icone} tam={18} />{g.label}</span>))}
+</div>
+</div>
+</section>
+
+<section class="secao">
+<div class="env texto-e-lista">
+<div class="prosa">
+<p class="olho">Como a conta é feita</p>
+<h2 class="t-h2">Litragem é vazão, não tamanho de casa</h2>
+<p>A litragem do aquecedor a gás é quanta água ele esquenta por minuto. Não é o tamanho de um reservatório. Um aparelho de 20 litros entrega 20 litros de água quente por minuto, sem parar, enquanto tiver gás e água.</p>
+<p>A conta começa no consumo de cada ponto. Um chuveiro comum pede de 6 a 9 litros por minuto, e uma torneira de cozinha, de 3 a 4. O que pesa não é quantos pontos a casa tem, é quantos funcionam ao mesmo tempo. Uma casa de três banheiros onde nunca tem dois banhos juntos precisa de menos aparelho que um apartamento de dois banheiros com família de cinco.</p>
+<p>Duas coisas mudam a conta. No inverno a água entra mais fria e o aparelho precisa de mais potência para entregar a mesma temperatura, e é por isso que a conta já sai com folga. A outra é a pressão de água: se a vazão estiver baixa, o sensor de fluxo não aciona e nenhuma litragem resolve, porque o aquecedor nem liga. Aí o que falta é <a href="/pressurizador-de-agua/"><b>pressurizador</b></a>, não aquecedor maior.</p>
+<p class="prosa__nota">A conta acima é uma estimativa de referência. O dimensionamento definitivo considera a distância entre o aparelho e os pontos, o tipo de gás e a norma de instalação — veja a <a href="/instalacao-de-aquecedor-a-gas/"><b>instalação de aquecedor a gás</b></a> ou fale com <a href="/"><b>a TecDaniel's, soluções em aquecedores a gás no Rio de Janeiro</b></a>.</p>
+</div>
+<div class="lista-cartao">
+<h3 class="t-h3" style="font-size:var(--fs-h4)">Referência de consumo por ponto</h3>
+<ul>
+{CONSUMOS.map((c) => (
+  <li style="justify-content:space-between"><span>{c.ponto}</span><b style="color:var(--brand);white-space:nowrap">{c.vazao}</b></li>
+))}
+</ul>
+</div>
+</div>
+</section>
+
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Perguntas frequentes</p>
+<h2 class="t-h2">Dúvidas de dimensionamento</h2>
+</div>
+<Faq itens={FAQ} />
+</div>
+</section>
+
+<section class="secao secao--curta" style="border-top:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Outros serviços</p>
+<h2 class="t-h2">Conheça também</h2>
+</div>
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+{RELACIONADOS.map((r) => (
+  <a href={r.href} class="cartao servico-cartao">
+  <span class="cartao__icone"><Icone nome={r.icone} tam={24} largura={1.6} /></span>
+  <h3 class="cartao__titulo" style="font-size:var(--fs-h4)">{r.titulo}</h3>
+  <p class="cartao__desc">{r.texto}</p>
+  <span class="cartao__cta">Ver serviço<Icone nome="arrow-right" tam={16} /></span>
+  </a>
+))}
+</div>
+</div>
+</section>
+
+<FaixaCta titulo="Quer confirmar a litragem antes de comprar?" secundario="Ver outros serviços" fonte="cta-dimensionamento" />
+
+<script is:inline>
+(() => {
+  const ESCALA = [10, 12, 15, 18, 20, 23, 26, 32, 40];
+  const estado = { chuveiros: 2, torneiras: 1, local: 'externa' };
+  const elLitros = document.getElementById('calc-litros');
+  const elExpl = document.getElementById('calc-explicacao');
+  const elAlertas = document.getElementById('calc-alertas');
+
+  function calcular() {
+    const bruto = estado.chuveiros * 7.5 + estado.torneiras * 3.5;
+    const comFolga = bruto * 1.15;
+    const litros = ESCALA.find((v) => v >= comFolga) || ESCALA[ESCALA.length - 1];
+
+    const alertas = [];
+    if (estado.local === 'interna') alertas.push('Ambiente sem ventilação externa exige aquecedor de fluxo balanceado, com duto coaxial. A litragem não muda, o aparelho sim.');
+    if (litros >= 26) alertas.push('Acima de 26 litros é preciso conferir se a rede de gás sustenta a vazão sob carga. Medimos a pressão em uso antes de indicar o aparelho.');
+    if (estado.chuveiros >= 2) alertas.push('Com dois ou mais banhos simultâneos, a pressão de água costuma ser o gargalo antes da litragem.');
+    if (!alertas.length) alertas.push('Pressão de água insuficiente impede o aquecedor de acionar, independente da litragem.');
+
+    elLitros.textContent = litros;
+    elExpl.textContent = 'Seus pontos somam cerca de ' + bruto.toFixed(1).replace('.', ',') +
+      ' litros por minuto. Com a folga de inverno, o aparelho indicado é o de ' + litros + ' litros.';
+    elAlertas.innerHTML = '';
+    for (const a of alertas.slice(0, 3)) {
+      const li = document.createElement('li');
+      li.textContent = a;
+      elAlertas.appendChild(li);
+    }
+  }
+
+  for (const grupo of document.querySelectorAll('.calc__botoes')) {
+    grupo.addEventListener('click', (e) => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      for (const outro of grupo.querySelectorAll('button')) outro.removeAttribute('aria-pressed');
+      b.setAttribute('aria-pressed', 'true');
+      const campo = grupo.dataset.grupo;
+      const v = b.dataset.valor;
+      estado[campo] = campo === 'local' ? v : Number(v);
+      calcular();
+    });
+  }
+  calcular();
+})();
+</script>
+
+</Base>

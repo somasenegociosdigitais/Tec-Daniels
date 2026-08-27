@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import Icone from '../components/Icone.astro';
+import { SERVICOS, BAIRROS, servicoUrl } from '../data/site.js';
+
+const principais = ['conserto-de-aquecedor-a-gas', 'manutencao-de-aquecedor-a-gas', 'instalacao-de-aquecedor-a-gas', 'gasista', 'teste-de-vazamento-de-gas', 'pressurizador-de-agua'];
+---
+<Base
+  titulo="Página não encontrada | TecDaniel's"
+  descricao="A página que você procurava não existe mais. Veja os serviços de aquecedor a gás e rede de gás no Rio de Janeiro."
+  noindex={true}
+>
+
+<section class="secao">
+<div class="env pil" style="gap:var(--sp-8);max-width:70ch">
+<div class="pil" style="gap:var(--sp-4)">
+<p class="olho">Erro 404</p>
+<h1 class="t-h1">Esta página não existe</h1>
+<p class="t-lead">O endereço pode ter mudado ou o link estar quebrado. Escolha um dos serviços abaixo ou fale direto com um técnico.</p>
+</div>
+
+<div class="linha" style="gap:var(--sp-4)">
+<button type="button" class="btn btn--zap btn--lg js-whatsapp-cta" data-whatsapp-source="404"><Icone nome="message-circle" tam={19} />Falar no WhatsApp</button>
+<a href="/" class="btn btn--contorno btn--lg">Ir para a home</a>
+</div>
+
+<div class="pil" style="gap:var(--sp-4)">
+<h2 class="t-h3">Serviços mais procurados</h2>
+<div class="linha">
+{principais.map((s) => (<a href={servicoUrl(s)} class="ficha">{SERVICOS[s]}</a>))}
+</div>
+</div>
+
+<div class="pil" style="gap:var(--sp-4)">
+<h2 class="t-h3">Atendimento por bairro</h2>
+<div class="linha">
+{BAIRROS.map((b) => (<a href={b.href} class="ficha">{b.nome}</a>))}
+</div>
+</div>
+
+<p class="t-corpo texto-links">Ou volte para <a href="/">aquecedores a gás no Rio de Janeiro</a>.</p>
+</div>
+</section>
+
+</Base>

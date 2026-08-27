@@ -1,0 +1,18 @@
+---
+/** FAQ em <details> nativo — espelha FaqItem.jsx: seta chevron-down que gira
+ *  180° quando aberto, comportamento já definido em tokens/interacao.css.
+ *  A resposta existe sempre no HTML, indexável e sem JavaScript. */
+import Icone from './Icone.astro';
+const { itens = [] } = Astro.props;
+---
+<div class="faq">
+{itens.map((f) => (
+  <details class="td-faq">
+  <summary>
+  {f.q}
+  <span class="td-faq-seta"><Icone nome="chevron-down" tam={20} /></span>
+  </summary>
+  <p>{f.a}</p>
+  </details>
+))}
+</div>

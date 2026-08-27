@@ -1,0 +1,29 @@
+---
+/** Faixa de CTA — espelha CtaBand.jsx. Com secundario, mostra o botão
+ *  de contorno; sem ele, o telefone com ícone. */
+import Icone from './Icone.astro';
+import { NEGOCIO } from '../data/site.js';
+
+const {
+  titulo = 'Fale agora com um técnico especialista.',
+  subtitulo = 'Orçamento sem compromisso. Visita técnica em até 24 horas no Rio e Grande Rio.',
+  primario = 'Falar no WhatsApp',
+  secundario,
+  secundarioHref = '/#todos-os-servicos',
+  fonte = 'faixa-cta',
+} = Astro.props;
+---
+<section class="faixa">
+<div class="env">
+<div class="pil" style="gap:var(--sp-3);max-width:34ch">
+<h2 class="t-h1">{titulo}</h2>
+{subtitulo && <p class="t-corpo sobre-brand">{subtitulo}</p>}
+</div>
+<div class="faixa__acoes">
+<button type="button" class="btn btn--zap btn--lg js-whatsapp-cta" data-whatsapp-source={fonte}><Icone nome="message-circle" tam={19} />{primario}</button>
+{secundario
+  ? <a href={secundarioHref} class="btn btn--sobre-brand-contorno btn--lg">{secundario}</a>
+  : <a href={'tel:' + NEGOCIO.telefoneE164} class="faixa__tel"><Icone nome="phone" tam={20} />{NEGOCIO.telefone}</a>}
+</div>
+</div>
+</section>

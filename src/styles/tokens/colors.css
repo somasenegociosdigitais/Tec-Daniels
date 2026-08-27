@@ -1,0 +1,20 @@
+:root{
+/* Vermelho — reservado a alerta e erro */
+--red-700:#A81B1F;--red-600:#C8232A;--red-550:#DA2B2B;--red-500:#EB3135;--red-300:#F5787B;--red-100:#FDE7E8;
+/* Verde WhatsApp — cor dos botões de ação do site */
+--green-700:#00722B;--green-600:#00822F;--green-500:#009B3A;--green-100:#E3F5E9;
+/* Neutros — texto quase preto e corpo azulado, como no site */
+--ink-900:#26292E;--ink-800:#2F343A;--ink-700:#3B434D;--ink-600:#4E6584;--ink-500:#6B7F98;--ink-400:#8B9BB0;--ink-300:#C6CFDA;--ink-200:#E8EBED;--ink-100:#F6FAFD;--white:#FFFFFF;
+/* Azul do logotipo (#0994DC, medido no print) e do mascote */
+--blue-950:#0E2F60;--blue-900:#123C7A;--blue-800:#0678AF;--blue-700:#0994DC;--blue-600:#2AA6E4;--blue-500:#4878A8;--blue-200:#A9DCF6;--blue-100:#DDF1FC;--blue-50:#F1F9FE;
+--blue-mascote:#4878A8;--whatsapp:#009B3A;--amber-600:#B4690E;
+
+/* Aliases semânticos */
+--brand:var(--blue-900);--brand-strong:var(--ink-900);--brand-soft:var(--blue-100);
+--accent:var(--blue-700);--accent-strong:var(--blue-800);--accent-soft:var(--blue-100);
+--cta:var(--green-500);--cta-strong:var(--green-600);
+--text-title:var(--ink-900);--text-body:var(--ink-600);--text-muted:var(--ink-500);--text-invert:var(--white);--text-on-brand:#D6E2F5;
+--surface-page:var(--white);--surface-alt:var(--ink-100);--surface-card:var(--white);--surface-brand:var(--blue-900);--surface-brand-deep:var(--blue-950);--surface-tint:var(--blue-50);
+--border-hairline:var(--ink-200);--border-strong:var(--ink-300);--border-on-brand:rgba(255,255,255,.16);
+--focus-ring:var(--blue-700);
+}

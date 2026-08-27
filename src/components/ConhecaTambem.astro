@@ -1,0 +1,20 @@
+---
+/** Links laterais entre páginas irmãs + o link obrigatório para a home
+ *  com âncora descritiva. Fluxo: página filha -> hub -> home. */
+const { itens = [], hub, titulo = 'Conheça também' } = Astro.props;
+---
+<section class="secao secao--curta">
+<div class="env pil" style="gap:24px">
+<h2 class="t-h3">{titulo}</h2>
+<div class="linha">
+{itens.map((i) => (
+  <a href={i.href} class="ficha">{i.label}</a>
+))}
+</div>
+<p class="t-corpo texto-links" style="max-width:70ch">
+{hub && (<>Veja o hub de <a href={hub.href}>{hub.label}</a> ou volte para </>)}
+{!hub && (<>Volte para </>)}
+<a href="/">aquecedores a gás no Rio de Janeiro</a> e conheça todos os nossos serviços de aquecedor e gás.
+</p>
+</div>
+</section>

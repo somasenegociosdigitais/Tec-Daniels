@@ -1,0 +1,27 @@
+:root{
+--font-sans:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+--font-narrow:"Archivo Narrow","Archivo",system-ui,sans-serif;
+--font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+
+--fs-display:clamp(40px,5.2vw,64px); /* @kind font */
+--fs-h1:clamp(32px,3.6vw,44px); /* @kind font */
+--fs-h2:clamp(26px,2.6vw,34px); /* @kind font */
+--fs-h3:22px;--fs-h4:18px;
+--fs-body-lg:19px;--fs-body:17px;--fs-sm:15px;--fs-xs:13px;--fs-eyebrow:12px;
+
+--lh-tight:1.06; /* @kind font */
+--lh-title:1.16; /* @kind font */
+--lh-snug:1.35; /* @kind font */
+--lh-body:1.62; /* @kind font */
+--ls-display:-.02em; /* @kind font */
+--ls-title:-.01em; /* @kind font */
+--ls-body:0; /* @kind font */
+--ls-eyebrow:.22em; /* @kind font */
+--ls-caps:.06em; /* @kind font */
+
+--fw-regular:400; /* @kind font */
+--fw-medium:500; /* @kind font */
+--fw-semibold:600; /* @kind font */
+--fw-bold:700; /* @kind font */
+--fw-black:800; /* @kind font */
+}

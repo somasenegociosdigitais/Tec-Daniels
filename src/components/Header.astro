@@ -1,0 +1,38 @@
+---
+import Assinatura from './Assinatura.astro';
+import Icone from './Icone.astro';
+import { NEGOCIO, MENU } from '../data/site.js';
+const atual = Astro.url.pathname;
+const tel = 'tel:' + NEGOCIO.telefoneE164;
+---
+<header class="cab">
+
+<div class="cab__faixa">
+<div class="env">
+<span><Icone nome="map-pin" tam={14} />Rio de Janeiro, Grande Rio e Baixada Fluminense</span>
+<span class="cab__faixa-dir">
+<span><Icone nome="clock" tam={14} />Visita técnica em até 24 horas</span>
+<a href={tel}><Icone nome="phone" tam={14} />{NEGOCIO.telefone}</a>
+</span>
+</div>
+</div>
+
+<div class="env cab__linha">
+<a href="/" class="cab__logo" aria-label={NEGOCIO.marca + ' — início'}>
+<img src="/assets/mascote-tecdaniels.png" alt="" width="46" height="46" fetchpriority="high">
+<Assinatura />
+</a>
+<nav class="cab__nav" aria-label="Navegação principal">
+{MENU.map((m) => (
+  <a href={m.href} aria-current={atual === m.href ? 'page' : undefined}>{m.label}</a>
+))}
+</nav>
+<div class="cab__acoes">
+<a href={tel} class="cab__tel"><Icone nome="phone" tam={17} />{NEGOCIO.telefone}</a>
+<button type="button" class="btn btn--zap btn--sm js-whatsapp-cta" data-whatsapp-source="cabecalho">
+<Icone nome="message-circle" tam={15} />Peça seu orçamento
+</button>
+</div>
+</div>
+
+</header>

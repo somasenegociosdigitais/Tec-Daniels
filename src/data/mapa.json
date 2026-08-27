@@ -1,0 +1,217 @@
+[
+ {
+  "titulo": "Home",
+  "nota": "Hub principal, com quatro cards de tema (aquecedor, gás, estanqueidade, pressurizador) e as páginas filhas listadas dentro de cada um.",
+  "cards": [
+   {
+    "nome": "Home — TecDaniel's",
+    "nota": "\"aquecedor a gás\" 4.400 buscas por mês",
+    "url": "/"
+   }
+  ]
+ },
+ {
+  "titulo": "Institucionais",
+  "nota": "As três que o menu referencia. \"Área de atendimento\" funciona como hub dos bairros, distribuindo autoridade para as sete páginas locais.",
+  "cards": [
+   {
+    "nome": "Quem somos",
+    "nota": "Sem busca própria · a empresa e as normas",
+    "url": "/quem-somos"
+   },
+   {
+    "nome": "Contato",
+    "nota": "Sem busca própria · WhatsApp, telefone e e-mail",
+    "url": "/contato"
+   },
+   {
+    "nome": "Área de atendimento",
+    "nota": "Sem busca própria · hub dos sete bairros",
+    "url": "/area-de-atendimento"
+   }
+  ]
+ },
+ {
+  "titulo": "Serviços",
+  "nota": "Uma página por serviço, cada uma dona do seu termo. É a base para trabalhar backlink depois — página que divide termo com outra não acumula autoridade.",
+  "cards": [
+   {
+    "nome": "Conserto de aquecedor a gás",
+    "nota": "320 buscas por mês",
+    "url": "/conserto-de-aquecedor-a-gas"
+   },
+   {
+    "nome": "Manutenção de aquecedor a gás",
+    "nota": "210 buscas por mês",
+    "url": "/manutencao-de-aquecedor-a-gas"
+   },
+   {
+    "nome": "Instalação de aquecedor a gás",
+    "nota": "170 buscas por mês",
+    "url": "/instalacao-de-aquecedor-a-gas"
+   },
+   {
+    "nome": "Gasista",
+    "nota": "480 buscas por mês",
+    "url": "/gasista"
+   },
+   {
+    "nome": "Teste de estanqueidade",
+    "nota": "390 buscas por mês",
+    "url": "/teste-de-estanqueidade"
+   },
+   {
+    "nome": "Teste de vazamento de gás",
+    "nota": "140 buscas por mês",
+    "url": "/teste-de-vazamento-de-gas"
+   },
+   {
+    "nome": "Substituição de tubulação a gás",
+    "nota": "20 buscas por mês",
+    "url": "/substituicao-de-tubulacao-de-gas"
+   },
+   {
+    "nome": "Remanejamento de ponto de gás",
+    "nota": "60 buscas por mês (com a variação \"preço\")",
+    "url": "/remanejamento-de-ponto-de-gas"
+   },
+   {
+    "nome": "Instalação de fogão e cooktop",
+    "nota": "≈ 250-300 buscas por mês (cluster)",
+    "url": "/instalacao-de-fogao-e-cooktop"
+   },
+   {
+    "nome": "Aplicação de resina em tubulação",
+    "nota": "30 buscas por mês",
+    "url": "/aplicacao-de-resina-em-tubulacao"
+   },
+   {
+    "nome": "Conversão de fogão",
+    "nota": "340 buscas por mês (com \"conversor de fogão\")",
+    "url": "/conversao-de-fogao"
+   },
+   {
+    "nome": "Pressurizador de água",
+    "nota": "2.400 buscas por mês",
+    "url": "/pressurizador-de-agua"
+   },
+   {
+    "nome": "Pressurizador Lorenzetti",
+    "nota": "320 buscas por mês (+ modelos PL)",
+    "url": "/pressurizador-lorenzetti"
+   },
+   {
+    "nome": "Pressurizador Komeco",
+    "nota": "140 buscas por mês (+ modelos TP)",
+    "url": "/pressurizador-komeco"
+   },
+   {
+    "nome": "Aquecedor de fluxo balanceado",
+    "nota": "170 buscas por mês",
+    "url": "/aquecedor-de-fluxo-balanceado"
+   },
+   {
+    "nome": "Aquecedor não esquenta a água",
+    "nota": "≈ 300 buscas/mês somadas, concorrência baixa",
+    "url": "/aquecedor-nao-esquenta-a-agua"
+   },
+   {
+    "nome": "Venda de aquecedor a gás",
+    "nota": "390 buscas por mês (\"aquecedores a gás rinnai\")",
+    "url": "/venda-de-aquecedor-a-gas"
+   },
+   {
+    "nome": "Quanto custa o conserto",
+    "nota": "Sem volume isolado · nenhum concorrente responde",
+    "url": "/quanto-custa-conserto-de-aquecedor"
+   },
+   {
+    "nome": "Condomínios e administradoras",
+    "nota": "Sem volume isolado · contrato programado",
+    "url": "/manutencao-para-condominios"
+   },
+   {
+    "nome": "Dimensionamento de aquecedor",
+    "nota": "≈ 150 buscas por mês · calculadora",
+    "url": "/dimensionamento-de-aquecedor-a-gas"
+   }
+  ]
+ },
+ {
+  "titulo": "Marcas",
+  "nota": "O volume de marca é dominado por intenção de compra do produto, não por assistência. Cada página responde às duas coisas, com a seção de modelos capturando a busca de produto.",
+  "cards": [
+   {
+    "nome": "Assistência autorizada Rinnai",
+    "nota": "1.000 buscas por mês",
+    "url": "/assistencia-tecnica-rinnai"
+   },
+   {
+    "nome": "Aquecedor Lorenzetti",
+    "nota": "720 buscas por mês",
+    "url": "/assistencia-tecnica-lorenzetti"
+   },
+   {
+    "nome": "Aquecedor Komeco",
+    "nota": "260 buscas por mês",
+    "url": "/assistencia-tecnica-komeco"
+   },
+   {
+    "nome": "Aquecedor Rheem",
+    "nota": "170 buscas por mês",
+    "url": "/assistencia-tecnica-rheem"
+   },
+   {
+    "nome": "Aquecedor Bosch e Junkers",
+    "nota": "140 buscas por mês",
+    "url": "/assistencia-tecnica-bosch"
+   },
+   {
+    "nome": "Aquecedor Orbis",
+    "nota": "30 buscas por mês",
+    "url": "/assistencia-tecnica-orbis"
+   }
+  ]
+ },
+ {
+  "titulo": "Bairros",
+  "nota": "Eixo Jacarepaguá / Barra da Tijuca mais o raio curto em volta da empresa. Conteúdo próprio por bairro: deslocamento real, perfil de imóvel, sub-regiões.",
+  "cards": [
+   {
+    "nome": "Barra da Tijuca",
+    "nota": "O bairro de maior busca do eixo",
+    "url": "/aquecedor-a-gas-barra-da-tijuca"
+   },
+   {
+    "nome": "Tijuca",
+    "nota": "Segunda maior busca por bairro",
+    "url": "/aquecedor-a-gas-tijuca"
+   },
+   {
+    "nome": "Jacarepaguá",
+    "nota": "Onde fica a base · sem volume isolado",
+    "url": "/aquecedor-a-gas-jacarepagua"
+   },
+   {
+    "nome": "Freguesia",
+    "nota": "Eixo prioritário · sem volume isolado",
+    "url": "/aquecedor-a-gas-freguesia"
+   },
+   {
+    "nome": "Taquara e Tanque",
+    "nota": "Eixo prioritário · sem volume isolado",
+    "url": "/aquecedor-a-gas-taquara"
+   },
+   {
+    "nome": "Recreio dos Bandeirantes",
+    "nota": "Eixo prioritário · sem volume isolado",
+    "url": "/aquecedor-a-gas-recreio-dos-bandeirantes"
+   },
+   {
+    "nome": "Vila Valqueire",
+    "nota": "Raio curto da base · sem volume isolado",
+    "url": "/aquecedor-a-gas-vila-valqueire"
+   }
+  ]
+ }
+]

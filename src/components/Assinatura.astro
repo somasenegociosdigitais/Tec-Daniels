@@ -1,0 +1,15 @@
+---
+/** Assinatura tipográfica do logotipo — espelha o Wordmark.jsx do design system.
+ *  Mascote + filete + "TecDaniel's" em versalete + linha "Soluções em aquecedores". */
+const { tom = 'escuro', linha = true } = Astro.props;
+---
+<span class:list={['assinatura', tom === 'claro' && 'assinatura--clara']}>
+<span class="assinatura__topo">
+<img src="/assets/marca-td.png" alt="TecDaniel’s" class="assinatura__marca" width="38" height="38">
+<span class="assinatura__filete"></span>
+<span class="assinatura__nome">
+<span class="g">T</span><span class="p">EC</span><span class="esp"></span><span class="g">D</span><span class="p">ANIEL</span><span class="g">’</span><span class="p">S</span>
+</span>
+</span>
+{linha && <span class="assinatura__linha">Soluções em aquecedores</span>}
+</span>

@@ -1,0 +1,72 @@
+---
+/** Ícones lucide de verdade, inlinados no build a partir do lucide-static.
+ *  Espelha components/core/Icon.jsx do design system (size=20, strokeWidth=1.75).
+ *  Uso: <Icone nome="phone" tam={16} /> */
+import alertTriangle from 'lucide-static/icons/triangle-alert.svg?raw';
+import arrowRight from 'lucide-static/icons/arrow-right.svg?raw';
+import arrowUpRight from 'lucide-static/icons/arrow-up-right.svg?raw';
+import badgeCheck from 'lucide-static/icons/badge-check.svg?raw';
+import building2 from 'lucide-static/icons/building-2.svg?raw';
+import cable from 'lucide-static/icons/cable.svg?raw';
+import calendar from 'lucide-static/icons/calendar.svg?raw';
+import check from 'lucide-static/icons/check.svg?raw';
+import chevronDown from 'lucide-static/icons/chevron-down.svg?raw';
+import chevronRight from 'lucide-static/icons/chevron-right.svg?raw';
+import clipboardCheck from 'lucide-static/icons/clipboard-check.svg?raw';
+import clock from 'lucide-static/icons/clock.svg?raw';
+import cookingPot from 'lucide-static/icons/cooking-pot.svg?raw';
+import droplets from 'lucide-static/icons/droplets.svg?raw';
+import facebook from 'lucide-static/icons/facebook.svg?raw';
+import fileCheck from 'lucide-static/icons/file-check.svg?raw';
+import flame from 'lucide-static/icons/flame.svg?raw';
+import flameKindling from 'lucide-static/icons/flame-kindling.svg?raw';
+import gauge from 'lucide-static/icons/gauge.svg?raw';
+import home from 'lucide-static/icons/house.svg?raw';
+import instagram from 'lucide-static/icons/instagram.svg?raw';
+import mail from 'lucide-static/icons/mail.svg?raw';
+import mapPin from 'lucide-static/icons/map-pin.svg?raw';
+import messageCircle from 'lucide-static/icons/message-circle.svg?raw';
+import move from 'lucide-static/icons/move.svg?raw';
+import phone from 'lucide-static/icons/phone.svg?raw';
+import pipette from 'lucide-static/icons/pipette.svg?raw';
+import power from 'lucide-static/icons/power.svg?raw';
+import receipt from 'lucide-static/icons/receipt.svg?raw';
+import searchCheck from 'lucide-static/icons/search-check.svg?raw';
+import shieldCheck from 'lucide-static/icons/shield-check.svg?raw';
+import shoppingBag from 'lucide-static/icons/shopping-bag.svg?raw';
+import star from 'lucide-static/icons/star.svg?raw';
+import thermometer from 'lucide-static/icons/thermometer.svg?raw';
+import thermometerSnowflake from 'lucide-static/icons/thermometer-snowflake.svg?raw';
+import trendingUp from 'lucide-static/icons/trending-up.svg?raw';
+import volume2 from 'lucide-static/icons/volume-2.svg?raw';
+import volumeX from 'lucide-static/icons/volume-x.svg?raw';
+import waves from 'lucide-static/icons/waves.svg?raw';
+import wind from 'lucide-static/icons/wind.svg?raw';
+import wrench from 'lucide-static/icons/wrench.svg?raw';
+import x from 'lucide-static/icons/x.svg?raw';
+
+const LUCIDE = {
+  'alert-triangle': alertTriangle, 'triangle-alert': alertTriangle,
+  'arrow-right': arrowRight, 'arrow-up-right': arrowUpRight,
+  'badge-check': badgeCheck, 'building-2': building2, cable, calendar, check,
+  'chevron-down': chevronDown, 'chevron-right': chevronRight,
+  'clipboard-check': clipboardCheck, clock, 'cooking-pot': cookingPot, droplets,
+  facebook, 'file-check': fileCheck, flame, 'flame-kindling': flameKindling, gauge,
+  home, house: home, instagram, mail, 'map-pin': mapPin, 'message-circle': messageCircle,
+  move, phone, pipette, power, receipt, 'search-check': searchCheck,
+  'shield-check': shieldCheck, 'shopping-bag': shoppingBag, star, thermometer,
+  'thermometer-snowflake': thermometerSnowflake, 'trending-up': trendingUp,
+  'volume-2': volume2, 'volume-x': volumeX, waves, wind, wrench, x,
+};
+
+const { nome, tam = 20, largura = 1.75, cor } = Astro.props;
+
+// O lucide-static vem com width/height 24 e stroke-width 2 fixos no arquivo.
+const bruto = LUCIDE[nome] || LUCIDE['badge-check'];
+const svg = bruto
+  .replace(/\swidth="[^"]*"/, ' width="' + tam + '"')
+  .replace(/\sheight="[^"]*"/, ' height="' + tam + '"')
+  .replace(/\sstroke-width="[^"]*"/, ' stroke-width="' + largura + '"')
+  .replace('<svg', '<svg aria-hidden="true" focusable="false"' + (cor ? ' style="color:' + cor + '"' : ''));
+---
+<Fragment set:html={svg} />

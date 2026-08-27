@@ -1,0 +1,178 @@
+---
+/** Página de bairro — eixo Jacarepaguá / Barra da Tijuca.
+ *  Cada bairro tem texto, cobertura e FAQ próprios: nunca clonar. */
+import Base from './Base.astro';
+import Icone from '../components/Icone.astro';
+import Trilha from '../components/Trilha.astro';
+import FaixaCta from '../components/FaixaCta.astro';
+import Faq from '../components/Faq.astro';
+import Avaliacoes from '../components/Avaliacoes.astro';
+import { NEGOCIO } from '../data/site.js';
+import conteudo from '../data/conteudo.json';
+
+const { slug } = Astro.props;
+const { BAIRROS, AVALIACOES, VIZINHOS, MAPA_SERVICOS } = conteudo.bairro;
+const b = BAIRROS[slug];
+
+const trilha = [
+  { nome: 'Início', href: '/' },
+  { nome: 'Área de atendimento', href: '/area-de-atendimento/' },
+  { nome: b.nome },
+];
+
+const promessa = b.promessa || 'Visita técnica em até 24 horas';
+const baseFrase = b.baseTexto || ('Rua Candido Benício 1381, sala 205 — a ' + b.distancia + ' ' + b.nomeDe + '.');
+
+const garantias = [
+  { icone: 'file-check', label: 'Orçamento sem compromisso' },
+  { icone: 'home', label: 'Atendemos em domicílio' },
+  { icone: 'clock', label: promessa },
+  { icone: 'shield-check', label: 'Garantia de 90 dias' },
+];
+
+const aval = AVALIACOES[slug];
+const servicos = (b.servicos || []).map((s) => ({
+  ...s, href: MAPA_SERVICOS[s.title] ? '/' + MAPA_SERVICOS[s.title] + '/' : '/#todos-os-servicos',
+}));
+const vizinhos = (VIZINHOS[slug] || []).map((v) => {
+  const chave = typeof v === 'string' ? v : v.label;
+  const alvo = Object.keys(BAIRROS).find((k) => BAIRROS[k].rotulo === chave || BAIRROS[k].nome === chave);
+  return { label: chave, href: alvo ? '/aquecedor-a-gas-' + alvo + '/' : '/area-de-atendimento/' };
+});
+---
+<Base
+  titulo={b.seoTitulo || b.h1 + " | TecDaniel's"}
+  descricao={b.seoDescricao || b.resumo}
+  trilha={trilha}
+  servico={b.h1}
+  faq={b.faq}
+>
+
+<section class="cabeca">
+<div class="env cabeca__env">
+<Trilha itens={trilha} claro={true} />
+<div class="cabeca__grade">
+<div class="pil" style="gap:var(--sp-5)">
+<p class="olho olho--claro">{b.rotulo}</p>
+<h1 class="t-h1" style="color:#fff;max-width:24ch">{b.h1}</h1>
+<div class="linha" style="gap:var(--sp-5);margin-top:var(--sp-1)">
+<button type="button" class="btn btn--zap btn--lg js-whatsapp-cta" data-whatsapp-source="hero-bairro"><Icone nome="message-circle" tam={19} />Falar no WhatsApp</button>
+<a href={'tel:' + NEGOCIO.telefoneE164} class="t-sm sobre-brand">ou ligue <b style="color:#fff">{NEGOCIO.telefone}</b></a>
+</div>
+</div>
+
+<div class="cabeca__resumo">
+<p class="t-corpo" style="color:#E4ECF8">{b.resumo}</p>
+<div class="linha" style="gap:var(--sp-2)">
+<span class="heroi__estrelas">★★★★★</span>
+<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · {NEGOCIO.google.total} avaliações · {NEGOCIO.anos} anos no Rio de Janeiro</span>
+</div>
+<div class="cabeca__base">
+<span class="rotulinho">Nossa base</span>
+<span class="t-sm" style="color:#E4ECF8">{baseFrase}</span>
+</div>
+</div>
+</div>
+</div>
+<div class="cabeca__garantias">
+<div class="env linha" style="gap:var(--sp-5) var(--sp-9)">
+{garantias.map((g) => (<span class="confia"><Icone nome={g.icone} tam={18} />{g.label}</span>))}
+</div>
+</div>
+</section>
+
+<section class="secao">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Atendimento local</p>
+<h2 class="t-h2">{b.h2}</h2>
+</div>
+<div class="texto-e-lista">
+<div class="prosa">
+<p>{b.p1}</p>
+<p>{b.p2}</p>
+<p>{b.p3}</p>
+<p class="prosa__nota">Atendemos além deste bairro — conheça <a href="/"><b>todos os nossos serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
+</div>
+<div class="lista-cartao" style="gap:18px">
+<h3 class="t-h3" style="font-size:var(--fs-h4)">Atendimento {b.nomeCom}</h3>
+<dl class="ficha-dados">
+<div><dt>Nossa base</dt><dd>{baseFrase}</dd></div>
+<div><dt>Horário</dt><dd>Segunda a sábado, 8h às 18h</dd></div>
+<div><dt>Prazo de visita</dt><dd>{promessa}</dd></div>
+</dl>
+<button type="button" class="btn btn--zap js-whatsapp-cta" data-whatsapp-source="lateral-bairro" style="width:100%"><Icone nome="message-circle" tam={16} />Pedir orçamento no WhatsApp</button>
+<a href={'tel:' + NEGOCIO.telefoneE164} class="t-sm" style="text-align:center">ou ligue <b>{NEGOCIO.telefone}</b></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="secao secao--alt" style="border-bottom:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:56ch">
+<p class="olho">Cobertura</p>
+<h2 class="t-h2">Onde atendemos {b.nomeCom}</h2>
+<p class="t-corpo">{b.introCobertura}</p>
+</div>
+<div class="linha">
+{b.cobertura.map((c) => (<span class="ficha">{c}</span>))}
+</div>
+</div>
+</section>
+
+<section class="secao">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Serviços</p>
+<h2 class="t-h2">{b.tituloServicos}</h2>
+</div>
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+{servicos.map((s) => (
+  <a href={s.href} class="cartao servico-cartao">
+  <span class="cartao__icone"><Icone nome={s.icon} tam={24} largura={1.6} /></span>
+  <h3 class="cartao__titulo" style="font-size:var(--fs-h4)">{s.title}</h3>
+  <p class="cartao__desc">{s.description}</p>
+  <span class="cartao__cta">Ver serviço<Icone nome="arrow-right" tam={16} /></span>
+  </a>
+))}
+</div>
+</div>
+</section>
+
+<section class="secao secao--curta" style="border-top:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Avaliações</p>
+<h2 class="t-h2">{aval.titulo}</h2>
+</div>
+<Avaliacoes itens={aval.itens} />
+</div>
+</section>
+
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Perguntas frequentes</p>
+<h2 class="t-h2">{b.tituloFaq}</h2>
+</div>
+<Faq itens={b.faq} />
+</div>
+</section>
+
+<section class="secao">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Bairros vizinhos</p>
+<h2 class="t-h2">Conheça também</h2>
+</div>
+<div class="linha">
+{vizinhos.map((v) => (<a href={v.href} class="ficha">{v.label}</a>))}
+</div>
+<p class="t-corpo texto-links">Volte para <a href="/">aquecedores a gás no Rio de Janeiro</a> e veja todos os serviços.</p>
+</div>
+</section>
+
+<FaixaCta titulo={b.ctaTitulo} subtitulo={'Orçamento sem compromisso. ' + promessa + '.'} secundario="Ver todos os serviços" fonte={'cta-bairro-' + slug} />
+
+</Base>

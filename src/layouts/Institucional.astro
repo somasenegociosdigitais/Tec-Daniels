@@ -1,0 +1,184 @@
+---
+/** Páginas institucionais: quem somos, contato e área de atendimento. */
+import Base from './Base.astro';
+import Icone from '../components/Icone.astro';
+import Trilha from '../components/Trilha.astro';
+import FaixaCta from '../components/FaixaCta.astro';
+import Avaliacoes from '../components/Avaliacoes.astro';
+import { NEGOCIO, BAIRROS as BAIRROS_SITE } from '../data/site.js';
+import conteudo from '../data/conteudo.json';
+
+const { slug } = Astro.props;
+const { PAGINAS, DADOS, NORMAS, BAIRROS, OUTRAS } = conteudo.institucional;
+const p = PAGINAS[slug];
+
+const trilha = [
+  { nome: 'Início', href: '/' },
+  { nome: p.rotulo },
+];
+
+const garantias = [
+  { icone: 'file-check', label: 'Orçamento sem compromisso' },
+  { icone: 'home', label: 'Atendemos em domicílio' },
+  { icone: 'clock', label: 'Visita técnica em até 24 horas' },
+  { icone: 'shield-check', label: 'Garantia de 90 dias' },
+];
+
+const horarios = [
+  { dia: 'Segunda a sexta', hora: '8h às 18h' },
+  { dia: 'Sábado', hora: '8h às 13h' },
+  { dia: 'Domingo e feriado', hora: 'Emergência de gás' },
+];
+
+const bairros = BAIRROS.map((b) => ({ ...b, href: '/aquecedor-a-gas-' + b.slug + '/' }));
+---
+<Base
+  titulo={p.seoTitulo || p.h1 + " | TecDaniel's"}
+  descricao={p.seoDescricao || p.resumo}
+  trilha={trilha}
+>
+
+<section class="cabeca">
+<div class="env cabeca__env" style="padding-bottom:var(--sp-11)">
+<Trilha itens={trilha} claro={true} />
+<div class="cabeca__grade">
+<div class="pil" style="gap:var(--sp-5)">
+<p class="olho olho--claro">{p.rotulo}</p>
+<h1 class="t-h1" style="color:#fff;max-width:24ch">{p.h1}</h1>
+<p class="t-lead sobre-brand" style="max-width:52ch">{p.resumo}</p>
+<div class="linha" style="gap:var(--sp-5);margin-top:var(--sp-1)">
+<button type="button" class="btn btn--zap btn--lg js-whatsapp-cta" data-whatsapp-source="hero-institucional"><Icone nome="message-circle" tam={19} />Falar no WhatsApp</button>
+<a href={'tel:' + NEGOCIO.telefoneE164} class="cabeca__tel">
+<span>Ou ligue agora</span>
+<span>{NEGOCIO.telefone}</span>
+</a>
+</div>
+</div>
+
+<div class="cabeca__resumo" style="gap:14px">
+{DADOS.map((d) => (
+  <div class="pil" style="gap:3px">
+  <span class="rotulinho">{d.rotulo}</span>
+  <span style="font-size:16px;line-height:1.45;color:#E4ECF8">{d.valor}</span>
+  </div>
+))}
+</div>
+</div>
+</div>
+<div class="cabeca__garantias">
+<div class="env linha" style="gap:var(--sp-5) var(--sp-9)">
+{garantias.map((g) => (<span class="confia"><Icone nome={g.icone} tam={18} />{g.label}</span>))}
+</div>
+</div>
+</section>
+
+<section class="secao">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">{p.eyebrow}</p>
+<h2 class="t-h2">{p.h2}</h2>
+</div>
+<div class="texto-e-lista">
+<div class="prosa">
+<p>{p.p1}</p>
+<p>{p.p2}</p>
+<p>{p.p3}</p>
+<p class="prosa__nota">Veja <a href="/"><b>todos os nossos serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
+</div>
+<div class="lista-cartao">
+<h3 class="t-h3" style="font-size:var(--fs-h4)">{p.tituloLista}</h3>
+<ul>
+{p.lista.map((item) => (
+  <li><span class="lista-cartao__check"><Icone nome="check" tam={17} /></span>{item}</li>
+))}
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+{p.temBairros && (
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:56ch">
+<p class="olho">Bairros</p>
+<h2 class="t-h2">Bairros onde mais atendemos</h2>
+</div>
+<div class="grade-bairros">
+{bairros.map((b) => (
+  <a href={b.href} class="bairro-linha"><span>{b.nome}</span><span class="bairro-linha__seta">›</span></a>
+))}
+</div>
+<div class="pil" style="gap:14px;padding-top:var(--sp-2)">
+<h3 class="t-h3" style="font-size:var(--fs-h4)">Também atendemos</h3>
+<div class="linha">
+{OUTRAS.map((a) => (<span class="ficha">{a}</span>))}
+</div>
+</div>
+</div>
+</section>
+)}
+
+{p.temEquipe && (
+<section class="secao secao--brand secao--curta">
+<div class="env duas-colunas">
+<div class="pil" style="gap:var(--sp-4)">
+<p class="olho olho--claro">Conformidade técnica</p>
+<h2 class="t-h2">Serviço de gás não é serviço comum</h2>
+<p class="t-corpo sobre-brand">Rede de gás e aparelho a gás são instalações de risco. Trabalhamos dentro das normas técnicas brasileiras e do regulamento estadual — é isso que mantém a garantia do fabricante válida e o laudo aceito pela concessionária.</p>
+</div>
+<div class="grade grade--estreita">
+{NORMAS.map((n) => (
+  <div class="cartao cartao--sobre-brand">
+  <b>{n.nome}</b>
+  <span class="t-xs" style="color:var(--text-on-brand)">{n.nota}</span>
+  </div>
+))}
+</div>
+</div>
+</section>
+)}
+
+{p.temHorario && (
+<section class="secao secao--alt">
+<div class="env duas-colunas" style="grid-template-columns:1fr 1fr">
+<div class="pil" style="gap:var(--sp-5)">
+<p class="olho">Horário</p>
+<h2 class="t-h2" style="font-size:clamp(24px,2.4vw,30px)">Quando atendemos</h2>
+<div class="horarios">
+{horarios.map((h) => (
+  <div class="horarios__linha"><span><b>{h.dia}</b></span><span>{h.hora}</span></div>
+))}
+</div>
+<p class="t-sm">Emergência de cheiro de gás fora do horário: ligue mesmo assim. Feche o registro geral, ventile o ambiente e não acione interruptores até a chegada do técnico.</p>
+</div>
+<div class="pil" style="gap:var(--sp-5)">
+<p class="olho">Como chegar</p>
+<h2 class="t-h2" style="font-size:clamp(24px,2.4vw,30px)">Nossa oficina</h2>
+<div class="lista-cartao" style="gap:14px">
+{DADOS.map((d) => (
+  <div class="pil" style="gap:2px">
+  <span class="rotulinho" style="color:var(--text-muted)">{d.rotulo}</span>
+  <span style="font-size:16px;line-height:1.45;color:var(--ink-900)">{d.valor}</span>
+  </div>
+))}
+</div>
+<p class="t-sm">O atendimento é <strong>em domicílio</strong>. A oficina é base técnica e não tem loja aberta ao público — combine a visita pelo WhatsApp ou telefone.</p>
+</div>
+</div>
+</section>
+)}
+
+<section class="secao secao--curta" style="border-top:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Avaliações</p>
+<h2 class="t-h2">{p.tituloAvaliacoes}</h2>
+</div>
+<Avaliacoes itens={p.avaliacoes} />
+</div>
+</section>
+
+<FaixaCta titulo={p.ctaTitulo} subtitulo="Orçamento sem compromisso. Visita técnica em até 24 horas no Rio, Grande Rio e Baixada Fluminense." secundario="Ver todos os serviços" fonte={'cta-' + slug} />
+
+</Base>

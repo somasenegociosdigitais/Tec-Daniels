@@ -1,0 +1,15 @@
+---
+/** Grade de trabalhos executados. Enquanto o cliente não manda as fotos reais,
+ *  cada item mostra um placeholder com a descrição do que vai ali. */
+const { itens = [] } = Astro.props;
+---
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+{itens.map((t) => (
+  <figure class="foto">
+  {t.src
+    ? <img src={t.src} alt={t.alt || t.legenda} width="480" height="360" loading="lazy" decoding="async">
+    : <div class="foto__vazio">{t.espera}</div>}
+  <figcaption>{t.legenda}</figcaption>
+  </figure>
+))}
+</div>

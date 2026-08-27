@@ -1,0 +1,264 @@
+---
+import Base from '../layouts/Base.astro';
+import FaixaCta from '../components/FaixaCta.astro';
+import Marcas from '../components/Marcas.astro';
+import Avaliacoes from '../components/Avaliacoes.astro';
+import FotosObra from '../components/FotosObra.astro';
+import Icone from '../components/Icone.astro';
+import { NEGOCIO, BAIRROS, NORMAS, SERVICOS, servicoUrl } from '../data/site.js';
+
+// Palavra-chave principal: "aquecedor a gás rio de janeiro"
+const seo = {
+  titulo: "Aquecedor a gás no Rio de Janeiro | TecDaniel's",
+  descricao: 'Aquecedor a gás no Rio: conserto, instalação, manutenção e venda. Autorizada Rinnai, 22 anos, visita em até 24 horas e garantia de 90 dias.',
+  trilha: [{ nome: 'Início', href: '/' }],
+};
+
+const confianca = [
+  { icone: 'file-check', label: 'Orçamento sem compromisso' },
+  { icone: 'home', label: 'Atendemos em domicílio' },
+  { icone: 'clock', label: 'Visita técnica em até 24 horas' },
+  { icone: 'shield-check', label: 'Garantia de 90 dias nos serviços' },
+];
+
+const sintomas = [
+  { label: 'Não esquenta a água', href: '/aquecedor-nao-esquenta-a-agua/' },
+  { label: 'Cheiro de gás', href: '/teste-de-vazamento-de-gas/' },
+  { label: 'Quanto custa o conserto?', href: '/quanto-custa-conserto-de-aquecedor/' },
+  { label: 'Qual aquecedor comprar?', href: '/dimensionamento-de-aquecedor-a-gas/' },
+];
+
+const hubs = [
+  {
+    icone: 'flame', href: '/conserto-de-aquecedor-a-gas/', titulo: 'Aquecedor a gás',
+    descricao: 'Conserto, manutenção, instalação e venda, com assistência técnica autorizada e garantia de 90 dias.',
+    links: [
+      { label: 'Manutenção', href: '/manutencao-de-aquecedor-a-gas/' },
+      { label: 'Instalação', href: '/instalacao-de-aquecedor-a-gas/' },
+      { label: 'Venda', href: '/venda-de-aquecedor-a-gas/' },
+      { label: 'Fluxo balanceado', href: '/aquecedor-de-fluxo-balanceado/' },
+    ],
+  },
+  {
+    icone: 'wrench', href: '/gasista/', titulo: 'Serviços de gás',
+    descricao: 'Rede de gás em casa e condomínio: tubulação, mudança de ponto e ligação de fogão, com laudo no final.',
+    links: [
+      { label: 'Remanejamento de ponto', href: '/remanejamento-de-ponto-de-gas/' },
+      { label: 'Tubulação', href: '/substituicao-de-tubulacao-de-gas/' },
+      { label: 'Conversão de fogão', href: '/conversao-de-fogao/' },
+      { label: 'Instalação de fogão', href: '/instalacao-de-fogao-e-cooktop/' },
+    ],
+  },
+  {
+    icone: 'clipboard-check', href: '/teste-de-estanqueidade/', titulo: 'Estanqueidade e vazamento',
+    descricao: 'Teste com manômetro, laudo assinado e reparo da rede — inclusive sem quebrar parede, quando o caso permite.',
+    links: [
+      { label: 'Resina na tubulação', href: '/aplicacao-de-resina-em-tubulacao/' },
+      { label: 'Condomínios', href: '/manutencao-para-condominios/' },
+    ],
+  },
+  {
+    icone: 'waves', href: '/pressurizador-de-agua/', titulo: 'Pressurizador de água',
+    descricao: 'Quando falta pressão para o chuveiro ou o aquecedor não aciona: dimensionamento, venda e instalação.',
+    links: [
+      { label: 'Lorenzetti', href: '/pressurizador-lorenzetti/' },
+      { label: 'Komeco', href: '/pressurizador-komeco/' },
+    ],
+  },
+];
+
+const trabalhos = [
+  { legenda: 'Aquecedor a gás instalado', espera: 'Foto de aquecedor a gás instalado' },
+  { legenda: 'Troca de aparelho e adequação da exaustão', espera: 'Foto de troca de aquecedor' },
+  { legenda: 'Fogão e cooktop ligados no gás', espera: 'Foto de fogão ou cooktop instalado' },
+  { legenda: 'Rede de gás refeita em cobre', espera: 'Foto de tubulação de gás em cobre' },
+];
+
+const colunas = [
+  { titulo: 'Aquecedor a gás', slugs: ['conserto-de-aquecedor-a-gas', 'manutencao-de-aquecedor-a-gas', 'instalacao-de-aquecedor-a-gas', 'venda-de-aquecedor-a-gas', 'aquecedor-de-fluxo-balanceado', 'aquecedor-nao-esquenta-a-agua', 'quanto-custa-conserto-de-aquecedor', 'dimensionamento-de-aquecedor-a-gas', 'manutencao-para-condominios'] },
+  { titulo: 'Serviços de gás', slugs: ['gasista', 'teste-de-estanqueidade', 'teste-de-vazamento-de-gas', 'substituicao-de-tubulacao-de-gas', 'remanejamento-de-ponto-de-gas', 'aplicacao-de-resina-em-tubulacao', 'conversao-de-fogao', 'instalacao-de-fogao-e-cooktop', 'pressurizador-de-agua', 'pressurizador-lorenzetti', 'pressurizador-komeco'] },
+];
+
+const areas = ['Zona Sul', 'Zona Norte', 'Zona Oeste', 'Centro', 'Barra da Tijuca', 'Recreio', 'Jacarepaguá', 'Tijuca', 'Niterói', 'São Gonçalo', 'Duque de Caxias', 'Nova Iguaçu', 'Nilópolis', 'São João de Meriti', 'Belford Roxo', 'Mesquita'];
+const paraBairro = { 'Barra da Tijuca': 'barra-da-tijuca', 'Jacarepaguá': 'jacarepagua', 'Recreio': 'recreio-dos-bandeirantes', 'Tijuca': 'tijuca' };
+const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/' : '/area-de-atendimento/';
+---
+<Base {...seo}>
+
+<section class="heroi">
+<div class="env duas-colunas duas-colunas--heroi heroi__grade">
+<div class="pil" style="gap:var(--sp-6)">
+<p class="olho olho--claro">Aquecedores a gás</p>
+<h1 class="t-display" style="color:#fff;max-width:20ch">Aquecedor a gás no Rio, com técnico especialista</h1>
+<p class="t-lead sobre-brand" style="max-width:46ch">Instalação, manutenção, venda e assistência técnica autorizada. Você fala diretamente com um técnico especialista em aquecedores a gás.</p>
+<div class="linha" style="gap:var(--sp-4);margin-top:var(--sp-2)">
+<button type="button" class="btn btn--zap btn--lg js-whatsapp-cta" data-whatsapp-source="heroi"><Icone nome="message-circle" tam={19} />Falar no WhatsApp</button>
+<a href="#todos-os-servicos" class="btn btn--sobre-brand-contorno btn--lg">Ver serviços</a>
+</div>
+<div class="linha" style="gap:var(--sp-2);margin-top:var(--sp-1)">
+<span class="t-xs" style="font-weight:var(--fw-bold);color:rgba(255,255,255,.78)">Qual é a sua situação?</span>
+{sintomas.map((s) => (
+  <a href={s.href} class="ficha ficha--sobre-brand">{s.label}<Icone nome="arrow-right" tam={14} /></a>
+))}
+</div>
+</div>
+
+<div class="heroi__lado">
+<div class="linha" style="justify-content:center;gap:var(--sp-3)">
+<span class="tag tag--sobre-brand">Autorizada Rinnai</span>
+<span class="tag tag--sobre-brand">Padrão Naturgy</span>
+</div>
+<div class="numero numero--sobre-brand">
+<span class="numero__valor">{NEGOCIO.anos} anos</span>
+<span class="numero__rotulo">de experiência em aquecedores a gás no Rio de Janeiro</span>
+</div>
+<a href={NEGOCIO.google.url} class="heroi__google" target="_blank" rel="noopener">
+<span class="heroi__estrelas">★★★★★</span>
+<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · {NEGOCIO.google.total} avaliações</span>
+</a>
+<a href={NEGOCIO.rinnai} class="heroi__rinnai" target="_blank" rel="noopener">
+<img src="https://www.rinnai.com.br/content/img/selo-parceiro-rinnai.jpg" alt="Selo de Parceiro Credenciado Rinnai" width="84" height="84" loading="lazy">
+<span class="pil" style="gap:3px;max-width:20ch">
+<b>Parceiro Credenciado Rinnai</b>
+<span>Confira a ficha no diretório oficial da Rinnai</span>
+</span>
+</a>
+</div>
+</div>
+
+<div class="heroi__confianca">
+<div class="env linha" style="gap:var(--sp-4) var(--sp-7)">
+{confianca.map((c) => (
+  <span class="confia"><Icone nome={c.icone} tam={18} />{c.label}</span>
+))}
+</div>
+</div>
+</section>
+
+<section class="secao">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Nossos serviços</p>
+<h2 class="t-h2">Tudo para o seu aquecedor a gás e sua rede de gás</h2>
+<p class="t-corpo">Instalação, manutenção e conserto de aquecedores a gás, além dos serviços de gás residencial e para condomínios.</p>
+</div>
+<div class="grade">
+{hubs.map((h) => (
+  <div class="cartao">
+  <span class="cartao__icone"><Icone nome={h.icone} tam={26} largura={1.6} /></span>
+  <h3 class="cartao__titulo"><a href={h.href}>{h.titulo}</a></h3>
+  <p class="cartao__desc">{h.descricao}</p>
+  <div class="cartao__links">
+  {h.links.map((l) => (<a href={l.href}>{l.label}</a>))}
+  </div>
+  <a href={h.href} class="cartao__cta">Saiba mais<Icone nome="arrow-right" tam={16} /></a>
+  </div>
+))}
+</div>
+<div class="convite">
+<div class="pil" style="gap:var(--sp-1)">
+<h3 class="t-h3">Não encontrou o serviço que procura?</h3>
+<p class="t-sm">Fale com um técnico. Avaliamos o que você precisa e orientamos o próximo passo.</p>
+</div>
+<button type="button" class="btn btn--zap js-whatsapp-cta" data-whatsapp-source="convite-servicos"><Icone nome="message-circle" tam={16} />Falar no WhatsApp</button>
+</div>
+</div>
+</section>
+
+<section class="secao secao--brand secao--curta">
+<div class="env duas-colunas">
+<div class="pil" style="gap:var(--sp-4)">
+<p class="olho olho--claro">Conformidade técnica</p>
+<h2 class="t-h2">Serviço de gás não é serviço comum</h2>
+<p class="t-corpo sobre-brand">Rede de gás e aparelho a gás são instalações de risco. Trabalhamos dentro das normas técnicas brasileiras e do regulamento estadual — é isso que mantém a garantia do fabricante válida e o laudo aceito pela concessionária.</p>
+</div>
+<div class="grade grade--estreita">
+{NORMAS.map((n) => (
+  <div class="cartao cartao--sobre-brand">
+  <b>{n.nome}</b>
+  <span class="t-xs" style="color:var(--text-on-brand)">{n.nota}</span>
+  </div>
+))}
+</div>
+</div>
+</section>
+
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="linha" style="align-items:flex-end;justify-content:space-between;gap:var(--sp-6)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Trabalhos executados</p>
+<h2 class="t-h2">Serviço feito, instalação entregue</h2>
+<p class="t-corpo">Aquecedores instalados, fogões e cooktops ligados, redes de gás refeitas. Todo atendimento termina com teste e laudo do que foi executado.</p>
+</div>
+<button type="button" class="btn btn--zap js-whatsapp-cta" data-whatsapp-source="trabalhos"><Icone nome="message-circle" tam={16} />Falar no WhatsApp</button>
+</div>
+<FotosObra itens={trabalhos} />
+</div>
+</section>
+
+<Avaliacoes />
+
+<Marcas />
+
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Quem somos</p>
+<h2 class="t-h2">Segurança em cada instalação, há mais de duas décadas</h2>
+</div>
+<div class="duas-colunas">
+<div class="numero">
+<span class="numero__valor">{NEGOCIO.anos} anos</span>
+<span class="numero__rotulo">de experiência em instalação, manutenção e assistência técnica</span>
+</div>
+<div class="prosa">
+<p>A TecDaniel’s é especialista em aquecedores a gás no Rio de Janeiro, atuando com instalação, manutenção, venda e assistência técnica autorizada. Somos assistência técnica Rinnai e integrados às redes Lorenzetti, Komeco e Rheem, seguindo rigorosamente os padrões exigidos pela Naturgy.</p>
+<p>Nossa equipe é formada por profissionais qualificados, treinados e preparados para oferecer soluções rápidas, seguras e totalmente confiáveis. Você fala diretamente com um técnico especialista em aquecedores a gás.</p>
+<p>Atendemos em domicílio em todo o Rio de Janeiro, Grande Rio e Baixada Fluminense, com respostas rápidas e visitas técnicas em até 24 horas.</p>
+<button type="button" class="btn btn--zap js-whatsapp-cta" data-whatsapp-source="quem-somos"><Icone nome="message-circle" tam={16} />Solicitar atendimento</button>
+</div>
+</div>
+</div>
+</section>
+
+<section id="todos-os-servicos" class="secao">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-3)">
+<p class="olho">Todos os serviços</p>
+<h2 class="t-h2">Tudo o que fazemos, em um só lugar</h2>
+<p class="t-corpo" style="max-width:64ch">Escolha pelo serviço, pela marca do seu aquecedor ou pelo seu bairro.</p>
+</div>
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--sp-6)">
+{colunas.map((c) => (
+  <div class="indice">
+  <h3>{c.titulo}</h3>
+  {c.slugs.map((s) => (<a href={servicoUrl(s)}>{SERVICOS[s]}</a>))}
+  </div>
+))}
+<div class="indice">
+<h3>Bairros atendidos</h3>
+{BAIRROS.map((b) => (<a href={b.href}>Aquecedor a gás {b.comPrep}</a>))}
+</div>
+</div>
+</div>
+</section>
+
+<section class="secao secao--tint">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Área de atendimento</p>
+<h2 class="t-h2">Atendemos o Rio de Janeiro, Grande Rio e Baixada Fluminense</h2>
+<p class="t-corpo">Realizamos conserto e manutenção de aquecedores a gás e serviços de gasista em diferentes regiões do Rio de Janeiro, Grande Rio e Baixada Fluminense.</p>
+<p class="t-corpo texto-links">Em áreas como <a href="/aquecedor-a-gas-jacarepagua/">Jacarepaguá</a>, <a href="/aquecedor-a-gas-taquara/">Taquara e Tanque</a>, <a href="/aquecedor-a-gas-freguesia/">Freguesia</a>, <a href="/aquecedor-a-gas-barra-da-tijuca/">Barra da Tijuca</a>, <a href="/aquecedor-a-gas-recreio-dos-bandeirantes/">Recreio</a>, <a href="/aquecedor-a-gas-vila-valqueire/">Vila Valqueire</a> e <a href="/aquecedor-a-gas-tijuca/">Tijuca</a>, temos páginas específicas com informações sobre o atendimento local, os serviços mais procurados e as particularidades de cada região.</p>
+<p class="t-corpo">Não encontrou o seu bairro? Fale conosco. Verificamos a disponibilidade de atendimento na sua região.</p>
+</div>
+<div class="linha">
+{areas.map((a) => (<a href={areaHref(a)} class="ficha">{a}</a>))}
+</div>
+</div>
+</section>
+
+<FaixaCta />
+
+</Base>

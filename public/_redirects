@@ -1,0 +1,3 @@
+# Netlify — 301 das URLs antigas com index.html para a URL limpa
+/*/index.html   /:splat/   301!
+/index.html     /          301!
