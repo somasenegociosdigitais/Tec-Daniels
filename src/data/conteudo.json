@@ -1872,25 +1872,33 @@
       "nome": "Pressurizador PL-9",
       "nota": "Indicado para ponto único ou apartamento pequeno. Silencioso, com acionamento por fluxo.",
       "slot": "press-pl9",
-      "foto": "Foto do Pressurizador PL-9"
+      "foto": "Foto do Pressurizador PL-9",
+      "src": "/assets/modelos/lorenzetti-pl-09.webp",
+      "alt": "Pressurizador de água Lorenzetti PL-09, indicado para ponto único ou apartamento pequeno"
      },
      {
       "nome": "Pressurizador PL-12",
       "nota": "Indicado para um a dois banheiros. Muito utilizado em apartamentos.",
       "slot": "press-pl12",
-      "foto": "Foto do Pressurizador PL-12"
+      "foto": "Foto do Pressurizador PL-12",
+      "src": "/assets/modelos/lorenzetti-pl-12.webp",
+      "alt": "Pressurizador de água Lorenzetti PL-12, indicado para um a dois banheiros"
      },
      {
       "nome": "Pressurizador TP40",
       "nota": "Para casas com dois a três pontos utilizados simultaneamente.",
       "slot": "press-tp40",
-      "foto": "Foto do Pressurizador TP40"
+      "foto": "Foto do Pressurizador TP40",
+      "src": "/assets/modelos/komeco-tp-40.webp",
+      "alt": "Pressurizador de água Komeco TP40, para casas com dois a três pontos"
      },
      {
       "nome": "Pressurizador TP80",
       "nota": "Para coluna alta, casas maiores e situações de uso intenso.",
       "slot": "press-tp80",
-      "foto": "Foto do Pressurizador TP80"
+      "foto": "Foto do Pressurizador TP80",
+      "src": "/assets/modelos/komeco-tp-80.webp",
+      "alt": "Pressurizador de água Komeco TP80, para coluna alta e uso intenso"
      }
     ]
    },
