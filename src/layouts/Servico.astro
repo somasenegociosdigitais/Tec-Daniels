@@ -10,6 +10,8 @@ import Faq from '../components/Faq.astro';
 import Avaliacoes from '../components/Avaliacoes.astro';
 import { NEGOCIO } from '../data/site.js';
 import conteudo from '../data/conteudo.json';
+import FotosObra from '../components/FotosObra.astro';
+import { FOTOS_POR_PAGINA } from '../data/fotos.js';
 
 const { slug } = Astro.props;
 const { PAGINAS, SINAIS, RELACIONADOS, AVALIACOES, MODELOS, ICONES, SITUACOES } = conteudo.servico;
@@ -36,6 +38,7 @@ const relacionados = (RELACIONADOS[slug] || []).map((k) => ({
   icone: ICONES[k], titulo: PAGINAS[k].rotulo, texto: PAGINAS[k].curto, href: '/' + k + '/',
 }));
 const temSelo = slug === 'manutencao-para-condominios' || slug === 'venda-de-aquecedor-a-gas';
+const fotos = FOTOS_POR_PAGINA[slug];
 ---
 <Base
   titulo={p.seoTitulo || p.h1 + " | TecDaniel's"}
@@ -171,6 +174,19 @@ const temSelo = slug === 'manutencao-para-condominios' || slug === 'venda-de-aqu
   </div>
 ))}
 </div>
+</div>
+</section>
+)}
+
+{fotos && (
+<section class="secao secao--alt" style="border-bottom:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-4);max-width:56ch">
+<p class="olho">{fotos.olho}</p>
+<h2 class="t-h2">{fotos.titulo}</h2>
+<p class="t-corpo">{fotos.intro}</p>
+</div>
+<FotosObra itens={fotos.itens} />
 </div>
 </section>
 )}
