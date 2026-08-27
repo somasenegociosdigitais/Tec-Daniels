@@ -97,12 +97,6 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <button type="button" class="btn btn--zap btn--lg js-whatsapp-cta" data-whatsapp-source="heroi"><Icone nome="message-circle" tam={19} />Falar no WhatsApp</button>
 <a href="#todos-os-servicos" class="btn btn--sobre-brand-contorno btn--lg">Ver serviços</a>
 </div>
-<div class="linha" style="gap:var(--sp-2);margin-top:var(--sp-1)">
-<span class="t-xs" style="font-weight:var(--fw-bold);color:rgba(255,255,255,.78)">Qual é a sua situação?</span>
-{sintomas.map((s) => (
-  <a href={s.href} class="ficha ficha--sobre-brand">{s.label}<Icone nome="arrow-right" tam={14} /></a>
-))}
-</div>
 </div>
 
 <div class="heroi__lado">
@@ -230,6 +224,14 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <p class="olho">Todos os serviços</p>
 <h2 class="t-h2">Tudo o que fazemos, em um só lugar</h2>
 <p class="t-corpo" style="max-width:64ch">Escolha pelo serviço, pela marca do seu aquecedor ou pelo seu bairro.</p>
+</div>
+<div class="pil" style="gap:var(--sp-4)">
+<h3 class="t-h3">Qual é o seu problema?</h3>
+<div class="linha" style="gap:var(--sp-3)">
+{sintomas.map((s) => (
+  <a href={s.href} class="ficha">{s.label}<Icone nome="arrow-right" tam={14} /></a>
+))}
+</div>
 </div>
 <div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--sp-6)">
 {colunas.map((c) => (

@@ -102,9 +102,11 @@ a:hover{color:var(--accent-strong)}
 .cartao__titulo{font-size:var(--fs-h3);font-weight:var(--fw-bold);line-height:var(--lh-snug)}
 .cartao__titulo a{color:inherit}
 .cartao__desc{font-size:var(--fs-sm);color:var(--text-body);line-height:var(--lh-body)}
-.cartao__links{display:flex;flex-direction:column;align-items:flex-start;gap:var(--sp-2);font-size:var(--fs-sm)}
-.cartao__links a{color:var(--brand);font-weight:var(--fw-medium)}
-.cartao__links a:hover{color:var(--accent-strong)}
+.cartao__links{display:flex;flex-direction:column;align-items:stretch;gap:0;font-size:var(--fs-sm);border-top:var(--bw-hair) solid var(--border-hairline)}
+.cartao__links a{display:flex;align-items:center;gap:var(--sp-2);padding:12px 0;border-bottom:var(--bw-hair) solid var(--border-hairline);color:var(--accent-strong);font-weight:var(--fw-semibold)}
+.cartao__links a::before{content:'›';font-size:1.15em;line-height:1;color:var(--accent);font-weight:var(--fw-bold)}
+.cartao__links a:hover{color:var(--brand)}
+.cartao__links a:hover::before{color:var(--brand)}
 .cartao__links .sep{color:var(--ink-300)}
 .cartao__cta{display:inline-flex;align-items:center;gap:6px;margin-top:auto;font-size:var(--fs-sm);font-weight:var(--fw-semibold);color:var(--brand)}
 .cartao:hover .cartao__cta{color:var(--accent-strong)}
@@ -163,6 +165,8 @@ a:hover{color:var(--accent-strong)}
   /* Nav em uma linha só, rolando na horizontal se não couber. */
   .cab__nav{order:3;width:100%;margin-left:0;gap:var(--sp-4);flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
   .cab__nav::-webkit-scrollbar{display:none}
+  /* Sombra na borda direita: sinaliza que o menu rola. */
+  .cab__nav{mask-image:linear-gradient(to right,#000 88%,rgba(0,0,0,.15));-webkit-mask-image:linear-gradient(to right,#000 88%,rgba(0,0,0,.15))}
   .assinatura__linha{display:none}
   .assinatura__nome .g{font-size:20px}
   .assinatura__nome .p{font-size:15px}
@@ -177,6 +181,9 @@ a:hover{color:var(--accent-strong)}
   .assinatura__nome .p{font-size:13.5px}
   .so-largo{display:none}
   .so-estreito{display:inline}
+  /* Mascote fica; o "TD" sai no celular — redundante ao lado do nome escrito. */
+  .cab__logo .assinatura__marca,.cab__logo .assinatura__filete{display:none}
+  .cab__acoes .btn svg{display:none}
   /* Trilha: uma linha só, rolando se não couber. */
   .trilha ol{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .trilha ol::-webkit-scrollbar{display:none}

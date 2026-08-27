@@ -65,6 +65,13 @@ const { privacidadeHref = '/politica-de-privacidade/' } = Astro.props;
     abrir(alvo.dataset.whatsappSource || alvo.textContent.trim());
   });
 
+  form.telefone.addEventListener('input', () => {
+    const d = form.telefone.value.replace(/\D/g, '').slice(0, 11);
+    form.telefone.value = d.length > 6
+      ? '(' + d.slice(0, 2) + ') ' + d.slice(2, d.length > 10 ? 7 : 6) + '-' + d.slice(d.length > 10 ? 7 : 6)
+      : d.length > 2 ? '(' + d.slice(0, 2) + ') ' + d.slice(2) : d;
+  });
+
   document.getElementById('zap-fechar').addEventListener('click', fechar);
   modal.addEventListener('click', (e) => { if (e.target === modal) fechar(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.hidden) fechar(); });
@@ -73,9 +80,19 @@ const { privacidadeHref = '/politica-de-privacidade/' } = Astro.props;
     e.preventDefault();
     const nome = form.nome.value.trim();
     const tel = form.telefone.value.trim();
-    const ok = nome.length > 1 && tel.replace(/\D/g, '').length >= 10 && form.aceite.checked;
-    erro.hidden = ok;
-    if (!ok) return;
+    const digitos = tel.replace(/\D/g, '').length;
+    let falta = '';
+    let campo = null;
+    if (nome.length < 2) { falta = 'Escreva seu nome para o técnico saber com quem falar.'; campo = form.nome; }
+    else if (digitos < 10) { falta = 'Informe o telefone com DDD — 11 dígitos com o 9 na frente.'; campo = form.telefone; }
+    else if (!form.aceite.checked) { falta = 'Marque a caixinha da Política de Privacidade para continuar.'; campo = form.aceite; }
+    if (falta) {
+      erro.textContent = falta;
+      erro.hidden = false;
+      if (campo) campo.focus();
+      return;
+    }
+    erro.hidden = true;
 
     const texto = 'Gostaria de orçamento para visita técnica. Nome: ' + nome + '. Telefone: ' + tel + (origem ? '. Origem: ' + origem : '');
     window.dataLayer = window.dataLayer || [];
