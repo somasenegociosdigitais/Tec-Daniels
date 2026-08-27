@@ -194,6 +194,8 @@ a:hover{color:var(--accent-strong)}
 /* --- SiteFooter ------------------------------------------------------- */
 .pe{background:var(--surface-brand-deep);color:#E7EDF7;padding-top:var(--sp-11)}
 .pe__grade{display:grid;grid-template-columns:1.1fr 1.4fr .9fr;gap:var(--sp-9)}
+.pe__logo{display:flex;align-items:center;gap:var(--sp-3)}
+.pe__logo img{display:block;flex:0 0 auto}
 .pe__col{display:flex;flex-direction:column;gap:var(--sp-3)}
 .pe__rotulo{font-size:var(--fs-eyebrow);font-weight:var(--fw-bold);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:var(--sp-2)}
 .pe a{font-size:var(--fs-sm);color:#E7EDF7}
