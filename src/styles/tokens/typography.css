@@ -1,6 +1,11 @@
+/* Reserva com métricas próximas às do Archivo: sem isso o swap da fonte
+   deslocava o layout (CLS 0,542 medido em 28/08/2026). */
+@font-face{font-family:"Archivo Reserva";src:local("Arial"),local("Helvetica"),local("Liberation Sans");size-adjust:96%;ascent-override:92%;descent-override:24%;line-gap-override:0%}
+@font-face{font-family:"Archivo Narrow Reserva";src:local("Arial Narrow"),local("Arial"),local("Liberation Sans Narrow");size-adjust:88%;ascent-override:96%;descent-override:24%;line-gap-override:0%}
+
 :root{
---font-sans:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
---font-narrow:"Archivo Narrow","Archivo",system-ui,sans-serif;
+--font-sans:"Archivo","Archivo Reserva",system-ui,-apple-system,"Segoe UI",sans-serif;
+--font-narrow:"Archivo Narrow","Archivo Narrow Reserva","Archivo",system-ui,sans-serif;
 --font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
 
 --fs-display:clamp(40px,5.2vw,64px); /* @kind font */
