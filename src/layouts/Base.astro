@@ -11,9 +11,6 @@
  *   faq         [{ q, a }] — gera o nó FAQPage
  *   palavraChave  registro da palavra-chave principal da página (não vai ao HTML)
  */
-import '@fontsource/archivo/400.css';
-import '@fontsource/archivo/700.css';
-import '@fontsource/archivo-narrow/700.css';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -112,6 +109,8 @@ const jsonld = JSON.stringify({ '@context': 'https://schema.org', '@graph': graf
 <meta property="og:url" content={url}>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#123C7A">
+<link rel="preload" href="/fonts/archivo-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/archivo-narrow-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="/assets/favicon-mascote-v3.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/icone-tela-inicio-v2.png">
 <script type="application/ld+json" set:html={jsonld}></script>

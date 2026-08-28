@@ -1,11 +1,19 @@
-/* Reserva com métricas próximas às do Archivo: sem isso o swap da fonte
-   deslocava o layout (CLS 0,542 medido em 28/08/2026). */
-@font-face{font-family:"Archivo Reserva";src:local("Arial"),local("Helvetica"),local("Liberation Sans");size-adjust:96%;ascent-override:92%;descent-override:24%;line-gap-override:0%}
-@font-face{font-family:"Archivo Narrow Reserva";src:local("Arial Narrow"),local("Arial"),local("Liberation Sans Narrow");size-adjust:88%;ascent-override:96%;descent-override:24%;line-gap-override:0%}
+/* Fontes próprias, servidas de /fonts.
+   font-display:optional é a peça central: no primeiro carregamento o navegador
+   NÃO troca a fonte no meio do caminho — usa a de sistema e aplica o Archivo
+   só quando ele já está em cache, da segunda visita em diante. É isso que zera
+   o salto de layout (CLS estava em 0,543 com o swap do @fontsource). */
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400;font-display:optional;src:url("/fonts/archivo-400.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:700;font-display:optional;src:url("/fonts/archivo-700.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Archivo Narrow";font-style:normal;font-weight:700;font-display:optional;src:url("/fonts/archivo-narrow-700.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* Reserva com métricas próximas às do Archivo, para a diferença entre a fonte
+   de sistema e a nossa ser pequena enquanto o Archivo não está em cache. */
+@font-face{font-family:"Archivo Reserva";src:local("Arial"),local("Helvetica Neue"),local("Liberation Sans"),local("DejaVu Sans");size-adjust:96%;ascent-override:92%;descent-override:24%;line-gap-override:0%}
 
 :root{
 --font-sans:"Archivo","Archivo Reserva",system-ui,-apple-system,"Segoe UI",sans-serif;
---font-narrow:"Archivo Narrow","Archivo Narrow Reserva","Archivo",system-ui,sans-serif;
+--font-narrow:"Archivo Narrow","Archivo","Archivo Reserva",system-ui,sans-serif;
 --font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
 
 --fs-display:clamp(40px,5.2vw,64px); /* @kind font */
