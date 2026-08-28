@@ -117,7 +117,30 @@ const jsonld = JSON.stringify({ '@context': 'https://schema.org', '@graph': graf
 <link rel="apple-touch-icon" href="/assets/icone-tela-inicio-v2.png">
 <script type="application/ld+json" set:html={jsonld}></script>
 <link rel="preconnect" href="https://www.googletagmanager.com">
-<script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KS5N9KVP');</script>
+<script is:inline>
+/* GTM adiado: carrega na primeira interação (rolagem, toque, clique, tecla) ou
+   após 6 segundos, o que vier primeiro. Tira o JavaScript de terceiro do caminho
+   do primeiro desenho da página. O dataLayer existe desde já, então evento
+   disparado antes do carregamento não se perde — fica na fila. */
+(function(){
+  window.dataLayer = window.dataLayer || [];
+  var carregado = false;
+  function carrega(){
+    if (carregado) return;
+    carregado = true;
+    eventos.forEach(function(e){ window.removeEventListener(e, carrega, opcoes); });
+    window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KS5N9KVP';
+    document.head.appendChild(s);
+  }
+  var eventos = ['scroll','pointerdown','touchstart','keydown','mousemove'];
+  var opcoes = { once: true, passive: true, capture: true };
+  eventos.forEach(function(e){ window.addEventListener(e, carrega, opcoes); });
+  setTimeout(carrega, 6000);
+})();
+</script>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS5N9KVP" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
