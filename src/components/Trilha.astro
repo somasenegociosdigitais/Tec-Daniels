@@ -1,7 +1,8 @@
 ---
-/** Breadcrumb — espelha Breadcrumb.jsx: separador chevron-right, último item
- *  em destaque. A mesma lista alimenta o nó BreadcrumbList no Base.astro. */
-import Icone from './Icone.astro';
+/** Breadcrumb — espelha Breadcrumb.jsx: último item em destaque. A mesma lista
+ *  alimenta o nó BreadcrumbList no Base.astro. O separador é um caractere de
+ *  texto no ::before do li, não um SVG: o SVG assentava na linha de base e
+ *  descia meia linha em relação ao texto vizinho (visto no celular, 29/08). */
 const { itens = [], claro = false } = Astro.props;
 ---
 <nav class:list={['trilha', claro && 'trilha--claro']} aria-label="Você está aqui">
@@ -9,7 +10,6 @@ const { itens = [], claro = false } = Astro.props;
   <ol>
   {itens.map((t, i) => (
     <li>
-    {i > 0 && <span class="trilha__sep"><Icone nome="chevron-right" tam={13} /></span>}
     {i === itens.length - 1 || !t.href ? <span aria-current="page">{t.nome}</span> : <a href={t.href}>{t.nome}</a>}
     </li>
   ))}
@@ -19,7 +19,6 @@ const { itens = [], claro = false } = Astro.props;
   <ol>
   {itens.map((t, i) => (
     <li>
-    {i > 0 && <span class="trilha__sep"><Icone nome="chevron-right" tam={13} /></span>}
     {i === itens.length - 1 || !t.href ? <span aria-current="page">{t.nome}</span> : <a href={t.href}>{t.nome}</a>}
     </li>
   ))}
