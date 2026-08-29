@@ -4,15 +4,17 @@ import Icone from './Icone.astro';
 import { NEGOCIO, MENU } from '../data/site.js';
 const atual = Astro.url.pathname;
 const tel = 'tel:' + NEGOCIO.telefoneE164;
+const zap = 'https://wa.me/' + NEGOCIO.whatsapp;
 ---
 <header class="cab">
 
 <div class="cab__faixa">
 <div class="env">
-<span><Icone nome="map-pin" tam={14} />Rio de Janeiro, Grande Rio e Baixada Fluminense</span>
+<span class="cab__faixa-quem"><Icone nome="flame" tam={14} /><span class="so-largo">{NEGOCIO.marca} &mdash; assist&ecirc;ncia t&eacute;cnica em aquecedores a g&aacute;s no Rio de Janeiro</span><span class="so-estreito">Aquecedores a g&aacute;s no Rio</span></span>
+<span class="cab__faixa-prazo"><Icone nome="clock" tam={14} /><span class="so-largo">Visita t&eacute;cnica em at&eacute; 24 horas</span><span class="so-estreito">Visita em at&eacute; 24h</span></span>
 <span class="cab__faixa-dir">
-<span><Icone nome="clock" tam={14} />Visita técnica em até 24 horas</span>
-<a href={tel}><Icone nome="phone" tam={14} />{NEGOCIO.telefone}</a>
+<a href={tel} class="cab__faixa-contato"><Icone nome="phone" tam={15} /><b>Telefone:</b>{NEGOCIO.telefone}</a>
+<a href={zap} class="cab__faixa-contato js-whatsapp-cta" data-whatsapp-source="faixa-topo"><Icone nome="whatsapp" tam={16} /><b>WhatsApp:</b>{NEGOCIO.telefone}</a>
 </span>
 </div>
 </div>
@@ -24,7 +26,9 @@ const tel = 'tel:' + NEGOCIO.telefoneE164;
 </a>
 <nav class="cab__nav" aria-label="Navegação principal">
 {MENU.map((m) => (
-  <a href={m.href} aria-current={atual === m.href ? 'page' : undefined}>{m.label}</a>
+  <a href={m.href} class:list={[m.href === '/' && 'cab__nav-inicio']} aria-current={atual === m.href ? 'page' : undefined}>
+  {m.curto ? (<><span class="so-largo">{m.label}</span><span class="so-estreito">{m.curto}</span></>) : m.label}
+  </a>
 ))}
 </nav>
 <div class="cab__acoes">

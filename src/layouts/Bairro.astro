@@ -127,7 +127,7 @@ const vizinhos = (VIZINHOS[slug] || []).map((v) => {
 <p class="olho">Serviços</p>
 <h2 class="t-h2">{b.tituloServicos}</h2>
 </div>
-<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr))">
 {servicos.map((s) => (
   <a href={s.href} class="cartao servico-cartao">
   <span class="cartao__icone"><Icone nome={s.icon} tam={24} largura={1.6} /></span>

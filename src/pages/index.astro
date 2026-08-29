@@ -241,7 +241,7 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <h2 class="t-h2">Tudo o que fazemos, em um só lugar</h2>
 <p class="t-corpo" style="max-width:64ch">Escolha pelo serviço, pela marca do seu aquecedor ou pelo seu bairro.</p>
 </div>
-<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--sp-6)">
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:var(--sp-6)">
 {colunas.map((c) => (
   <div class="indice">
   <h3>{c.titulo}</h3>

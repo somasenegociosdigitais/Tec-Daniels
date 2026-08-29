@@ -33,12 +33,13 @@ a:hover{color:var(--accent-strong)}
 .secao--tint{background:var(--surface-tint);border-top:var(--bw-hair) solid var(--blue-100);border-bottom:var(--bw-hair) solid var(--blue-100)}
 .secao--brand{background:var(--surface-brand);color:var(--text-invert)}
 .secao--brand h1,.secao--brand h2,.secao--brand h3{color:var(--text-invert)}
-.grade{display:grid;gap:var(--sp-5);grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.grade--estreita{grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:var(--sp-4)}
+.grade{display:grid;gap:var(--sp-5);grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+.grade--estreita{grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:var(--sp-4)}
 .duas-colunas{display:grid;gap:var(--sp-10);align-items:start}
 @media (min-width:901px){
   .duas-colunas{grid-template-columns:.9fr 1.1fr}
   .duas-colunas--heroi{grid-template-columns:1.15fr .85fr;align-items:center}
+  .duas-colunas--igual{grid-template-columns:1fr 1fr}
 }
 
 /* --- tipografia -------------------------------------------------------- */
@@ -138,10 +139,17 @@ a:hover{color:var(--accent-strong)}
 /* Não é fixo: rola com a página, para não roubar altura na leitura. */
 .cab{background:var(--white);box-shadow:var(--shadow-header)}
 .cab__faixa{background:var(--surface-brand);color:rgba(255,255,255,.86);font-size:var(--fs-xs)}
-.cab__faixa .env{padding:8px var(--gutter);display:flex;flex-wrap:wrap;gap:var(--sp-5);align-items:center;justify-content:space-between}
-.cab__faixa span{display:inline-flex;align-items:center;gap:var(--sp-2)}
-.cab__faixa-dir{display:inline-flex;align-items:center;gap:var(--sp-5)}
-.cab__faixa a{color:#fff;font-weight:var(--fw-semibold);white-space:nowrap}
+.cab__faixa .env{padding:9px var(--gutter);display:flex;flex-wrap:wrap;gap:var(--sp-3) var(--sp-6);align-items:center;justify-content:flex-start}
+.cab__faixa-quem{display:inline-flex;align-items:center;gap:var(--sp-2)}
+.cab__faixa-quem svg{color:var(--accent);flex:0 0 auto}
+.cab__faixa-prazo{display:inline-flex;align-items:center;gap:var(--sp-2);color:rgba(255,255,255,.82)}
+.cab__faixa-prazo svg{flex:0 0 auto}
+.cab__faixa-dir{display:inline-flex;align-items:center;gap:var(--sp-6);margin-left:auto}
+.cab__faixa-contato{display:inline-flex;align-items:center;gap:7px;color:#fff;white-space:nowrap;font-weight:var(--fw-medium)}
+.cab__faixa-contato:hover{color:#fff;text-decoration:underline}
+.cab__faixa-contato b{font-weight:var(--fw-bold)}
+.cab__faixa-contato svg{flex:0 0 auto}
+.cab__faixa-contato.js-whatsapp-cta svg{color:#5EE49B}
 .cab__linha{padding:var(--sp-4) var(--gutter);display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-5) var(--sp-7)}
 .cab__logo{display:flex;align-items:center;gap:var(--sp-3);line-height:1}
 .cab__logo img{display:block;flex-shrink:0}
@@ -155,9 +163,16 @@ a:hover{color:var(--accent-strong)}
 @media (max-width:1100px){
   .cab__nav{gap:var(--sp-5)}
   .cab__tel{display:none}
+  /* Rótulos curtos já aqui: em 900–1100px a faixa quebrava em duas linhas. */
+  .so-largo{display:none}
+  .so-estreito{display:inline}
+  .cab__faixa-dir{gap:var(--sp-5)}
+  .cab__faixa-dir>a:first-child b{display:none}
 }
 @media (max-width:900px){
-  .cab__faixa-dir span{display:none}
+  /* Faixa superior: quem somos à esquerda, contato à direita, mais junto. */
+  .cab__faixa .env{gap:var(--sp-2) var(--sp-4)}
+  .cab__faixa-dir{gap:var(--sp-4)}
   .cab__linha{gap:var(--sp-3) var(--sp-4);padding:var(--sp-3) var(--gutter)}
   .cab__logo{flex:1 1 auto;min-width:0}
   .cab__logo img{width:38px;height:38px}
@@ -173,9 +188,16 @@ a:hover{color:var(--accent-strong)}
 }
 @media (max-width:600px){
   .cab__acoes .btn{font-size:var(--fs-xs);padding:9px 12px}
-  /* Faixa superior em uma linha: o telefone repete no herói. */
-  .cab__faixa .env>span:first-child{display:none}
-  .cab__faixa .env{justify-content:flex-start;padding:7px var(--gutter)}
+  /* Menu em uma linha só, sem corte: rótulo curto para "Área de
+     atendimento" e "Início" sai (a marca já leva para a home). */
+  .cab__nav{gap:var(--sp-3);overflow-x:visible;justify-content:space-between;mask-image:none;-webkit-mask-image:none}
+  .cab__nav a{font-size:13px}
+  .cab__nav-inicio{display:none}
+  .cab__faixa .env{padding:7px var(--gutter)}
+  /* Um contato só no celular: o WhatsApp. */
+  .cab__faixa-dir>a:first-child{display:none}
+  .cab__faixa-contato b{display:none}
+  .cab__faixa-prazo{display:none}
   .cab__logo img{width:34px;height:34px}  .assinatura__nome .g{font-size:17px}
   .assinatura__nome .p{font-size:13px}
   /* Mascote + TD + nome + botão na mesma linha: tudo encolhe um pouco. */
@@ -183,8 +205,6 @@ a:hover{color:var(--accent-strong)}
   .cab__logo .assinatura__topo{gap:6px}
   .cab__logo .assinatura__marca{height:26px}
   .cab__acoes .btn svg{display:none}
-  .so-largo{display:none}
-  .so-estreito{display:inline}
   /* Trilha: uma linha só, rolando se não couber. */
   .trilha ol{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .trilha ol::-webkit-scrollbar{display:none}
@@ -252,6 +272,12 @@ a:hover{color:var(--accent-strong)}
 .nota__valor{font-family:var(--font-narrow);font-size:40px;font-weight:var(--fw-bold);line-height:1;color:var(--text-title)}
 .nota__link{display:inline-flex;align-items:center;gap:6px;font-size:var(--fs-sm);font-weight:var(--fw-semibold);color:var(--brand)}
 .estrelas{display:inline-flex;gap:3px;line-height:0}
+/* No celular o resumo da nota fica centralizado — encostado à esquerda ele
+   parecia solto do restante da seção. */
+@media (max-width:700px){
+  .nota{flex-direction:column;align-items:center;text-align:center;gap:var(--sp-4)}
+  .nota__resumo{justify-content:center}
+}
 .aval{display:flex;flex-direction:column;gap:var(--sp-4);margin:0;padding:var(--sp-6);background:var(--surface-card);border:var(--bw-hair) solid var(--border-hairline);border-radius:var(--r-lg);box-shadow:var(--shadow-card)}
 .aval blockquote{margin:0;font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body)}
 .aval figcaption{display:flex;flex-direction:column;gap:2px;margin-top:auto}
@@ -362,13 +388,13 @@ a:hover{color:var(--accent-strong)}
 .ficha-dados dd{margin:0;color:var(--text-body)}
 
 /* --- Marca: grade de modelos em linhas ------------------------------- */
-.grade-modelos{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--sp-3)}
+.grade-modelos{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr));gap:var(--sp-3)}
 .modelo-linha{display:flex;flex-direction:column;gap:4px;padding:16px 18px;background:var(--surface-card);border:var(--bw-hair) solid var(--border-hairline);border-radius:10px}
 .modelo-linha b{font-family:var(--font-narrow);font-size:var(--fs-body);font-weight:var(--fw-bold);color:var(--ink-900)}
 .modelo-linha span{font-size:var(--fs-sm);line-height:1.45}
 
 /* --- Institucional: grade de bairros e tabela de horários ------------- */
-.grade-bairros{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.grade-bairros{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(230px,100%),1fr));gap:10px}
 .bairro-linha{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 18px;background:var(--surface-card);border:var(--bw-hair) solid var(--border-hairline);border-radius:10px;font-family:var(--font-narrow);font-size:var(--fs-body);font-weight:var(--fw-bold);color:var(--ink-900)}
 .bairro-linha:hover{border-color:#B9CEEC;color:var(--brand)}
 .bairro-linha__seta{color:var(--accent);font-family:var(--font-sans);font-size:var(--fs-sm)}
@@ -432,7 +458,7 @@ a:hover{color:var(--accent-strong)}
 .heroi__lado{display:flex;flex-direction:column;gap:var(--sp-5);align-items:center;text-align:center;align-self:center}
 /* Mascote inteiro: aparece onde há altura sobrando, e sai no estreito para não empurrar o botão. */
 .heroi__mascote{display:block;width:min(230px,60%);height:auto}
-@media (max-width:900px){.heroi__mascote{width:150px;order:-1;align-self:flex-start}}
+@media (max-width:900px){.heroi__mascote{width:min(260px,66%);order:-1;align-self:center}}
 .heroi__google{display:inline-flex;align-items:center;gap:var(--sp-2);padding:10px 16px;background:rgba(255,255,255,.1);border:var(--bw-hair) solid var(--border-on-brand);border-radius:var(--r-pill);color:#fff}
 .heroi__google:hover{background:rgba(255,255,255,.16);color:#fff}
 .heroi__estrelas{color:#FFC94D;font-size:var(--fs-sm);letter-spacing:2px}

@@ -31,7 +31,7 @@ const cheias = Math.round(nota);
 <a href={href} target="_blank" rel="noopener" class="nota__link">Avaliar no Google<Icone nome="arrow-up-right" tam={16} /></a>
 </div>
 
-<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--sp-5)">
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:var(--sp-5)">
 {itens.map((r) => (
   <figure class="aval">
   <span class="estrelas" role="img" aria-label="5 de 5 estrelas">

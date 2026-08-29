@@ -3,7 +3,7 @@
  *  cada item mostra um placeholder com a descrição do que vai ali. */
 const { itens = [] } = Astro.props;
 ---
-<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:16px">
 {itens.map((t) => (
   <figure class:list={['foto', t.retrato && 'foto--retrato']}>
   {t.src

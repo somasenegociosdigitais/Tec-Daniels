@@ -132,7 +132,7 @@ const relacionados = (RELACIONADAS[slug] || []).map((k) => ({
 <h2 class="t-h2">{m.tituloSinais}</h2>
 <p class="t-corpo">Notou algum destes sintomas? Chame um técnico antes que o prejuízo aumente.</p>
 </div>
-<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))">
 {sinais.map((s) => (
   <div class="sinal">
   <span class="sinal__icone"><Icone nome={s.icone} tam={22} /></span>
@@ -159,7 +159,7 @@ const relacionados = (RELACIONADAS[slug] || []).map((k) => ({
 <p class="olho">Outras marcas</p>
 <h2 class="t-h2">Conheça também</h2>
 </div>
-<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr))">
 {relacionados.map((r) => (
   <a href={r.href} class="cartao servico-cartao">
   <span class="cartao__icone"><Icone nome={r.icone} tam={24} largura={1.6} /></span>

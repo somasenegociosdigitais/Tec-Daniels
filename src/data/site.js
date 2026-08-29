@@ -35,7 +35,7 @@ export const MENU = [
   { label: 'Início', href: '/' },
   { label: 'Serviços', href: '/#todos-os-servicos' },
   { label: 'Quem somos', href: '/quem-somos/' },
-  { label: 'Área de atendimento', href: '/area-de-atendimento/' },
+  { label: 'Área de atendimento', curto: 'Atendimento', href: '/area-de-atendimento/' },
   { label: 'Contato', href: '/contato/' },
 ];
 
