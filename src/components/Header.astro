@@ -13,8 +13,8 @@ const zap = 'https://wa.me/' + NEGOCIO.whatsapp;
 <span class="cab__faixa-quem"><Icone nome="flame" tam={14} /><span class="so-largo">{NEGOCIO.marca} &mdash; assist&ecirc;ncia t&eacute;cnica em aquecedores a g&aacute;s no Rio de Janeiro</span><span class="so-estreito">Aquecedores a g&aacute;s no Rio</span></span>
 <span class="cab__faixa-prazo"><Icone nome="clock" tam={14} /><span class="so-largo">Visita t&eacute;cnica em at&eacute; 24 horas</span><span class="so-estreito">Visita em at&eacute; 24h</span></span>
 <span class="cab__faixa-dir">
-<a href={tel} class="cab__faixa-contato"><Icone nome="phone" tam={15} /><b>Telefone:</b>{NEGOCIO.telefone}</a>
-<a href={zap} class="cab__faixa-contato js-whatsapp-cta" data-whatsapp-source="faixa-topo"><Icone nome="whatsapp" tam={16} /><b>WhatsApp:</b>{NEGOCIO.telefone}</a>
+<a href={tel} class="cab__faixa-contato" aria-label={'Ligar para ' + NEGOCIO.telefone}><Icone nome="phone" tam={15} /><b>Telefone:</b><span class="cab__faixa-num">{NEGOCIO.telefone}</span></a>
+<a href={zap} class="cab__faixa-contato js-whatsapp-cta" data-whatsapp-source="faixa-topo" aria-label="Falar no WhatsApp"><Icone nome="whatsapp" tam={16} /><b>WhatsApp:</b><span class="cab__faixa-num">{NEGOCIO.telefone}</span></a>
 </span>
 </div>
 </div>
