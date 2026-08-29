@@ -1,3 +1,5 @@
+# Hostinger (Apache). No Netlify/Cloudflare vale o public/_redirects.
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
@@ -5,6 +7,30 @@
   # não pode ficar dividida entre as duas versões.
   RewriteCond %{HTTP_HOST} ^tecdaniels\.com\.br$ [NC]
   RewriteRule ^(.*)$ https://www.tecdaniels.com.br/$1 [R=301,L]
+
+  # --- URLs do site anterior ---------------------------------------------
+  # Regra de rewrite, não mod_alias: o Redirect do mod_alias casava por
+  # prefixo e não pegava a forma sem ".html" que o Google indexou.
+  # Há backlinks apontando para algumas delas; o 301 transfere a autoridade.
+  RewriteRule ^instalacao-de-aquecedor(\.html)?/?$ /instalacao-de-aquecedor-a-gas/ [R=301,L]
+  RewriteRule ^aquecedor-rinnai(\.html)?/?$ /assistencia-tecnica-rinnai/ [R=301,L]
+  RewriteRule ^aquecedor-lorenzetti(\.html)?/?$ /assistencia-tecnica-lorenzetti/ [R=301,L]
+  RewriteRule ^aquecedor-komeco(\.html)?/?$ /assistencia-tecnica-komeco/ [R=301,L]
+  RewriteRule ^aquecedor-rheem(\.html)?/?$ /assistencia-tecnica-rheem/ [R=301,L]
+  RewriteRule ^substituicao-de-tubulacao-a-gas(\.html)?/?$ /substituicao-de-tubulacao-de-gas/ [R=301,L]
+  RewriteRule ^teste-de-vazamento(\.html)?/?$ /teste-de-vazamento-de-gas/ [R=301,L]
+  RewriteRule ^conversao-de-fogao-e-cooktop(\.html)?/?$ /conversao-de-fogao/ [R=301,L]
+  RewriteRule ^conversao-de-forno-gpl-para-gn(\.html)?/?$ /conversao-de-fogao/ [R=301,L]
+  RewriteRule ^produtos(\.html)?/?$ /venda-de-aquecedor-a-gas/ [R=301,L]
+  RewriteRule ^manutencao-de-pressurizador(\.html)?/?$ /pressurizador-de-agua/ [R=301,L]
+  RewriteRule ^instalacao-de-pressurizador(\.html)?/?$ /pressurizador-de-agua/ [R=301,L]
+  RewriteRule ^manutencao-de-boiler(\.html)?/?$ /conserto-de-aquecedor-a-gas/ [R=301,L]
+  RewriteRule ^index/?$ / [R=301,L]
+
+  # Qualquer URL antiga terminada em .html cujo slug virou pasta:
+  # /quem-somos.html -> /quem-somos/
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+  RewriteRule ^(.+)\.html$ /$1/ [R=301,L]
 
   # /pagina/index.html na URL antiga vira /pagina/
   RewriteCond %{THE_REQUEST} \s/+(.*)index\.html[\s?] [NC]
@@ -16,27 +42,10 @@
   RewriteRule ^(.*)$ /$1/index.html [L]
 </IfModule>
 
-DirectoryIndex index.html
+DirectoryIndex index.html index.php
 ErrorDocument 404 /404.html
 
-# --- URLs do site anterior -----------------------------------------------
-Redirect 301 /instalacao-de-aquecedor /instalacao-de-aquecedor-a-gas/
-Redirect 301 /instalacao-de-aquecedor.html /instalacao-de-aquecedor-a-gas/
-Redirect 301 /manutencao-de-aquecedor-a-gas.html /manutencao-de-aquecedor-a-gas/
-Redirect 301 /quem-somos.html /quem-somos/
-Redirect 301 /remanejamento-de-ponto-de-gas.html /remanejamento-de-ponto-de-gas/
-Redirect 301 /substituicao-de-tubulacao-a-gas.html /substituicao-de-tubulacao-de-gas/
-Redirect 301 /teste-de-estanqueidade.html /teste-de-estanqueidade/
-Redirect 301 /teste-de-vazamento.html /teste-de-vazamento-de-gas/
-Redirect 301 /aplicacao-de-resina-em-tubulacao.html /aplicacao-de-resina-em-tubulacao/
-Redirect 301 /aquecedor-rinnai.html /assistencia-tecnica-rinnai/
-Redirect 301 /aquecedor-lorenzetti.html /assistencia-tecnica-lorenzetti/
-Redirect 301 /aquecedor-komeco.html /assistencia-tecnica-komeco/
-Redirect 301 /conversao-de-fogao-e-cooktop.html /conversao-de-fogao/
-Redirect 301 /conversao-de-forno-gpl-para-gn.html /conversao-de-fogao/
-Redirect 301 /produtos.html /venda-de-aquecedor-a-gas/
-
-# --- Cache e compressão --------------------------------------------------
+# --- Cache e compressão ---------------------------------------------------
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/html "access plus 0 seconds"
@@ -61,6 +70,7 @@ Redirect 301 /produtos.html /venda-de-aquecedor-a-gas/
 # Nada de arquivo oculto exposto (.git, .env, .DS_Store).
 # O .well-known fica de fora: é usado na validação do certificado SSL.
 RedirectMatch 404 ^/\.(?!well-known)
+
 # --- Cache -----------------------------------------------------------------
 # Arquivos do Astro têm hash no nome: mudam de nome quando mudam de conteúdo,
 # então podem ficar um ano no cache do navegador. Sem isso as fontes vinham
