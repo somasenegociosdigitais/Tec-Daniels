@@ -193,8 +193,14 @@ a:hover{color:var(--accent-strong)}
   .cab__nav{gap:var(--sp-3);overflow-x:visible;justify-content:space-between;mask-image:none;-webkit-mask-image:none}
   .cab__nav a{font-size:13px}
   .cab__nav-inicio{display:none}
-  .cab__faixa .env{padding:7px var(--gutter)}
-  /* No celular vale o telefone com o n\u00famero: o WhatsApp j\u00e1 tem o bot\u00e3o\n     do cabe\u00e7alho e o flutuante. */\n  .cab__faixa-dir>a:last-child .cab__faixa-num{display:none}\n  .cab__faixa-contato b{display:none}
+  .cab__faixa .env{padding:7px var(--gutter);flex-wrap:nowrap}
+  .cab__faixa-quem{min-width:0}
+  .cab__faixa-quem span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cab__faixa{font-size:12px}
+  /* Uma linha só: fica o telefone com o número. O WhatsApp continua no botão
+     do cabeçalho e no flutuante. */
+  .cab__faixa-dir>a:last-child{display:none}
+  .cab__faixa-contato b{display:none}
   .cab__faixa-prazo{display:none}
   .cab__logo img{width:34px;height:34px}  .assinatura__nome .g{font-size:17px}
   .assinatura__nome .p{font-size:13px}
