@@ -34,7 +34,7 @@ export const FOTOS_POR_PAGINA = {
     titulo: 'Rede de gás refeita, com registro identificado',
     intro: 'Tubulação aparente em cobre, registro de esfera com identificação de gás e teste de estanqueidade no final. É assim que a concessionária aceita a instalação.',
     itens: [
-      { src: '/assets/obras/rede-de-gas-tubulacao-registro.webp', alt: 'Rede de gás refeita com tubulação aparente e registro de esfera com identificação de gás', legenda: 'Rede de gás com registro identificado' },
+      { src: '/assets/obras/rede-de-gas-tubulacao-registro.webp', alt: 'Rede de gás refeita com tubulação aparente e registro de esfera com identificação de gás', legenda: 'Rede de gás com registro identificado', retrato: true },
     ],
   },
   'pressurizador-de-agua': {
