@@ -9,7 +9,7 @@ export const FOTOS_POR_PAGINA = {
       { src: '/assets/obras/aquecedor-rinnai-instalado.webp', alt: 'Aquecedor a gás Rinnai instalado, com duto de exaustão e ligações de água e gás em flexível', legenda: 'Rinnai instalado e ligado', retrato: true },
       { src: '/assets/obras/aquecedor-komeco-slim-instalado.webp', alt: 'Aquecedor a gás Komeco Slim KO 07M BP instalado, com registro de gás e ligações de água', legenda: 'Komeco Slim, com registro identificado', retrato: true },
       { src: '/assets/obras/aquecedor-lorenzetti-lz1600de-instalado.webp', alt: 'Aquecedor a gás Lorenzetti LZ 1600DE instalado em área de serviço, com exaustão pelo teto', legenda: 'Lorenzetti LZ 1600DE com exaustão pelo teto', retrato: true },
-      { src: '/assets/obras/aquecedor-komeco-varanda-instalado.webp', alt: 'Aquecedor a gás Komeco instalado em varanda, com ligações de água e gás na alvenaria', legenda: 'Komeco em varanda, ligações aparentes' },
+      { src: '/assets/obras/aquecedor-komeco-varanda-instalado.webp', alt: 'Aquecedor a gás Komeco instalado em varanda, com ligações de água e gás na alvenaria', legenda: 'Komeco em varanda, ligações aparentes', retrato: true },
     ],
   },
   'manutencao-de-aquecedor-a-gas': {
