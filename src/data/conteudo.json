@@ -36,7 +36,7 @@
      },
      {
       "q": "Quanto custa o conserto de um aquecedor a gás?",
-      "a": "Depende da peça e do modelo do aquecedor. Primeiro identificamos o defeito e, antes de qualquer troca, você recebe o orçamento fechado para aprovar o serviço."
+      "a": "A visita técnica com diagnóstico custa R$ 160 e, se o atendimento virar manutenção preventiva, você paga somente a manutenção. O valor do conserto depende da peça e do modelo: identificamos o defeito e, antes de qualquer troca, você recebe o orçamento fechado para aprovar o serviço."
      },
      {
       "q": "Conserto de aquecedor: vocês atendem elétrico e solar também?",
@@ -58,7 +58,7 @@
    },
    "manutencao-de-aquecedor-a-gas": {
     "seoTitulo": "Manutenção de aquecedor a gás no Rio | TecDaniel's",
-    "seoDescricao": "Revisão anual do aquecedor para manter o rendimento e reduzir o consumo de gás. Visita em até 24 horas e garantia de 90 dias no serviço.",
+    "seoDescricao": "Revisão anual do aquecedor a partir de R$ 220 para manter o rendimento e reduzir o consumo de gás. Visita em até 24 horas e garantia de 90 dias no serviço.",
     "rotulo": "Manutenção de aquecedor a gás",
     "curto": "Revisão preventiva para evitar falhas, desperdício e consertos maiores.",
     "h1": "Manutenção de aquecedor a gás no Rio de Janeiro",
@@ -92,6 +92,10 @@
      {
       "q": "De quanto em quanto tempo revisar o aquecedor a gás?",
       "a": "Uma vez por ano em uso residencial normal e a cada seis meses em prédios, academias e locais de uso intenso."
+     },
+     {
+      "q": "Quanto custa a manutenção preventiva do aquecedor?",
+      "a": "R$ 220 no aquecedor mecânico, de pilha, e R$ 290 no eletrônico, de tomada. O valor cobre a mão de obra da revisão completa. Se durante a revisão for identificada a necessidade de trocar alguma peça, o orçamento é apresentado antes."
      },
      {
       "q": "O que a manutenção preventiva inclui?",
@@ -640,7 +644,7 @@
      },
      {
       "q": "Quanto custa a conversão de fogão para gás encanado?",
-      "a": "Depende do modelo do aparelho, do número de bocas e da necessidade de trocar mangueira e registro. O orçamento é fechado na visita antes do serviço."
+      "a": "A mão de obra da conversão custa R$ 220, nos dois sentidos: do gás encanado para o botijão e do botijão para o encanado. O material de instalação, como mangueira e registro, não está incluído nesse valor e é orçado na visita, antes do serviço."
      },
      {
       "q": "Convertem fogão Electrolux, Brastemp, Consul?",
@@ -761,7 +765,7 @@
    },
    "quanto-custa-conserto-de-aquecedor": {
     "seoTitulo": "Quanto custa consertar aquecedor a gás no Rio | TecDaniel's",
-    "seoDescricao": "Entenda como o orçamento é formado: visita, peça e mão de obra. Preço fechado antes da execução, sem surpresa no final.",
+    "seoDescricao": "Visita técnica R$ 160 e manutenção preventiva a partir de R$ 220. Veja como o orçamento é formado e receba o preço fechado antes da execução.",
     "rotulo": "Quanto custa o conserto",
     "curto": "Entenda o que influencia o preço do conserto.",
     "h1": "Quanto custa o conserto de aquecedor a gás no Rio de Janeiro",
@@ -769,13 +773,13 @@
     "h2": "O preço depende do defeito — e o diagnóstico mostra qual é",
     "p1": "Não existe um único preço para consertar um aquecedor porque problemas diferentes exigem serviços e peças diferentes. A troca de um eletrodo de ignição, por exemplo, não tem o mesmo custo de um trocador de calor. Por isso, o valor é dividido entre a visita técnica e o serviço identificado no diagnóstico.",
     "p2": "A peça costuma ser um dos principais fatores no preço e varia conforme a marca e o modelo. Componentes de aparelhos digitais também podem ter valores diferentes dos utilizados em equipamentos mais simples. O acesso ao aparelho e a complexidade do serviço também podem alterar o tempo de mão de obra.",
-    "p3": "A regra é simples: primeiro identificamos o problema e apresentamos o orçamento fechado; depois você decide. Se não quiser executar o serviço, paga apenas a visita. Em aparelhos antigos, também podemos comparar o custo do reparo com o de um aparelho novo instalado para ajudar na decisão.",
+    "p3": "A regra é simples: primeiro identificamos o problema e apresentamos o orçamento fechado; depois você decide. Se não quiser executar o serviço, paga apenas a visita técnica, de R$ 160. Se o atendimento virar manutenção preventiva, você paga somente a manutenção. Em aparelhos antigos, também podemos comparar o custo do reparo com o de um aparelho novo instalado para ajudar na decisão.",
     "tituloChecklist": "Como funciona o orçamento",
     "checklist": [
-     "Visita com valor informado antes de agendar",
+     "Visita técnica de R$ 160, informada antes de agendar",
      "Diagnóstico completo, não chute",
      "Orçamento fechado antes de executar",
-     "Valor da visita abatido do serviço executado",
+     "Virou manutenção preventiva, você paga só a manutenção",
      "Nada é desmontado sem autorização",
      "Peça original com nota fiscal",
      "Comparação entre reparo e troca em aparelho antigo",
@@ -786,51 +790,51 @@
      "Segunda opinião sobre orçamento de terceiro"
     ],
     "temPrecos": true,
-    "tituloPrecos": "Faixas de referência por tipo de serviço",
-    "introPrecos": "Faixas para orçamento no Rio de Janeiro, em aparelho residencial de passagem. Servem apenas como referência antes da visita; o valor exato depende do diagnóstico.",
+    "tituloPrecos": "Valores por tipo de serviço",
+    "introPrecos": "Valores de mão de obra praticados no Rio de Janeiro, em aparelho residencial de passagem. Peças, quando necessárias, são orçadas à parte depois do diagnóstico.",
     "precos": [
      {
       "servico": "Visita técnica com diagnóstico",
-      "fator": "Valor único, abatido do serviço se você executar conosco",
-      "faixa": "a confirmar"
+      "fator": "Vamos até o local para resolver o problema. Se o atendimento virar manutenção, você paga somente a manutenção preventiva",
+      "faixa": "R$ 160"
      },
      {
-      "servico": "Limpeza e regulagem",
-      "fator": "Manutenção preventiva, sem troca de peça",
-      "faixa": "a confirmar"
+      "servico": "Manutenção preventiva — aquecedor mecânico (pilha)",
+      "fator": "Limpeza, regulagem e verificação geral do aparelho",
+      "faixa": "R$ 220"
      },
      {
-      "servico": "Troca de peça comum",
-      "fator": "Sensor de fluxo, eletrodo, membrana, pressostato — varia por marca",
-      "faixa": "a confirmar"
+      "servico": "Manutenção preventiva — aquecedor eletrônico (tomada)",
+      "fator": "Aparelho digital, com verificação da parte eletrônica",
+      "faixa": "R$ 290"
      },
      {
-      "servico": "Troca de placa eletrônica",
-      "fator": "Aparelho digital; a peça original é o maior componente do custo",
-      "faixa": "a confirmar"
+      "servico": "Manutenção preventiva de pressurizador",
+      "fator": "Valor válido para pressurizador instalado no aquecedor",
+      "faixa": "R$ 220"
      },
      {
-      "servico": "Trocador de calor",
-      "fator": "Peça de maior valor; em aparelho antigo comparamos com a troca",
-      "faixa": "a confirmar"
+      "servico": "Conversão de fogão GLP ⇄ gás encanado",
+      "fator": "Mão de obra da conversão nos dois sentidos; material de instalação não incluído",
+      "faixa": "R$ 220"
      },
      {
-      "servico": "Instalação de aparelho novo",
-      "fator": "Depende de tubulação, exaustão e remanejamento de ponto",
-      "faixa": "a confirmar"
+      "servico": "Troca de peça",
+      "fator": "Sensor de fluxo, eletrodo, membrana, pressostato, placa eletrônica ou trocador de calor — o valor depende da marca e do modelo",
+      "faixa": "orçamento após diagnóstico"
      }
     ],
-    "notaPrecos": "As faixas serão preenchidas com os valores praticados pela equipe. O preço das peças pode variar conforme marca, modelo e disponibilidade no momento do atendimento.",
+    "notaPrecos": "Os valores acima são de mão de obra. O preço das peças varia conforme marca, modelo e disponibilidade no momento do atendimento, e é apresentado com o orçamento fechado antes da execução.",
     "tituloFaq": "Preço de conserto de aquecedor: as perguntas diretas",
     "ctaTitulo": "Quer o orçamento do seu caso? Fale conosco.",
     "faq": [
      {
       "q": "Quanto custa o conserto de um aquecedor a gás?",
-      "a": "Depende da peça e do modelo. O valor da visita técnica é informado antes do agendamento; depois do diagnóstico, o serviço é apresentado com preço fechado para você decidir."
+      "a": "A visita técnica com diagnóstico custa R$ 160. Depois do diagnóstico, o serviço é apresentado com preço fechado para você decidir. A manutenção preventiva sai por R$ 220 no aquecedor mecânico, de pilha, e R$ 290 no eletrônico, de tomada. Peças, quando necessárias, são orçadas à parte conforme marca e modelo."
      },
      {
       "q": "A visita é cobrada mesmo se eu não fizer o serviço?",
-      "a": "Sim. A visita técnica é cobrada porque inclui o diagnóstico. Se você executar o serviço conosco, o valor da visita é abatido."
+      "a": "Sim. A visita técnica custa R$ 160 porque inclui o deslocamento e o diagnóstico. Se o atendimento virar manutenção preventiva, você paga somente a manutenção."
      },
      {
       "q": "Por que ninguém passa preço por telefone?",
@@ -962,7 +966,7 @@
      },
      {
       "q": "Quanto custa o conserto e em quanto tempo o técnico chega?",
-      "a": "A visita técnica é feita em até 24 horas no Rio, Grande Rio e Baixada Fluminense, e o valor do conserto depende da peça, informado com preço fechado antes da execução."
+      "a": "A visita técnica é feita em até 24 horas no Rio, Grande Rio e Baixada Fluminense e custa R$ 160. Se o atendimento virar manutenção preventiva, você paga somente a manutenção: R$ 220 no aparelho mecânico e R$ 290 no eletrônico. Havendo troca de peça, o valor depende da peça e é informado com preço fechado antes da execução."
      }
     ]
    },
@@ -1009,7 +1013,7 @@
      },
      {
       "q": "Vocês fazem manutenção de pressurizador?",
-      "a": "Sim. Fazemos manutenção preventiva e corretiva, incluindo verificação de pressostato, rotor, vedação e acionamento automático."
+      "a": "Sim. Fazemos manutenção preventiva e corretiva, incluindo verificação de pressostato, rotor, vedação e acionamento automático. A preventiva do pressurizador instalado no aquecedor custa R$ 220."
      },
      {
       "q": "Qual pressurizador usar na caixa d'água?",
