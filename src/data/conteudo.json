@@ -11,7 +11,7 @@
     "h2": "Aquecedor com defeito, diagnóstico antes da troca de peça",
     "p1": "O conserto começa pela identificação da causa, não pela troca de peças. Medimos a pressão de gás e de água, testamos sensor de fluxo, placa e eletrodo de ignição e verificamos a exaustão. Só depois do diagnóstico apresentamos o orçamento fechado para você decidir se quer executar o serviço.",
     "p2": "Entre os problemas mais comuns estão aparelho que não acende, água que não esquenta, temperatura oscilando durante o banho, chama amarela, vazamento de água e desarme frequente. Conforme o diagnóstico, fazemos a troca de sensor, placa, membrana, pressostato, eletrodo ou trocador de calor.",
-    "p3": "O conserto de aquecedor aqui é sempre do aparelho a gás — não atendemos elétrico nem solar. Atendemos Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem, incluindo modelos de passagem, digitais e equipamentos para condomínio. Somos assistência técnica autorizada Rinnai e seguimos os padrões exigidos pela Naturgy.",
+    "p3": "Trabalhamos com aquecedores a gás das marcas Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem, incluindo modelos de passagem, digitais e equipamentos para condomínio. Atendemos tanto o mecânico, de acendimento por pilha, quanto o eletrônico ligado na tomada — os dois são aquecedores a gás. Aquecedor de resistência elétrica e aquecedor solar ficam fora do nosso escopo. Somos assistência técnica autorizada Rinnai e seguimos os padrões exigidos pela Naturgy.",
     "checklist": [
      "Diagnóstico técnico com preço fechado",
      "Aparelho que não acende",
@@ -1570,8 +1570,8 @@
       "nome": "Michelle Ferreira"
      },
      {
-      "texto": "Excelente serviço! São pontuais com o horário e o preço ótimo.",
-      "nome": "re_nata"
+      "texto": "Uma empresa de qualidade, que faz ótimos trabalhos, garantindo a eficiência do equipamento.",
+      "nome": "Robson Olímpio Ribeiro"
      }
     ]
    },
@@ -1587,8 +1587,8 @@
       "nome": "Luciane Caruso"
      },
      {
-      "texto": "Excelente profissional. Pontual, honesto e com orçamentos justos. Recomendo!",
-      "nome": "Eder Silva"
+      "texto": "Excelente empresa, recomendo os serviços. Excelentes profissionais, pontualidade e comprometimento.",
+      "nome": "Odilson Nascimento"
      }
     ]
    },
@@ -1829,8 +1829,8 @@
       "nome": "Natália F"
      },
      {
-      "texto": "Profissionais honestos, competentes, comprometidos. Agradeço muito o profissionalismo! Melhor empresa. Me atenderam rápido em JACAREPAGUÁ RJ.",
-      "nome": "Mari Lopes"
+      "texto": "Profissionais excelentes, serviço com preço justo e de altíssima qualidade. Super recomendo.",
+      "nome": "Filipe fsantos"
      }
     ]
    },
