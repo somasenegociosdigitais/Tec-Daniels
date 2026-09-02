@@ -9,15 +9,6 @@ export const FOTOS_POR_PAGINA = {
       { src: '/assets/obras/aquecedor-rinnai-instalado.webp', alt: 'Aquecedor a gás Rinnai instalado, com duto de exaustão e ligações de água e gás em flexível', legenda: 'Rinnai instalado e ligado', retrato: true },
       { src: '/assets/obras/aquecedor-komeco-slim-instalado.webp', alt: 'Aquecedor a gás Komeco Slim KO 07M BP instalado, com registro de gás e ligações de água', legenda: 'Komeco Slim, com registro identificado', retrato: true },
       { src: '/assets/obras/aquecedor-lorenzetti-lz1600de-instalado.webp', alt: 'Aquecedor a gás Lorenzetti LZ 1600DE instalado em área de serviço, com exaustão pelo teto', legenda: 'Lorenzetti LZ 1600DE com exaustão pelo teto', retrato: true },
-      { src: '/assets/obras/aquecedor-komeco-varanda-instalado.webp', alt: 'Aquecedor a gás Komeco instalado em varanda, com ligações de água e gás na alvenaria', legenda: 'Komeco em varanda, ligações aparentes', retrato: true },
-    ],
-  },
-  'manutencao-de-aquecedor-a-gas': {
-    olho: 'Antes e depois',
-    titulo: 'O que a falta de manutenção faz com a câmara de combustão',
-    intro: 'Fuligem e corrosão saindo pela frente do gabinete indicam queima irregular há bastante tempo. Neste Lorenzetti LZ 750 BP o aparelho foi substituído e a exaustão refeita — com revisão anual, o quadro não chega a esse ponto.',
-    itens: [
-      { src: '/assets/obras/aquecedor-lz750bp-antes-depois.webp', alt: 'Comparação de aquecedor Lorenzetti LZ 750 BP: à esquerda com fuligem e corrosão na frente, à direita o aparelho novo com duto de exaustão', legenda: 'Antes e depois, com exaustão refeita' },
     ],
   },
   'conserto-de-aquecedor-a-gas': {
@@ -34,7 +25,7 @@ export const FOTOS_POR_PAGINA = {
     titulo: 'Rede de gás refeita, com registro identificado',
     intro: 'Tubulação aparente em cobre, registro de esfera com identificação de gás e teste de estanqueidade no final. É assim que a concessionária aceita a instalação.',
     itens: [
-      { src: '/assets/obras/rede-de-gas-tubulacao-registro.webp', alt: 'Rede de gás refeita com tubulação aparente e registro de esfera com identificação de gás', legenda: 'Rede de gás com registro identificado', retrato: true },
+      { src: '/assets/obras/rede-de-gas-tubulacao-registro.webp', alt: 'Rede de gás refeita com tubulação aparente e registro de esfera com identificação de gás', legenda: 'Rede de gás com registro identificado' },
     ],
   },
   'pressurizador-de-agua': {
