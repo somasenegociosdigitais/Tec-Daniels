@@ -25,6 +25,8 @@
   RewriteRule ^manutencao-de-pressurizador(\.html)?/?$ /pressurizador-de-agua/ [R=301,L]
   RewriteRule ^instalacao-de-pressurizador(\.html)?/?$ /pressurizador-de-agua/ [R=301,L]
   RewriteRule ^manutencao-de-boiler(\.html)?/?$ /conserto-de-aquecedor-a-gas/ [R=301,L]
+  RewriteRule ^remanejamento-do-ponto-de-gas(\.html)?/?$ /remanejamento-de-ponto-de-gas/ [R=301,L]
+  RewriteRule ^remanejamento-do-ponto-de-gas-do-fogao(\.html)?/?$ /remanejamento-de-ponto-de-gas/ [R=301,L]
   RewriteRule ^index/?$ / [R=301,L]
 
   # Qualquer URL antiga terminada em .html cujo slug virou pasta:
