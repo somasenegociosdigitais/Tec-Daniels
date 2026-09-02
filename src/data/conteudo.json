@@ -86,6 +86,22 @@
     "ctaTitulo": "Agende a revisão do seu aquecedor.",
     "faq": [
      {
+      "q": "Como sei que meu aquecedor precisa de manutenção?",
+      "a": "Os sinais mais comuns são demora para aquecer, chama amarela em vez de azul, conta de gás mais alta sem mudança de uso e ruído diferente ao acender. Mais de um ano sem revisão já é motivo suficiente, mesmo sem sintoma aparente."
+     },
+     {
+      "q": "A chama do meu aquecedor está amarela. É grave?",
+      "a": "Chama amarela indica queima incompleta do gás, e queima incompleta produz monóxido de carbono. Em geral a causa é queimador sujo ou pressão de gás fora do ajuste, e a limpeza da manutenção preventiva resolve — mas não deve ser deixado para depois."
+     },
+     {
+      "q": "Sinto cheiro de queimado quando o aquecedor liga. É normal?",
+      "a": "Não. Cheiro de queimado costuma vir de poeira acumulada no queimador ou de exaustão obstruída, que empurra os gases de volta para dentro do ambiente. Desligue o aparelho e chame um técnico antes de usar de novo."
+     },
+     {
+      "q": "Meu aquecedor apaga sozinho no meio do banho. É falta de manutenção?",
+      "a": "Pode ser. O desarme no meio do banho aparece quando a exaustão está obstruída, quando o ambiente tem ventilação insuficiente ou quando o sensor está sujo — os três são verificados na revisão. Se o aparelho já parou de acender, o caso é de conserto."
+     },
+     {
       "q": "Manutenção de aquecedor: a gás, elétrico ou solar?",
       "a": "Trabalhamos exclusivamente com aquecedor a gás, de passagem, e com a rede de gás. Aquecedor elétrico, boiler e sistema solar não fazem parte do nosso atendimento — assim quem procura manutenção de aquecedor a gás fala com quem faz só isso há 22 anos."
      },
