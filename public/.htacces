@@ -1,0 +1,34 @@
+# Hostinger (Apache). No Netlify/Cloudflare vale o public/_redirects.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Sempre https e sempre www, em um salto so.
+  # Se der ERR_TOO_MANY_REDIRECTS, troque a primeira linha por:
+  # RewriteCond %{HTTP:X-Forwarded-Proto} !=https [OR]
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} !^www\.tecdaniels\.com\.br$ [NC]
+  RewriteRule ^(.*)$ https://www.tecdaniels.com.br/$1 [R=301,L]
+
+  # --- URLs do site anterior ---
+  RewriteRule ^instalacao-de-aquecedor(\.html)?/?$ /instalacao-de-aquecedor-a-gas/ [R=301,L]
+  RewriteRule ^aquecedor-rinnai(\.html)?/?$ /assistencia-tecnica-rinnai/ [R=301,L]
+  RewriteRule ^aquecedor-lorenzetti(\.html)?/?$ /assistencia-tecnica-lorenzetti/ [R=301,L]
+  RewriteRule ^aquecedor-komeco(\.html)?/?$ /assistencia-tecnica-komeco/ [R=301,L]
+  RewriteRule ^aquecedor-rheem(\.html)?/?$ /assistencia-tecnica-rheem/ [R=301,L]
+  RewriteRule ^substituicao-de-tubulacao-a-gas(\.html)?/?$ /substituicao-de-tubulacao-de-gas/ [R=301,L]
+  RewriteRule ^teste-de-vazamento(\.html)?/?$ /teste-de-vazamento-de-gas/ [R=301,L]
+  RewriteRule ^conversao-de-fogao-e-cooktop(\.html)?/?$ /conversao-de-fogao/ [R=301,L]
+  RewriteRule ^conversao-de-forno-gpl-para-gn(\.html)?/?$ /conversao-de-fogao/ [R=301,L]
+  RewriteRule ^produtos(\.html)?/?$ /venda-de-aquecedor-a-gas/ [R=301,L]
+  RewriteRule ^manutencao-de-pressurizador(\.html)?/?$ /pressurizador-de-agua/ [R=301,L]
+  RewriteRule ^instalacao-de-pressurizador(\.html)?/?$ /pressurizador-de-agua/ [R=301,L]
+  RewriteRule ^manutencao-de-boiler(\.html)?/?$ /conserto-de-aquecedor-a-gas/ [R=301,L]
+  RewriteRule ^remanejamento-do-ponto-de-gas(\.html)?/?$ /remanejamento-de-ponto-de-gas/ [R=301,L]
+  RewriteRule ^remanejamento-do-ponto-de-gas-do-fogao(\.html)?/?$ /remanejamento-de-ponto-de-gas/ [R=301,L]
+  RewriteRule ^index/?$ / [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
