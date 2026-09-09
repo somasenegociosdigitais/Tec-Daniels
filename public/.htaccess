@@ -4,9 +4,7 @@
   RewriteEngine On
 
   # Sempre https e sempre www, em um salto so.
-  # Se der ERR_TOO_MANY_REDIRECTS, troque a primeira linha por:
-  # RewriteCond %{HTTP:X-Forwarded-Proto} !=https [OR]
-  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https [OR]
   RewriteCond %{HTTP_HOST} !^www\.tecdaniels\.com\.br$ [NC]
   RewriteRule ^(.*)$ https://www.tecdaniels.com.br/$1 [R=301,L]
 
