@@ -9,6 +9,10 @@ export const FOTOS_POR_PAGINA = {
       { src: '/assets/obras/aquecedor-rinnai-instalado.webp', alt: 'Aquecedor a gás Rinnai instalado, com duto de exaustão e ligações de água e gás em flexível', legenda: 'Rinnai instalado e ligado', retrato: true },
       { src: '/assets/obras/aquecedor-komeco-slim-instalado.webp', alt: 'Aquecedor a gás Komeco Slim KO 07M BP instalado, com registro de gás e ligações de água', legenda: 'Komeco Slim, com registro identificado', retrato: true },
       { src: '/assets/obras/aquecedor-lorenzetti-lz1600de-instalado.webp', alt: 'Aquecedor a gás Lorenzetti LZ 1600DE instalado em área de serviço, com exaustão pelo teto', legenda: 'Lorenzetti LZ 1600DE com exaustão pelo teto', retrato: true },
+      { src: '/assets/obras/aquecedor-rinnai-varanda-exaustao-instalado.webp', alt: 'Aquecedor a gás Rinnai instalado em varanda, com duto de exaustão levado para fora', legenda: 'Rinnai em varanda, com exaustão para o exterior', retrato: true },
+      { src: '/assets/obras/aquecedor-komeco-area-externa-instalado.webp', alt: 'Aquecedor a gás Komeco instalado em área externa, com ligações de água e gás aparentes', legenda: 'Komeco em área externa', retrato: true },
+      { src: '/assets/obras/aquecedor-lorenzetti-lz1600n-banheiro-instalado.webp', alt: 'Aquecedor a gás Lorenzetti LZ 1600N instalado em banheiro, com ligações de água e gás', legenda: 'Lorenzetti LZ 1600N em banheiro', retrato: true },
+      { src: '/assets/obras/aquecedor-lorenzetti-lz1600n-exaustao-instalado.webp', alt: 'Duto de exaustão do aquecedor Lorenzetti LZ 1600N subindo pela parede até a saída externa', legenda: 'Exaustão do mesmo aparelho, até a saída externa', retrato: true },
     ],
   },
   'conserto-de-aquecedor-a-gas': {
@@ -16,8 +20,11 @@ export const FOTOS_POR_PAGINA = {
     titulo: 'Quando o conserto não compensa, a troca sai com a exaustão refeita',
     intro: 'Aparelho muito antigo, com corpo corroído ou peça fora de linha, às vezes custa mais que um novo. Neste caso o cliente optou pela troca — e a exaustão foi refeita junto, porque a antiga estava fora de norma.',
     itens: [
-      { src: '/assets/obras/troca-aquecedor-lorenzetti-lz750bp.webp', alt: 'Aquecedor a gás Lorenzetti LZ 750 BP recém-instalado, com duto de exaustão novo saindo pela janela', legenda: 'Troca de aparelho, com exaustão refeita', retrato: true },
-      { src: '/assets/obras/aquecedor-lorenzetti-lz1600de-area.webp', alt: 'Aquecedor a gás Lorenzetti LZ 1600DE em área de serviço, visto de frente com o painel digital aceso', legenda: 'Aparelho em operação depois do serviço', retrato: true },
+      { src: '/assets/obras/troca-aquecedor-antes-cosmopolita-a15.webp', alt: 'Aquecedor a gás Cosmopolita A15 antigo antes da troca, com corpo desgastado', legenda: 'Antes: Cosmopolita A15 fora de operação', retrato: true },
+      { src: '/assets/obras/troca-aquecedor-antes-cosmopolita-a15-area.webp', alt: 'Área de serviço com o aquecedor Cosmopolita A15 antigo e a exaustão original', legenda: 'Antes: a exaustão original estava fora de norma', retrato: true },
+      { src: '/assets/obras/troca-aquecedor-depois-lorenzetti-lz1600de.webp', alt: 'Aquecedor a gás Lorenzetti LZ 1600DE novo instalado no lugar do aparelho antigo, com painel digital aceso', legenda: 'Depois: Lorenzetti LZ 1600DE instalado e ligado', retrato: true },
+      { src: '/assets/obras/troca-aquecedor-depois-lorenzetti-lz1600de-desligado.webp', alt: 'Mesmo aquecedor Lorenzetti LZ 1600DE desligado, com as ligações de água e gás e a exaustão nova', legenda: 'Depois: ligações e exaustão refeitas', retrato: true },
+      { src: '/assets/obras/troca-aquecedor-lorenzetti-lz750bp.webp', alt: 'Aquecedor a gás Lorenzetti LZ 750 BP recém-instalado, com duto de exaustão novo saindo pela janela', legenda: 'Outra troca, com exaustão refeita', retrato: true },
     ],
   },
   'gasista': {
@@ -26,6 +33,16 @@ export const FOTOS_POR_PAGINA = {
     intro: 'Tubulação aparente em cobre, registro de esfera com identificação de gás e teste de estanqueidade no final. É assim que a concessionária aceita a instalação.',
     itens: [
       { src: '/assets/obras/rede-de-gas-tubulacao-registro.webp', alt: 'Rede de gás refeita com tubulação aparente e registro de esfera com identificação de gás', legenda: 'Rede de gás com registro identificado' },
+    ],
+  },
+  'venda-de-aquecedor-a-gas': {
+    olho: 'Aparelhos em estoque',
+    titulo: 'Aparelho novo, lacrado e instalado no mesmo atendimento',
+    intro: 'Trabalhamos com Rinnai e Lorenzetti em estoque próprio. O aparelho sai lacrado, é dimensionado para os pontos de água da casa e vai instalado com exaustão e ligações no mesmo atendimento.',
+    itens: [
+      { src: '/assets/obras/estoque-aquecedores-rinnai-embalados.webp', alt: 'Aquecedores a gás Rinnai novos e embalados no estoque da TecDaniel\'s', legenda: 'Rinnai novos, ainda embalados', retrato: true },
+      { src: '/assets/obras/estoque-aquecedores-rinnai-lorenzetti.webp', alt: 'Aquecedores a gás Rinnai e Lorenzetti em estoque, prontos para instalação', legenda: 'Rinnai e Lorenzetti prontos para instalação', retrato: true },
+      { src: '/assets/obras/estoque-loja-aquecedores-rinnai-caixas.webp', alt: 'Caixas de aquecedores a gás Rinnai empilhadas no estoque da loja', legenda: 'Estoque próprio na loja', retrato: true },
     ],
   },
   'pressurizador-de-agua': {

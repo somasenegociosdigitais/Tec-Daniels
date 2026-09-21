@@ -298,18 +298,18 @@ a:hover{color:var(--accent-strong)}
 /* --- Fotos de obra ---------------------------------------------------- */
 .foto{margin:0;background:var(--surface-card);border:var(--bw-hair) solid var(--border-hairline);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow-card)}
 .foto__vazio{display:grid;place-items:center;aspect-ratio:4/3;background:var(--surface-alt);color:var(--ink-400);font-size:var(--fs-xs);text-align:center;padding:var(--sp-4)}
-/* height:auto é obrigatório: sem ele o atributo height do <img> vence o
-   aspect-ratio e a foto sai com 960px de altura em qualquer tela. */
-.foto img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.foto img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
 /* Foto em pé (aparelho na parede): 3/4 mostra duto e ligações sem cortar. */
 .foto--retrato img{aspect-ratio:3/4}
 .foto--retrato .foto__vazio{aspect-ratio:3/4}
 .foto figcaption{padding:14px 16px;font-size:var(--fs-sm);font-weight:var(--fw-semibold);color:var(--ink-900)}
-/* No celular a foto em pé em altura livre ficava muito maior que as demais:
-   quadrado recortado deixa todas do mesmo tamanho, sem vão branco. */
+/* No celular a foto em pé ocupava quase a tela inteira e o corte de 3/4
+   comia as ligações nas laterais: quadrado e a imagem inteira à vista. */
 @media (max-width:600px){
-  .foto--retrato img{aspect-ratio:1/1;height:auto;max-height:none;object-fit:cover;object-position:center top}
-  .foto--retrato .foto__vazio{aspect-ratio:1/1}
+  /* Sem caixa de proporção fixa: a imagem define a própria altura e a legenda
+     encosta nela. A caixa quadrada deixava um vão branco sob a foto em pé. */
+  .foto--retrato img{aspect-ratio:auto;height:auto;max-height:70vh;object-fit:contain;background:var(--surface-alt)}
+  .foto--retrato .foto__vazio{aspect-ratio:3/4}
 }
 
 /* --- Esteira de marcas ------------------------------------------------ */
@@ -383,7 +383,7 @@ a:hover{color:var(--accent-strong)}
 .modelo{display:flex;flex-direction:column;background:var(--surface-card);border:var(--bw-hair) solid var(--border-hairline);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow-card)}
 .modelo__foto{display:grid;place-items:center;aspect-ratio:4/3;background:var(--surface-alt);border-bottom:var(--bw-hair) solid var(--border-hairline);color:var(--ink-400);font-size:var(--fs-xs);text-align:center;padding:var(--sp-4)}
 /* Foto de produto: fundo branco, sem cortar o aparelho. */
-.modelo>img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff;border-bottom:var(--bw-hair) solid var(--border-hairline);padding:var(--sp-4)}
+.modelo>img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;border-bottom:var(--bw-hair) solid var(--border-hairline);padding:var(--sp-4)}
 .modelo__texto{padding:18px 20px;display:flex;flex-direction:column;gap:5px}
 .modelo__texto b{font-family:var(--font-narrow);font-size:var(--fs-h4);color:var(--ink-900)}
 .modelo__texto span{font-size:var(--fs-sm);line-height:1.45}
