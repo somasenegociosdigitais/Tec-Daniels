@@ -25,7 +25,7 @@ export const NEGOCIO = {
   google: {
     url: 'https://g.page/r/CeRlLWupLbrsEBM',
     review: 'https://g.page/r/CeRlLWupLbrsEBM/review',
-    nota: '5.0', total: 68,
+    nota: '5.0', total: 70,
   },
   rinnai: 'https://www.rinnai.com.br/parceiros/tec-daniel--s-solucoes-em-aquecedores_7947/',
   tagline: 'Pensou em banho quente com segurança? Chame a TecDaniels!',
