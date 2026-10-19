@@ -5,14 +5,27 @@ import Marcas from '../components/Marcas.astro';
 import Avaliacoes from '../components/Avaliacoes.astro';
 import FotosObra from '../components/FotosObra.astro';
 import Icone from '../components/Icone.astro';
+import Faq from '../components/Faq.astro';
 import { NEGOCIO, BAIRROS, NORMAS, SERVICOS, servicoUrl } from '../data/site.js';
 
 // Palavra-chave principal: "aquecedor a gás rio de janeiro"
 const seo = {
   titulo: "Aquecedor a gás no Rio de Janeiro | TecDaniel's",
-  descricao: 'Aquecedor a gás no Rio: conserto, instalação, manutenção e venda. Autorizada Rinnai, 22 anos, visita em até 24 horas e garantia de 90 dias.',
+  descricao: 'Aquecedor a gás no Rio: conserto, instalação, manutenção e venda. Autorizada Rinnai desde 2003, visita em até 24 horas e garantia de 90 dias.',
+  ogTitulo: "TecDaniel's | Aquecedor a gás no Rio de Janeiro",
   trilha: [{ nome: 'Início', href: '/' }],
 };
+
+// Texto idêntico ao de public/ai/faq.json e llms-full.txt (GEO-LEIAME 3.4).
+const FAQ = [
+  { q: 'Em quanto tempo o técnico chega?', a: 'Visita técnica em até 24 horas no Rio de Janeiro e no Grande Rio.' },
+  { q: 'Pago a visita se fizer o serviço?', a: 'Não. A visita com diagnóstico custa R$ 160 apenas quando nenhum serviço é realizado no dia. Se você aprovar o orçamento e o técnico executar o serviço no mesmo atendimento, seja conserto, manutenção, instalação ou serviço de gás, essa taxa não é cobrada.' },
+  { q: 'Quanto custa a manutenção do aquecedor a gás?', a: 'R$ 220 no aquecedor mecânico (de pilha) e R$ 290 no eletrônico (de tomada).' },
+  { q: 'Quais marcas vocês atendem?', a: 'Rinnai, como assistência técnica autorizada, e também Lorenzetti, Komeco, Rheem, Bosch, Junkers e Orbis.' },
+  { q: 'O serviço tem garantia?', a: 'Sim, 90 dias de garantia em todos os serviços.' },
+  { q: 'Onde vocês atendem?', a: 'Em todo o Rio de Janeiro, no Grande Rio e na Baixada Fluminense, com base na Praça Seca, em Jacarepaguá.' },
+  { q: 'Como pedir orçamento?', a: 'Pelo WhatsApp (21) 98617-1050 ou pelo formulário do site, que abre o WhatsApp com a mensagem pronta.' },
+];
 
 const confianca = [
   { icone: 'file-check', label: 'Orçamento sem compromisso' },
@@ -89,7 +102,7 @@ const areas = ['Zona Sul', 'Zona Norte', 'Zona Oeste', 'Centro', 'Barra da Tijuc
 const paraBairro = { 'Barra da Tijuca': 'barra-da-tijuca', 'Jacarepaguá': 'jacarepagua', 'Recreio': 'recreio-dos-bandeirantes', 'Tijuca': 'tijuca' };
 const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/' : '/area-de-atendimento/';
 ---
-<Base {...seo}>
+<Base {...seo} faq={FAQ}>
 
 <section class="heroi">
 <div class="env duas-colunas duas-colunas--heroi heroi__grade">
@@ -104,7 +117,7 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 </div>
 
 <div class="heroi__lado">
-<img class="heroi__mascote" src="/assets/mascote-td-heroi.webp" alt="" width="510" height="440" fetchpriority="low">
+<img class="heroi__mascote" src="/assets/mascote-td-heroi.webp" alt="Mascote da TecDaniel's: técnico de boné com chave inglesa" width="510" height="440" fetchpriority="low">
 <div class="linha" style="gap:var(--sp-3)">
 <span class="tag tag--sobre-brand">Autorizada Rinnai</span>
 <span class="tag tag--sobre-brand">Padrão Naturgy</span>
@@ -271,6 +284,16 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <div class="linha">
 {areas.map((a) => (<a href={areaHref(a)} class="ficha">{a}</a>))}
 </div>
+</div>
+</section>
+
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Perguntas frequentes</p>
+<h2 class="t-h2">Dúvidas sobre o atendimento de aquecedor a gás</h2>
+</div>
+<Faq itens={FAQ} />
 </div>
 </section>
 

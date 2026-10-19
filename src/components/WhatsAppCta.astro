@@ -87,7 +87,9 @@ const { privacidadeHref = '/politica-de-privacidade/' } = Astro.props;
   });
 
   form.telefone.addEventListener('input', () => {
-    const d = form.telefone.value.replace(/\D/g, '').slice(0, 11);
+    let d = form.telefone.value.replace(/\D/g, '');
+    if (d.length >= 12 && d.startsWith('55')) d = d.slice(2);
+    d = d.slice(0, 11);
     form.telefone.value = d.length >= 10
       ? '(' + d.slice(0, 2) + ') ' + d.slice(2, d.length - 4) + '-' + d.slice(-4)
       : d;
@@ -101,6 +103,7 @@ const { privacidadeHref = '/politica-de-privacidade/' } = Astro.props;
     e.preventDefault();
     const nome = form.nome.value.trim();
     let d = form.telefone.value.replace(/\D/g, '');
+    if (d.length >= 12 && d.startsWith('55')) d = d.slice(2);
     if (d.length === 8 || d.length === 9) d = '21' + d;
     const digitos = d.length;
     const tel = digitos >= 10 ? '(' + d.slice(0, 2) + ') ' + d.slice(2, digitos - 4) + '-' + d.slice(-4) : form.telefone.value.trim();

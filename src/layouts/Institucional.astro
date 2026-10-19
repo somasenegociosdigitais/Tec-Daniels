@@ -38,7 +38,7 @@ const bairros = BAIRROS.map((b) => ({ ...b, href: '/aquecedor-a-gas-' + b.slug +
   trilha={trilha}
 >
 
-<section class="cabeca">
+<section class="cabeca" id={slug === 'quem-somos' ? 'about' : undefined}>
 <div class="env cabeca__env" style="padding-bottom:var(--sp-11)">
 <Trilha itens={trilha} claro={true} />
 <div class="cabeca__grade">

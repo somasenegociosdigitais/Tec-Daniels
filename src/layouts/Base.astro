@@ -48,7 +48,7 @@ const empresa = {
   image: [NEGOCIO.site + '/og-tecdaniels.jpg'],
   taxID: NEGOCIO.cnpj,
   foundingDate: '2003-10-04',
-  description: 'Assistência técnica autorizada Rinnai. Conserto, manutenção, instalação e venda de aquecedores a gás, serviço de gasista e teste de estanqueidade no Rio de Janeiro. ' + NEGOCIO.anos + ' anos de experiência.',
+  description: 'Assistência técnica autorizada Rinnai. Conserto, manutenção, instalação e venda de aquecedores a gás, serviço de gasista e teste de estanqueidade no Rio de Janeiro. ' + 'Desde 2003 no Rio de Janeiro.',
   url: NEGOCIO.site,
   telephone: NEGOCIO.telefoneE164,
   priceRange: 'R$ 160 a R$ 290 (mão de obra)',
@@ -69,7 +69,7 @@ const empresa = {
   ],
   // Sem aggregateRating: o Google não aceita a empresa marcar as próprias avaliações.
   hasMap: 'https://maps.google.com/maps?cid=17057996744290035172',
-  sameAs: [NEGOCIO.google.url, NEGOCIO.rinnai, 'https://www.facebook.com/people/Tec-Daniels/61553668604598/'],
+  sameAs: [NEGOCIO.google.url, NEGOCIO.rinnai, 'https://www.facebook.com/people/Tec-Daniels-Solu%C3%A7%C3%B5es-em-Aquecedores/100088495374319/', 'https://www.instagram.com/tecdaniels/'],
   makesOffer: OFERTAS.map((o) => ({
     '@type': 'Offer',
     itemOffered: { '@type': 'Service', name: o.nome, url: NEGOCIO.site + '/' + o.slug + '/' },

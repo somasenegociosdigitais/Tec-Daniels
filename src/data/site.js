@@ -34,7 +34,7 @@ export const NEGOCIO = {
 export const MENU = [
   { label: 'Início', href: '/' },
   { label: 'Serviços', href: '/#todos-os-servicos' },
-  { label: 'Quem somos', href: '/quem-somos/' },
+  { label: 'Quem somos', href: '/quem-somos/#about' },
   { label: 'Área de atendimento', curto: 'Atendimento', href: '/area-de-atendimento/' },
   { label: 'Contato', href: '/contato/' },
 ];
