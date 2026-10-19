@@ -1,0 +1,69 @@
+{
+  "name": "TecDaniel's Soluções em Aquecedores",
+  "alternateName": "TecDaniel's",
+  "description": "Assistência técnica autorizada Rinnai e especialista em aquecedores a gás no Rio de Janeiro desde 2003. Conserto, manutenção, instalação e venda de aquecedores a gás de todas as marcas e serviços de gasista no padrão Naturgy, com visita em até 24 horas e 90 dias de garantia.",
+  "url": "https://www.tecdaniels.com.br/",
+  "type": "LocalBusiness",
+  "category": "Assistência técnica de aquecedores a gás e serviços de gás",
+  "foundingYear": 2003,
+  "language": "pt-BR",
+  "address": {
+    "street": "Rua Cândido Benício, 1381, sala 205",
+    "neighborhood": "Praça Seca",
+    "city": "Rio de Janeiro",
+    "region": "RJ",
+    "country": "BR"
+  },
+  "areaServed": [
+    "Rio de Janeiro",
+    "Jacarepaguá",
+    "Taquara",
+    "Freguesia",
+    "Vila Valqueire",
+    "Barra da Tijuca",
+    "Recreio dos Bandeirantes",
+    "Tijuca",
+    "Niterói",
+    "São Gonçalo",
+    "Duque de Caxias",
+    "Nova Iguaçu",
+    "Nilópolis",
+    "São João de Meriti",
+    "Belford Roxo",
+    "Mesquita"
+  ],
+  "contact": {
+    "whatsapp": "+55 21 98617-1050",
+    "telephone": "+55 21 98617-1050",
+    "url": "https://www.tecdaniels.com.br/contato/"
+  },
+  "openingHours": [
+    "Mo-Fr 08:00-18:00",
+    "Sa 08:00-12:00"
+  ],
+  "brands": [
+    "Rinnai (assistência autorizada)",
+    "Lorenzetti",
+    "Komeco",
+    "Rheem",
+    "Bosch",
+    "Junkers",
+    "Orbis"
+  ],
+  "keyFacts": [
+    "Visita técnica em até 24 horas",
+    "Garantia de 90 dias em todos os serviços",
+    "Visita com diagnóstico R$ 160, não cobrada se o serviço for executado no mesmo atendimento",
+    "Manutenção preventiva a partir de R$ 220",
+    "Preço fechado antes do serviço",
+    "Normas ABNT NBR 13103, NBR 15526, RIP-RJ e padrão Naturgy"
+  ],
+  "links": {
+    "llms": "https://www.tecdaniels.com.br/llms.txt",
+    "llmsFull": "https://www.tecdaniels.com.br/llms-full.txt",
+    "faq": "https://www.tecdaniels.com.br/ai/faq.json",
+    "services": "https://www.tecdaniels.com.br/ai/service.json",
+    "reviews": "https://g.page/r/CeRlLWupLbrsEBM",
+    "maps": "https://maps.google.com/maps?cid=17057996744290035172"
+  }
+}

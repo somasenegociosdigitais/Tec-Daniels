@@ -10,6 +10,8 @@
  *   servico     nome do serviço, gera o nó Service do schema
  *   faq         [{ q, a }] — gera o nó FAQPage
  *   palavraChave  registro da palavra-chave principal da página (não vai ao HTML)
+ *   ogTitulo    opcional, título só para WhatsApp/redes (a home usa "TecDaniel's | ...")
+ *   ogImagem    opcional, JPG/PNG 1200x630 em /public (padrão: /og-tecdaniels.jpg)
  */
 import '../styles/global.css';
 import Header from '../components/Header.astro';
@@ -17,19 +19,40 @@ import Footer from '../components/Footer.astro';
 import WhatsAppCta from '../components/WhatsAppCta.astro';
 import { NEGOCIO, AREAS_SERVIDAS } from '../data/site.js';
 
-const { titulo, descricao, trilha = [], servico, faq = [], noindex = false } = Astro.props;
+const { titulo, descricao, trilha = [], servico, faq = [], noindex = false, ogTitulo, ogImagem = '/og-tecdaniels.jpg', ogAlt = "TecDaniel's: aquecedor a gás no Rio de Janeiro. Conserto, manutenção e instalação. WhatsApp (21) 98617-1050" } = Astro.props;
+const ogImg = new URL(ogImagem, NEGOCIO.site).href;
+
+// Preços de mão de obra. Precisam ser os mesmos do texto das páginas.
+const OFERTAS = [
+  { nome: 'Visita técnica com diagnóstico', preco: 160, obs: 'Não é cobrada se o serviço for aprovado e feito na mesma visita.', slug: 'quanto-custa-conserto-de-aquecedor' },
+  { nome: 'Manutenção de aquecedor a gás mecânico (pilha)', preco: 220, slug: 'manutencao-de-aquecedor-a-gas' },
+  { nome: 'Manutenção de aquecedor a gás eletrônico (tomada)', preco: 290, slug: 'manutencao-de-aquecedor-a-gas' },
+  { nome: 'Manutenção de pressurizador', preco: 220, slug: 'pressurizador-de-agua' },
+  { nome: 'Conversão de fogão GLP / gás natural', preco: 220, slug: 'conversao-de-fogao' },
+  { nome: 'Conserto de aquecedor a gás', slug: 'conserto-de-aquecedor-a-gas' },
+  { nome: 'Instalação de aquecedor a gás', slug: 'instalacao-de-aquecedor-a-gas' },
+  { nome: 'Venda de aquecedor a gás com instalação', slug: 'venda-de-aquecedor-a-gas' },
+  { nome: 'Gasista: rede de gás residencial e predial', slug: 'gasista' },
+  { nome: 'Teste de estanqueidade com laudo', slug: 'teste-de-estanqueidade' },
+];
 
 const url = new URL(Astro.url.pathname, NEGOCIO.site).href;
 const desc = descricao.replace(/\s+/g, ' ').trim();
 
 const empresa = {
-  '@type': 'LocalBusiness',
+  '@type': ['LocalBusiness', 'HVACBusiness'],
   '@id': NEGOCIO.site + '/#empresa',
   name: NEGOCIO.nome,
+  alternateName: NEGOCIO.marca,
+  logo: NEGOCIO.site + '/assets/perfil-tecdaniels.png',
+  image: [NEGOCIO.site + '/og-tecdaniels.jpg'],
+  taxID: NEGOCIO.cnpj,
+  foundingDate: '2003-10-04',
   description: 'Assistência técnica autorizada Rinnai. Conserto, manutenção, instalação e venda de aquecedores a gás, serviço de gasista e teste de estanqueidade no Rio de Janeiro. ' + NEGOCIO.anos + ' anos de experiência.',
   url: NEGOCIO.site,
   telephone: NEGOCIO.telefoneE164,
-  priceRange: '$$',
+  priceRange: 'R$ 160 a R$ 290 (mão de obra)',
+  currenciesAccepted: 'BRL',
   address: {
     '@type': 'PostalAddress',
     streetAddress: NEGOCIO.endereco.rua,
@@ -44,8 +67,14 @@ const empresa = {
     { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '18:00' },
     { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '12:00' },
   ],
-  aggregateRating: { '@type': 'AggregateRating', ratingValue: NEGOCIO.google.nota, reviewCount: String(NEGOCIO.google.total), bestRating: '5' },
-  sameAs: [NEGOCIO.google.url, NEGOCIO.rinnai],
+  // Sem aggregateRating: o Google não aceita a empresa marcar as próprias avaliações.
+  hasMap: 'https://maps.google.com/maps?cid=17057996744290035172',
+  sameAs: [NEGOCIO.google.url, NEGOCIO.rinnai, 'https://www.facebook.com/people/Tec-Daniels/61553668604598/'],
+  makesOffer: OFERTAS.map((o) => ({
+    '@type': 'Offer',
+    itemOffered: { '@type': 'Service', name: o.nome, url: NEGOCIO.site + '/' + o.slug + '/' },
+    ...(o.preco ? { price: o.preco, priceCurrency: 'BRL', description: o.obs || 'Valor da mão de obra.' } : {}),
+  })),
 };
 
 const grafo = [empresa, {
@@ -104,17 +133,26 @@ const jsonld = JSON.stringify({ '@context': 'https://schema.org', '@graph': graf
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content={NEGOCIO.marca}>
-<meta property="og:title" content={titulo}>
+<meta property="og:title" content={ogTitulo || titulo}>
 <meta property="og:description" content={desc}>
 <meta property="og:url" content={url}>
+<meta property="og:image" content={ogImg}>
+<meta property="og:image:secure_url" content={ogImg}>
+<meta property="og:image:type" content={ogImg.endsWith('.png') ? 'image/png' : 'image/jpeg'}>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content={ogAlt}>
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content={ogTitulo || titulo}>
+<meta name="twitter:description" content={desc}>
+<meta name="twitter:image" content={ogImg}>
+<meta name="author" content={NEGOCIO.marca}>
 <meta name="theme-color" content="#123C7A">
 <link rel="preload" href="/fonts/archivo-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/archivo-narrow-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="/assets/favicon-mascote-v3.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/icone-tela-inicio-v2.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#123C7A">
 <script type="application/ld+json" set:html={jsonld}></script>
 <script is:inline>
 /* GTM adiado: carrega na primeira interação (rolagem, toque, clique, tecla) ou

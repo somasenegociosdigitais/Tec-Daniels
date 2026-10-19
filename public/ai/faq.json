@@ -1,0 +1,34 @@
+{
+  "name": "Perguntas frequentes — TecDaniel's",
+  "url": "https://www.tecdaniels.com.br/",
+  "questions": [
+    {
+      "q": "Em quanto tempo o técnico chega?",
+      "a": "Visita técnica em até 24 horas no Rio de Janeiro e no Grande Rio."
+    },
+    {
+      "q": "Pago a visita se fizer o serviço?",
+      "a": "Não. A visita com diagnóstico custa R$ 160 apenas quando nenhum serviço é realizado no dia. Se você aprovar o orçamento e o técnico executar o serviço no mesmo atendimento, seja conserto, manutenção, instalação ou serviço de gás, essa taxa não é cobrada."
+    },
+    {
+      "q": "Quanto custa a manutenção do aquecedor a gás?",
+      "a": "R$ 220 no aquecedor mecânico (de pilha) e R$ 290 no eletrônico (de tomada)."
+    },
+    {
+      "q": "Quais marcas vocês atendem?",
+      "a": "Rinnai, como assistência técnica autorizada, e também Lorenzetti, Komeco, Rheem, Bosch, Junkers e Orbis."
+    },
+    {
+      "q": "O serviço tem garantia?",
+      "a": "Sim, 90 dias de garantia em todos os serviços."
+    },
+    {
+      "q": "Onde vocês atendem?",
+      "a": "Em todo o Rio de Janeiro, no Grande Rio e na Baixada Fluminense, com base na Praça Seca, em Jacarepaguá."
+    },
+    {
+      "q": "Como pedir orçamento?",
+      "a": "Pelo WhatsApp (21) 98617-1050 ou pelo formulário do site, que abre o WhatsApp com a mensagem pronta."
+    }
+  ]
+}

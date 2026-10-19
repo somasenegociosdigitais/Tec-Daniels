@@ -1,4 +1,11 @@
 # Hostinger (Apache). No Netlify/Cloudflare vale o public/_redirects.
+# 19/10/2026: + charset UTF-8 (llms.txt, ai/*.json), 301 da URL antiga com acento,
+# versão markdown da home para IAs.
+
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .txt .xml .json .md .webmanifest
+AddType application/json .json
+AddType text/markdown .md
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
@@ -31,6 +38,16 @@
   RewriteRule ^remanejamento-do-ponto-de-gas-do-fogao(\.html)?/?$ /remanejamento-de-ponto-de-gas/ [R=301,L]
   RewriteRule ^index/?$ / [R=301,L]
 
+  # URL antiga com acento (%C3%A1 = á). Pendência de 25/09.
+  RewriteCond %{THE_REQUEST} \s/aquecedor-nao-esquenta-a-(%C3%A1|%c3%a1|á)gua-causas/?[\s?] [NC]
+  RewriteRule ^ /aquecedor-nao-esquenta-a-agua/ [R=301,L]
+
+  # Versão em markdown da home para assistentes de IA (pedido com Accept: text/markdown).
+  # Visitante normal continua recebendo o HTML. Se o teste do pós-deploy mostrar
+  # markdown na home normal, apague estas 2 linhas.
+  RewriteCond %{HTTP:Accept} text/markdown [NC]
+  RewriteRule ^$ /index.md [L,T=text/markdown]
+
   # Qualquer URL antiga terminada em .html cujo slug virou pasta:
   # /quem-somos.html -> /quem-somos/
   RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
@@ -59,6 +76,14 @@ DirectoryIndex index.html index.php
 ErrorDocument 404 /404.html
 
 # HSTS: o navegador passa a pedir https direto, sem tentar http.
+<IfModule mod_headers.c>
+  <Files "index.md">
+    Header set Content-Type "text/markdown; charset=utf-8"
+    Header set Cache-Control "private, no-store"
+    Header set Vary "Accept"
+  </Files>
+</IfModule>
+
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 </IfModule>

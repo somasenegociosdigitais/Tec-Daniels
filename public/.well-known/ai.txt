@@ -1,0 +1,18 @@
+# ai.txt — TecDaniel's Soluções em Aquecedores
+# https://www.tecdaniels.com.br
+
+User-Agent: *
+Allow: /
+
+# Uso por assistentes de IA
+# Permitido citar e resumir o conteúdo deste site em respostas, com link para a página de origem.
+# Preços, horários e condições podem mudar: confirme sempre na página indicada.
+
+Name: TecDaniel's Soluções em Aquecedores
+Description: Assistência técnica autorizada Rinnai e especialista em aquecedores a gás no Rio de Janeiro desde 2003: conserto, manutenção, instalação e venda, e serviços de gasista.
+Location: Rua Cândido Benício, 1381, sala 205, Praça Seca, Rio de Janeiro - RJ, Brasil
+Contact: WhatsApp e telefone (21) 98617-1050 — https://www.tecdaniels.com.br/contato/
+Summary: https://www.tecdaniels.com.br/ai/summary.json
+LLMs: https://www.tecdaniels.com.br/llms.txt
+LLMs-Full: https://www.tecdaniels.com.br/llms-full.txt
+Sitemap: https://www.tecdaniels.com.br/sitemap-index.xml

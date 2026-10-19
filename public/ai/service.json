@@ -1,0 +1,65 @@
+{
+  "provider": "TecDaniel's Soluções em Aquecedores",
+  "currency": "BRL",
+  "services": [
+    {
+      "name": "Visita técnica com diagnóstico",
+      "price": 160,
+      "note": "Não cobrada se o serviço for executado no mesmo atendimento",
+      "url": "https://www.tecdaniels.com.br/quanto-custa-conserto-de-aquecedor/"
+    },
+    {
+      "name": "Conserto de aquecedor a gás",
+      "price": null,
+      "note": "Orçamento após diagnóstico, preço fechado antes do serviço",
+      "url": "https://www.tecdaniels.com.br/conserto-de-aquecedor-a-gas/"
+    },
+    {
+      "name": "Manutenção preventiva — aquecedor mecânico (pilha)",
+      "price": 220,
+      "url": "https://www.tecdaniels.com.br/manutencao-de-aquecedor-a-gas/"
+    },
+    {
+      "name": "Manutenção preventiva — aquecedor eletrônico (tomada)",
+      "price": 290,
+      "url": "https://www.tecdaniels.com.br/manutencao-de-aquecedor-a-gas/"
+    },
+    {
+      "name": "Manutenção preventiva de pressurizador",
+      "price": 220,
+      "url": "https://www.tecdaniels.com.br/pressurizador-de-agua/"
+    },
+    {
+      "name": "Conversão de fogão GLP / gás natural",
+      "price": 220,
+      "url": "https://www.tecdaniels.com.br/conversao-de-fogao/"
+    },
+    {
+      "name": "Instalação de aquecedor a gás",
+      "price": null,
+      "url": "https://www.tecdaniels.com.br/instalacao-de-aquecedor-a-gas/"
+    },
+    {
+      "name": "Venda de aquecedor a gás com instalação",
+      "price": null,
+      "url": "https://www.tecdaniels.com.br/venda-de-aquecedor-a-gas/"
+    },
+    {
+      "name": "Gasista — rede de gás",
+      "price": null,
+      "url": "https://www.tecdaniels.com.br/gasista/"
+    },
+    {
+      "name": "Teste de estanqueidade com laudo",
+      "price": null,
+      "url": "https://www.tecdaniels.com.br/teste-de-estanqueidade/"
+    },
+    {
+      "name": "Teste de vazamento de gás",
+      "price": null,
+      "url": "https://www.tecdaniels.com.br/teste-de-vazamento-de-gas/"
+    }
+  ],
+  "warranty": "90 dias",
+  "responseTime": "Visita em até 24 horas"
+}
