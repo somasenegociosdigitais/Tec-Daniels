@@ -54,7 +54,8 @@
             "q": "O serviço tem garantia?",
             "a": "Sim, o serviço tem garantia de 90 dias, com peças originais."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "manutencao-de-aquecedor-a-gas": {
         "seoTitulo": "Manutenção de aquecedor a gás no Rio de Janeiro | TecDaniel's",
@@ -141,7 +142,8 @@
             "faixa": "R$ 290"
           }
         ],
-        "notaPrecos": "Quem faz a manutenção não paga a visita técnica. Se a revisão encontrar peça com defeito, a troca é orçada à parte, com preço fechado antes da execução."
+        "notaPrecos": "Quem faz a manutenção não paga a visita técnica. Se a revisão encontrar peça com defeito, a troca é orçada à parte, com preço fechado antes da execução.",
+        "atualizado": "2026-10-20"
       },
       "instalacao-de-aquecedor-a-gas": {
         "seoTitulo": "Instalação de aquecedor a gás no Rio | TecDaniel's",
@@ -188,7 +190,8 @@
             "q": "Vocês vendem o aquecedor também?",
             "a": "Sim. Trabalhamos com as principais marcas e fazemos a venda com instalação, indicando o modelo dimensionado para o seu consumo."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "teste-de-estanqueidade": {
         "seoTitulo": "Teste de estanqueidade de gás no Rio | TecDaniel's",
@@ -235,7 +238,8 @@
             "q": "Vocês atendem condomínio inteiro?",
             "a": "Sim. Organizamos o atendimento por unidade e entregamos relatório consolidado para a administradora."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "teste-de-vazamento-de-gas": {
         "seoTitulo": "Teste de vazamento de gás no Rio de Janeiro | TecDaniel's",
@@ -282,7 +286,8 @@
             "q": "Recebo laudo do serviço?",
             "a": "Sim. Depois do reparo, realizamos o teste de estanqueidade e emitimos o laudo do serviço executado."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "gasista": {
         "seoTitulo": "Gasista no Rio de Janeiro e Grande Rio | TecDaniel's",
@@ -329,7 +334,8 @@
             "q": "Atendem condomínios?",
             "a": "Sim. Atendemos condomínios, inclusive serviços de prumada e cronograma por unidade, com relatório para a administradora."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "remanejamento-de-ponto-de-gas": {
         "seoTitulo": "Remanejamento de ponto de gás no Rio | TecDaniel's",
@@ -380,7 +386,8 @@
             "q": "O serviço tem laudo?",
             "a": "Sim. Todo remanejamento termina com teste de estanqueidade e laudo assinado do trecho executado."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "substituicao-de-tubulacao-de-gas": {
         "seoTitulo": "Substituição de tubulação de gás no Rio | TecDaniel's",
@@ -427,7 +434,8 @@
             "q": "O serviço tem laudo?",
             "a": "Sim. Após a execução, fazemos o teste de estanqueidade e emitimos o laudo do serviço."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "instalacao-de-fogao-e-cooktop": {
         "seoTitulo": "Instalação de fogão e cooktop no Rio | TecDaniel's",
@@ -478,7 +486,8 @@
             "q": "Posso instalar cooktop e forno no mesmo ponto?",
             "a": "Pode, desde que a instalação permita uma derivação adequada e haja registro para cada aparelho. Avaliamos o ponto antes da execução."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "aplicacao-de-resina-em-tubulacao": {
         "seoTitulo": "Resina em tubulação de gás no Rio de Janeiro | TecDaniel's",
@@ -525,7 +534,8 @@
             "q": "Como sei que funcionou?",
             "a": "Após a aplicação, refazemos o teste de estanqueidade para verificar a vedação e emitimos o laudo do serviço."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "pressurizador-lorenzetti": {
         "seoTitulo": "Pressurizador Lorenzetti no Rio de Janeiro | TecDaniel's",
@@ -576,7 +586,8 @@
             "q": "Vocês têm PL-20 ou PL-400?",
             "a": "Trazemos sob consulta. São modelos de pressão maior, indicados para coluna alta ou casa com vários pontos abrindo ao mesmo tempo."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "pressurizador-komeco": {
         "seoTitulo": "Pressurizador Komeco no Rio de Janeiro | TecDaniel's",
@@ -627,7 +638,8 @@
             "q": "Vocês têm TP820 ou TP825?",
             "a": "Trazemos sob consulta, conforme a necessidade da instalação avaliada na visita."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "conversao-de-fogao": {
         "seoTitulo": "Conversão de fogão para gás natural no Rio | TecDaniel's",
@@ -682,7 +694,8 @@
             "q": "Convertem fogão Electrolux, Brastemp, Consul?",
             "a": "Sim. Trabalhamos com todas as marcas, nos dois sentidos: do botijão para o gás encanado e do encanado para o GLP."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "aquecedor-de-fluxo-balanceado": {
         "seoTitulo": "Aquecedor de fluxo balanceado no Rio | TecDaniel's",
@@ -733,7 +746,8 @@
             "q": "O condomínio exigiu fluxo balanceado na reforma. Vocês fazem?",
             "a": "Sim, com dimensionamento, instalação, teste de estanqueidade e laudo para apresentar à administradora."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "venda-de-aquecedor-a-gas": {
         "seoTitulo": "Venda de aquecedor a gás no Rio de Janeiro | TecDaniel's",
@@ -793,7 +807,8 @@
             "q": "Preciso trocar a tubulação para instalar?",
             "a": "Nem sempre. Avaliamos a rede existente, a pressão e a exaustão antes da compra e informamos se há custo adicional — nunca depois de o aparelho já estar comprado."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "quanto-custa-conserto-de-aquecedor": {
         "seoTitulo": "Quanto custa consertar aquecedor a gás no Rio | TecDaniel's",
@@ -884,7 +899,8 @@
             "q": "Tem nota fiscal e garantia?",
             "a": "Sim. Emitimos nota fiscal em todo atendimento e oferecemos garantia de 90 dias no serviço, com peça original."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "manutencao-para-condominios": {
         "seoTitulo": "Manutenção de aquecedor a gás para condomínios | TecDaniel's",
@@ -940,7 +956,8 @@
             "q": "Emitem nota fiscal para a administradora?",
             "a": "Sim. Emitimos nota fiscal com CNPJ e discriminação por unidade, no formato necessário para a prestação de contas da administradora."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "aquecedor-nao-esquenta-a-agua": {
         "seoTitulo": "Aquecedor não esquenta a água: causas | TecDaniel's",
@@ -1000,7 +1017,8 @@
             "q": "Quanto custa o conserto e em quanto tempo o técnico chega?",
             "a": "A visita técnica é feita em até 24 horas no Rio, Grande Rio e Baixada Fluminense e custa R$ 160. Se você aprovar o orçamento e o serviço for executado na mesma visita, essa taxa não é cobrada. A manutenção preventiva sai por R$ 220 no aparelho mecânico e R$ 290 no eletrônico. Havendo troca de peça, o valor depende da peça e é informado com preço fechado antes da execução."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       },
       "pressurizador-de-agua": {
         "seoTitulo": "Pressurizador de água no Rio de Janeiro | TecDaniel's",
@@ -1055,7 +1073,8 @@
             "q": "Existe pressurizador só para a torneira ou o chuveiro?",
             "a": "Sim. O pressurizador de ponto pode atender uma torneira, chuveiro ou aquecedor específico quando apenas aquele ponto apresenta baixa pressão."
           }
-        ]
+        ],
+        "atualizado": "2026-10-20"
       }
     },
     "SINAIS": {
@@ -2193,7 +2212,8 @@
           }
         ],
         "ctaTitulo": "Aquecedor com problema na Barra? Fale conosco.",
-        "promessa": "Visita técnica em até 24 horas"
+        "promessa": "Visita técnica em até 24 horas",
+        "atualizado": "2026-10-20"
       },
       "jacarepagua": {
         "seoTitulo": "Gasista e aquecedor a gás em Jacarepaguá | TecDaniel's",
@@ -2279,7 +2299,8 @@
             "a": "Sim. Atendemos toda a região de Jacarepaguá, incluindo Taquara, Tanque, Freguesia, Pechincha, Anil, Curicica e Gardênia Azul."
           }
         ],
-        "ctaTitulo": "Precisa de gasista em Jacarepaguá? Fale conosco."
+        "ctaTitulo": "Precisa de gasista em Jacarepaguá? Fale conosco.",
+        "atualizado": "2026-10-20"
       },
       "recreio-dos-bandeirantes": {
         "seoTitulo": "Aquecedor a gás no Recreio dos Bandeirantes | TecDaniel's",
@@ -2360,7 +2381,8 @@
           }
         ],
         "ctaTitulo": "Aquecedor com problema no Recreio? Fale conosco.",
-        "promessa": "Visita técnica em até 24 horas"
+        "promessa": "Visita técnica em até 24 horas",
+        "atualizado": "2026-10-20"
       },
       "freguesia": {
         "seoTitulo": "Gasista e aquecedor a gás na Freguesia | TecDaniel's",
@@ -2440,7 +2462,8 @@
           }
         ],
         "ctaTitulo": "Precisa de laudo ou gasista na Freguesia? Fale conosco.",
-        "promessa": "Atendimento no mesmo dia, bairro vizinho"
+        "promessa": "Atendimento no mesmo dia, bairro vizinho",
+        "atualizado": "2026-10-20"
       },
       "taquara": {
         "seoTitulo": "Aquecedor a gás e gasista na Taquara | TecDaniel's",
@@ -2522,7 +2545,8 @@
             "a": "Sim. Realizamos o teste com manômetro calibrado e emitimos laudo assinado para apresentação à concessionária ou administradora."
           }
         ],
-        "ctaTitulo": "Aquecedor ou gás na Taquara? Fale conosco."
+        "ctaTitulo": "Aquecedor ou gás na Taquara? Fale conosco.",
+        "atualizado": "2026-10-20"
       },
       "vila-valqueire": {
         "seoTitulo": "Conserto de aquecedor a gás em Vila Valqueire | TecDaniel's",
@@ -2607,7 +2631,8 @@
           }
         ],
         "ctaTitulo": "Aquecedor com defeito em Vila Valqueire? Fale conosco.",
-        "promessa": "Atendimento no mesmo dia, bairro vizinho"
+        "promessa": "Atendimento no mesmo dia, bairro vizinho",
+        "atualizado": "2026-10-20"
       },
       "tijuca": {
         "seoTitulo": "Aquecedor a gás e gasista na Tijuca | TecDaniel's",
@@ -2689,7 +2714,8 @@
           }
         ],
         "ctaTitulo": "Aquecedor com problema na Tijuca? Fale conosco.",
-        "promessa": "Visita técnica em até 24 horas"
+        "promessa": "Visita técnica em até 24 horas",
+        "atualizado": "2026-10-20"
       }
     },
     "AVALIACOES": {
@@ -3004,7 +3030,8 @@
             "a": "Sim. Fazemos venda com instalação, dimensionamento e ligação nos padrões exigidos pela Naturgy."
           }
         ],
-        "ctaTitulo": "Aquecedor Rinnai com problema? Fale com a autorizada."
+        "ctaTitulo": "Aquecedor Rinnai com problema? Fale com a autorizada.",
+        "atualizado": "2026-10-20"
       },
       "lorenzetti": {
         "seoTitulo": "Assistência técnica Lorenzetti no Rio | TecDaniel's",
@@ -3119,7 +3146,8 @@
             "a": "Avaliamos o modelo antes de agendar. Nosso foco é a linha a gás, e alguns aquecedores elétricos podem não compensar o reparo."
           }
         ],
-        "ctaTitulo": "Aquecedor Lorenzetti com defeito? Fale conosco."
+        "ctaTitulo": "Aquecedor Lorenzetti com defeito? Fale conosco.",
+        "atualizado": "2026-10-20"
       },
       "komeco": {
         "seoTitulo": "Assistência técnica Komeco no Rio de Janeiro | TecDaniel's",
@@ -3230,7 +3258,8 @@
             "a": "É uma linha intermediária que pode atender bem quando o modelo é corretamente dimensionado e instalado. A manutenção periódica também influencia diretamente o funcionamento."
           }
         ],
-        "ctaTitulo": "Aquecedor ou pressurizador Komeco? Fale conosco."
+        "ctaTitulo": "Aquecedor ou pressurizador Komeco? Fale conosco.",
+        "atualizado": "2026-10-20"
       },
       "rheem": {
         "seoTitulo": "Assistência técnica Rheem no Rio de Janeiro | TecDaniel's",
@@ -3341,7 +3370,8 @@
             "a": "Sim. Fazemos o dimensionamento da instalação, verificamos a exaustão e realizamos o teste de estanqueidade com laudo."
           }
         ],
-        "ctaTitulo": "Aquecedor Rheem com defeito? Fale conosco."
+        "ctaTitulo": "Aquecedor Rheem com defeito? Fale conosco.",
+        "atualizado": "2026-10-20"
       },
       "bosch": {
         "seoTitulo": "Assistência técnica Bosch e Junkers no Rio | TecDaniel's",
@@ -3444,7 +3474,8 @@
             "a": "Para boa parte dos modelos, sim. Verificamos a disponibilidade da peça antes de fechar o orçamento."
           }
         ],
-        "ctaTitulo": "Aquecedor Bosch ou Junkers? Fale conosco."
+        "ctaTitulo": "Aquecedor Bosch ou Junkers? Fale conosco.",
+        "atualizado": "2026-10-20"
       },
       "orbis": {
         "seoTitulo": "Assistência técnica Orbis no Rio de Janeiro | TecDaniel's",
@@ -3547,7 +3578,8 @@
             "a": "Sim. Fazemos o dimensionamento, adequação da exaustão, ligação em padrão Naturgy e remoção do aparelho antigo."
           }
         ],
-        "ctaTitulo": "Aquecedor Orbis com problema? Fale conosco."
+        "ctaTitulo": "Aquecedor Orbis com problema? Fale conosco.",
+        "atualizado": "2026-10-20"
       }
     },
     "RELACIONADAS": {
@@ -3651,7 +3683,8 @@
         ],
         "ctaTitulo": "Fale agora com um técnico especialista.",
         "seoDescricao": "Desde 2003 só com aquecedor a gás no Rio: assistência autorizada Rinnai, normas ABNT e padrão Naturgy. Você fala direto com o técnico, não com um call center.",
-        "seoTitulo": "Desde 2003 com aquecedor a gás no Rio | TecDaniel's"
+        "seoTitulo": "Desde 2003 com aquecedor a gás no Rio | TecDaniel's",
+        "atualizado": "2026-10-20"
       },
       "contato": {
         "seoTitulo": "Contato | Aquecedor a gás no Rio de Janeiro | TecDaniel's",
@@ -3699,7 +3732,8 @@
             "quando": "2025"
           }
         ],
-        "ctaTitulo": "Chame agora. Orçamento sem compromisso."
+        "ctaTitulo": "Chame agora. Orçamento sem compromisso.",
+        "atualizado": "2026-10-20"
       },
       "area-de-atendimento": {
         "seoTitulo": "Área de atendimento no Rio e Grande Rio | TecDaniel's",
@@ -3752,7 +3786,8 @@
             "quando": "Cliente há mais de 5 anos"
           }
         ],
-        "ctaTitulo": "Atendemos o seu bairro. Fale conosco."
+        "ctaTitulo": "Atendemos o seu bairro. Fale conosco.",
+        "atualizado": "2026-10-20"
       }
     },
     "DADOS": [

@@ -8,6 +8,7 @@ import FaixaCta from '../components/FaixaCta.astro';
 import Faq from '../components/Faq.astro';
 import { NEGOCIO } from '../data/site.js';
 import conteudo from '../data/conteudo.json';
+import FormContato from '../components/FormContato.astro';
 
 const { slug } = Astro.props;
 const { MARCAS, RELACIONADAS, ICONES } = conteudo.marca;
@@ -27,6 +28,7 @@ const garantias = [
 ];
 
 const temSelo = slug === 'rinnai';
+const nomeMarca = { rinnai: 'Rinnai', lorenzetti: 'Lorenzetti', komeco: 'Komeco', rheem: 'Rheem', bosch: 'Bosch', orbis: 'Orbis' }[slug] || '';
 const sinais = (m.sinais || []).map((s) => ({ icone: s.icon, titulo: s.title, texto: s.t }));
 const relacionados = (RELACIONADAS[slug] || []).map((k) => ({
   icone: ICONES ? ICONES[k] : 'flame', titulo: MARCAS[k].rotulo, texto: MARCAS[k].curto,
@@ -170,6 +172,12 @@ const relacionados = (RELACIONADAS[slug] || []).map((k) => ({
 ))}
 </div>
 <p class="t-corpo texto-links">Precisa de outro serviço? Veja <a href="/"><b>todos os nossos serviços de aquecedor e gás</b></a> ou fale direto com um técnico.</p>
+</div>
+</section>
+
+<section class="secao secao--alt" id="orcamento">
+<div class="env">
+<FormContato marcaPadrao={nomeMarca} />
 </div>
 </section>
 

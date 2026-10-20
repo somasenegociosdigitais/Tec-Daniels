@@ -9,6 +9,7 @@ import Faq from '../components/Faq.astro';
 import Avaliacoes from '../components/Avaliacoes.astro';
 import { NEGOCIO } from '../data/site.js';
 import conteudo from '../data/conteudo.json';
+import FormContato from '../components/FormContato.astro';
 
 const { slug } = Astro.props;
 const { BAIRROS, AVALIACOES, VIZINHOS, MAPA_SERVICOS } = conteudo.bairro;
@@ -170,6 +171,12 @@ const vizinhos = (VIZINHOS[slug] || []).map((v) => {
 {vizinhos.map((v) => (<a href={v.href} class="ficha">{v.label}</a>))}
 </div>
 <p class="t-corpo texto-links">Volte para <a href="/">aquecedores a gás no Rio de Janeiro</a> e veja todos os serviços.</p>
+</div>
+</section>
+
+<section class="secao secao--alt" id="orcamento">
+<div class="env">
+<FormContato titulo={'Peça seu orçamento ' + b.nomeCom} />
 </div>
 </section>
 
