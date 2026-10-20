@@ -7,6 +7,7 @@ import FaixaCta from '../components/FaixaCta.astro';
 import Avaliacoes from '../components/Avaliacoes.astro';
 import { NEGOCIO, BAIRROS as BAIRROS_SITE } from '../data/site.js';
 import conteudo from '../data/conteudo.json';
+import FormContato from '../components/FormContato.astro';
 
 const { slug } = Astro.props;
 const { PAGINAS, DADOS, NORMAS, BAIRROS, OUTRAS } = conteudo.institucional;
@@ -96,6 +97,14 @@ const bairros = BAIRROS.map((b) => ({ ...b, href: '/aquecedor-a-gas-' + b.slug +
 </div>
 </div>
 </section>
+
+{slug === 'contato' && (
+<section class="secao secao--alt" id="orcamento">
+<div class="env">
+<FormContato titulo="Peça seu orçamento pelo WhatsApp" />
+</div>
+</section>
+)}
 
 {p.temBairros && (
 <section class="secao secao--alt">

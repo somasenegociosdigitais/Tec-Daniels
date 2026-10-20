@@ -96,7 +96,9 @@ a.form-ct__botao{display:flex;align-items:center;justify-content:center;text-dec
   document.querySelectorAll('form.form-ct').forEach((form) => {
     const erro = form.querySelector('.form-ct__erro');
     form.telefone.addEventListener('input', () => {
-      const d = form.telefone.value.replace(/\D/g, '').slice(0, 11);
+      let d = form.telefone.value.replace(/\D/g, '');
+      if (d.length >= 12 && d.startsWith('55')) d = d.slice(2);
+      d = d.slice(0, 11);
       form.telefone.value = d.length >= 10 ? '(' + d.slice(0, 2) + ') ' + d.slice(2, d.length - 4) + '-' + d.slice(-4) : d;
     });
     form.addEventListener('input', (e) => {
@@ -106,6 +108,7 @@ a.form-ct__botao{display:flex;align-items:center;justify-content:center;text-dec
       e.preventDefault();
       const v = (k) => String(form[k].value || '').trim();
       let d = v('telefone').replace(/\D/g, '');
+      if (d.length >= 12 && d.startsWith('55')) d = d.slice(2);
       if (d.length === 8 || d.length === 9) d = '21' + d;
       const tel = d.length >= 10 ? '(' + d.slice(0, 2) + ') ' + d.slice(2, d.length - 4) + '-' + d.slice(-4) : '';
       const checar = [

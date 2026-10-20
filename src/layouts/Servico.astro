@@ -12,6 +12,7 @@ import { NEGOCIO } from '../data/site.js';
 import conteudo from '../data/conteudo.json';
 import FotosObra from '../components/FotosObra.astro';
 import { FOTOS_POR_PAGINA } from '../data/fotos.js';
+import FormContato from '../components/FormContato.astro';
 
 const { slug } = Astro.props;
 const { PAGINAS, SINAIS, RELACIONADOS, AVALIACOES, MODELOS, ICONES, SITUACOES } = conteudo.servico;
@@ -39,6 +40,17 @@ const relacionados = (RELACIONADOS[slug] || []).map((k) => ({
 }));
 const temSelo = slug === 'manutencao-para-condominios' || slug === 'venda-de-aquecedor-a-gas';
 const fotos = FOTOS_POR_PAGINA[slug];
+const FORM_SERVICO = {
+  'conserto-de-aquecedor-a-gas': 'Conserto de aquecedor', 'aquecedor-nao-esquenta-a-agua': 'Conserto de aquecedor', 'quanto-custa-conserto-de-aquecedor': 'Conserto de aquecedor',
+  'manutencao-de-aquecedor-a-gas': 'Manutenção / revisão anual', 'manutencao-para-condominios': 'Manutenção / revisão anual',
+  'instalacao-de-aquecedor-a-gas': 'Instalação de aquecedor', 'aquecedor-de-fluxo-balanceado': 'Instalação de aquecedor',
+  'venda-de-aquecedor-a-gas': 'Compra de aquecedor novo',
+  'gasista': 'Gasista / rede de gás', 'remanejamento-de-ponto-de-gas': 'Gasista / rede de gás', 'substituicao-de-tubulacao-de-gas': 'Gasista / rede de gás', 'aplicacao-de-resina-em-tubulacao': 'Gasista / rede de gás',
+  'teste-de-estanqueidade': 'Teste de estanqueidade / vazamento', 'teste-de-vazamento-de-gas': 'Teste de estanqueidade / vazamento',
+  'conversao-de-fogao': 'Conversão ou instalação de fogão', 'instalacao-de-fogao-e-cooktop': 'Conversão ou instalação de fogão',
+  'pressurizador-de-agua': 'Pressurizador de água', 'pressurizador-lorenzetti': 'Pressurizador de água', 'pressurizador-komeco': 'Pressurizador de água',
+};
+const FORM_MARCA = { 'pressurizador-lorenzetti': 'Lorenzetti', 'pressurizador-komeco': 'Komeco' };
 ---
 <Base
   titulo={p.seoTitulo || p.h1 + " | TecDaniel's"}
@@ -68,7 +80,7 @@ const fotos = FOTOS_POR_PAGINA[slug];
 <p class="t-corpo" style="color:#E4ECF8">{p.resumo}</p>
 <div class="linha" style="gap:var(--sp-2)">
 <span class="heroi__estrelas">★★★★★</span>
-<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · {NEGOCIO.google.total} avaliações · {NEGOCIO.anos} anos no Rio de Janeiro</span>
+<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · no Rio de Janeiro desde 2003</span>
 </div>
 {temSelo && (
   <a href={NEGOCIO.rinnai} target="_blank" rel="noopener" class="heroi__rinnai" style="width:fit-content">
@@ -230,6 +242,12 @@ const fotos = FOTOS_POR_PAGINA[slug];
 ))}
 </div>
 <p class="t-corpo texto-links">Precisa de outro serviço? Fale com <a href="/"><b>a TecDaniel's, soluções em aquecedores a gás</b></a>, ou chame um técnico agora mesmo.</p>
+</div>
+</section>
+
+<section class="secao secao--alt" id="orcamento">
+<div class="env">
+<FormContato servicoPadrao={FORM_SERVICO[slug] || ''} marcaPadrao={FORM_MARCA[slug] || ''} />
 </div>
 </section>
 
