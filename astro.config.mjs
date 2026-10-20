@@ -1,12 +1,21 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { execSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
+
+// O texto de 35 páginas fica em src/data/conteudo.json, não no arquivo da página.
+// Cada página tem ali o campo "atualizado" (AAAA-MM-DD): ao mudar o texto de uma
+// página, atualize esse campo só nela. O sitemap usa a data mais recente entre
+// esse campo e o último commit do arquivo da página.
+const conteudo = JSON.parse(readFileSync('./src/data/conteudo.json', 'utf8'));
+const ATUALIZADO = {};
+for (const [k, p] of Object.entries(conteudo.servico.PAGINAS)) ATUALIZADO[k] = p.atualizado;
+for (const [k, p] of Object.entries(conteudo.bairro.BAIRROS)) ATUALIZADO['aquecedor-a-gas-' + k] = p.atualizado;
+for (const [k, p] of Object.entries(conteudo.marca.MARCAS)) ATUALIZADO['assistencia-tecnica-' + k] = p.atualizado;
+for (const [k, p] of Object.entries(conteudo.institucional.PAGINAS)) ATUALIZADO[k] = p.atualizado;
 
 // Data real da última alteração de cada página, tirada do histórico do git.
-// Se a página não for encontrada, o sitemap simplesmente não leva data para ela.
-function dataDoGit(url) {
-  const slug = new URL(url).pathname.replace(/^\/|\/$/g, '') || 'index';
+function dataDoGit(slug) {
   const arquivo = [`src/pages/${slug}.astro`, `src/pages/${slug}/index.astro`, `src/pages/${slug}.md`].find(existsSync);
   if (!arquivo) return undefined;
   try {
@@ -14,6 +23,14 @@ function dataDoGit(url) {
   } catch {
     return undefined;
   }
+}
+
+function dataDaPagina(url) {
+  const slug = new URL(url).pathname.replace(/^\/|\/$/g, '') || 'index';
+  const datas = [dataDoGit(slug), ATUALIZADO[slug] && ATUALIZADO[slug] + 'T12:00:00-03:00']
+    .filter(Boolean).map((d) => new Date(d)).filter((d) => !isNaN(d));
+  if (!datas.length) return undefined;
+  return new Date(Math.max(...datas)).toISOString();
 }
 
 export default defineConfig({
@@ -26,18 +43,12 @@ export default defineConfig({
 
   integrations: [
     sitemap({
-      // Tira do sitemap as páginas noindex (/mapa/ e /politica-de-privacidade/):
-      // sitemap só deve listar páginas que o Google pode indexar.
+      // Tira do sitemap as páginas noindex (/mapa/ e /politica-de-privacidade/).
       filter: (page) => !page.includes('/mapa/') && !page.includes('/politica-de-privacidade/'),
-      // Troque a opção `lastmod: new Date()` (se existir) por isto: hoje todas as 39 URLs
-      // saem com a mesma data do build e o Google ignora o campo. Com a data do git,
-      // cada página leva a data real da última alteração (o que também conta como
-      // "frescor" para os buscadores de IA).
-      // ATENÇÃO: se o build roda no GitHub Actions, o checkout precisa de `fetch-depth: 0`,
-      // senão o git só enxerga o último commit e todas as datas ficam iguais.
+      // O GitHub Actions precisa de `fetch-depth: 0` no checkout (já está no deploy.yml).
       changefreq: 'monthly',
       serialize(item) {
-        const data = dataDoGit(item.url);
+        const data = dataDaPagina(item.url);
         if (data) item.lastmod = data;
         return item;
       },
