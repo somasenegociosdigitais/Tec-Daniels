@@ -10,8 +10,8 @@
         "resumo": "Aquecedor que não acende, água fria, chama instável ou aparelho que desarma durante o banho? Identificamos a causa antes de trocar qualquer peça, informamos o preço fechado e oferecemos garantia de 90 dias no serviço.",
         "h2": "Aquecedor com defeito, diagnóstico antes da troca de peça",
         "p1": "O conserto começa pela identificação da causa, não pela troca de peças. Medimos a pressão de gás e de água, testamos sensor de fluxo, placa e eletrodo de ignição e verificamos a exaustão. Só depois do diagnóstico apresentamos o orçamento fechado para você decidir se quer executar o serviço.",
-        "p2": "Entre os problemas mais comuns estão aparelho que não acende, água que não esquenta, temperatura oscilando durante o banho, chama amarela, vazamento de água e desarme frequente. Conforme o diagnóstico, fazemos a troca de sensor, placa, membrana, pressostato, eletrodo ou trocador de calor.",
-        "p3": "Trabalhamos com aquecedores a gás das marcas Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem, incluindo modelos de passagem, digitais e equipamentos para condomínio. Atendemos tanto o mecânico, de acendimento por pilha, quanto o eletrônico ligado na tomada — os dois são aquecedores a gás. Aquecedor de resistência elétrica e aquecedor solar ficam fora do nosso escopo. Somos assistência técnica autorizada Rinnai e seguimos os padrões exigidos pela Naturgy.",
+        "p2": "Entre os problemas mais comuns estão aparelho que não acende, <a href=\"/aquecedor-nao-esquenta-a-agua/\">água que não esquenta</a>, temperatura oscilando durante o banho, chama amarela, vazamento de água e desarme frequente. Conforme o diagnóstico, fazemos a troca de sensor, placa, membrana, pressostato, eletrodo ou trocador de calor.",
+        "p3": "Trabalhamos com aquecedores a gás das marcas Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem, incluindo modelos de passagem, digitais e equipamentos para condomínio. Atendemos tanto o mecânico, de acendimento por pilha, quanto o eletrônico ligado na tomada — os dois são aquecedores a gás. Aquecedor de resistência elétrica e aquecedor solar ficam fora do nosso escopo. Somos <a href=\"/assistencia-tecnica-rinnai/\">assistência técnica autorizada Rinnai</a> e seguimos os padrões exigidos pela Naturgy. Para o defeito não voltar, indicamos a <a href=\"/manutencao-de-aquecedor-a-gas/\">manutenção de aquecedor a gás</a> uma vez por ano. Os valores estão em <a href=\"/quanto-custa-conserto-de-aquecedor/\">quanto custa o conserto de aquecedor</a>.",
         "checklist": [
           "Diagnóstico técnico com preço fechado",
           "Aparelho que não acende",
@@ -57,7 +57,7 @@
         ]
       },
       "manutencao-de-aquecedor-a-gas": {
-        "seoTitulo": "Manutenção de aquecedor a gás no Rio | TecDaniel's",
+        "seoTitulo": "Manutenção de aquecedor a gás no Rio de Janeiro | TecDaniel's",
         "seoDescricao": "Revisão anual do aquecedor a gás no Rio a partir de R$ 220, para manter o rendimento e gastar menos gás. Visita em até 24h e 90 dias de garantia. WhatsApp.",
         "rotulo": "Manutenção de aquecedor a gás",
         "curto": "Revisão preventiva para evitar falhas, desperdício e consertos maiores.",
@@ -65,8 +65,8 @@
         "resumo": "Limpeza, regulagem e revisão dos principais componentes para manter o aquecedor funcionando corretamente, reduzir o consumo de gás e diminuir riscos relacionados à combustão. A recomendação é fazer a revisão uma vez por ano.",
         "h2": "Aquecedor revisado trabalha melhor e evita problemas maiores",
         "p1": "Na manutenção, limpamos queimadores e trocador de calor, medimos a pressão de gás e de água, testamos o sensor de fluxo e verificamos a exaustão e a ventilação. A limpeza adequada ajuda o aparelho a transferir calor com mais eficiência e evita que sujeira comprometa o funcionamento.",
-        "p2": "A manutenção preventiva também permite identificar desgaste antes que ele vire uma falha mais cara. Sujeira no trocador prejudica a transferência de calor e pode aumentar o esforço do equipamento. Em locais com uso intenso, como prédios e academias, a revisão pode ser necessária a cada seis meses.",
-        "p3": "Quem procura manutenção de aquecedor no Rio encontra empresas que atendem também solar e elétrico. Aqui é só gás: fazemos manutenção de aquecedores Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem. Para condomínios e administradoras, também oferecemos contrato de manutenção programada e acompanhamento dos aparelhos.",
+        "p2": "A manutenção preventiva também permite identificar desgaste antes que ele vire uma falha mais cara. Sujeira no trocador prejudica a transferência de calor e pode aumentar o esforço do equipamento. Em locais com uso intenso, como prédios e academias, a revisão pode ser necessária a cada seis meses. Se o aparelho já está com defeito, o caminho é o <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a>; a manutenção é para o aquecedor que ainda funciona e precisa continuar assim.",
+        "p3": "Quem procura manutenção de aquecedor no Rio encontra empresas que atendem também solar e elétrico. Aqui é só gás: fazemos manutenção de aquecedores Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem. Para condomínios e administradoras, também oferecemos contrato de <a href=\"/manutencao-para-condominios/\">manutenção programada</a> e acompanhamento dos aparelhos.",
         "checklist": [
           "Limpeza de queimadores",
           "Limpeza do trocador de calor",
@@ -125,7 +125,23 @@
             "q": "Vocês fazem contrato para condomínio?",
             "a": "Sim. Trabalhamos com manutenção programada e relatório por aparelho para a administradora."
           }
-        ]
+        ],
+        "temPrecos": true,
+        "tituloPrecos": "Quanto custa a manutenção de aquecedor a gás",
+        "introPrecos": "Preço de mão de obra da revisão completa, informado antes de agendar.",
+        "precos": [
+          {
+            "servico": "Aquecedor mecânico (pilha)",
+            "fator": "Limpeza de queimadores e trocador, regulagem da chama e testes de pressão e vazamento",
+            "faixa": "R$ 220"
+          },
+          {
+            "servico": "Aquecedor eletrônico (tomada)",
+            "fator": "Tudo do mecânico, mais a revisão elétrica e da placa",
+            "faixa": "R$ 290"
+          }
+        ],
+        "notaPrecos": "Quem faz a manutenção não paga a visita técnica. Se a revisão encontrar peça com defeito, a troca é orçada à parte, com preço fechado antes da execução."
       },
       "instalacao-de-aquecedor-a-gas": {
         "seoTitulo": "Instalação de aquecedor a gás no Rio | TecDaniel's",
@@ -136,8 +152,8 @@
         "resumo": "O aparelho precisa ser dimensionado de acordo com os pontos de água utilizados ao mesmo tempo. Fazemos a instalação, tubulação, adequação da exaustão, teste de vazamento e regulagem final, seguindo as normas e os padrões exigidos pela Naturgy.",
         "h2": "Aquecedor seguro começa com o dimensionamento correto",
         "p1": "Antes de instalar, avaliamos quantos pontos de água serão utilizados simultaneamente e qual tipo de gás está disponível. Um aquecedor pequeno pode não atender dois chuveiros ao mesmo tempo; um modelo maior que o necessário significa pagar mais por uma capacidade que não será aproveitada.",
-        "p2": "Executamos a tubulação de gás e água, fazemos a ligação na pressão correta, adequamos a exaustão, realizamos o teste de vazamento e regulamos a chama. O serviço segue as normas técnicas e as exigências da Naturgy, incluindo os cuidados necessários para preservar a garantia de fábrica.",
-        "p3": "Instalamos aquecedores residenciais e comerciais, de passagem, digitais e para condomínio das marcas Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem. Quando necessário, também fazemos a substituição do aparelho antigo e o remanejamento do ponto de gás.",
+        "p2": "Executamos a tubulação de gás e água, fazemos a ligação na pressão correta, adequamos a exaustão, realizamos o <a href=\"/teste-de-vazamento-de-gas/\">teste de vazamento</a> e regulamos a chama. O serviço segue as normas técnicas e as exigências da Naturgy, incluindo os cuidados necessários para preservar a garantia de fábrica.",
+        "p3": "Instalamos aquecedores residenciais e comerciais, de passagem, digitais e para condomínio das marcas Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem. Quando necessário, também fazemos a substituição do aparelho antigo e o <a href=\"/remanejamento-de-ponto-de-gas/\">remanejamento do ponto de gás</a>.",
         "checklist": [
           "Dimensionamento por pontos de água",
           "Instalação de aquecedor de passagem",
@@ -230,7 +246,7 @@
         "resumo": "Cheiro de gás em casa não espera. Localizamos vazamentos em fogão, aquecedor e tubulação com equipamento próprio e realizamos o reparo no mesmo atendimento, quando possível.",
         "h2": "Sentiu cheiro de gás? Primeiro, interrompa o risco",
         "p1": "Se você sentiu cheiro de gás, feche o registro geral, abra portas e janelas e não acione interruptores nem use chama. O vazamento pode estar na tubulação, na ligação do fogão, no aquecedor ou no registro, por isso a origem precisa ser localizada antes do reparo.",
-        "p2": "Verificamos fogão, cooktop, aquecedor e tubulação com detector e teste de pressão. Depois de localizar o ponto, apresentamos o orçamento antes do reparo. O serviço pode envolver troca de mangueira ou registro, reparo de solda ou aplicação de resina na tubulação.",
+        "p2": "Verificamos fogão, <a href=\"/instalacao-de-fogao-e-cooktop/\">cooktop</a>, aquecedor e tubulação com detector e teste de pressão. Depois de localizar o ponto, apresentamos o orçamento antes do reparo. O serviço pode envolver troca de mangueira ou registro, reparo de solda ou <a href=\"/aplicacao-de-resina-em-tubulacao/\">aplicação de resina</a> na tubulação.",
         "p3": "Atendemos em domicílio no Rio de Janeiro, Grande Rio e Baixada Fluminense, com visita técnica em até 24 horas.",
         "checklist": [
           "Detecção de vazamento de gás",
@@ -276,8 +292,8 @@
         "h1": "Gasista no Rio de Janeiro e Grande Rio",
         "resumo": "Técnico gasista para instalação, remanejamento e reparo de rede de gás em casas, apartamentos e condomínios, com teste de estanqueidade e laudo.",
         "h2": "Serviço de gás feito por técnico, com teste no final",
-        "p1": "Gasista no Rio de Janeiro e Grande Rio para instalação, alteração e reparo de redes de gás. O serviço envolve tubulação adequada, pressão correta, ventilação e teste de estanqueidade para verificar a vedação da rede. A execução segue o padrão Naturgy.",
-        "p2": "Instalamos e substituímos tubulação de cobre e ferro galvanizado, remanejamos pontos de fogão e aquecedor, trocamos registros, fazemos conversão de fogão e forno e corrigimos vazamentos. Quando possível, o reparo é feito sem quebrar a parede.",
+        "p1": "Gasista no Rio de Janeiro e Grande Rio para instalação, alteração e reparo de redes de gás. O serviço envolve tubulação adequada, pressão correta, ventilação e <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> para verificar a vedação da rede. A execução segue o padrão Naturgy.",
+        "p2": "Instalamos e substituímos tubulação de cobre e ferro galvanizado, remanejamos pontos de fogão e aquecedor, trocamos registros, fazemos <a href=\"/conversao-de-fogao/\">conversão de fogão</a> e forno e corrigimos vazamentos. Quando possível, o reparo é feito sem quebrar a parede.",
         "p3": "Depois do serviço, realizamos o teste de estanqueidade e emitimos o laudo do que foi executado. Atendemos residências, condomínios e pontos comerciais no Rio, Grande Rio e Baixada Fluminense.",
         "checklist": [
           "Instalação de tubulação de gás",
@@ -324,8 +340,8 @@
         "resumo": "Mudou a cozinha ou a posição do aquecedor? Refazemos o trecho de tubulação até o novo ponto, com teste de estanqueidade e laudo ao final.",
         "h2": "Mudar o ponto de gás exige refazer a tubulação corretamente",
         "p1": "O remanejamento de ponto de gás consiste em refazer o caminho da tubulação até a nova posição do aparelho. Definimos o trajeto mais adequado, com o menor trecho e a menor quebra possível, usando cobre embutido ou aparente. O ponto antigo é lacrado com segurança.",
-        "p2": "É comum durante reformas de cozinha, quando o fogão muda de parede, o cooktop vai para uma bancada ou o aquecedor precisa ser reposicionado. Também criamos pontos para churrasqueira e forno embutido, conforme as condições da instalação.",
-        "p3": "Todo remanejamento termina com teste de estanqueidade e laudo do trecho executado, seguindo o padrão Naturgy. Atendemos residências, condomínios e pontos comerciais no Rio, Grande Rio e Baixada Fluminense.",
+        "p2": "É comum durante reformas de cozinha, quando o fogão muda de parede, o <a href=\"/instalacao-de-fogao-e-cooktop/\">cooktop</a> vai para uma bancada ou o aquecedor precisa ser reposicionado. Também criamos pontos para churrasqueira e forno embutido, conforme as condições da instalação.",
+        "p3": "Todo remanejamento termina com <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> e laudo do trecho executado, seguindo o padrão Naturgy. Atendemos residências, condomínios e pontos comerciais no Rio, Grande Rio e Baixada Fluminense.",
         "checklist": [
           "Remanejamento de ponto do fogão",
           "Remanejamento de ponto do cooktop",
@@ -375,8 +391,8 @@
         "resumo": "Substituição de tubulação de gás em cobre ou ferro galvanizado para atualizar a rede, corrigir problemas ou mudar o ponto de gás com o mínimo de quebra possível.",
         "h2": "Tubulação antiga: quando reparar já não compensa",
         "p1": "Tubulações antigas de ferro galvanizado podem sofrer corrosão interna e apresentar vazamentos. Quando a rede está comprometida, a substituição por cobre é uma alternativa para renovar o trecho e adequar a instalação às necessidades do imóvel.",
-        "p2": "Antes da execução, avaliamos o caminho da nova tubulação e planejamos o serviço para reduzir a quebra de parede. Instalamos o novo trecho, fazemos a pressurização e realizamos o teste de estanqueidade antes da liberação da rede.",
-        "p3": "Também fazemos remanejamento de pontos de fogão e aquecedor. Quando o vazamento permite outro tipo de reparo, avaliamos a aplicação de resina como alternativa à quebra do trecho embutido.",
+        "p2": "Antes da execução, avaliamos o caminho da nova tubulação e planejamos o serviço para reduzir a quebra de parede. Instalamos o novo trecho, fazemos a pressurização e realizamos o <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> antes da liberação da rede.",
+        "p3": "Também fazemos <a href=\"/remanejamento-de-ponto-de-gas/\">remanejamento de pontos</a> de fogão e aquecedor. Quando o vazamento permite outro tipo de reparo, avaliamos a <a href=\"/aplicacao-de-resina-em-tubulacao/\">aplicação de resina</a> como alternativa à quebra do trecho embutido.",
         "checklist": [
           "Substituição de tubulação em cobre",
           "Troca de rede de ferro galvanizado",
@@ -421,7 +437,7 @@
         "h1": "Instalação de fogão e cooktop no Rio de Janeiro",
         "resumo": "Instalação de fogão de piso, cooktop e forno embutido no gás encanado ou GLP, com mangueira e registro adequados, regulagem da chama e teste de vazamento.",
         "h2": "Fogão instalado por gasista, com ligação e teste",
-        "p1": "A ligação do fogão precisa de materiais adequados ao tipo de gás e uma montagem correta. Instalamos mangueira e registro apropriados, fazemos a ligação conforme as condições do imóvel e terminamos com teste de vazamento.",
+        "p1": "A ligação do fogão precisa de materiais adequados ao tipo de gás e uma montagem correta. Instalamos mangueira e registro apropriados, fazemos a ligação conforme as condições do imóvel e terminamos com <a href=\"/teste-de-vazamento-de-gas/\">teste de vazamento</a>.",
         "p2": "Instalamos fogão de piso, cooktop e forno embutido de marcas como Electrolux, Brastemp, Consul, Atlas, Itatiaia e Esmaltec, entre outras. Se o aparelho estiver configurado para outro tipo de gás, fazemos a conversão dos injetores. Se o ponto estiver em outra posição, também podemos fazer o remanejamento.",
         "p3": "Atendemos instalações em gás encanado e botijão, para residências, condomínios e pontos comerciais no Rio, Grande Rio e Baixada Fluminense.",
         "checklist": [
@@ -474,7 +490,7 @@
         "h2": "Resina na tubulação: uma alternativa à quebra de parede",
         "p1": "Quando uma tubulação de gás embutida apresenta vazamento, nem sempre é necessário quebrar a parede para encontrar todo o trecho comprometido. A aplicação de resina faz a vedação interna da tubulação, podendo corrigir microfissuras e porosidades em casos compatíveis com o método.",
         "p2": "A técnica é especialmente útil em apartamentos e condomínios onde a tubulação está embutida e o acesso ao trecho seria trabalhoso. Antes de indicar a resina, avaliamos a condição da rede. Vazamento em conexão ou tubulação muito comprometida pode exigir reparo pontual ou substituição.",
-        "p3": "Após a aplicação, realizamos novamente o teste de estanqueidade para verificar a vedação e emitimos o laudo do serviço. O atendimento segue o padrão Naturgy.",
+        "p3": "Após a aplicação, realizamos novamente o <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> para verificar a vedação e emitimos o laudo do serviço. O atendimento segue o padrão Naturgy.",
         "checklist": [
           "Avaliação prévia do caso",
           "Aplicação de resina na tubulação",
@@ -622,7 +638,7 @@
         "resumo": "Conversão de fogão, cooktop ou forno para outro tipo de gás sem trocar o aparelho, com troca dos injetores, regulagem da chama e teste de vazamento.",
         "h2": "Conversão de fogão feita na sua casa",
         "p1": "Mudou de endereço e encontrou outro tipo de gás? A conversão permite adaptar o aparelho sem comprar um fogão novo. Trocamos os injetores adequados ao gás de destino, ajustamos a entrada de ar e regulamos a chama. O serviço pode ser feito de GLP (botijão) para gás natural ou no sentido inverso.",
-        "p2": "Convertemos fogão de piso, cooktop e forno embutido de marcas como Electrolux, Brastemp, Consul, Atlas, Itatiaia, Dako e Esmaltec, entre outras. Após a conversão, testamos a ligação e regulamos as chamas para que o aparelho funcione corretamente.",
+        "p2": "Convertemos fogão de piso, <a href=\"/instalacao-de-fogao-e-cooktop/\">cooktop</a> e forno embutido de marcas como Electrolux, Brastemp, Consul, Atlas, Itatiaia, Dako e Esmaltec, entre outras. Após a conversão, testamos a ligação e regulamos as chamas para que o aparelho funcione corretamente.",
         "p3": "Se a instalação também precisar de um novo ponto de gás, podemos fazer o remanejamento e executar a ligação em tubulação adequada.",
         "checklist": [
           "Conversão de GLP para gás natural",
@@ -678,7 +694,7 @@
         "h2": "Quando o apartamento não permite um aquecedor convencional",
         "p1": "O aquecedor de fluxo balanceado, também chamado de câmara estanque, trabalha isolado do ambiente onde está instalado. Ele capta o ar necessário para a combustão do lado externo e direciona os gases da queima para fora pelo duto coaxial. Isso permite sua utilização em situações nas quais um aparelho convencional não é adequado.",
         "p2": "É uma alternativa comum em apartamentos com restrições de ventilação, áreas de serviço fechadas e locais onde não existe uma parede externa livre para a instalação convencional. Em alguns condomínios, esse tipo de equipamento também pode ser exigido durante reformas ou alterações na prumada de gás.",
-        "p3": "Antes da instalação, avaliamos o local, verificamos as condições para passagem do duto coaxial e dimensionamos o aparelho conforme os pontos de água. Depois, executamos a instalação, realizamos o teste de estanqueidade e emitimos o laudo. Trabalhamos com os modelos de câmara estanque das marcas que atendemos.",
+        "p3": "Antes da instalação, avaliamos o local, verificamos as condições para passagem do duto coaxial e dimensionamos o aparelho conforme os pontos de água. Depois, executamos a instalação, realizamos o <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> e emitimos o laudo. Trabalhamos com os modelos de câmara estanque das marcas que atendemos.",
         "checklist": [
           "Avaliação do local para fluxo balanceado",
           "Instalação em ambiente sem ventilação externa",
@@ -729,7 +745,7 @@
         "h2": "Compre com quem instala e acompanha você depois",
         "p1": "Escolher um aquecedor não é apenas uma questão de preço. A litragem correta é fundamental para garantir conforto e evitar problemas no uso diário. Um aparelho subdimensionado pode não atender dois banhos simultaneamente — e, nesse caso, nenhum ajuste resolve: é preciso trocar o equipamento. Por isso, antes de indicar qualquer modelo, fazemos o dimensionamento do aquecedor, considerando a quantidade de pontos de água utilizados ao mesmo tempo, o tipo de gás disponível e o local onde o equipamento será instalado.",
         "p2": "A instalação também é realizada pela nossa equipe especializada, seguindo as normas técnicas e as exigências do fabricante. Isso é importante inclusive para preservar a garantia de fábrica, que pode ser comprometida quando o equipamento é instalado de forma inadequada. Na TecDaniel's, você resolve tudo em um só lugar: compra, instalação, manutenção e assistência técnica. Assim, você conta com uma equipe que conhece o equipamento desde a escolha até o pós-venda.",
-        "p3": "Temos aquecedores disponíveis em nossa loja, sem necessidade de encomenda. Conforme a disponibilidade e as condições da instalação, podemos realizar o serviço no mesmo dia ou no dia seguinte. Trabalhamos com aquecedores de passagem, modelos digitais e de fluxo balanceado, em diferentes capacidades para residências e condomínios. Quando a pressão da água é insuficiente, também avaliamos a necessidade de pressurizador para garantir o funcionamento adequado do sistema. Escolha o equipamento certo, conte com instalação especializada e tenha assistência de quem realmente conhece o seu aquecedor. Este é um dos serviços da TecDaniel's. Conheça também todos os nossos serviços de aquecedores e gás no Rio de Janeiro.",
+        "p3": "Temos aquecedores disponíveis em nossa loja, sem necessidade de encomenda. Conforme a disponibilidade e as condições da instalação, podemos realizar o serviço no mesmo dia ou no dia seguinte. Trabalhamos com aquecedores de passagem, modelos digitais e de <a href=\"/aquecedor-de-fluxo-balanceado/\">fluxo balanceado</a>, em diferentes capacidades para residências e condomínios. Quando a pressão da água é insuficiente, também avaliamos a necessidade de <a href=\"/pressurizador-de-agua/\">pressurizador</a> para garantir o funcionamento adequado do sistema. Escolha o equipamento certo, conte com instalação especializada e tenha assistência de quem realmente conhece o seu aquecedor. Antes de escolher, faça a conta na <a href=\"/dimensionamento-de-aquecedor-a-gas/\">calculadora de aquecedor para 2 chuveiros</a>.",
         "tituloChecklist": "O que está incluído na compra",
         "checklist": [
           "Dimensionamento antes da compra",
@@ -789,7 +805,7 @@
         "h2": "O preço depende do defeito — e o diagnóstico mostra qual é",
         "p1": "Não existe um único preço para consertar um aquecedor porque problemas diferentes exigem serviços e peças diferentes. A troca de um eletrodo de ignição, por exemplo, não tem o mesmo custo de um trocador de calor. Por isso, o valor é dividido entre a visita técnica e o serviço identificado no diagnóstico.",
         "p2": "A peça costuma ser um dos principais fatores no preço e varia conforme a marca e o modelo. Componentes de aparelhos digitais também podem ter valores diferentes dos utilizados em equipamentos mais simples. O acesso ao aparelho e a complexidade do serviço também podem alterar o tempo de mão de obra.",
-        "p3": "A regra é simples: primeiro identificamos o problema e apresentamos o orçamento fechado; depois você decide. Se não quiser executar o serviço, paga apenas a visita técnica, de R$ 160. Se você aprovar o orçamento e o serviço for executado na mesma visita, essa taxa não é cobrada. Em aparelhos antigos, também podemos comparar o custo do reparo com o de um aparelho novo instalado para ajudar na decisão.",
+        "p3": "A regra é simples: primeiro identificamos o problema e apresentamos o orçamento fechado; depois você decide. Se não quiser executar o serviço, paga apenas a visita técnica, de R$ 160. Se você aprovar o orçamento e o serviço for executado na mesma visita, essa taxa não é cobrada. Em aparelhos antigos, também podemos comparar o custo do reparo com o de um <a href=\"/venda-de-aquecedor-a-gas/\">aparelho novo</a> instalado para ajudar na decisão. A revisão anual tem preço fixo: veja a <a href=\"/manutencao-de-aquecedor-a-gas/\">manutenção de aquecedor a gás</a>.",
         "tituloChecklist": "Como funciona o orçamento",
         "checklist": [
           "Visita técnica de R$ 160, informada antes de agendar e não cobrada se o serviço for feito na mesma visita",
@@ -879,7 +895,7 @@
         "resumo": "Atendimento para síndicos e administradoras com manutenção programada por unidade, teste e laudo de estanqueidade da prumada, cronograma alinhado com a portaria e relatório consolidado para acompanhamento do condomínio.",
         "h2": "Prumada de gás e manutenção por unidade, com documentação pronta",
         "p1": "Em condomínio, não basta executar o serviço: é preciso deixar tudo documentado. Por isso, o atendimento pode incluir laudo por unidade, registro fotográfico, nota fiscal e relatório consolidado, permitindo que o síndico acompanhe o que foi realizado sem precisar interpretar termos técnicos.",
-        "p2": "A prumada de gás é o eixo do serviço: dela saem os ramais de cada pavimento, e é nela que o teste de estanqueidade começa. O atendimento é organizado por cronograma. Alinhamos a ordem das unidades com a portaria, comunicamos os moradores com antecedência e concentramos os serviços em blocos de dias. Isso reduz deslocamentos, facilita o acesso aos apartamentos e diminui o impacto na rotina do prédio. Prumada, central de gás, registros de pavimento e aparelhos individuais podem fazer parte do mesmo planejamento.",
+        "p2": "A prumada de gás é o eixo do serviço: dela saem os ramais de cada pavimento, e é nela que o <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> começa. O atendimento é organizado por cronograma. Alinhamos a ordem das unidades com a portaria, comunicamos os moradores com antecedência e concentramos os serviços em blocos de dias. Isso reduz deslocamentos, facilita o acesso aos apartamentos e diminui o impacto na rotina do prédio. Prumada, central de gás, registros de pavimento e aparelhos individuais podem fazer parte do mesmo planejamento.",
         "p3": "A manutenção programada também reduz a dependência de atendimentos emergenciais. Em períodos de maior demanda, como o inverno, a agenda das assistências costuma ficar mais disputada. Com contrato, o condomínio conta com programação prévia, prioridade de agenda e valor fechado por unidade.",
         "tituloChecklist": "O que o contrato inclui",
         "checklist": [
@@ -2106,9 +2122,9 @@
         "resumo": "Conserto, manutenção e instalação de aquecedor a gás na Barra da Tijuca, com visita em até 24 horas. Atendemos apartamentos, casas, coberturas e condomínios.",
         "distancia": "um trajeto direto",
         "h2": "Aquecedor de alta vazão exige mais que uma boa máquina",
-        "p1": "O conserto de aquecedor a gás na Barra da Tijuca envolve muitos aparelhos de alta vazão, instalados para atender dois ou três banheiros. Em apartamentos altos, também são comuns instalações em varanda técnica, com a exaustão passando pelo shaft.",
+        "p1": "O <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a> na Barra da Tijuca envolve muitos aparelhos de alta vazão, instalados para atender dois ou três banheiros. Em apartamentos altos, também são comuns instalações em varanda técnica, com a exaustão passando pelo shaft.",
         "p2": "Quando o aquecedor não liga, o defeito nem sempre está nele. Pressão de água insuficiente pode impedir o aparelho de ligar, enquanto pressão de gás inadequada pode fazer um aparelho de alta vazão desarmar. Medimos as condições de funcionamento antes de indicar troca de peça.",
-        "p3": "Atendemos condomínios como Península, Barra Bonita e Jardim Oceânico, além de casas no Itanhangá. Para condomínios, podemos emitir nota fiscal e laudo do serviço e organizar manutenção programada.",
+        "p3": "Atendemos condomínios como Península, Barra Bonita e Jardim Oceânico, além de casas no Itanhangá. Para condomínios, podemos emitir nota fiscal e laudo do serviço e organizar <a href=\"/manutencao-para-condominios/\">manutenção programada</a>.",
         "checklist": [
           "Conserto de aquecedor a gás",
           "Aquecedor que não acende",
@@ -2193,8 +2209,8 @@
         "distancia": "poucos quarteirões",
         "h2": "Aquecedor a gás em Jacarepaguá: casa, apartamento e condomínio",
         "p1": "Jacarepaguá é grande e mistura tudo: casa com dois banheiros, apartamento novo com aquecedor na varanda técnica e condomínio com rede de gás para dezenas de unidades. Cada um pede uma solução diferente, e é por isso que o diagnóstico vem antes do orçamento.",
-        "p2": "Nossa base fica na região, o que encurta o prazo de chegada — inclusive nos casos que não podem esperar, como cheiro de gás. Consertamos, revisamos e instalamos aquecedor a gás, e fazemos o serviço de gasista na rede.",
-        "p3": "A rede de gás é boa parte do que fazemos por aqui: substituição de tubulação, remanejamento de ponto em reforma e teste de estanqueidade com laudo. Avaliamos a instalação, executamos o serviço e testamos antes de entregar.",
+        "p2": "Nossa base fica na região, o que encurta o prazo de chegada — inclusive nos casos que não podem esperar, como <a href=\"/teste-de-vazamento-de-gas/\">cheiro de gás</a>. Consertamos, revisamos e instalamos aquecedor a gás, e fazemos o serviço de <a href=\"/gasista/\">gasista</a> na rede.",
+        "p3": "A rede de gás é boa parte do que fazemos por aqui: substituição de tubulação, <a href=\"/remanejamento-de-ponto-de-gas/\">remanejamento de ponto</a> em reforma e <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> com laudo. Avaliamos a instalação, executamos o serviço e testamos antes de entregar.",
         "checklist": [
           "Gasista para rede de gás",
           "Substituição de tubulação em cobre",
@@ -2276,8 +2292,8 @@
         "resumo": "Conserto, manutenção e instalação de aquecedor a gás no Recreio dos Bandeirantes, com assistência autorizada Rinnai e visita em até 24 horas.",
         "distancia": "um trajeto direto",
         "h2": "Maresia acelera a corrosão: a instalação e a revisão fazem diferença",
-        "p1": "No Recreio, o conserto de aquecedor a gás muitas vezes envolve corrosão provocada pela maresia. Aparelhos instalados em áreas externas ou varandas abertas ficam mais expostos, e a oxidação pode atingir carcaça, parafusos e componentes do trocador de calor.",
-        "p2": "Por isso, aparelhos expostos à maresia podem precisar de revisão a cada seis meses, em vez da revisão anual. O local de instalação também importa: proteger o equipamento da brisa direta reduz a exposição e ajuda a preservar seus componentes.",
+        "p1": "No Recreio, o <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a> muitas vezes envolve corrosão provocada pela maresia. Aparelhos instalados em áreas externas ou varandas abertas ficam mais expostos, e a oxidação pode atingir carcaça, parafusos e componentes do trocador de calor.",
+        "p2": "Por isso, aparelhos expostos à maresia podem precisar de revisão a cada seis meses, em vez da <a href=\"/manutencao-de-aquecedor-a-gas/\">revisão anual</a>. O local de instalação também importa: proteger o equipamento da brisa direta reduz a exposição e ajuda a preservar seus componentes.",
         "p3": "Nas casas de condomínio da Gleba e nos prédios da orla, indicamos revisão a cada seis meses em vez de uma vez por ano. O intervalo menor é o que segura a oxidação antes de ela chegar ao trocador de calor.",
         "checklist": [
           "Conserto de aquecedor a gás",
@@ -2357,9 +2373,9 @@
         "resumo": "Gasista, conserto e manutenção de aquecedor a gás na Freguesia. Nossa base fica na Praça Seca, bairro vizinho, e atendemos casas, apartamentos e condomínios.",
         "distancia": "um trajeto direto",
         "h2": "Teste de estanqueidade identifica problemas antes do vazamento",
-        "p1": "Na Freguesia, muitos chamados de gasista envolvem redes antigas de gás. Tubulações de ferro galvanizado podem sofrer corrosão com o tempo, por isso o teste de estanqueidade é uma forma objetiva de verificar se a instalação continua sem vazamentos.",
+        "p1": "Na Freguesia, muitos chamados de <a href=\"/gasista/\">gasista</a> envolvem redes antigas de gás. Tubulações de ferro galvanizado podem sofrer corrosão com o tempo, por isso o <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> é uma forma objetiva de verificar se a instalação continua sem vazamentos.",
         "p2": "Fazemos o teste com manômetro calibrado, registramos as condições da instalação e emitimos o laudo. Se houver reprovação, localizamos o problema e apresentamos o reparo indicado, inclusive alternativas que reduzam a necessidade de quebra quando tecnicamente viáveis.",
-        "p3": "Quando o laudo aponta reparo, executamos na mesma visita se a peça estiver disponível. Quando aponta substituição de trecho, apresentamos o orçamento com o que será trocado e o prazo, antes de começar.",
+        "p3": "Quando o laudo aponta reparo, executamos na mesma visita se a peça estiver disponível. Quando aponta substituição de trecho, apresentamos o orçamento com o que será trocado e o prazo, antes de começar. A Freguesia faz parte de Jacarepaguá: veja também <a href=\"/aquecedor-a-gas-jacarepagua/\">aquecedor a gás em Jacarepaguá</a>.",
         "checklist": [
           "Teste de estanqueidade com laudo",
           "Teste de vazamento de gás",
@@ -2440,7 +2456,7 @@
         "h2": "Conserto de aquecedor na Taquara e no Tanque, com peça em mãos",
         "p1": "Boa parte dos chamados na Taquara e no Tanque se resolve na primeira visita, porque as peças de maior giro — sensor, placa, membrana e eletrodo de ignição — saem com o técnico. Quando a peça é específica, informamos o prazo antes de você decidir.",
         "p2": "Os chamados mais comuns são aquecedor que parou de esquentar, conversão de fogão após mudança de imóvel e reparo de tubulação durante reforma de cozinha. Avaliamos a instalação antes de definir o serviço.",
-        "p3": "Fazemos conserto, manutenção e instalação de aquecedores, serviço de gasista, teste de estanqueidade e teste de vazamento, com laudo do serviço realizado.",
+        "p3": "Fazemos conserto, manutenção e <a href=\"/instalacao-de-aquecedor-a-gas/\">instalação de aquecedores</a>, serviço de <a href=\"/gasista/\">gasista</a>, <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> e <a href=\"/teste-de-vazamento-de-gas/\">teste de vazamento</a>, com laudo do serviço realizado. Taquara e Tanque ficam em Jacarepaguá: veja também <a href=\"/aquecedor-a-gas-jacarepagua/\">aquecedor a gás em Jacarepaguá</a>.",
         "checklist": [
           "Atendimento no mesmo dia",
           "Emergência de cheiro de gás",
@@ -2521,7 +2537,7 @@
         "h2": "Casa com mais de um banheiro pede aquecedor bem dimensionado",
         "p1": "Vila Valqueire é bairro de casa, e casa costuma ter mais de um ponto de água quente. Quando dois banhos acontecem ao mesmo tempo, ou quando há banheira, é a litragem do aparelho que decide se a água sai quente ou morna. Dimensionamos pelo uso real da casa antes de instalar ou trocar.",
         "p2": "A região também tem muita casa estabelecida, com aquecedor e rede de gás de anos de uso. Nesses casos a revisão identifica desgaste antes de virar falha, e quando o aparelho já não compensa, apresentamos o custo do reparo e o da troca por um novo instalado, para você comparar.",
-        "p3": "Na parte de gás, fazemos substituição de tubulação, remanejamento de ponto, conversão de fogão e teste de estanqueidade com laudo.",
+        "p3": "Na parte de gás, fazemos substituição de tubulação, <a href=\"/remanejamento-de-ponto-de-gas/\">remanejamento de ponto</a>, <a href=\"/conversao-de-fogao/\">conversão de fogão</a> e <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> com laudo.",
         "checklist": [
           "Conserto de aquecedor a gás",
           "Modelo com chama piloto e termopar",
@@ -2604,8 +2620,8 @@
         "resumo": "Conserto, manutenção e instalação de aquecedor a gás na Tijuca, com assistência autorizada Rinnai e visita em até 24 horas.",
         "distancia": "um trajeto direto",
         "h2": "Apartamento sem parede externa: avalie a exaustão antes de trocar o aparelho",
-        "p1": "O conserto de aquecedor a gás na Tijuca muitas vezes começa pela instalação. Há apartamentos com área de serviço fechada, pouca ventilação ou limitações para a passagem do duto de exaustão. Nesses casos, trocar o aparelho sem avaliar o ambiente pode não resolver.",
-        "p2": "Em instalações compatíveis, o aquecedor de fluxo balanceado pode ser uma alternativa porque capta o ar necessário à combustão e conduz os gases para fora por um sistema próprio. Na visita verificamos o ambiente, a exaustão e o modelo adequado antes da instalação.",
+        "p1": "O <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a> na Tijuca muitas vezes começa pela instalação. Há apartamentos com área de serviço fechada, pouca ventilação ou limitações para a passagem do duto de exaustão. Nesses casos, trocar o aparelho sem avaliar o ambiente pode não resolver.",
+        "p2": "Em instalações compatíveis, o aquecedor de <a href=\"/aquecedor-de-fluxo-balanceado/\">fluxo balanceado</a> pode ser uma alternativa porque capta o ar necessário à combustão e conduz os gases para fora por um sistema próprio. Na visita verificamos o ambiente, a exaustão e o modelo adequado antes da instalação.",
         "p3": "Nos prédios antigos da região, a limitação costuma ser a passagem do duto. Medimos o ambiente e a saída disponível antes de indicar aparelho — em alguns casos o fluxo balanceado resolve, em outros basta adequar a exaustão existente.",
         "checklist": [
           "Conserto de aquecedor a gás",
@@ -2889,7 +2905,7 @@
         ],
         "h2": "Assistência Rinnai autorizada, com peça original",
         "p1": "Assistência técnica Rinnai autorizada no Rio de Janeiro para quem precisa consertar, revisar ou instalar um aquecedor da marca. Trabalhamos conforme os procedimentos do fabricante e utilizamos peças originais, ajudando a preservar a garantia do aparelho.",
-        "p2": "Atendemos problemas como aquecedor que não acende, água fria, temperatura oscilando, código de erro no display, chama instável e desarme. Também fazemos revisão anual, instalação de aparelho novo com dimensionamento e conversão entre botijão e gás encanado.",
+        "p2": "Atendemos problemas como aquecedor que não acende, <a href=\"/aquecedor-nao-esquenta-a-agua/\">água fria</a>, temperatura oscilando, código de erro no display, chama instável e desarme. Também fazemos <a href=\"/manutencao-de-aquecedor-a-gas/\">revisão anual</a>, instalação de <a href=\"/venda-de-aquecedor-a-gas/\">aparelho novo</a> com dimensionamento e conversão entre botijão e gás encanado.",
         "p3": "Ainda vai comprar? Antes de escolher o modelo, avaliamos quantos pontos de água podem funcionar ao mesmo tempo. Um aparelho de 15 litros não atende dois chuveiros simultaneamente, enquanto um de 35 litros pode ser desnecessário para um apartamento pequeno.",
         "tituloChecklist": "O atendimento Rinnai inclui",
         "checklist": [
@@ -3004,7 +3020,7 @@
         ],
         "h2": "Aquecedor Lorenzetti: conserto, revisão e instalação",
         "p1": "Assistência técnica de aquecedor Lorenzetti no Rio de Janeiro para problemas como aparelho que não acende, água morna, chama amarela e desarme. Atendemos modelos como LZ 750BP, LZ 1600D e LZ 2000, com diagnóstico direcionado para cada aparelho.",
-        "p2": "Fazemos conserto, revisão anual, instalação e substituição de aquecedores. Também verificamos a pressão de água, uma causa comum de falha que pode ser confundida com defeito no aparelho quando o sensor de fluxo não consegue acionar.",
+        "p2": "Fazemos conserto, <a href=\"/manutencao-de-aquecedor-a-gas/\">revisão anual</a>, instalação e substituição de aquecedores. Também verificamos a pressão de água, uma causa comum de falha que pode ser confundida com defeito no aparelho quando o sensor de fluxo não consegue acionar.",
         "p3": "Nosso atendimento é voltado principalmente à linha a gás. Para aquecedores elétricos de torneira e de ponto da marca, avaliamos o modelo antes de agendar para evitar um reparo que não compense financeiramente.",
         "tituloChecklist": "O atendimento Lorenzetti inclui",
         "checklist": [
@@ -3119,7 +3135,7 @@
         ],
         "h2": "Komeco: aquecedor a gás e pressurizador no mesmo atendimento",
         "p1": "Assistência técnica de aquecedor Komeco no Rio de Janeiro para conserto, manutenção e instalação da linha a gás de passagem. Atendemos residências, condomínios e pontos comerciais.",
-        "p2": "A pressão da água também pode ser a causa de um aquecedor Komeco que não liga. Sem vazão suficiente, o sensor de fluxo não aciona o aparelho. Por isso, verificamos o aquecedor e o pressurizador quando os dois fazem parte da instalação.",
+        "p2": "A pressão da água também pode ser a causa de um aquecedor Komeco que não liga. Sem vazão suficiente, o sensor de fluxo não aciona o aparelho. Por isso, verificamos o aquecedor e o <a href=\"/pressurizador-de-agua/\">pressurizador</a> quando os dois fazem parte da instalação.",
         "p3": "Além dos aquecedores, atendemos pressurizadores Komeco com instalação, dimensionamento, manutenção e regulagem. O objetivo é descobrir se a falha está no aquecedor, na pressão de água ou no sistema de pressurização.",
         "tituloChecklist": "O atendimento Komeco inclui",
         "checklist": [
@@ -3341,7 +3357,7 @@
         ],
         "h2": "Bosch e Junkers: diagnóstico para modelos antigos e atuais",
         "p1": "Assistência técnica de aquecedor Bosch no Rio de Janeiro para aparelhos Bosch e Junkers de diferentes gerações. Nos modelos com piloto, verificamos itens como termopar e injetor. Nos aparelhos eletrônicos, avaliamos eletrodo, sensores e placa.",
-        "p2": "Fazemos conserto, revisão anual, instalação e conversão entre botijão e gás encanado. Quando o aparelho é antigo, comparamos o custo das peças e da mão de obra com o investimento em um aquecedor novo instalado.",
+        "p2": "Fazemos conserto, <a href=\"/manutencao-de-aquecedor-a-gas/\">revisão anual</a>, instalação e conversão entre botijão e gás encanado. Quando o aparelho é antigo, comparamos o custo das peças e da mão de obra com o investimento em um <a href=\"/venda-de-aquecedor-a-gas/\">aquecedor novo</a> instalado.",
         "p3": "Atendemos aquecedores Bosch e Junkers em residências, condomínios e pontos comerciais, incluindo modelos de piloto e de ignição eletrônica.",
         "tituloChecklist": "O atendimento Bosch inclui",
         "checklist": [
@@ -3444,7 +3460,7 @@
         ],
         "h2": "Orbis antigo: primeiro avaliamos, depois indicamos",
         "p1": "Assistência técnica de aquecedor Orbis no Rio de Janeiro para aparelhos de diferentes gerações, incluindo modelos de piloto e linhas descontinuadas. Em muitos casos ainda é possível encontrar peças como termopar, injetor e queimador, mas o estado geral do aparelho precisa ser considerado.",
-        "p2": "Fazemos o diagnóstico e colocamos os custos na mesa: quanto custa reparar e quanto custa substituir por um aparelho novo instalado. Assim, a decisão não depende apenas de uma indicação de troca ou de um reparo que pode não compensar.",
+        "p2": "Fazemos o diagnóstico e colocamos os custos na mesa: <a href=\"/quanto-custa-conserto-de-aquecedor/\">quanto custa</a> reparar e quanto custa substituir por um <a href=\"/venda-de-aquecedor-a-gas/\">aparelho novo</a> instalado. Assim, a decisão não depende apenas de uma indicação de troca ou de um reparo que pode não compensar.",
         "p3": "Quando a substituição é a melhor alternativa, também fazemos o dimensionamento, adequação da exaustão, ligação no padrão Naturgy e remoção do aparelho antigo.",
         "tituloChecklist": "O atendimento Orbis inclui",
         "checklist": [
@@ -3595,7 +3611,7 @@
         "eyebrow": "A empresa",
         "h2": "Desde 2003 fazendo uma coisa só",
         "p1": "A TecDaniel's trabalha exclusivamente com aquecedor a gás e rede de gás desde 2003. Não somos uma assistência de eletrodomésticos que também atende aquecedores. Conhecemos o aparelho, a instalação e os problemas que costumam aparecer no dia a dia — o que torna o diagnóstico mais preciso desde a primeira visita.",
-        "p2": "Somos assistência técnica autorizada Rinnai e integrados às redes Lorenzetti, Komeco e Rheem. Também atendemos Bosch, Junkers e Orbis, inclusive equipamentos de linhas descontinuadas. Os serviços seguem as normas técnicas brasileiras e os padrões exigidos pela Naturgy.",
+        "p2": "Somos <a href=\"/assistencia-tecnica-rinnai/\">assistência técnica autorizada Rinnai</a> e integrados às redes Lorenzetti, Komeco e Rheem. Também atendemos Bosch, Junkers e Orbis, inclusive equipamentos de linhas descontinuadas. Os serviços seguem as normas técnicas brasileiras e os padrões exigidos pela Naturgy.",
         "p3": "Nossa equipe é formada por técnicos treinados, e o primeiro atendimento também é feito por técnico. Você pode explicar o problema, receber uma orientação inicial e entender a faixa de preço antes de agendar a visita. Assim, o atendimento começa com informação, não com uma visita às cegas.",
         "tituloLista": "O que nos define",
         "lista": [
@@ -3652,7 +3668,7 @@
         "h2": "O WhatsApp é o jeito mais rápido de começar",
         "p1": "Envie o modelo do aparelho, descreva o problema e informe seu bairro. Com essas três informações, o técnico já consegue avaliar a situação, indicar a causa mais provável e orientar sobre a faixa de preço antes da visita.",
         "p2": "Prefere ligar? O número é o mesmo e o atendimento também é feito por técnico. Para condomínios e administradoras, o WhatsApp facilita o envio da demanda, dos documentos e das informações necessárias para preparar a proposta e o cronograma.",
-        "p3": "Fazemos atendimento em domicílio em todo o Rio de Janeiro, Grande Rio e Baixada Fluminense. A visita técnica é feita em até 24 horas e, no eixo de Jacarepaguá, geralmente conseguimos atender no mesmo dia.",
+        "p3": "Fazemos atendimento em domicílio em todo o Rio de Janeiro, Grande Rio e Baixada Fluminense. A visita técnica é feita em até 24 horas e, no eixo de <a href=\"/aquecedor-a-gas-jacarepagua/\">Jacarepaguá</a>, geralmente conseguimos atender no mesmo dia.",
         "tituloLista": "O que agiliza o atendimento",
         "lista": [
           "Marca e modelo do aparelho",
@@ -3698,8 +3714,8 @@
         ],
         "eyebrow": "Cobertura",
         "h2": "Atendimento em domicílio em toda a cidade",
-        "p1": "Atendemos em domicílio no Rio de Janeiro, Grande Rio e Baixada Fluminense, com visita técnica em até 24 horas. O atendimento é direcionado para serviços em aquecedores a gás e instalações relacionadas à rede de gás.",
-        "p2": "Nossa base fica em Jacarepaguá. Por isso, no eixo de Jacarepaguá, Taquara, Tanque, Freguesia e Barra da Tijuca a visita costuma ser realizada no mesmo dia, conforme a agenda. Nos demais bairros, o compromisso é a visita em até 24 horas.",
+        "p1": "Atendemos em domicílio no Rio de Janeiro, Grande Rio e Baixada Fluminense, com visita técnica em até 24 horas. O atendimento é direcionado para serviços em aquecedores a gás e instalações relacionadas à rede de gás. A maior parte dos chamados vem da Zona Oeste, perto da nossa base: veja o atendimento de <a href=\"/aquecedor-a-gas-jacarepagua/\">aquecedor a gás em Jacarepaguá</a> e da <a href=\"/aquecedor-a-gas-barra-da-tijuca/\">Barra da Tijuca</a>.",
+        "p2": "Nossa base fica em Jacarepaguá. Por isso, no eixo de Jacarepaguá, <a href=\"/aquecedor-a-gas-taquara/\">Taquara</a>, Tanque, <a href=\"/aquecedor-a-gas-freguesia/\">Freguesia</a> e Barra da Tijuca a visita costuma ser realizada no mesmo dia, conforme a agenda. Nos demais bairros, o compromisso é a visita em até 24 horas.",
         "p3": "Não encontrou sua região na lista? Entre em contato. A cobertura pode variar conforme o endereço e a agenda do dia, mas atendemos diversas outras áreas do Rio, Grande Rio e Baixada.",
         "tituloLista": "Como funciona a visita",
         "lista": [

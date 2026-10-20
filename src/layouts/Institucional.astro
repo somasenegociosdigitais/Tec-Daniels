@@ -81,9 +81,9 @@ const bairros = BAIRROS.map((b) => ({ ...b, href: '/aquecedor-a-gas-' + b.slug +
 </div>
 <div class="texto-e-lista">
 <div class="prosa">
-<p>{p.p1}</p>
-<p>{p.p2}</p>
-<p>{p.p3}</p>
+<p set:html={p.p1}></p>
+<p set:html={p.p2}></p>
+<p set:html={p.p3}></p>
 <p class="prosa__nota">Veja <a href="/"><b>todos os nossos serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
 </div>
 <div class="lista-cartao">

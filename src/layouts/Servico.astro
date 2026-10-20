@@ -8,7 +8,7 @@ import Trilha from '../components/Trilha.astro';
 import FaixaCta from '../components/FaixaCta.astro';
 import Faq from '../components/Faq.astro';
 import Avaliacoes from '../components/Avaliacoes.astro';
-import { NEGOCIO } from '../data/site.js';
+import { NEGOCIO, BAIRROS, MARCAS } from '../data/site.js';
 import conteudo from '../data/conteudo.json';
 import FotosObra from '../components/FotosObra.astro';
 import { FOTOS_POR_PAGINA } from '../data/fotos.js';
@@ -40,6 +40,9 @@ const relacionados = (RELACIONADOS[slug] || []).map((k) => ({
 }));
 const temSelo = slug === 'manutencao-para-condominios' || slug === 'venda-de-aquecedor-a-gas';
 const fotos = FOTOS_POR_PAGINA[slug];
+// Links internos fixos: bairros do eixo em todas as páginas; marcas nas de aquecedor.
+const AQUECEDOR = ['conserto-de-aquecedor-a-gas', 'manutencao-de-aquecedor-a-gas', 'instalacao-de-aquecedor-a-gas', 'venda-de-aquecedor-a-gas', 'aquecedor-nao-esquenta-a-agua', 'quanto-custa-conserto-de-aquecedor', 'aquecedor-de-fluxo-balanceado', 'manutencao-para-condominios'];
+const outrasMarcas = MARCAS.filter((m) => m.slug !== 'rinnai');
 const FORM_SERVICO = {
   'conserto-de-aquecedor-a-gas': 'Conserto de aquecedor', 'aquecedor-nao-esquenta-a-agua': 'Conserto de aquecedor', 'quanto-custa-conserto-de-aquecedor': 'Conserto de aquecedor',
   'manutencao-de-aquecedor-a-gas': 'Manutenção / revisão anual', 'manutencao-para-condominios': 'Manutenção / revisão anual',
@@ -114,10 +117,12 @@ const FORM_MARCA = { 'pressurizador-lorenzetti': 'Lorenzetti', 'pressurizador-ko
 </div>
 <div class="texto-e-lista">
 <div class="prosa">
-<p>{p.p1}</p>
-<p>{p.p2}</p>
-<p>{p.p3}</p>
-<p class="prosa__nota">Este é um dos serviços da TecDaniel's — veja também <a href="/"><b>todos os nossos serviços de aquecedor e gás no Rio de Janeiro</b></a>.</p>
+<p set:html={p.p1}></p>
+<p set:html={p.p2}></p>
+<p set:html={p.p3}></p>
+<p class="prosa__nota">Este é um dos serviços da TecDaniel's — veja também <a href="/"><b>todos os nossos serviços de aquecedor e gás no Rio de Janeiro</b></a>.
+{AQUECEDOR.includes(slug) && (<Fragment> Marcas que atendemos: <a href="/assistencia-tecnica-rinnai/">assistência técnica autorizada Rinnai</a>, {outrasMarcas.map((m, i) => (<Fragment>{i > 0 && (i === outrasMarcas.length - 1 ? ' e ' : ', ')}<a href={m.href}>{m.nome}</a></Fragment>))}.</Fragment>)}
+ Atendemos todo o Rio, com prioridade em {BAIRROS.map((b, i) => (<Fragment>{i > 0 && (i === BAIRROS.length - 1 ? ' e ' : ', ')}<a href={b.href}>{b.nome}</a></Fragment>))}.</p>
 </div>
 <div class="lista-cartao">
 <h3 class="t-h3" style="font-size:var(--fs-h4)">{p.tituloChecklist || 'O serviço inclui'}</h3>

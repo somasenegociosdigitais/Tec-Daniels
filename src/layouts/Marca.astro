@@ -93,10 +93,10 @@ const relacionados = (RELACIONADAS[slug] || []).map((k) => ({
 </div>
 <div class="texto-e-lista">
 <div class="prosa">
-<p>{m.p1}</p>
-<p>{m.p2}</p>
-<p>{m.p3}</p>
-<p class="prosa__nota">Atendemos também as demais marcas — veja todos os nossos <a href="/"><b>serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
+<p set:html={m.p1}></p>
+<p set:html={m.p2}></p>
+<p set:html={m.p3}></p>
+<p class="prosa__nota">Para o seu aquecedor, fazemos <a href="/conserto-de-aquecedor-a-gas/">conserto de aquecedor a gás</a>, <a href="/manutencao-de-aquecedor-a-gas/">manutenção de aquecedor a gás</a> e <a href="/instalacao-de-aquecedor-a-gas/">instalação de aquecedor a gás</a>. Atendemos também as demais marcas — veja todos os nossos <a href="/"><b>serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
 </div>
 <div class="lista-cartao">
 <h3 class="t-h3" style="font-size:var(--fs-h4)">{m.tituloChecklist}</h3>

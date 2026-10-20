@@ -89,9 +89,9 @@ const vizinhos = (VIZINHOS[slug] || []).map((v) => {
 </div>
 <div class="texto-e-lista">
 <div class="prosa">
-<p>{b.p1}</p>
-<p>{b.p2}</p>
-<p>{b.p3}</p>
+<p set:html={b.p1}></p>
+<p set:html={b.p2}></p>
+<p set:html={b.p3}></p>
 <p class="prosa__nota">Atendemos além deste bairro — conheça <a href="/"><b>todos os nossos serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
 </div>
 <div class="lista-cartao" style="gap:18px">
