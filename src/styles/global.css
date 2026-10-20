@@ -454,8 +454,8 @@ a:hover{color:var(--accent-strong)}
   .zap-fab{width:54px;height:54px;right:14px;bottom:14px}
   .zap-fab svg{width:28px;height:28px}
 }
-.zap-modal{position:fixed;inset:0;z-index:60;background:rgba(18,32,44,.55);display:flex;align-items:center;justify-content:center;padding:var(--sp-6)}
-.zap-modal[hidden]{display:none}
+.zap-janela{position:fixed;inset:0;z-index:60;background:rgba(18,32,44,.55);display:flex;align-items:center;justify-content:center;padding:var(--sp-6)}
+.zap-janela[hidden]{display:none}
 .zap-form{position:relative;width:100%;max-width:520px;background:var(--white);border-radius:var(--r-lg);box-shadow:var(--shadow-float);padding:var(--sp-8);display:flex;flex-direction:column;gap:var(--sp-5)}
 .zap-form__fechar{position:absolute;top:16px;right:16px;border:0;background:transparent;color:var(--text-muted);cursor:pointer;padding:6px;line-height:0}
 .zap-campo{display:flex;flex-direction:column;gap:var(--sp-2)}
@@ -507,3 +507,5 @@ a:hover{color:var(--accent-strong)}
   .heroi__lado>.linha{justify-content:flex-start!important}
   .heroi__rinnai{max-width:none}
 }
+  /* Listas semânticas sem marcador (home) */
+  .lista-limpa{list-style:none;margin:0;padding:0}

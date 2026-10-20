@@ -3,6 +3,8 @@ import Assinatura from './Assinatura.astro';
 import Icone from './Icone.astro';
 import { NEGOCIO, SERVICOS, SERVICOS_RODAPE, servicoUrl } from '../data/site.js';
 
+const { atualizado } = Astro.props;
+const atualizadoBR = atualizado ? atualizado.split('-').reverse().join('/') : '';
 const servicos = SERVICOS_RODAPE.map((s) => [s, SERVICOS[s]]);
 const REDES = [
   { nome: 'Facebook', icone: 'facebook', href: 'https://www.facebook.com/people/Tec-Daniels-Solu%C3%A7%C3%B5es-em-Aquecedores/100088495374319/' },
@@ -58,7 +60,7 @@ const REDES = [
 
 <div class="pe__base">
 <div class="env">
-<a href="/">Aquecedores a gás no Rio de Janeiro</a> · CNPJ {NEGOCIO.cnpj} · <a href="/politica-de-privacidade/">Política de privacidade</a> · © 2026 TecDaniel’s · Aquecedores a Gás. Todos os direitos reservados.
+<a href="/">Aquecedores a gás no Rio de Janeiro</a> · CNPJ {NEGOCIO.cnpj} · <a href="/politica-de-privacidade/">Política de privacidade</a> · © 2026 TecDaniel’s · Aquecedores a Gás. Todos os direitos reservados.{atualizado && (<Fragment> · Página atualizada em <time datetime={atualizado}>{atualizadoBR}</time></Fragment>)}
 </div>
 </div>
 </footer>

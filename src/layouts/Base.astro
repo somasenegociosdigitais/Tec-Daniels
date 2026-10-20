@@ -11,6 +11,7 @@
  *   faq         [{ q, a }] — gera o nó FAQPage
  *   palavraChave  registro da palavra-chave principal da página (não vai ao HTML)
  *   ogTitulo    opcional, título só para WhatsApp/redes (a home usa "TecDaniel's | ...")
+ *   atualizado  opcional, AAAA-MM-DD da última mudança do texto (conteudo.json); sem ele, data do build
  *   ogImagem    opcional, JPG/PNG 1200x630 em /public (padrão: /og-tecdaniels.jpg)
  */
 import '../styles/global.css';
@@ -19,7 +20,7 @@ import Footer from '../components/Footer.astro';
 import WhatsAppCta from '../components/WhatsAppCta.astro';
 import { NEGOCIO, AREAS_SERVIDAS } from '../data/site.js';
 
-const { titulo, descricao, trilha = [], servico, faq = [], noindex = false, ogTitulo, ogImagem = '/og-tecdaniels.jpg', ogAlt = "TecDaniel's: aquecedor a gás no Rio de Janeiro. Conserto, manutenção e instalação. WhatsApp (21) 98617-1050" } = Astro.props;
+const { titulo, descricao, trilha = [], servico, faq = [], noindex = false, atualizado, ogTitulo, ogImagem = '/og-tecdaniels.jpg', ogAlt = "TecDaniel's: aquecedor a gás no Rio de Janeiro. Conserto, manutenção e instalação. WhatsApp (21) 98617-1050" } = Astro.props;
 const ogImg = new URL(ogImagem, NEGOCIO.site).href;
 
 // Preços de mão de obra. Precisam ser os mesmos do texto das páginas.
@@ -37,13 +38,15 @@ const OFERTAS = [
 ];
 
 const url = new URL(Astro.url.pathname, NEGOCIO.site).href;
+// Mesma data no schema (dateModified) e no rodapé.
+const dataISO = atualizado || new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(new Date());
 const desc = descricao.replace(/\s+/g, ' ').trim();
 
 const empresa = {
   '@type': ['LocalBusiness', 'HVACBusiness'],
   '@id': NEGOCIO.site + '/#empresa',
-  name: NEGOCIO.nome,
-  alternateName: NEGOCIO.marca,
+  name: NEGOCIO.marca,
+  alternateName: NEGOCIO.nome,
   logo: NEGOCIO.site + '/assets/perfil-tecdaniels.png',
   image: [NEGOCIO.site + '/og-tecdaniels.jpg'],
   taxID: NEGOCIO.cnpj,
@@ -77,12 +80,24 @@ const empresa = {
   })),
 };
 
-const grafo = [empresa, {
+const site = {
+  '@type': 'WebSite',
+  '@id': NEGOCIO.site + '/#site',
+  url: NEGOCIO.site + '/',
+  name: NEGOCIO.marca,
+  inLanguage: 'pt-BR',
+  publisher: { '@id': NEGOCIO.site + '/#empresa' },
+};
+
+const grafo = [empresa, site, {
   '@type': 'WebPage',
   '@id': url + '#pagina',
   url, name: titulo, description: desc, inLanguage: 'pt-BR',
-  isPartOf: { '@type': 'WebSite', '@id': NEGOCIO.site + '/#site', url: NEGOCIO.site, name: NEGOCIO.marca, inLanguage: 'pt-BR' },
+  isPartOf: { '@id': NEGOCIO.site + '/#site' },
   about: { '@id': NEGOCIO.site + '/#empresa' },
+  dateModified: dataISO,
+  author: { '@id': NEGOCIO.site + '/#empresa' },
+  publisher: { '@id': NEGOCIO.site + '/#empresa' },
 }];
 
 if (trilha.length) {
@@ -186,7 +201,7 @@ const jsonld = JSON.stringify({ '@context': 'https://schema.org', '@graph': graf
 <main id="conteudo">
 <slot />
 </main>
-<Footer />
+<Footer atualizado={dataISO} />
 <WhatsAppCta />
 </body>
 </html>

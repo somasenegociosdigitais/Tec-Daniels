@@ -141,10 +141,12 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 </div>
 
 <div class="heroi__confianca">
-<div class="env linha" style="gap:var(--sp-4) var(--sp-7)">
+<div class="env">
+<ul class="linha lista-limpa" style="gap:var(--sp-4) var(--sp-7)">
 {confianca.map((c) => (
-  <span class="confia"><Icone nome={c.icone} tam={18} />{c.label}</span>
+  <li class="confia"><Icone nome={c.icone} tam={18} />{c.label}</li>
 ))}
+</ul>
 </div>
 </div>
 </section>
@@ -162,9 +164,9 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
   <span class="cartao__icone"><Icone nome={h.icone} tam={26} largura={1.6} /></span>
   <h3 class="cartao__titulo"><a href={h.href}>{h.titulo}</a></h3>
   <p class="cartao__desc">{h.descricao}</p>
-  <div class="cartao__links">
-  {h.links.map((l) => (<a href={l.href}>{l.label}</a>))}
-  </div>
+  <ul class="cartao__links lista-limpa">
+  {h.links.map((l) => (<li><a href={l.href}>{l.label}</a></li>))}
+  </ul>
   <a href={h.href} class="cartao__cta">Saiba mais<Icone nome="arrow-right" tam={16} /></a>
   </div>
 ))}
@@ -261,12 +263,16 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 {colunas.map((c) => (
   <div class="indice">
   <h3>{c.titulo}</h3>
-  {c.slugs.map((s) => (<a href={servicoUrl(s)}>{SERVICOS[s]}</a>))}
+  <ul class="lista-limpa">
+  {c.slugs.map((s) => (<li><a href={servicoUrl(s)}>{SERVICOS[s]}</a></li>))}
+  </ul>
   </div>
 ))}
 <div class="indice">
 <h3>Bairros atendidos</h3>
-{BAIRROS.map((b) => (<a href={b.href}>Aquecedor a gás {b.comPrep}</a>))}
+<ul class="lista-limpa">
+{BAIRROS.map((b) => (<li><a href={b.href}>Aquecedor a gás {b.comPrep}</a></li>))}
+</ul>
 </div>
 </div>
 </div>
@@ -281,9 +287,9 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <p class="t-corpo texto-links">Em áreas como <a href="/aquecedor-a-gas-jacarepagua/">Jacarepaguá</a>, <a href="/aquecedor-a-gas-taquara/">Taquara e Tanque</a>, <a href="/aquecedor-a-gas-freguesia/">Freguesia</a>, <a href="/aquecedor-a-gas-barra-da-tijuca/">Barra da Tijuca</a>, <a href="/aquecedor-a-gas-recreio-dos-bandeirantes/">Recreio</a>, <a href="/aquecedor-a-gas-vila-valqueire/">Vila Valqueire</a> e <a href="/aquecedor-a-gas-tijuca/">Tijuca</a>, temos páginas específicas com informações sobre o atendimento local, os serviços mais procurados e as particularidades de cada região.</p>
 <p class="t-corpo">Não encontrou o seu bairro? Fale conosco. Verificamos a disponibilidade de atendimento na sua região.</p>
 </div>
-<div class="linha">
-{areas.map((a) => (<a href={areaHref(a)} class="ficha">{a}</a>))}
-</div>
+<ul class="linha lista-limpa">
+{areas.map((a) => (<li><a href={areaHref(a)} class="ficha">{a}</a></li>))}
+</ul>
 </div>
 </section>
 
