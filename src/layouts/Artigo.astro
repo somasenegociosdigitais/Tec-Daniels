@@ -1,0 +1,117 @@
+---
+/** Layout de artigo. Uso: <Artigo slug="..." /> em src/pages/blog/<slug>/index.astro.
+ *  Corpo em src/data/artigos/<slug>.html; metadados em src/data/blog.js. */
+import Base from './Base.astro';
+import Icone from '../components/Icone.astro';
+import Trilha from '../components/Trilha.astro';
+import FaixaCta from '../components/FaixaCta.astro';
+import Faq from '../components/Faq.astro';
+import FormContato from '../components/FormContato.astro';
+import '../styles/blog.css';
+import { NEGOCIO } from '../data/site.js';
+import { ARTIGOS, artigoUrl, dataBR } from '../data/blog.js';
+
+const corpos = import.meta.glob('../data/artigos/*.html', { query: '?raw', import: 'default', eager: true });
+
+const { slug } = Astro.props;
+const a = ARTIGOS.find((x) => x.slug === slug);
+const corpo = corpos['../data/artigos/' + slug + '.html'];
+const url = new URL(artigoUrl(a.slug), NEGOCIO.site).href;
+
+const trilha = [
+  { nome: 'Início', href: '/' },
+  { nome: 'Blog', href: '/blog/' },
+  { nome: a.rotulo },
+];
+
+const artigoLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  '@id': url + '#artigo',
+  headline: a.h1,
+  description: a.seoDescricao,
+  datePublished: a.publicado,
+  dateModified: a.atualizado,
+  inLanguage: 'pt-BR',
+  mainEntityOfPage: { '@id': url + '#pagina' },
+  author: { '@id': NEGOCIO.site + '/#empresa' },
+  publisher: { '@id': NEGOCIO.site + '/#empresa' },
+  about: a.palavraChave,
+  ...(a.imagem ? { image: new URL(a.imagem, NEGOCIO.site).href } : {}),
+});
+---
+<Base titulo={a.seoTitulo} descricao={a.seoDescricao} trilha={trilha} faq={a.faq} atualizado={a.atualizado}>
+<script type="application/ld+json" set:html={artigoLd}></script>
+
+<section class="cabeca">
+<div class="env cabeca__env" style="padding-bottom:var(--sp-10)">
+<Trilha itens={trilha} claro={true} />
+<div class="pil" style="margin-top:44px;gap:var(--sp-5);max-width:820px">
+<p class="olho olho--claro">{a.olho}</p>
+<h1 class="t-h1" style="color:#fff;max-width:26ch">{a.h1}</h1>
+<p class="t-lead sobre-brand" style="max-width:60ch">{a.resumo}</p>
+<p class="artigo__meta"><span>Equipe técnica TecDaniel's</span><span>Publicado em <time datetime={a.publicado}>{dataBR(a.publicado)}</time></span>{a.atualizado !== a.publicado && (<span>Atualizado em <time datetime={a.atualizado}>{dataBR(a.atualizado)}</time></span>)}<span>{a.leitura}</span></p>
+</div>
+</div>
+</section>
+
+<section class="secao">
+<div class="env artigo-grade">
+<article class="artigo" set:html={corpo}></article>
+<aside class="sumario" aria-label="Neste artigo">
+<span class="rotulinho" style="color:var(--text-muted)">Neste artigo</span>
+<ol>
+{a.sumario.map((s) => (<li><a href={'#' + s.id}>{s.nome}</a></li>))}
+</ol>
+<button type="button" class="btn btn--zap js-whatsapp-cta" data-whatsapp-source={'blog-' + a.slug} style="margin-top:var(--sp-2)"><Icone nome="message-circle" tam={17} />{a.botaoSumario}</button>
+<span class="t-xs">{a.textoSumario}</span>
+</aside>
+</div>
+{a.fontes.length > 0 && (<div class="env" style="margin-top:var(--sp-8)">
+<div class="fontes" style="max-width:68ch">
+<b>Fontes</b>
+<ul>
+{a.fontes.map((f) => (<li><a href={f.href} target="_blank" rel="noopener">{f.nome}</a></li>))}
+</ul>
+</div>
+</div>)}
+</section>
+
+<section class="secao secao--alt">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Perguntas frequentes</p>
+<h2 class="t-h2">{a.tituloFaq}</h2>
+</div>
+<Faq itens={a.faq} />
+</div>
+</section>
+
+<section class="secao" id="orcamento">
+<div class="env" style="max-width:760px">
+<FormContato titulo={a.tituloForm} servicoPadrao={a.servicoForm || ''} marcaPadrao={a.marcaForm || ''} />
+</div>
+</section>
+
+<section class="secao secao--curta" style="border-top:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-4);max-width:52ch">
+<p class="olho">Serviços relacionados</p>
+<h2 class="t-h2">Conheça também</h2>
+</div>
+<div class="grade" style="grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr))">
+{a.relacionados.map((r) => (
+  <a href={r.href} class="cartao servico-cartao">
+  <span class="cartao__icone"><Icone nome={r.icone} tam={24} largura={1.6} /></span>
+  <h3 class="cartao__titulo" style="font-size:var(--fs-h4)">{r.titulo}</h3>
+  <p class="cartao__desc">{r.texto}</p>
+  <span class="cartao__cta">Ver serviço<Icone nome="arrow-right" tam={16} /></span>
+  </a>
+))}
+</div>
+<p class="t-sm texto-links">Voltar para <a href="/">TecDaniel's — soluções em aquecedores a gás no Rio de Janeiro</a>.</p>
+</div>
+</section>
+
+<FaixaCta titulo={a.ctaTitulo} secundario="Ver todos os serviços" fonte={'cta-blog-' + a.slug} />
+</Base>

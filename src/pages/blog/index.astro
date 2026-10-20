@@ -1,0 +1,46 @@
+---
+/** Hub do blog. Palavra-chave: "aquecedor a gás" (informacional) — página de apoio, não concorre com a home. */
+import Base from '../../layouts/Base.astro';
+import Icone from '../../components/Icone.astro';
+import Trilha from '../../components/Trilha.astro';
+import FaixaCta from '../../components/FaixaCta.astro';
+import '../../styles/blog.css';
+import { ARTIGOS, artigoUrl, dataBR } from '../../data/blog.js';
+
+const trilha = [{ nome: 'Início', href: '/' }, { nome: 'Blog' }];
+const lista = [...ARTIGOS].sort((x, y) => y.publicado.localeCompare(x.publicado));
+---
+<Base
+  titulo="Blog sobre aquecedor a gás e rede de gás | TecDaniel's"
+  descricao="Guias sobre aquecedor a gás no Rio de Janeiro: como escolher, códigos de erro, cheiro de gás e segurança, escritos pela equipe técnica da TecDaniel's."
+  trilha={trilha}
+>
+<section class="cabeca">
+<div class="env cabeca__env" style="padding-bottom:var(--sp-10)">
+<Trilha itens={trilha} claro={true} />
+<div class="pil" style="margin-top:44px;gap:var(--sp-5);max-width:760px">
+<p class="olho olho--claro">Blog</p>
+<h1 class="t-h1" style="color:#fff;max-width:26ch">Blog sobre aquecedor a gás e rede de gás no Rio de Janeiro</h1>
+<p class="t-lead sobre-brand" style="max-width:58ch">Orientações da nossa equipe técnica sobre escolha, defeitos, manutenção e segurança com gás.</p>
+</div>
+</div>
+</section>
+
+<section class="secao">
+<div class="env pil" style="gap:var(--sp-8)">
+<div class="lista-artigos">
+{lista.map((a) => (
+  <a href={artigoUrl(a.slug)} class="cartao">
+  <span class="cartao__data"><time datetime={a.publicado}>{dataBR(a.publicado)}</time> · {a.leitura}</span>
+  <h2 class="cartao__titulo">{a.h1}</h2>
+  <p class="cartao__desc">{a.resumo}</p>
+  <span class="cartao__cta">Ler o artigo<Icone nome="arrow-right" tam={16} /></span>
+  </a>
+))}
+</div>
+<p class="t-sm texto-links">Veja <a href="/">todos os nossos serviços de aquecedor e gás</a> ou fale com a <a href="/assistencia-tecnica-rinnai/">assistência técnica Rinnai no Rio de Janeiro</a>.</p>
+</div>
+</section>
+
+<FaixaCta titulo="Precisa de um técnico de gás? Fale conosco." secundario="Ver todos os serviços" fonte="cta-blog" />
+</Base>
