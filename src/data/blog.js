@@ -13,7 +13,7 @@ export const ARTIGOS = [
     resumo: 'Litragem, local de instalação, mecânico ou digital, tipo de gás, pressão de água e marca: o guia completo para escolher, com fotos de instalações reais.',
     imagem: '/assets/obras/aquecedor-rinnai-varanda-exaustao-instalado.jpg',
     publicado: '2026-10-20',
-    atualizado: '2026-10-20',
+    atualizado: '2026-10-21',
     leitura: '8 min de leitura',
     sumario: [
       { id: 'litragem', nome: 'Litragem ideal' },
@@ -102,7 +102,7 @@ export const ARTIGOS = [
     resumo: 'O passo a passo para agir com segurança, as causas mais comuns do vazamento de gás e o que fazer antes de abrir o registro de novo.',
     imagem: '/assets/obras/rede-de-gas-tubulacao-registro.webp',
     publicado: '2026-10-20',
-    atualizado: '2026-10-20',
+    atualizado: '2026-10-21',
     leitura: '5 min de leitura',
     sumario: [
       { id: 'o-que-fazer', nome: 'O que fazer agora' },

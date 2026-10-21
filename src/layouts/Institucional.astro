@@ -85,7 +85,9 @@ const bairros = BAIRROS.map((b) => ({ ...b, href: '/aquecedor-a-gas-' + b.slug +
 <p set:html={p.p1}></p>
 <p set:html={p.p2}></p>
 <p set:html={p.p3}></p>
-<p class="prosa__nota">Veja <a href="/"><b>todos os nossos serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
+{slug === 'quem-somos' || slug === 'area-de-atendimento'
+  ? (<p class="prosa__nota">A TecDaniel's é especialista em <a href="/"><b>aquecedor a gás no Rio de Janeiro</b></a>.{slug === 'quem-somos' && (<Fragment> Somos parceiro credenciado Rinnai: <a href={NEGOCIO.rinnai} target="_blank" rel="noopener">ver nosso credenciamento no site da Rinnai</a>.</Fragment>)}</p>)
+  : (<p class="prosa__nota">Veja <a href="/"><b>todos os nossos serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>)}
 </div>
 <div class="lista-cartao">
 <h3 class="t-h3" style="font-size:var(--fs-h4)">{p.tituloLista}</h3>

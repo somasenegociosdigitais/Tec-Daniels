@@ -34,6 +34,8 @@ const relacionados = (RELACIONADAS[slug] || []).map((k) => ({
   icone: ICONES ? ICONES[k] : 'flame', titulo: MARCAS[k].rotulo, texto: MARCAS[k].curto,
   href: '/assistencia-tecnica-' + k + '/',
 }));
+const textoMarca = [m.p1, m.p2, m.p3].join(' ');
+const temM = (h) => textoMarca.includes('href="' + h + '"');
 ---
 <Base
   titulo={m.seoTitulo || m.h1 + " | TecDaniel's"}
@@ -72,7 +74,7 @@ const relacionados = (RELACIONADAS[slug] || []).map((k) => ({
   <img src="/assets/selo-parceiro-rinnai.jpg" alt="Selo de Parceiro Credenciado Rinnai" width="84" height="84" loading="lazy">
   <span class="pil" style="gap:3px;max-width:22ch">
   <b>Parceiro Credenciado Rinnai</b>
-  <span>Ficha oficial no diretório da Rinnai, com endereço e categorias</span>
+  <span>Ver nosso credenciamento no site da Rinnai</span>
   </span>
   </a>
 )}
@@ -99,7 +101,7 @@ const relacionados = (RELACIONADAS[slug] || []).map((k) => ({
 <p set:html={m.p1}></p>
 <p set:html={m.p2}></p>
 <p set:html={m.p3}></p>
-<p class="prosa__nota">Para o seu aquecedor, fazemos <a href="/conserto-de-aquecedor-a-gas/">conserto de aquecedor a gás</a>, <a href="/manutencao-de-aquecedor-a-gas/">manutenção de aquecedor a gás</a> e <a href="/instalacao-de-aquecedor-a-gas/">instalação de aquecedor a gás</a>. Atendemos também as demais marcas — veja todos os nossos <a href="/"><b>serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
+<p class="prosa__nota">Para o seu aquecedor, fazemos {temM('/conserto-de-aquecedor-a-gas/') ? 'conserto' : (<a href="/conserto-de-aquecedor-a-gas/">conserto de aquecedor a gás</a>)}, {temM('/manutencao-de-aquecedor-a-gas/') ? 'manutenção' : (<a href="/manutencao-de-aquecedor-a-gas/">manutenção de aquecedor a gás</a>)} e <a href="/instalacao-de-aquecedor-a-gas/">instalação de aquecedor a gás</a>. Atendemos também as demais marcas — veja todos os nossos <a href="/"><b>serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
 </div>
 <div class="lista-cartao">
 <h3 class="t-h3" style="font-size:var(--fs-h4)">{m.tituloChecklist}</h3>
@@ -145,6 +147,17 @@ const relacionados = (RELACIONADAS[slug] || []).map((k) => ({
 </div>
 </div>
 </section>
+
+{slug === 'rinnai' && (
+<section class="secao secao--curta" style="border-top:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-4);max-width:72ch">
+<p class="olho">Códigos de erro</p>
+<h2 class="t-h2">Códigos de erro Rinnai mais comuns</h2>
+<p class="t-corpo texto-links">Quando o aquecedor Rinnai para e mostra um número no display, o código indica em que parte do aparelho está a falha. Explicamos o erro 11 e o erro 12, que estão entre os mais vistos, no artigo <a href="/blog/erro-11-rinnai/">erro 11 no aquecedor Rinnai: o que significa e o que fazer</a>.</p>
+{/* TODO DANIEL: validar a lista dos códigos de erro Rinnai mais comuns antes de detalhar outros códigos aqui. */}
+</div>
+</section>
+)}
 
 <section class="secao secao--alt">
 <div class="env pil" style="gap:var(--sp-8)">

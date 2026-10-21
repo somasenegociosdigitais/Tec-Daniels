@@ -53,6 +53,23 @@ const FORM_SERVICO = {
   'conversao-de-fogao': 'Conversão ou instalação de fogão', 'instalacao-de-fogao-e-cooktop': 'Conversão ou instalação de fogão',
   'pressurizador-de-agua': 'Pressurizador de água', 'pressurizador-lorenzetti': 'Pressurizador de água', 'pressurizador-komeco': 'Pressurizador de água',
 };
+// Fase 2 (21/10/2026): links no corpo para as páginas de dinheiro.
+// No máximo 1 link por destino no corpo: se o texto (p1-p3) já linka, a nota não repete.
+const texto = [p.p1, p.p2, p.p3].join(' ');
+const tem = (h) => texto.includes('href="' + h + '"');
+const v = (arr) => arr[[...slug].reduce((s, ch) => s + ch.charCodeAt(0), 0) % arr.length];
+const GAS = ['gasista', 'teste-de-estanqueidade', 'teste-de-vazamento-de-gas', 'substituicao-de-tubulacao-de-gas', 'remanejamento-de-ponto-de-gas', 'aplicacao-de-resina-em-tubulacao', 'conversao-de-fogao', 'instalacao-de-fogao-e-cooktop'];
+const extras = [];
+if (AQUECEDOR.includes(slug)) {
+  if (slug !== 'manutencao-de-aquecedor-a-gas' && !tem('/manutencao-de-aquecedor-a-gas/')) extras.push({ href: '/manutencao-de-aquecedor-a-gas/', txt: slug === 'manutencao-para-condominios' ? 'manutenção do aquecedor do apartamento' : v(['manutenção de aquecedor a gás', 'manutenção preventiva do aquecedor', 'revisão anual do aquecedor a gás']) });
+  if (slug !== 'conserto-de-aquecedor-a-gas' && !tem('/conserto-de-aquecedor-a-gas/')) extras.push({ href: '/conserto-de-aquecedor-a-gas/', txt: v(['conserto de aquecedor a gás no Rio', 'conserto do aquecedor a gás', 'conserto de aquecedor a gás de todas as marcas']) });
+  if (slug === 'manutencao-de-aquecedor-a-gas' && !tem('/manutencao-para-condominios/')) extras.push({ href: '/manutencao-para-condominios/', txt: 'manutenção para condomínios' });
+}
+if (GAS.includes(slug)) {
+  if (slug !== 'gasista' && !tem('/gasista/')) extras.push({ href: '/gasista/', txt: v(['gasista no Rio de Janeiro', 'serviço de gasista', 'gasista para casa e condomínio']) });
+  if (slug !== 'remanejamento-de-ponto-de-gas' && !tem('/remanejamento-de-ponto-de-gas/')) extras.push({ href: '/remanejamento-de-ponto-de-gas/', txt: v(['remanejamento de ponto de gás', 'mudança do ponto de gás', 'troca de lugar do ponto de gás']) });
+}
+const linkRinnai = !tem('/assistencia-tecnica-rinnai/');
 const FORM_MARCA = { 'pressurizador-lorenzetti': 'Lorenzetti', 'pressurizador-komeco': 'Komeco' };
 ---
 <Base
@@ -122,7 +139,8 @@ const FORM_MARCA = { 'pressurizador-lorenzetti': 'Lorenzetti', 'pressurizador-ko
 <p set:html={p.p2}></p>
 <p set:html={p.p3}></p>
 <p class="prosa__nota">Este é um dos serviços da TecDaniel's — veja também <a href="/"><b>todos os nossos serviços de aquecedor e gás no Rio de Janeiro</b></a>.
-{AQUECEDOR.includes(slug) && (<Fragment> Marcas que atendemos: <a href="/assistencia-tecnica-rinnai/">assistência técnica autorizada Rinnai</a>, {outrasMarcas.map((m, i) => (<Fragment>{i > 0 && (i === outrasMarcas.length - 1 ? ' e ' : ', ')}<a href={m.href}>{m.nome}</a></Fragment>))}.</Fragment>)}
+{extras.length > 0 && (<Fragment> Também fazemos {extras.map((e, i) => (<Fragment>{i > 0 && (i === extras.length - 1 ? ' e ' : ', ')}<a href={e.href}>{e.txt}</a></Fragment>))}.</Fragment>)}
+{AQUECEDOR.includes(slug) && (<Fragment> Marcas que atendemos: {linkRinnai ? (<a href="/assistencia-tecnica-rinnai/">assistência técnica autorizada Rinnai</a>) : 'Rinnai (autorizada)'}, {outrasMarcas.map((m, i) => (<Fragment>{i > 0 && (i === outrasMarcas.length - 1 ? ' e ' : ', ')}<a href={m.href}>{m.nome}</a></Fragment>))}.</Fragment>)}
  Atendemos todo o Rio, com prioridade em {BAIRROS.map((b, i) => (<Fragment>{i > 0 && (i === BAIRROS.length - 1 ? ' e ' : ', ')}<a href={b.href}>{b.nome}</a></Fragment>))}.</p>
 </div>
 <div class="lista-cartao">

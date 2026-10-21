@@ -7,6 +7,10 @@ import FotosObra from '../components/FotosObra.astro';
 import Icone from '../components/Icone.astro';
 import Faq from '../components/Faq.astro';
 import { NEGOCIO, BAIRROS, NORMAS, SERVICOS, servicoUrl } from '../data/site.js';
+import { ARTIGOS, artigoUrl, dataBR } from '../data/blog.js';
+
+// "Do blog": os 3 posts mais recentes, gerados de src/data/blog.js.
+const recentes = [...ARTIGOS].sort((x, y) => y.publicado.localeCompare(x.publicado)).slice(0, 3);
 
 // Palavra-chave principal: "aquecedor a gás rio de janeiro"
 const seo = {
@@ -229,9 +233,9 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <span class="numero__rotulo">em instalação, manutenção e assistência técnica</span>
 </div>
 <div class="prosa">
-<p>A TecDaniel’s é especialista em aquecedores a gás no Rio de Janeiro, atuando com instalação, manutenção, venda e assistência técnica autorizada. Somos assistência técnica Rinnai e integrados às redes Lorenzetti, Komeco e Rheem, seguindo rigorosamente os padrões exigidos pela Naturgy.</p>
+<p>A TecDaniel’s é especialista em aquecedores a gás no Rio de Janeiro, atuando com instalação, manutenção, venda e assistência técnica autorizada. Somos <a href="/assistencia-tecnica-rinnai/">assistência técnica autorizada Rinnai</a> e integrados às redes Lorenzetti, Komeco e Rheem, seguindo rigorosamente os padrões exigidos pela Naturgy.</p>
 <p>Nossa equipe é formada por profissionais qualificados, treinados e preparados para oferecer soluções rápidas, seguras e totalmente confiáveis. Você fala diretamente com um técnico especialista em aquecedores a gás.</p>
-<p>Atendemos em domicílio em todo o Rio de Janeiro, Grande Rio e Baixada Fluminense, com respostas rápidas e visitas técnicas em até 24 horas.</p>
+<p>Atendemos em domicílio em todo o Rio de Janeiro, Grande Rio e Baixada Fluminense, com respostas rápidas e visitas técnicas em até 24 horas. Para evitar o defeito antes que ele apareça, fazemos a <a href="/manutencao-de-aquecedor-a-gas/">manutenção preventiva do aquecedor a gás</a>, a partir de R$ 220.</p>
 <button type="button" class="btn btn--zap js-whatsapp-cta" data-whatsapp-source="quem-somos"><Icone nome="message-circle" tam={16} />Solicitar atendimento</button>
 </div>
 </div>
@@ -290,6 +294,21 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <ul class="linha lista-limpa">
 {areas.map((a) => (<li><a href={areaHref(a)} class="ficha">{a}</a></li>))}
 </ul>
+</div>
+</section>
+
+<section class="secao secao--curta">
+<div class="env pil" style="gap:var(--sp-6)">
+<div class="pil" style="gap:var(--sp-3);max-width:52ch">
+<p class="olho">Do blog</p>
+<h2 class="t-h2">Guias da nossa equipe técnica</h2>
+</div>
+<ul class="lista-limpa pil" style="gap:var(--sp-4)">
+{recentes.map((a) => (
+  <li class="pil" style="gap:2px"><a href={artigoUrl(a.slug)}><b>{a.h1}</b></a><span class="t-sm"><time datetime={a.publicado}>{dataBR(a.publicado)}</time></span></li>
+))}
+</ul>
+<p class="t-sm"><a href="/blog/">Ver todos os artigos do blog</a></p>
 </div>
 </section>
 

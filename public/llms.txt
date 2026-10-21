@@ -65,3 +65,11 @@ Fatos principais:
 
 - [Perfil no Google Maps](https://maps.google.com/maps?cid=17057996744290035172): avaliações e localização.
 - [Diretório oficial de parceiros Rinnai](https://www.rinnai.com.br/parceiros/tec-daniel--s-solucoes-em-aquecedores_7947/): comprovação da credencial Rinnai.
+
+## Blog
+
+- [Blog sobre aquecedor a gás e rede de gás](https://www.tecdaniels.com.br/blog/): guias da equipe técnica.
+- [Qual o melhor aquecedor a gás](https://www.tecdaniels.com.br/blog/melhor-aquecedor-a-gas/): como escolher tipo, litragem e instalação.
+- [Erro 11 no aquecedor Rinnai](https://www.tecdaniels.com.br/blog/erro-11-rinnai/): o que significa o erro 11 e o erro 12 e o que fazer.
+- [Cheiro de gás em casa](https://www.tecdaniels.com.br/blog/cheiro-de-gas-em-casa/): o que fazer na hora e como localizar o vazamento.
+- [Feed RSS do blog](https://www.tecdaniels.com.br/rss.xml)

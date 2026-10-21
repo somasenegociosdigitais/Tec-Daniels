@@ -40,6 +40,17 @@ const vizinhos = (VIZINHOS[slug] || []).map((v) => {
   const alvo = Object.keys(BAIRROS).find((k) => BAIRROS[k].rotulo === chave || BAIRROS[k].nome === chave);
   return { label: chave, href: alvo ? '/aquecedor-a-gas-' + alvo + '/' : '/area-de-atendimento/' };
 });
+// Fase 2 (21/10/2026): links no corpo para as páginas de dinheiro, sem repetir destino já linkado no texto.
+const texto = [b.p1, b.p2, b.p3, b.gasista ? b.gasista.p : ''].join(' ');
+const tem = (h) => texto.includes('href="' + h + '"');
+const v = (arr) => arr[[...slug].reduce((s, ch) => s + ch.charCodeAt(0), 0) % arr.length];
+const extras = [
+  { href: '/conserto-de-aquecedor-a-gas/', txt: v(['conserto de aquecedor a gás', 'conserto do aquecedor a gás no Rio']) },
+  { href: '/manutencao-de-aquecedor-a-gas/', txt: v(['manutenção preventiva do aquecedor', 'revisão anual do aquecedor a gás', 'manutenção de aquecedor a gás']) },
+  { href: '/assistencia-tecnica-rinnai/', txt: v(['assistência técnica autorizada Rinnai', 'autorizada Rinnai no Rio']) },
+  { href: '/gasista/', txt: v(['serviço de gasista', 'gasista para rede de gás']) },
+  { href: '/remanejamento-de-ponto-de-gas/', txt: v(['remanejamento de ponto de gás', 'mudança do ponto de gás']) },
+].filter((e) => !tem(e.href));
 ---
 <Base
   titulo={b.seoTitulo || b.h1 + " | TecDaniel's"}
@@ -94,7 +105,7 @@ const vizinhos = (VIZINHOS[slug] || []).map((v) => {
 <p set:html={b.p1}></p>
 <p set:html={b.p2}></p>
 <p set:html={b.p3}></p>
-<p class="prosa__nota">Atendemos além deste bairro — conheça <a href="/"><b>todos os nossos serviços de aquecedor a gás no Rio de Janeiro</b></a>.</p>
+<p class="prosa__nota">Atendemos além deste bairro — conheça <a href="/"><b>todos os nossos serviços de aquecedor a gás no Rio de Janeiro</b></a>.{extras.length > 0 && (<Fragment> {b.nomeCom.charAt(0).toUpperCase() + b.nomeCom.slice(1)}, fazemos também {extras.map((e, i) => (<Fragment>{i > 0 && (i === extras.length - 1 ? ' e ' : ', ')}<a href={e.href}>{e.txt}</a></Fragment>))}.</Fragment>)}</p>
 </div>
 <div class="lista-cartao" style="gap:18px">
 <h3 class="t-h3" style="font-size:var(--fs-h4)">Atendimento {b.nomeCom}</h3>
@@ -109,6 +120,19 @@ const vizinhos = (VIZINHOS[slug] || []).map((v) => {
 </div>
 </div>
 </section>
+
+{b.gasista && (
+<section class="secao secao--curta" style="border-top:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-4);max-width:72ch">
+<p class="olho">Serviços de gás</p>
+<h2 class="t-h2">{b.gasista.h2}</h2>
+<p class="t-corpo texto-links" set:html={b.gasista.p}></p>
+</div>
+</section>
+)}
+
+{/* TODO DANIEL: seção "Serviços feitos {b.nomeCom}" — 2 ou 3 serviços reais com foto
+    (aparelho, defeito, solução). Fica desligada até ter conteúdo real. */}
 
 <section class="secao secao--alt" style="border-bottom:var(--bw-hair) solid var(--border-hairline)">
 <div class="env pil" style="gap:var(--sp-8)">
