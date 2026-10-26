@@ -40,7 +40,7 @@ jobs:
           local-dir: ./dist/
           server-dir: /public_html/
           # Nome novo do controle de sincronização: força o envio completo do dist/.
-          state-name: .ftp-deploy-sync-state-v2.json
+          state-name: .ftp-deploy-sync-state-v3.json
           log-level: standard
           # Não mexer no que não vem do build
           exclude: |
