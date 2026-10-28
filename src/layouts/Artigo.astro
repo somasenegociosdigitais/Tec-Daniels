@@ -50,14 +50,24 @@ const artigoLd = JSON.stringify({
 <p class="olho olho--claro">{a.olho}</p>
 <h1 class="t-h1" style="color:#fff;max-width:26ch">{a.h1}</h1>
 <p class="t-lead sobre-brand" style="max-width:60ch">{a.resumo}</p>
-<p class="artigo__meta"><span>Equipe técnica TecDaniel's</span><span>Publicado em <time datetime={a.publicado}>{dataBR(a.publicado)}</time></span>{a.atualizado !== a.publicado && (<span>Atualizado em <time datetime={a.atualizado}>{dataBR(a.atualizado)}</time></span>)}<span>{a.leitura}</span></p>
+<p class="artigo__meta"><span>Equipe técnica TecDaniel's</span><span>Atualizado em <time datetime={a.atualizado}>{dataBR(a.atualizado)}</time></span>{a.atualizado !== a.publicado && (<span>Publicado em <time datetime={a.publicado}>{dataBR(a.publicado)}</time></span>)}<span>{a.leitura}</span></p>
 </div>
 </div>
 </section>
 
 <section class="secao">
 <div class="env artigo-grade">
+<div class="pil" style="gap:var(--sp-8);min-width:0">
 <article class="artigo" set:html={corpo}></article>
+<aside class="autor" aria-label="Quem escreveu">
+<img src="/assets/mascote-td-pequeno.webp" alt="" width="53" height="46" loading="lazy">
+<div class="pil" style="gap:var(--sp-2)">
+<b class="autor__nome">Equipe técnica TecDaniel's</b>
+<p class="autor__texto">Técnicos de aquecedor a gás no Rio de Janeiro desde 2003. Assistência técnica autorizada Rinnai, integrada às redes Lorenzetti, Komeco e Rheem, e dentro dos padrões Naturgy. Os artigos saem do que vemos nos atendimentos.</p>
+<p class="autor__links"><a href="/quem-somos/">Conheça a equipe</a><a href={NEGOCIO.avaliacoes || 'https://g.page/r/CeRlLWupLbrsEBM'} target="_blank" rel="noopener">Nota 5,0 no Google</a></p>
+</div>
+</aside>
+</div>
 <aside class="sumario" aria-label="Neste artigo">
 <span class="rotulinho" style="color:var(--text-muted)">Neste artigo</span>
 <ol>

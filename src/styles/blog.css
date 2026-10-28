@@ -34,3 +34,10 @@
 .artigo__tabela tr:last-child td{border-bottom:0}
 .artigo__tabela td:last-child{color:var(--ink-900);font-weight:var(--fw-semibold)}
 .artigo__nota{font-size:var(--fs-sm);padding:var(--sp-4) var(--sp-5);background:var(--surface-tint);border:var(--bw-hair) solid var(--blue-100);border-radius:var(--r-md)}
+.autor{display:flex;gap:var(--sp-5);align-items:flex-start;max-width:68ch;padding:var(--sp-6);background:var(--surface-alt);border:var(--bw-hair) solid var(--border-hairline);border-radius:var(--r-lg)}
+.autor img{display:block;flex-shrink:0;height:46px;width:auto}
+.autor__nome{color:var(--ink-900);font-size:var(--fs-body)}
+.autor__texto{font-size:var(--fs-sm);line-height:var(--lh-body)}
+.autor__links{display:flex;flex-wrap:wrap;gap:var(--sp-2) var(--sp-5);font-size:var(--fs-sm)}
+.autor__links a{color:var(--accent-strong);font-weight:var(--fw-semibold)}
+.autor__links a:hover{color:var(--brand)}
