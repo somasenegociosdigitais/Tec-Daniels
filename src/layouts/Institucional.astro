@@ -5,6 +5,7 @@ import Icone from '../components/Icone.astro';
 import Trilha from '../components/Trilha.astro';
 import FaixaCta from '../components/FaixaCta.astro';
 import Avaliacoes from '../components/Avaliacoes.astro';
+import { AVALIACOES, TEXTO_NOTA } from '../data/avaliacoes.ts';
 import { NEGOCIO, BAIRROS as BAIRROS_SITE } from '../data/site.js';
 import conteudo from '../data/conteudo.json';
 import FormContato from '../components/FormContato.astro';
@@ -185,7 +186,9 @@ const bairros = BAIRROS.map((b) => ({ ...b, href: '/aquecedor-a-gas-' + b.slug +
 <div class="env pil" style="gap:var(--sp-7)">
 <div class="pil" style="gap:var(--sp-4);max-width:52ch">
 <p class="olho">Avaliações</p>
-<h2 class="t-h2">{p.tituloAvaliacoes}</h2>
+{p.tituloAvaliacoes === '{{NOTA_GOOGLE}}'
+  ? (<h2 class="t-h2"><a href={AVALIACOES.link} target="_blank" rel="noopener" style="color:inherit">{TEXTO_NOTA}</a></h2>)
+  : (<h2 class="t-h2">{p.tituloAvaliacoes}</h2>)}
 </div>
 <Avaliacoes itens={p.avaliacoes} />
 </div>

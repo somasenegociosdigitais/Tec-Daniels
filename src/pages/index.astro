@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { AVALIACOES, TEXTO_NOTA } from '../data/avaliacoes.ts';
 import FaixaCta from '../components/FaixaCta.astro';
 import Marcas from '../components/Marcas.astro';
 import Avaliacoes from '../components/Avaliacoes.astro';
@@ -130,9 +131,9 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <span class="numero__valor">Desde 2003</span>
 <span class="numero__rotulo">com aquecedores a gás no Rio de Janeiro</span>
 </div>
-<a href={NEGOCIO.google.url} class="heroi__google" target="_blank" rel="noopener">
+<a href={AVALIACOES.link} class="heroi__google" target="_blank" rel="noopener">
 <span class="heroi__estrelas">★★★★★</span>
-<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · {NEGOCIO.google.total} avaliações</span>
+<span class="t-sm sobre-brand">{TEXTO_NOTA}</span>
 </a>
 <a href={NEGOCIO.rinnai} class="heroi__rinnai" target="_blank" rel="noopener">
 <img src="/assets/selo-parceiro-rinnai.jpg" alt="Selo de Parceiro Credenciado Rinnai" width="84" height="84" loading="lazy">

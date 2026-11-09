@@ -1,4 +1,5 @@
 ---
+import { AVALIACOES, TEXTO_NOTA } from '../../data/avaliacoes.ts';
 import Base from '../../layouts/Base.astro';
 import Icone from '../../components/Icone.astro';
 import Trilha from '../../components/Trilha.astro';
@@ -65,7 +66,7 @@ const garantias = [
 <p class="t-corpo sobre-brand" style="max-width:52ch">Aparelho pequeno demais não dá banho quente em dois pontos ao mesmo tempo. Grande demais é dinheiro parado na parede. Informe os pontos de água da sua casa e veja a vazão recomendada.</p>
 <div class="linha" style="gap:var(--sp-2)">
 <span class="heroi__estrelas">★★★★★</span>
-<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · no Rio de Janeiro desde 2003</span>
+<span class="t-sm sobre-brand"><a href={AVALIACOES.link} target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;text-underline-offset:2px">{TEXTO_NOTA}</a> · no Rio de Janeiro desde 2003</span>
 </div>
 </div>
 

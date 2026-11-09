@@ -9,7 +9,7 @@ Fatos principais:
 - Preço fechado antes do serviço; diagnóstico antes da troca de peça.
 - Assistência técnica autorizada Rinnai; integrada às redes Lorenzetti, Komeco e Rheem; atende também Bosch, Junkers e Orbis.
 - Trabalha dentro das normas ABNT NBR 13103 e NBR 15526, do RIP-RJ e dos padrões da Naturgy.
-- Nota 5,0 no Google: https://g.page/r/CeRlLWupLbrsEBM
+- Nota 5,0 em 80 avaliações no Google (novembro de 2026): https://g.page/r/CeRlLWupLbrsEBM
 - CNPJ 16.962.952/0001-26.
 
 ## Aquecedor a gás
@@ -75,4 +75,5 @@ Fatos principais:
 - [Aquecedor a gás não liga](https://www.tecdaniels.com.br/blog/aquecedor-a-gas-nao-liga/): causas (pressão de água, pilha, energia, gás) e o que conferir antes do técnico.
 - [Diafragma do aquecedor Rinnai](https://www.tecdaniels.com.br/blog/diafragma-aquecedor-rinnai/): sinais de membrana ressecada ou furada e como é a troca.
 - [Aquecedor vazando água](https://www.tecdaniels.com.br/blog/aquecedor-vazando-agua/): o que fazer na hora e de onde vem o vazamento.
+- [Erro E1, E2, E3 e outros códigos no aquecedor Lorenzetti](https://www.tecdaniels.com.br/blog/erro-aquecedor-lorenzetti/): o que significa cada código (E1 a E8) do Lorenzetti digital e o que fazer.
 - [Feed RSS do blog](https://www.tecdaniels.com.br/rss.xml)

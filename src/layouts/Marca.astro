@@ -2,6 +2,7 @@
 /** Página de assistência por marca. Rinnai é a única autorizada —
  *  as outras são atendimento técnico, sem alegar autorização. */
 import Base from './Base.astro';
+import { AVALIACOES, TEXTO_NOTA } from '../data/avaliacoes.ts';
 import Icone from '../components/Icone.astro';
 import Trilha from '../components/Trilha.astro';
 import FaixaCta from '../components/FaixaCta.astro';
@@ -66,7 +67,7 @@ const temM = (h) => textoMarca.includes('href="' + h + '"');
 <p class="t-corpo" style="color:#E4ECF8">{m.resumo}</p>
 <div class="linha" style="gap:var(--sp-2)">
 <span class="heroi__estrelas">★★★★★</span>
-<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · no Rio de Janeiro desde 2003</span>
+<span class="t-sm sobre-brand"><a href={AVALIACOES.link} target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;text-underline-offset:2px">{TEXTO_NOTA}</a> · no Rio de Janeiro desde 2003</span>
 </div>
 <div class="linha" style="gap:var(--sp-2)">
 {temSelo && (
@@ -159,6 +160,16 @@ const temM = (h) => textoMarca.includes('href="' + h + '"');
 <li><b>Erro 12:</b> a chama acendeu, mas apagou durante o banho. <a href="/blog/erro-11-rinnai/#erro-12">O que fazer no erro 12 do Rinnai</a></li>
 </ul>
 {/* TODO DANIEL: validar a lista dos códigos de erro Rinnai mais comuns antes de detalhar outros códigos aqui. */}
+</div>
+</section>
+)}
+
+{slug === 'lorenzetti' && (
+<section class="secao secao--curta" style="border-top:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-4);max-width:72ch">
+<p class="olho">Códigos de erro</p>
+<h2 class="t-h2">Códigos de erro Lorenzetti</h2>
+<p class="t-corpo texto-links">Quando o Lorenzetti digital mostra um código no display, como E1, E2 ou E3, e emite um bipe, veja <a href="/blog/erro-aquecedor-lorenzetti/">o que significa cada código de erro</a> e o que fazer em cada caso.</p>
 </div>
 </section>
 )}

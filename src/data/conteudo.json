@@ -3171,7 +3171,7 @@
           }
         ],
         "ctaTitulo": "Aquecedor Lorenzetti com defeito? Fale conosco.",
-        "atualizado": "2026-10-21"
+        "atualizado": "2026-11-09"
       },
       "komeco": {
         "seoTitulo": "Assistência técnica Komeco no Rio de Janeiro | TecDaniel's",
@@ -3687,7 +3687,7 @@
         "temEquipe": true,
         "temBairros": false,
         "temHorario": false,
-        "tituloAvaliacoes": "Nota 5,0 no Google",
+        "tituloAvaliacoes": "{{NOTA_GOOGLE}}",
         "avaliacoes": [
           {
             "texto": "Atendimento personalizado com muita competência. Minha experiência com a empresa tem mais de 5 anos e sempre com presteza quando solicitado.",
@@ -3708,7 +3708,7 @@
         "ctaTitulo": "Fale agora com um técnico especialista.",
         "seoDescricao": "Desde 2003 só com aquecedor a gás no Rio: assistência autorizada Rinnai, normas ABNT e padrão Naturgy. Você fala direto com o técnico, não com um call center.",
         "seoTitulo": "Desde 2003 com aquecedor a gás no Rio | TecDaniel's",
-        "atualizado": "2026-10-21"
+        "atualizado": "2026-11-09"
       },
       "contato": {
         "seoTitulo": "Contato | Aquecedor a gás no Rio de Janeiro | TecDaniel's",

@@ -2,6 +2,7 @@
 /** Página de bairro — eixo Jacarepaguá / Barra da Tijuca.
  *  Cada bairro tem texto, cobertura e FAQ próprios: nunca clonar. */
 import Base from './Base.astro';
+import { AVALIACOES, TEXTO_NOTA } from '../data/avaliacoes.ts';
 import Icone from '../components/Icone.astro';
 import Trilha from '../components/Trilha.astro';
 import FaixaCta from '../components/FaixaCta.astro';
@@ -78,7 +79,7 @@ const extras = [
 <p class="t-corpo" style="color:#E4ECF8">{b.resumo}</p>
 <div class="linha" style="gap:var(--sp-2)">
 <span class="heroi__estrelas">★★★★★</span>
-<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · no Rio de Janeiro desde 2003</span>
+<span class="t-sm sobre-brand"><a href={AVALIACOES.link} target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;text-underline-offset:2px">{TEXTO_NOTA}</a> · no Rio de Janeiro desde 2003</span>
 </div>
 <div class="cabeca__base">
 <span class="rotulinho">Nossa base</span>

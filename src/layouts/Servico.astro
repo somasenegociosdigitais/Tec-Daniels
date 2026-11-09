@@ -3,6 +3,7 @@
  *  herói azul com breadcrumb e cartão de resumo, texto + checklist,
  *  preços, modelos, sinais, FAQ, avaliações, relacionados e faixa de CTA. */
 import Base from './Base.astro';
+import { AVALIACOES, TEXTO_NOTA } from '../data/avaliacoes.ts';
 import Icone from '../components/Icone.astro';
 import Trilha from '../components/Trilha.astro';
 import FaixaCta from '../components/FaixaCta.astro';
@@ -101,7 +102,7 @@ const FORM_MARCA = { 'pressurizador-lorenzetti': 'Lorenzetti', 'pressurizador-ko
 <p class="t-corpo" style="color:#E4ECF8">{p.resumo}</p>
 <div class="linha" style="gap:var(--sp-2)">
 <span class="heroi__estrelas">★★★★★</span>
-<span class="t-sm sobre-brand"><b style="color:#fff">5,0</b> no Google · no Rio de Janeiro desde 2003</span>
+<span class="t-sm sobre-brand"><a href={AVALIACOES.link} target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;text-underline-offset:2px">{TEXTO_NOTA}</a> · no Rio de Janeiro desde 2003</span>
 </div>
 {temSelo && (
   <a href={NEGOCIO.rinnai} target="_blank" rel="noopener" class="heroi__rinnai" style="width:fit-content">

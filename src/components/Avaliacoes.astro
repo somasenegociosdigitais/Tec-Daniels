@@ -3,17 +3,16 @@
  *  resumo da nota (número grande + estrelas + total) e link para avaliar,
  *  seguido dos depoimentos selecionados. */
 import Icone from './Icone.astro';
-import { NEGOCIO, AVALIACOES } from '../data/site.js';
+import { NEGOCIO, AVALIACOES as DEPOIMENTOS } from '../data/site.js';
+import { AVALIACOES as GOOGLE, TEXTO_NOTA } from '../data/avaliacoes.ts';
 
 const {
-  itens = AVALIACOES,
-  nota = 5,
-  total = NEGOCIO.google.total,
+  itens = DEPOIMENTOS,
   href = NEGOCIO.google.review,
 } = Astro.props;
 
-const cheias = Math.round(nota);
-const notaTxt = Number(nota).toFixed(1).replace('.', ',');
+const notaTxt = GOOGLE.nota;
+const cheias = Math.round(Number(GOOGLE.nota.replace(',', '.')));
 ---
 <div class="pil" style="gap:var(--sp-6)">
 
@@ -26,7 +25,7 @@ const notaTxt = Number(nota).toFixed(1).replace('.', ',');
   <Icone nome="star" tam={16} largura={2.25} cor={i < cheias ? '#F5A623' : '#D8DDE3'} />
 ))}
 </span>
-<span class="t-sm">Nota {notaTxt} · {total} avaliações no Google</span>
+<a href={GOOGLE.link} target="_blank" rel="noopener" class="t-sm">{TEXTO_NOTA}</a>
 </div>
 </div>
 <a href={href} target="_blank" rel="noopener" class="nota__link">Avaliar no Google<Icone nome="arrow-up-right" tam={16} /></a>

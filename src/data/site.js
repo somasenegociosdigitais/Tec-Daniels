@@ -1,3 +1,5 @@
+import { AVALIACOES as GOOGLE } from './avaliacoes.ts';
+
 export const NEGOCIO = {
   nome: "TecDaniel's Soluções em Aquecedores a Gás",
   marca: "TecDaniel's",
@@ -22,10 +24,10 @@ export const NEGOCIO = {
       (hoje.getMonth() === abriu.getMonth() && hoje.getDate() < abriu.getDate());
     return antes ? a - 1 : a;
   },
+  // Nota e total de avaliações ficam em src/data/avaliacoes.ts (fonte única).
   google: {
-    url: 'https://g.page/r/CeRlLWupLbrsEBM',
-    review: 'https://g.page/r/CeRlLWupLbrsEBM/review',
-    nota: '5.0', total: 79,
+    url: GOOGLE.link,
+    review: GOOGLE.link + '/review',
   },
   rinnai: 'https://www.rinnai.com.br/parceiros/tec-daniel--s-solucoes-em-aquecedores_7947/',
   tagline: 'Pensou em banho quente com segurança? Chame a TecDaniels!',

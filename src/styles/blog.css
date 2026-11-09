@@ -33,6 +33,10 @@
 .artigo__tabela th{background:var(--surface-alt);color:var(--ink-900);font-weight:var(--fw-semibold)}
 .artigo__tabela tr:last-child td{border-bottom:0}
 .artigo__tabela td:last-child{color:var(--ink-900);font-weight:var(--fw-semibold)}
+.artigo__tabela--codigos td{vertical-align:top}
+.artigo__tabela--codigos td:first-child{color:var(--ink-900);font-weight:var(--fw-semibold);white-space:nowrap}
+.artigo__tabela--codigos td:last-child{color:inherit;font-weight:inherit}
+@media (max-width:640px){.artigo__tabela--codigos thead{display:none}.artigo__tabela--codigos tr,.artigo__tabela--codigos td{display:block}.artigo__tabela--codigos tr{border-bottom:var(--bw-hair) solid var(--border-hairline)}.artigo__tabela--codigos tr:last-child{border-bottom:0}.artigo__tabela--codigos td{border-bottom:0;padding:6px 16px}.artigo__tabela--codigos td:first-child{padding-top:14px;font-size:var(--fs-body)}.artigo__tabela--codigos td:last-child{padding-bottom:14px}.artigo__tabela--codigos td[data-rotulo]:not(:first-child)::before{content:attr(data-rotulo);display:block;font-size:var(--fs-xs);font-weight:var(--fw-semibold);color:var(--text-muted)}}
 .artigo__nota{font-size:var(--fs-sm);padding:var(--sp-4) var(--sp-5);background:var(--surface-tint);border:var(--bw-hair) solid var(--blue-100);border-radius:var(--r-md)}
 .autor{display:flex;gap:var(--sp-5);align-items:flex-start;max-width:68ch;padding:var(--sp-6);background:var(--surface-alt);border:var(--bw-hair) solid var(--border-hairline);border-radius:var(--r-lg)}
 .autor img{display:block;flex-shrink:0;height:46px;width:auto}

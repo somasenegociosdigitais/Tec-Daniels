@@ -9,13 +9,15 @@ import Faq from '../components/Faq.astro';
 import FormContato from '../components/FormContato.astro';
 import '../styles/blog.css';
 import { NEGOCIO } from '../data/site.js';
+import { AVALIACOES, TEXTO_NOTA } from '../data/avaliacoes.ts';
 import { ARTIGOS, artigoUrl, dataBR } from '../data/blog.js';
 
 const corpos = import.meta.glob('../data/artigos/*.html', { query: '?raw', import: 'default', eager: true });
 
 const { slug } = Astro.props;
 const a = ARTIGOS.find((x) => x.slug === slug);
-const corpo = corpos['../data/artigos/' + slug + '.html'];
+// Comentários HTML (ex.: TODO DANIEL) ficam só no arquivo-fonte, não no site publicado.
+const corpo = corpos['../data/artigos/' + slug + '.html'].replace(/<!--[\s\S]*?-->\n?/g, '');
 const url = new URL(artigoUrl(a.slug), NEGOCIO.site).href;
 
 const trilha = [
@@ -64,7 +66,7 @@ const artigoLd = JSON.stringify({
 <div class="pil" style="gap:var(--sp-2)">
 <b class="autor__nome">Equipe técnica TecDaniel's</b>
 <p class="autor__texto">Técnicos de aquecedor a gás no Rio de Janeiro desde 2003. Assistência técnica autorizada Rinnai, integrada às redes Lorenzetti, Komeco e Rheem, e dentro dos padrões Naturgy. Os artigos saem do que vemos nos atendimentos.</p>
-<p class="autor__links"><a href="/quem-somos/">Conheça a equipe</a><a href={NEGOCIO.google.url} target="_blank" rel="noopener">Nota 5,0 no Google</a></p>
+<p class="autor__links"><a href="/quem-somos/">Conheça a equipe</a><a href={AVALIACOES.link} target="_blank" rel="noopener">{TEXTO_NOTA}</a></p>
 </div>
 </aside>
 </div>
