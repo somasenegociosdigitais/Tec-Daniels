@@ -139,6 +139,7 @@ const FORM_MARCA = { 'pressurizador-lorenzetti': 'Lorenzetti', 'pressurizador-ko
 <p set:html={p.p1}></p>
 <p set:html={p.p2}></p>
 <p set:html={p.p3}></p>
+{p.p4 && <p set:html={p.p4}></p>}
 <p class="prosa__nota">Este é um dos serviços da TecDaniel's — veja também <a href="/"><b>todos os nossos serviços de aquecedor e gás no Rio de Janeiro</b></a>.
 {extras.length > 0 && (<Fragment> Também fazemos {extras.map((e, i) => (<Fragment>{i > 0 && (i === extras.length - 1 ? ' e ' : ', ')}<a href={e.href}>{e.txt}</a></Fragment>))}.</Fragment>)}
 {AQUECEDOR.includes(slug) && (<Fragment> Marcas que atendemos: {linkRinnai ? (<a href="/assistencia-tecnica-rinnai/">assistência técnica autorizada Rinnai</a>) : 'Rinnai (autorizada)'}, {outrasMarcas.map((m, i) => (<Fragment>{i > 0 && (i === outrasMarcas.length - 1 ? ' e ' : ', ')}<a href={m.href}>{m.nome}</a></Fragment>))}.</Fragment>)}

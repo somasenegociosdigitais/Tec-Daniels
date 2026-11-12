@@ -64,7 +64,18 @@ export const BAIRROS = [
   { nome: 'Tijuca', slug: 'tijuca', prep: 'na' },
 ].map((b) => ({ ...b, href: '/aquecedor-a-gas-' + b.slug + '/', comPrep: b.prep + ' ' + b.nome }));
 
-export const AREAS_SERVIDAS = ['Jacarepaguá', 'Barra da Tijuca', 'Recreio dos Bandeirantes', 'Freguesia', 'Taquara', 'Tanque', 'Vila Valqueire', 'Tijuca', 'Rio de Janeiro', 'Grande Rio', 'Baixada Fluminense'];
+// Todas as páginas de região (as 7 do eixo + as 5 regiões mais distantes), para a home,
+// a área de atendimento e o rodapé. Páginas criadas em 12/11/2026.
+export const REGIOES = [
+  ...BAIRROS,
+  { nome: 'Copacabana', slug: 'copacabana', prep: 'em' },
+  { nome: 'Méier', slug: 'meier', prep: 'no' },
+  { nome: 'Campo Grande', slug: 'campo-grande', prep: 'em' },
+  { nome: 'Niterói', slug: 'niteroi', prep: 'em' },
+  { nome: 'Baixada Fluminense', slug: 'baixada-fluminense', prep: 'na' },
+].map((b) => ({ ...b, href: '/aquecedor-a-gas-' + b.slug + '/', comPrep: b.prep + ' ' + b.nome }));
+
+export const AREAS_SERVIDAS = ['Jacarepaguá', 'Barra da Tijuca', 'Recreio dos Bandeirantes', 'Freguesia', 'Taquara', 'Tanque', 'Vila Valqueire', 'Tijuca', 'Copacabana', 'Zona Sul', 'Méier', 'Zona Norte', 'Campo Grande', 'Zona Oeste', 'Niterói', 'São Gonçalo', 'Rio de Janeiro', 'Grande Rio', 'Baixada Fluminense'];
 
 export const NORMAS = [
   { nome: 'ABNT NBR 13103', nota: 'Instalação de aparelhos a gás: ventilação, exaustão e volume mínimo do ambiente.' },

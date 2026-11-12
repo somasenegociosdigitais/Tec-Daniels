@@ -11,6 +11,7 @@ import Avaliacoes from '../components/Avaliacoes.astro';
 import { NEGOCIO } from '../data/site.js';
 import conteudo from '../data/conteudo.json';
 import FormContato from '../components/FormContato.astro';
+import FotosObra from '../components/FotosObra.astro';
 
 const { slug } = Astro.props;
 const { BAIRROS, AVALIACOES, VIZINHOS, MAPA_SERVICOS } = conteudo.bairro;
@@ -59,6 +60,7 @@ const extras = [
   atualizado={b.atualizado}
   trilha={trilha}
   servico={b.h1}
+  areaServida={[b.nome, ...b.cobertura.filter((c) => c !== b.nome)]}
   faq={b.faq}
 >
 
@@ -132,8 +134,24 @@ const extras = [
 </section>
 )}
 
-{/* TODO DANIEL: seção "Serviços feitos {b.nomeCom}" — 2 ou 3 serviços reais com foto
-    (aparelho, defeito, solução). Fica desligada até ter conteúdo real. */}
+{b.fotos && (
+<section class="secao secao--alt" style="border-bottom:var(--bw-hair) solid var(--border-hairline)">
+<div class="env pil" style="gap:var(--sp-7)">
+<div class="pil" style="gap:var(--sp-4);max-width:56ch">
+<p class="olho">{b.fotos.olho}</p>
+<h2 class="t-h2">{b.fotos.titulo}</h2>
+<p class="t-corpo">{b.fotos.intro}</p>
+</div>
+<FotosObra itens={b.fotos.itens} />
+</div>
+</section>
+)}
+
+<!-- TODO DANIEL: seção "Serviços feitos {b.nomeCom}" — 2 ou 3 serviços reais com foto
+     (aparelho, defeito, solução) feitos nesta região. Os posts do perfil do Google só
+     dizem o bairro em Jacarepaguá; as fotos acima são de atendimentos
+     no Rio, sem o bairro. Quando houver casos da região, trocar os itens de `fotos`
+     em src/data/conteudo.json (bairro.BAIRROS.<slug>.fotos). -->
 
 <section class="secao secao--alt" style="border-bottom:var(--bw-hair) solid var(--border-hairline)">
 <div class="env pil" style="gap:var(--sp-8)">
@@ -202,7 +220,7 @@ const extras = [
 
 <section class="secao secao--alt" id="orcamento">
 <div class="env">
-<FormContato titulo={'Peça seu orçamento ' + b.nomeCom} />
+<FormContato titulo={'Peça seu orçamento ' + b.nomeCom} servicoPadrao="Conserto de aquecedor" />
 </div>
 </section>
 

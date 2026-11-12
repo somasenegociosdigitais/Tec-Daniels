@@ -8,6 +8,7 @@
  *   descricao   obrigatório, até ~155 caracteres
  *   trilha      breadcrumb: [{ nome, href }] — o último item é a página atual
  *   servico     nome do serviço, gera o nó Service do schema
+ *   areaServida lugares atendidos pela página (páginas de região): entra no areaServed do Service
  *   faq         [{ q, a }] — gera o nó FAQPage
  *   palavraChave  registro da palavra-chave principal da página (não vai ao HTML)
  *   ogTitulo    opcional, título só para WhatsApp/redes (a home usa "TecDaniel's | ...")
@@ -20,7 +21,7 @@ import Footer from '../components/Footer.astro';
 import WhatsAppCta from '../components/WhatsAppCta.astro';
 import { NEGOCIO, AREAS_SERVIDAS } from '../data/site.js';
 
-const { titulo, descricao, trilha = [], servico, faq = [], noindex = false, atualizado, ogTitulo, ogImagem = '/og-tecdaniels.jpg', ogAlt = "TecDaniel's: aquecedor a gás no Rio de Janeiro. Conserto, manutenção e instalação. WhatsApp (21) 98617-1050" } = Astro.props;
+const { titulo, descricao, trilha = [], servico, areaServida = [], faq = [], noindex = false, atualizado, ogTitulo, ogImagem = '/og-tecdaniels.jpg', ogAlt = "TecDaniel's: aquecedor a gás no Rio de Janeiro. Conserto, manutenção e instalação. WhatsApp (21) 98617-1050" } = Astro.props;
 const ogImg = new URL(ogImagem, NEGOCIO.site).href;
 
 // Preços de mão de obra. Precisam ser os mesmos do texto das páginas.
@@ -116,7 +117,7 @@ if (servico) {
     '@id': url + '#servico',
     name: servico, serviceType: servico, description: desc,
     provider: { '@id': NEGOCIO.site + '/#empresa' },
-    areaServed: { '@type': 'City', name: 'Rio de Janeiro' },
+    areaServed: areaServida.length ? areaServida.map((n) => ({ '@type': 'Place', name: n })) : { '@type': 'City', name: 'Rio de Janeiro' },
     offers: { '@type': 'Offer', availability: 'https://schema.org/InStock', priceCurrency: 'BRL', url },
   });
 }
