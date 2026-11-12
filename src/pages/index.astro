@@ -7,7 +7,7 @@ import Avaliacoes from '../components/Avaliacoes.astro';
 import FotosObra from '../components/FotosObra.astro';
 import Icone from '../components/Icone.astro';
 import Faq from '../components/Faq.astro';
-import { NEGOCIO, BAIRROS, NORMAS, SERVICOS, servicoUrl } from '../data/site.js';
+import { NEGOCIO, REGIOES, NORMAS, SERVICOS, servicoUrl } from '../data/site.js';
 import { ARTIGOS, artigoUrl, dataBR } from '../data/blog.js';
 
 // "Do blog": os 3 posts mais recentes, gerados de src/data/blog.js.
@@ -104,7 +104,7 @@ const colunas = [
 ];
 
 const areas = ['Zona Sul', 'Zona Norte', 'Zona Oeste', 'Centro', 'Barra da Tijuca', 'Recreio', 'Jacarepaguá', 'Tijuca', 'Niterói', 'São Gonçalo', 'Duque de Caxias', 'Nova Iguaçu', 'Nilópolis', 'São João de Meriti', 'Belford Roxo', 'Mesquita'];
-const paraBairro = { 'Barra da Tijuca': 'barra-da-tijuca', 'Jacarepaguá': 'jacarepagua', 'Recreio': 'recreio-dos-bandeirantes', 'Tijuca': 'tijuca' };
+const paraBairro = { 'Zona Sul': 'copacabana', 'Zona Norte': 'meier', 'Zona Oeste': 'campo-grande', 'Barra da Tijuca': 'barra-da-tijuca', 'Jacarepaguá': 'jacarepagua', 'Recreio': 'recreio-dos-bandeirantes', 'Tijuca': 'tijuca', 'Niterói': 'niteroi', 'São Gonçalo': 'niteroi', 'Duque de Caxias': 'baixada-fluminense', 'Nova Iguaçu': 'baixada-fluminense', 'Nilópolis': 'baixada-fluminense', 'São João de Meriti': 'baixada-fluminense', 'Belford Roxo': 'baixada-fluminense', 'Mesquita': 'baixada-fluminense' };
 const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/' : '/area-de-atendimento/';
 ---
 <Base {...seo} faq={FAQ}>
@@ -276,7 +276,7 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <div class="indice">
 <h3>Bairros atendidos</h3>
 <ul class="lista-limpa">
-{BAIRROS.map((b) => (<li><a href={b.href}>Aquecedor a gás {b.comPrep}</a></li>))}
+{REGIOES.map((b) => (<li><a href={b.href}>Aquecedor a gás {b.comPrep}</a></li>))}
 </ul>
 </div>
 </div>
@@ -289,7 +289,7 @@ const areaHref = (a) => paraBairro[a] ? '/aquecedor-a-gas-' + paraBairro[a] + '/
 <p class="olho">Área de atendimento</p>
 <h2 class="t-h2">Atendemos o Rio de Janeiro, Grande Rio e Baixada Fluminense</h2>
 <p class="t-corpo">Realizamos conserto e manutenção de aquecedores a gás e serviços de gasista em diferentes regiões do Rio de Janeiro, Grande Rio e Baixada Fluminense.</p>
-<p class="t-corpo texto-links">Em áreas como <a href="/aquecedor-a-gas-jacarepagua/">Jacarepaguá</a>, <a href="/aquecedor-a-gas-taquara/">Taquara e Tanque</a>, <a href="/aquecedor-a-gas-freguesia/">Freguesia</a>, <a href="/aquecedor-a-gas-barra-da-tijuca/">Barra da Tijuca</a>, <a href="/aquecedor-a-gas-recreio-dos-bandeirantes/">Recreio</a>, <a href="/aquecedor-a-gas-vila-valqueire/">Vila Valqueire</a> e <a href="/aquecedor-a-gas-tijuca/">Tijuca</a>, temos páginas específicas com informações sobre o atendimento local, os serviços mais procurados e as particularidades de cada região.</p>
+<p class="t-corpo texto-links">Em áreas como <a href="/aquecedor-a-gas-jacarepagua/">Jacarepaguá</a>, <a href="/aquecedor-a-gas-taquara/">Taquara e Tanque</a>, <a href="/aquecedor-a-gas-freguesia/">Freguesia</a>, <a href="/aquecedor-a-gas-barra-da-tijuca/">Barra da Tijuca</a>, <a href="/aquecedor-a-gas-recreio-dos-bandeirantes/">Recreio</a>, <a href="/aquecedor-a-gas-vila-valqueire/">Vila Valqueire</a>, <a href="/aquecedor-a-gas-tijuca/">Tijuca</a>, <a href="/aquecedor-a-gas-copacabana/">Copacabana e Zona Sul</a>, <a href="/aquecedor-a-gas-meier/">Méier e Zona Norte</a>, <a href="/aquecedor-a-gas-campo-grande/">Campo Grande</a>, <a href="/aquecedor-a-gas-niteroi/">Niterói</a> e <a href="/aquecedor-a-gas-baixada-fluminense/">Baixada Fluminense</a>, temos páginas específicas com informações sobre o atendimento local, os serviços mais procurados e as particularidades de cada região.</p>
 <p class="t-corpo">Não encontrou o seu bairro? Fale conosco. Verificamos a disponibilidade de atendimento na sua região.</p>
 </div>
 <ul class="linha lista-limpa">

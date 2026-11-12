@@ -297,7 +297,7 @@
         "h1": "Gasista no Rio de Janeiro e Grande Rio",
         "resumo": "Técnico gasista para instalação, remanejamento e reparo de rede de gás em casas, apartamentos e condomínios, com teste de estanqueidade e laudo.",
         "h2": "Serviço de gás feito por técnico, com teste no final",
-        "p1": "Gasista no Rio de Janeiro e Grande Rio para instalação, alteração e reparo de redes de gás. O serviço envolve tubulação adequada, pressão correta, ventilação e <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> para verificar a vedação da rede. A execução segue o padrão Naturgy.",
+        "p1": "Gasista no Rio de Janeiro e Grande Rio para instalação, alteração e reparo de redes de gás. Muita gente chama esse profissional de bombeiro gasista: é o mesmo técnico, que cuida da rede de gás da casa ou do condomínio. O serviço envolve tubulação adequada, pressão correta, ventilação e <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a> para verificar a vedação da rede. A execução segue o padrão Naturgy.",
         "p2": "Instalamos e substituímos tubulação de cobre e ferro galvanizado, remanejamos pontos de fogão e aquecedor, trocamos registros, fazemos <a href=\"/conversao-de-fogao/\">conversão de fogão</a> e forno e corrigimos vazamentos. Quando possível, o reparo é feito sem quebrar a parede.",
         "p3": "Depois do serviço, realizamos o teste de estanqueidade e emitimos o laudo do que foi executado. Atendemos residências, condomínios e pontos comerciais no Rio, Grande Rio e Baixada Fluminense.",
         "checklist": [
@@ -323,6 +323,10 @@
             "a": "O gasista trabalha na rede de gás, fazendo instalação e reparo de tubulação, troca de registros, mudança de pontos, ligação de fogão e aquecedor, conversão de aparelhos e testes de estanqueidade."
           },
           {
+            "q": "Gasista e bombeiro gasista são a mesma coisa?",
+            "a": "Sim. São dois nomes para o mesmo profissional: o técnico que faz instalação e reparo de tubulação de gás, troca de registros, mudança de pontos, ligação de fogão e aquecedor, conversão de aparelhos e teste de estanqueidade com laudo."
+          },
+          {
             "q": "Vocês emitem laudo do serviço?",
             "a": "Sim. Após o serviço em rede de gás, realizamos o teste de estanqueidade e emitimos o laudo assinado."
           },
@@ -335,7 +339,8 @@
             "a": "Sim. Atendemos condomínios, inclusive serviços de prumada e cronograma por unidade, com relatório para a administradora."
           }
         ],
-        "atualizado": "2026-10-21"
+        "atualizado": "2026-11-12",
+        "p4": "Gasista por região: atendemos em domicílio em <a href=\"/aquecedor-a-gas-copacabana/\">Copacabana e Zona Sul</a>, na <a href=\"/aquecedor-a-gas-barra-da-tijuca/\">Barra da Tijuca</a>, na <a href=\"/aquecedor-a-gas-tijuca/\">Tijuca</a>, no <a href=\"/aquecedor-a-gas-meier/\">Méier e Zona Norte</a>, em <a href=\"/aquecedor-a-gas-jacarepagua/\">Jacarepaguá</a>, em <a href=\"/aquecedor-a-gas-niteroi/\">Niterói</a> e na <a href=\"/aquecedor-a-gas-baixada-fluminense/\">Baixada Fluminense</a>."
       },
       "remanejamento-de-ponto-de-gas": {
         "seoTitulo": "Remanejamento de ponto de gás no Rio | TecDaniel's",
@@ -444,7 +449,7 @@
         "curto": "Ligação no gás encanado ou no botijão, com teste de vazamento.",
         "h1": "Instalação de fogão e cooktop no Rio de Janeiro",
         "resumo": "Instalação de fogão de piso, cooktop e forno embutido no gás encanado ou GLP, com mangueira e registro adequados, regulagem da chama e teste de vazamento.",
-        "h2": "Fogão instalado por gasista, com ligação e teste",
+        "h2": "Fogão e cooktop a gás encanado (gás de rua) ou botijão: instalação por gasista, com ligação e teste",
         "p1": "A ligação do fogão precisa de materiais adequados ao tipo de gás e uma montagem correta. Instalamos mangueira e registro apropriados, fazemos a ligação conforme as condições do imóvel e terminamos com <a href=\"/teste-de-vazamento-de-gas/\">teste de vazamento</a>.",
         "p2": "Instalamos fogão de piso, cooktop e forno embutido de marcas como Electrolux, Brastemp, Consul, Atlas, Itatiaia e Esmaltec, entre outras. Se o aparelho estiver configurado para outro tipo de gás, fazemos a conversão dos injetores. Se o ponto estiver em outra posição, também podemos fazer o remanejamento.",
         "p3": "Atendemos instalações em gás encanado e botijão, para residências, condomínios e pontos comerciais no Rio, Grande Rio e Baixada Fluminense.",
@@ -471,6 +476,10 @@
             "a": "Sim. Instalamos fogão de piso, cooktop e forno embutido no gás encanado ou no botijão, com ligação adequada e teste de vazamento no final."
           },
           {
+            "q": "O que precisa para instalar um cooktop no gás encanado?",
+            "a": "Mangueira e registro dentro da norma, adequados ao gás de rua, a montagem correta no ponto de gás e o teste de vazamento no final. Se o cooktop vier configurado para botijão, fazemos a conversão dos injetores na mesma visita."
+          },
+          {
             "q": "Instalam fogão Electrolux, Brastemp, Consul?",
             "a": "Sim. Trabalhamos com todas as marcas e, quando necessário, fazemos a conversão dos injetores para o tipo de gás disponível no imóvel."
           },
@@ -487,7 +496,7 @@
             "a": "Pode, desde que a instalação permita uma derivação adequada e haja registro para cada aparelho. Avaliamos o ponto antes da execução."
           }
         ],
-        "atualizado": "2026-10-21"
+        "atualizado": "2026-11-12"
       },
       "aplicacao-de-resina-em-tubulacao": {
         "seoTitulo": "Resina em tubulação de gás no Rio de Janeiro | TecDaniel's",
@@ -649,7 +658,7 @@
         "h1": "Conversão de fogão para gás natural ou botijão",
         "resumo": "Conversão de fogão, cooktop ou forno para outro tipo de gás sem trocar o aparelho, com troca dos injetores, regulagem da chama e teste de vazamento.",
         "h2": "Conversão de fogão feita na sua casa",
-        "p1": "Mudou de endereço e encontrou outro tipo de gás? A conversão permite adaptar o aparelho sem comprar um fogão novo. Trocamos os injetores adequados ao gás de destino, ajustamos a entrada de ar e regulamos a chama. O serviço pode ser feito de GLP (botijão) para gás natural ou no sentido inverso.",
+        "p1": "Mudou de endereço e encontrou outro tipo de gás? Converter o fogão para gás de rua é o pedido mais comum. A conversão permite adaptar o aparelho sem comprar um fogão novo. Trocamos os injetores adequados ao gás de destino, ajustamos a entrada de ar e regulamos a chama. O serviço pode ser feito de GLP (botijão) para gás natural, o gás de rua ou gás encanado, ou no sentido inverso.",
         "p2": "Convertemos fogão de piso, <a href=\"/instalacao-de-fogao-e-cooktop/\">cooktop</a> e forno embutido de marcas como Electrolux, Brastemp, Consul, Atlas, Itatiaia, Dako e Esmaltec, entre outras. Após a conversão, testamos a ligação e regulamos as chamas para que o aparelho funcione corretamente.",
         "p3": "Se a instalação também precisar de um novo ponto de gás, podemos fazer o remanejamento e executar a ligação em tubulação adequada.",
         "checklist": [
@@ -670,6 +679,14 @@
         "tituloFaq": "Dúvidas sobre conversão de fogão",
         "ctaTitulo": "Vai converter o fogão? Fale conosco.",
         "faq": [
+          {
+            "q": "Como converter o fogão para gás de rua?",
+            "a": "A conversão troca os injetores de cada boca e do forno pelos adequados ao gás natural, regula a chama e termina com o teste de vedação na ligação. É feita na sua casa, sem trocar o fogão, e a mão de obra custa R$ 220."
+          },
+          {
+            "q": "Existe adaptador de fogão para gás encanado?",
+            "a": "Não é um adaptador. A conversão para o gás encanado é feita trocando os injetores e regulando a chama de cada boca e do forno, e por isso precisa de técnico."
+          },
           {
             "q": "Preciso comprar um fogão novo para mudar de gás?",
             "a": "Não. A conversão adapta o próprio aparelho ao gás de destino por meio da troca dos injetores e da regulagem da chama."
@@ -695,7 +712,7 @@
             "a": "Sim. Trabalhamos com todas as marcas, nos dois sentidos: do botijão para o gás encanado e do encanado para o GLP."
           }
         ],
-        "atualizado": "2026-10-21"
+        "atualizado": "2026-11-12"
       },
       "aquecedor-de-fluxo-balanceado": {
         "seoTitulo": "Aquecedor de fluxo balanceado no Rio | TecDaniel's",
@@ -2169,7 +2186,7 @@
           "Rio 2",
           "Ilha da Gigoia"
         ],
-        "tituloServicos": "Serviços mais pedidos na Barra da Tijuca",
+        "tituloServicos": "Conserto de aquecedor a gás na Barra da Tijuca e outros serviços mais pedidos",
         "servicos": [
           {
             "icon": "thermometer",
@@ -2217,7 +2234,7 @@
         ],
         "ctaTitulo": "Aquecedor com problema na Barra? Fale conosco.",
         "promessa": "Visita técnica em até 24 horas",
-        "atualizado": "2026-10-21",
+        "atualizado": "2026-11-12",
         "gasista": {
           "h2": "Gasista na Barra da Tijuca",
           "p": "Em apartamento reformado, o <a href=\"/gasista/\">gasista na Barra da Tijuca</a> entra para mudar o ponto de gás da cozinha, ligar o cooktop na bancada nova e fazer o teste de estanqueidade quando o condomínio exige laudo. Também localizamos vazamento com detector e trocamos registro com defeito. O serviço segue a NBR 15526 e os padrões da Naturgy."
@@ -2687,7 +2704,7 @@
           "Grajaú",
           "Vila Isabel"
         ],
-        "tituloServicos": "Serviços mais pedidos na Tijuca",
+        "tituloServicos": "Conserto de aquecedor a gás na Tijuca e outros serviços mais pedidos",
         "servicos": [
           {
             "icon": "wind",
@@ -2735,10 +2752,547 @@
         ],
         "ctaTitulo": "Aquecedor com problema na Tijuca? Fale conosco.",
         "promessa": "Visita técnica em até 24 horas",
-        "atualizado": "2026-10-21",
+        "atualizado": "2026-11-12",
         "gasista": {
           "h2": "Gasista na Tijuca",
           "p": "Além do aquecedor, fazemos o serviço de <a href=\"/gasista/\">gasista na Tijuca</a> em apartamento, casa e condomínio: teste de estanqueidade com laudo, localização de vazamento com detector, remanejamento de ponto de gás e ligação de fogão e cooktop. Quando o teste aponta perda de pressão, mostramos o trecho com problema e o orçamento do reparo antes de começar."
+        }
+      },
+      "copacabana": {
+        "seoTitulo": "Gasista e aquecedor a gás em Copacabana | TecDaniel's",
+        "seoDescricao": "Gasista em Copacabana e Zona Sul, com conserto e manutenção de aquecedor a gás em apartamento e condomínio. Visita em até 24h e 90 dias de garantia. WhatsApp.",
+        "nome": "Copacabana",
+        "nomeCom": "em Copacabana",
+        "nomeDe": "de Copacabana",
+        "rotulo": "Copacabana e Zona Sul",
+        "h1": "Gasista e aquecedor a gás em Copacabana e Zona Sul",
+        "resumo": "Gasista para rede de gás, fogão e cooktop, e conserto e manutenção de aquecedor a gás em Copacabana, Leme, Botafogo, Flamengo, Laranjeiras, Ipanema e Leblon.",
+        "baseTexto": "Rua Candido Benício 1381, sala 205, Praça Seca. Atendemos Copacabana e a Zona Sul em domicílio.",
+        "h2": "Gasista em Copacabana: rede de gás, fogão e aquecedor pelo mesmo técnico",
+        "p1": "Em Copacabana e na Zona Sul, fazemos serviços de <a href=\"/gasista/\">gasista</a> e de aquecedor a gás em apartamentos e condomínios. Na rede de gás: teste de estanqueidade com laudo pedido pelo condomínio ou pela concessionária, localização de vazamento quando há cheiro de gás, troca de registro, remanejamento de ponto em reforma de cozinha e ligação de fogão e cooktop no gás encanado. O serviço segue a NBR 15526 e os padrões da Naturgy, e termina com teste.",
+        "p2": "O mesmo técnico cuida do aquecedor: <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a> com diagnóstico antes da troca de peça, <a href=\"/manutencao-de-aquecedor-a-gas/\">manutenção de aquecedor a gás</a> anual e instalação ou troca de aparelho, com a exaustão conferida. Somos <a href=\"/assistencia-tecnica-rinnai/\">assistência técnica autorizada Rinnai</a> e integrados às redes Lorenzetti, Komeco e Rheem.",
+        "p3": "Atendemos apartamentos, casas e condomínios em Copacabana, Leme, Botafogo, Flamengo, Laranjeiras, Ipanema e Leblon, com nota fiscal e laudo do serviço para a administradora quando necessário. A visita técnica é agendada em até 24 horas.",
+        "checklist": [
+          "Gasista em Copacabana e Zona Sul",
+          "Teste de estanqueidade com laudo",
+          "Emergência de cheiro de gás",
+          "Remanejamento de ponto de gás",
+          "Ligação de fogão e cooktop",
+          "Conversão de fogão",
+          "Conserto de aquecedor a gás",
+          "Manutenção preventiva anual",
+          "Instalação e troca de aparelho",
+          "Atendimento a condomínio",
+          "Assistência autorizada Rinnai",
+          "Garantia de 90 dias no serviço"
+        ],
+        "introCobertura": "Atendemos Copacabana e os demais bairros da Zona Sul em domicílio, com visita técnica em até 24 horas.",
+        "cobertura": [
+          "Copacabana",
+          "Leme",
+          "Botafogo",
+          "Flamengo",
+          "Laranjeiras",
+          "Ipanema",
+          "Leblon"
+        ],
+        "tituloServicos": "Serviços mais pedidos em Copacabana e na Zona Sul",
+        "servicos": [
+          {
+            "icon": "wrench",
+            "title": "Gasista",
+            "description": "Tubulação, remanejamento de ponto e reparo de rede."
+          },
+          {
+            "icon": "search-check",
+            "title": "Teste de estanqueidade",
+            "description": "Manômetro na rede e laudo para condomínio e concessionária."
+          },
+          {
+            "icon": "thermometer",
+            "title": "Conserto de aquecedor",
+            "description": "Aquecedor que não acende, apaga no banho ou mostra código de erro."
+          },
+          {
+            "icon": "gauge",
+            "title": "Manutenção preventiva",
+            "description": "Revisão anual com limpeza do queimador e checagem da exaustão."
+          }
+        ],
+        "tituloFaq": "Dúvidas sobre atendimento em Copacabana",
+        "faq": [
+          {
+            "q": "Vocês atendem em Copacabana e na Zona Sul?",
+            "a": "Sim. Atendemos em domicílio em Copacabana, Leme, Botafogo, Flamengo, Laranjeiras, Ipanema e Leblon, para serviço de gasista e para aquecedor a gás, em apartamento, casa e condomínio."
+          },
+          {
+            "q": "Em quanto tempo o gasista chega em Copacabana?",
+            "a": "Fazemos a visita técnica em até 24 horas. A equipe sai da nossa base na Praça Seca, em Jacarepaguá, e o horário é combinado pelo WhatsApp."
+          },
+          {
+            "q": "A visita em Copacabana é cobrada?",
+            "a": "A visita técnica com diagnóstico custa R$ 160 e não é cobrada se você aprovar o orçamento e o serviço for executado na mesma visita."
+          },
+          {
+            "q": "Quais marcas de aquecedor vocês atendem em Copacabana?",
+            "a": "Todas as marcas de aquecedor a gás: somos autorizada Rinnai e integrados às redes Lorenzetti, Komeco e Rheem, e atendemos também Bosch e Orbis. O serviço tem 90 dias de garantia."
+          }
+        ],
+        "ctaTitulo": "Precisa de gasista ou aquecedor em Copacabana? Fale conosco.",
+        "atualizado": "2026-11-12",
+        "gasista": {
+          "h2": "Gasista em Copacabana",
+          "p": "Como <a href=\"/teste-de-estanqueidade/\">teste de estanqueidade</a>, remanejamento de ponto, troca de registro e ligação de fogão e cooktop são serviços na rede de gás, só devem ser feitos por técnico, com teste no final. Em Copacabana e na Zona Sul fazemos tudo isso em uma visita, com laudo quando o condomínio ou a concessionária exigem."
+        },
+        "fotos": {
+          "olho": "Serviços recentes",
+          "titulo": "Trabalhos de gás e de aquecedor feitos pela nossa equipe",
+          "intro": "Fotos de atendimentos nossos no Rio de Janeiro, publicadas no nosso perfil do Google.",
+          "itens": [
+            {
+              "src": "/assets/obras/rede-de-gas-fachada-medidor-cozinha.webp",
+              "alt": "Tubulação de gás amarela subindo pela fachada de um prédio, do abrigo do medidor até o apartamento",
+              "legenda": "Rede de gás do medidor até a cozinha, com teste de estanqueidade no final",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/remanejamento-ponto-de-gas-cooktop.webp",
+              "alt": "Cooktop a gás com a ligação de gás levada para a lateral, com registro novo de fácil acesso",
+              "legenda": "Remanejamento do ponto de gás do fogão, com registro ao lado",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/aquecedor-lorenzetti-lz1600de-apartamento.webp",
+              "alt": "Aquecedor a gás Lorenzetti LZ 1600DE instalado em área de serviço de apartamento, com duto de exaustão e janela ao lado",
+              "legenda": "Lorenzetti LZ 1600DE instalado em apartamento, com ligação e chaminé",
+              "retrato": true
+            }
+          ]
+        }
+      },
+      "meier": {
+        "seoTitulo": "Aquecedor a gás e gasista no Méier | TecDaniel's",
+        "seoDescricao": "Conserto e manutenção de aquecedor a gás e gasista no Méier, Cachambi, Engenho de Dentro e Zona Norte. Visita em até 24h e 90 dias de garantia. WhatsApp.",
+        "nome": "Méier",
+        "nomeCom": "no Méier",
+        "nomeDe": "do Méier",
+        "rotulo": "Méier e Zona Norte",
+        "h1": "Aquecedor a gás e gasista no Méier e Zona Norte",
+        "resumo": "Conserto, manutenção e instalação de aquecedor a gás e serviço de gasista no Méier, Cachambi, Engenho de Dentro, Todos os Santos e Lins de Vasconcelos.",
+        "baseTexto": "Rua Candido Benício 1381, sala 205, Praça Seca, em Jacarepaguá. Atendemos o Méier e a Zona Norte em domicílio.",
+        "h2": "Conserto de aquecedor a gás no Méier, com diagnóstico antes da peça",
+        "p1": "O <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a> no Méier e na Zona Norte começa com o aparelho aberto: medimos a pressão de água e de gás, testamos a ignição e conferimos o sensor de fluxo e o diafragma antes de indicar qualquer peça. Quando o aparelho é muito antigo ou está sem tampa e corroído, mostramos o custo do reparo e o de um aparelho novo para você decidir.",
+        "p2": "Fazemos a <a href=\"/manutencao-de-aquecedor-a-gas/\">manutenção de aquecedor a gás</a> anual, com limpeza do queimador e do trocador de calor, regulagem da chama e verificação da exaustão, além da instalação e da troca de aparelho. Somos <a href=\"/assistencia-tecnica-rinnai/\">assistência técnica autorizada Rinnai</a> e integrados às redes Lorenzetti, Komeco e Rheem.",
+        "p3": "Para a rede de gás, o <a href=\"/gasista/\">gasista no Méier</a> faz teste de vazamento quando há cheiro de gás, teste de estanqueidade com laudo, troca de registro, remanejamento de ponto e ligação de fogão e cooktop. Atendemos casas, apartamentos e condomínios em todo o bairro e nos vizinhos.",
+        "checklist": [
+          "Conserto de aquecedor a gás",
+          "Diagnóstico antes de trocar peça",
+          "Manutenção preventiva anual",
+          "Instalação e troca de aparelho",
+          "Consertar ou trocar: avaliação na visita",
+          "Emergência de cheiro de gás",
+          "Teste de estanqueidade com laudo",
+          "Remanejamento de ponto de gás",
+          "Conversão de fogão",
+          "Atendimento a condomínio",
+          "Assistência autorizada Rinnai",
+          "Garantia de 90 dias no serviço"
+        ],
+        "introCobertura": "Atendemos o Méier e os bairros próximos da Zona Norte em domicílio, com visita técnica em até 24 horas.",
+        "cobertura": [
+          "Méier",
+          "Cachambi",
+          "Engenho de Dentro",
+          "Todos os Santos",
+          "Lins de Vasconcelos"
+        ],
+        "tituloServicos": "Serviços mais pedidos no Méier e na Zona Norte",
+        "servicos": [
+          {
+            "icon": "thermometer",
+            "title": "Conserto de aquecedor",
+            "description": "Aquecedor que não acende, água fria ou temperatura oscilando."
+          },
+          {
+            "icon": "gauge",
+            "title": "Manutenção preventiva",
+            "description": "Revisão anual com limpeza do queimador e checagem da exaustão."
+          },
+          {
+            "icon": "flame",
+            "title": "Instalação de aquecedor",
+            "description": "Troca de aparelho antigo, com exaustão refeita quando necessário."
+          },
+          {
+            "icon": "wrench",
+            "title": "Gasista",
+            "description": "Tubulação, remanejamento de ponto e reparo de rede."
+          }
+        ],
+        "tituloFaq": "Dúvidas sobre atendimento no Méier",
+        "faq": [
+          {
+            "q": "Vocês atendem no Méier e na Zona Norte?",
+            "a": "Sim. Atendemos em domicílio no Méier, Cachambi, Engenho de Dentro, Todos os Santos e Lins de Vasconcelos, para aquecedor a gás e serviço de gasista."
+          },
+          {
+            "q": "Em quanto tempo o técnico chega no Méier?",
+            "a": "Fazemos a visita técnica em até 24 horas. A equipe sai da Praça Seca, em Jacarepaguá, e combina o horário pelo WhatsApp."
+          },
+          {
+            "q": "A visita no Méier é cobrada?",
+            "a": "A visita técnica com diagnóstico custa R$ 160 e não é cobrada se você aprovar o orçamento e o serviço for executado na mesma visita."
+          },
+          {
+            "q": "Quais marcas de aquecedor vocês atendem no Méier?",
+            "a": "Rinnai (assistência técnica autorizada), Lorenzetti, Komeco e Rheem (redes integradas), Bosch e Orbis. Em todas, o diagnóstico vem antes da troca de qualquer peça."
+          }
+        ],
+        "ctaTitulo": "Aquecedor ou gás no Méier? Fale conosco.",
+        "atualizado": "2026-11-12",
+        "fotos": {
+          "olho": "Serviços recentes",
+          "titulo": "Quando o conserto não compensa: antes e depois de uma troca",
+          "intro": "Fotos de atendimentos nossos no Rio de Janeiro, publicadas no nosso perfil do Google.",
+          "itens": [
+            {
+              "src": "/assets/obras/troca-aquecedor-antes-sem-tampa.webp",
+              "alt": "Aquecedor a gás antigo funcionando sem a tampa frontal, com o trocador de calor oxidado e as peças internas expostas",
+              "legenda": "Antes: aparelho sem tampa, com trocador oxidado e peças expostas",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/troca-aquecedor-depois-lorenzetti-lz750bp.webp",
+              "alt": "Aquecedor a gás Lorenzetti LZ 750 BP novo instalado na mesma posição, com chaminé reconectada e flexível de gás novo",
+              "legenda": "Depois: Lorenzetti LZ 750 BP na mesma posição, com chaminé e flexível novos",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/aquecedor-com-fuligem-manutencao.webp",
+              "alt": "Aquecedor a gás com marcas escuras de fuligem na frente do aparelho",
+              "legenda": "Fuligem no aparelho: sinal de manutenção atrasada",
+              "retrato": true
+            }
+          ]
+        }
+      },
+      "campo-grande": {
+        "seoTitulo": "Aquecedor a gás e gasista em Campo Grande | TecDaniel's",
+        "seoDescricao": "Conserto, manutenção e instalação de aquecedor a gás e gasista em Campo Grande, Bangu, Realengo e Santa Cruz. Visita em até 24h e 90 dias de garantia. WhatsApp.",
+        "nome": "Campo Grande",
+        "nomeCom": "em Campo Grande",
+        "nomeDe": "de Campo Grande",
+        "rotulo": "Campo Grande e Zona Oeste",
+        "h1": "Aquecedor a gás e gasista em Campo Grande e Zona Oeste",
+        "resumo": "Conserto, manutenção, instalação e troca de aquecedor a gás e serviço de gasista em Campo Grande, Bangu, Realengo e Santa Cruz, com visita em até 24 horas.",
+        "baseTexto": "Rua Candido Benício 1381, sala 205, Praça Seca. Atendemos Campo Grande e a Zona Oeste em domicílio.",
+        "h2": "Aquecedor a gás em Campo Grande: visita em até 24 horas na Zona Oeste",
+        "p1": "Em Campo Grande, Bangu, Realengo e Santa Cruz fazemos o <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a> de todas as marcas, com o aparelho testado na visita e o orçamento fechado antes de trocar peça. Levamos as peças de maior giro, e boa parte dos chamados se resolve no mesmo atendimento.",
+        "p2": "Quando a troca compensa mais que o reparo, instalamos o aparelho novo com as ligações de água e gás em flexível, registro dedicado e a exaustão refeita quando a antiga está fora de norma. Também fazemos a <a href=\"/manutencao-de-aquecedor-a-gas/\">manutenção de aquecedor a gás</a> anual e a revisão de pressurizador, para o aquecedor que não liga por falta de pressão de água.",
+        "p3": "Somos <a href=\"/assistencia-tecnica-rinnai/\">assistência técnica autorizada Rinnai</a> e integrados às redes Lorenzetti, Komeco e Rheem. Na rede de gás, o <a href=\"/gasista/\">gasista em Campo Grande</a> faz teste de vazamento, teste de estanqueidade com laudo, remanejamento de ponto, conversão de fogão e ligação de fogão e cooktop.",
+        "checklist": [
+          "Conserto de aquecedor a gás",
+          "Peças de maior giro na visita",
+          "Manutenção preventiva anual",
+          "Instalação e troca de aparelho",
+          "Exaustão refeita quando fora de norma",
+          "Pressurizador de água",
+          "Emergência de cheiro de gás",
+          "Teste de estanqueidade com laudo",
+          "Conversão de fogão",
+          "Remanejamento de ponto de gás",
+          "Assistência autorizada Rinnai",
+          "Garantia de 90 dias no serviço"
+        ],
+        "introCobertura": "Atendemos Campo Grande e a Zona Oeste em domicílio, com visita técnica em até 24 horas.",
+        "cobertura": [
+          "Campo Grande",
+          "Bangu",
+          "Realengo",
+          "Santa Cruz"
+        ],
+        "tituloServicos": "Serviços mais pedidos em Campo Grande e na Zona Oeste",
+        "servicos": [
+          {
+            "icon": "thermometer",
+            "title": "Conserto de aquecedor",
+            "description": "Aquecedor que não acende, água fria ou temperatura oscilando."
+          },
+          {
+            "icon": "flame",
+            "title": "Instalação de aquecedor",
+            "description": "Troca de aparelho antigo, com exaustão e ligações refeitas."
+          },
+          {
+            "icon": "waves",
+            "title": "Pressurizador de água",
+            "description": "Pressão insuficiente, que impede o aquecedor de ligar."
+          },
+          {
+            "icon": "wrench",
+            "title": "Gasista",
+            "description": "Tubulação, remanejamento de ponto e reparo de rede."
+          }
+        ],
+        "tituloFaq": "Dúvidas sobre atendimento em Campo Grande",
+        "faq": [
+          {
+            "q": "Vocês atendem em Campo Grande e na Zona Oeste?",
+            "a": "Sim. Atendemos em domicílio em Campo Grande, Bangu, Realengo e Santa Cruz, para aquecedor a gás, pressurizador e serviço de gasista."
+          },
+          {
+            "q": "Em quanto tempo o técnico chega em Campo Grande?",
+            "a": "Em até 24 horas. Saímos da Praça Seca, em Jacarepaguá, e marcamos o dia e o horário pelo WhatsApp antes de ir."
+          },
+          {
+            "q": "A visita em Campo Grande é cobrada?",
+            "a": "A visita técnica com diagnóstico custa R$ 160 e não é cobrada se você aprovar o orçamento e o serviço for executado na mesma visita."
+          },
+          {
+            "q": "Quais marcas de aquecedor vocês atendem em Campo Grande?",
+            "a": "Atendemos Rinnai como assistência técnica autorizada, com peça original, e Lorenzetti, Komeco e Rheem como integrantes das redes dessas marcas. Bosch e Orbis também."
+          }
+        ],
+        "ctaTitulo": "Aquecedor ou gás em Campo Grande? Fale conosco.",
+        "atualizado": "2026-11-12",
+        "fotos": {
+          "olho": "Serviços recentes",
+          "titulo": "Trocas e instalações feitas pela nossa equipe",
+          "intro": "Fotos de atendimentos nossos no Rio de Janeiro, publicadas no nosso perfil do Google.",
+          "itens": [
+            {
+              "src": "/assets/obras/troca-komeco-22di-rinnai-e21.webp",
+              "alt": "Aquecedor a gás Rinnai E21 preto, digital, instalado com flexíveis novos de água e gás e chaminé reconectada ao duto do teto",
+              "legenda": "Troca: saiu um Komeco 22DI, entrou um Rinnai E21 digital",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/aquecedor-rinnai-digital-instalado.webp",
+              "alt": "Aquecedor a gás Rinnai digital instalado em área de serviço, com ligações em flexível de aço e chaminé até a saída externa",
+              "legenda": "Rinnai digital instalado, com registro dedicado e chaminé até a saída externa",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/aquecedor-rinnai-jacarepagua-instalado.webp",
+              "alt": "Aquecedor a gás Rinnai instalado ao lado de uma janela, com duto de exaustão e ligações em flexível",
+              "legenda": "Instalação de Rinnai, com exaustão dimensionada e ligações em flexível",
+              "retrato": true
+            }
+          ]
+        }
+      },
+      "niteroi": {
+        "seoTitulo": "Aquecedor a gás e gasista em Niterói | TecDaniel's",
+        "seoDescricao": "Conserto, manutenção e instalação de aquecedor a gás e gasista em Niterói (Icaraí, Santa Rosa, Ingá, Centro) e São Gonçalo. Visita em até 24h. WhatsApp.",
+        "nome": "Niterói",
+        "nomeCom": "em Niterói",
+        "nomeDe": "de Niterói",
+        "rotulo": "Niterói",
+        "h1": "Aquecedor a gás e gasista em Niterói",
+        "resumo": "Conserto, manutenção, instalação e troca de aquecedor a gás e serviço de gasista em Icaraí, Santa Rosa, Ingá, Centro e São Francisco, em Niterói, e também em São Gonçalo.",
+        "baseTexto": "Rua Candido Benício 1381, sala 205, Praça Seca. Atendemos Niterói e São Gonçalo em domicílio.",
+        "h2": "Aquecedor a gás em Niterói e São Gonçalo, com visita em até 24 horas",
+        "p1": "Atendemos Niterói em domicílio, em Icaraí, Santa Rosa, Ingá, Centro e São Francisco, e também São Gonçalo. O <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a> é feito com diagnóstico na visita: aparelho que não acende, que apaga no meio do banho, que oscila de temperatura ou que trava com código de erro no display.",
+        "p2": "Para o aparelho que ainda está bom, a <a href=\"/manutencao-de-aquecedor-a-gas/\">manutenção de aquecedor a gás</a> anual limpa o queimador e o trocador de calor, regula a chama e confere a exaustão. Para o que não compensa mais consertar, fazemos a troca com as ligações refeitas e o aparelho testado na temperatura de banho antes de entregar. Somos <a href=\"/assistencia-tecnica-rinnai/\">assistência técnica autorizada Rinnai</a>.",
+        "p3": "O <a href=\"/gasista/\">gasista em Niterói</a> atende a rede de gás de casa, apartamento e condomínio: teste de vazamento, teste de estanqueidade com laudo, troca de registro, remanejamento de ponto e ligação de fogão e cooktop, no padrão da concessionária. Como a visita é agendada, aproveite para juntar o serviço do aquecedor e o do gás em um único atendimento.",
+        "checklist": [
+          "Conserto de aquecedor a gás",
+          "Diagnóstico antes de trocar peça",
+          "Manutenção preventiva anual",
+          "Instalação e troca de aparelho",
+          "Aparelho testado antes de entregar",
+          "Emergência de cheiro de gás",
+          "Teste de estanqueidade com laudo",
+          "Remanejamento de ponto de gás",
+          "Ligação de fogão e cooktop",
+          "Atendimento a condomínio",
+          "Assistência autorizada Rinnai",
+          "Garantia de 90 dias no serviço"
+        ],
+        "introCobertura": "Atendemos Niterói e São Gonçalo em domicílio, com visita técnica em até 24 horas.",
+        "cobertura": [
+          "Icaraí",
+          "Santa Rosa",
+          "Ingá",
+          "Centro de Niterói",
+          "São Francisco",
+          "São Gonçalo"
+        ],
+        "tituloServicos": "Serviços mais pedidos em Niterói",
+        "servicos": [
+          {
+            "icon": "thermometer",
+            "title": "Conserto de aquecedor",
+            "description": "Aquecedor que não acende, apaga no banho ou mostra código de erro."
+          },
+          {
+            "icon": "gauge",
+            "title": "Manutenção preventiva",
+            "description": "Revisão anual com limpeza do queimador e checagem da exaustão."
+          },
+          {
+            "icon": "badge-check",
+            "title": "Assistência Rinnai",
+            "description": "Autorizada, com peças originais e garantia preservada."
+          },
+          {
+            "icon": "wrench",
+            "title": "Gasista",
+            "description": "Tubulação, remanejamento de ponto e reparo de rede."
+          }
+        ],
+        "tituloFaq": "Dúvidas sobre atendimento em Niterói",
+        "faq": [
+          {
+            "q": "Vocês atendem em Niterói e São Gonçalo?",
+            "a": "Sim. Atendemos em domicílio em Icaraí, Santa Rosa, Ingá, Centro e São Francisco, em Niterói, e também em São Gonçalo, para aquecedor a gás e serviço de gasista."
+          },
+          {
+            "q": "Em quanto tempo o técnico chega em Niterói?",
+            "a": "Fazemos a visita técnica em até 24 horas. A equipe sai da Praça Seca, no Rio, e o horário é combinado pelo WhatsApp."
+          },
+          {
+            "q": "A visita em Niterói é cobrada?",
+            "a": "A visita técnica com diagnóstico custa R$ 160 e não é cobrada se você aprovar o orçamento e o serviço for executado na mesma visita."
+          },
+          {
+            "q": "Quais marcas de aquecedor vocês atendem em Niterói?",
+            "a": "Rinnai, de que somos assistência técnica autorizada, e também Lorenzetti, Komeco e Rheem, redes das quais fazemos parte, além de Bosch e Orbis. Garantia de 90 dias no serviço."
+          }
+        ],
+        "ctaTitulo": "Aquecedor ou gás em Niterói? Fale conosco.",
+        "atualizado": "2026-11-12",
+        "fotos": {
+          "olho": "Serviços recentes",
+          "titulo": "Aparelho testado na temperatura de banho antes de entregar",
+          "intro": "Fotos de atendimentos nossos no Rio de Janeiro, publicadas no nosso perfil do Google.",
+          "itens": [
+            {
+              "src": "/assets/obras/aquecedor-rinnai-digital-temperatura.webp",
+              "alt": "Aquecedor a gás Rinnai digital instalado em área de serviço, com o painel ligado na temperatura do banho",
+              "legenda": "Rinnai digital funcionando na temperatura certa para o banho",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/troca-aquecedor-depois-lorenzetti-lz1600de.webp",
+              "alt": "Aquecedor a gás Lorenzetti LZ 1600DE novo instalado no lugar de um aparelho antigo, com painel digital aceso",
+              "legenda": "Troca de um Cosmopolita A15 antigo por um Lorenzetti LZ 1600DE, com display a 45 °C",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/aquecedor-rinnai-varanda-exaustao-instalado.webp",
+              "alt": "Aquecedor a gás Rinnai instalado em varanda, com duto de exaustão levado para fora",
+              "legenda": "Rinnai em varanda de apartamento, com exaustão levada para fora",
+              "retrato": true
+            }
+          ]
+        }
+      },
+      "baixada-fluminense": {
+        "seoTitulo": "Aquecedor a gás na Baixada Fluminense | TecDaniel's",
+        "seoDescricao": "Conserto, manutenção e instalação de aquecedor a gás e gasista na Baixada Fluminense: Caxias, Nova Iguaçu, Meriti e mais. Visita em até 24h. WhatsApp.",
+        "nome": "Baixada Fluminense",
+        "nomeCom": "na Baixada Fluminense",
+        "nomeDe": "da Baixada Fluminense",
+        "rotulo": "Baixada Fluminense",
+        "h1": "Aquecedor a gás e gasista na Baixada Fluminense",
+        "resumo": "Conserto, manutenção, instalação e troca de aquecedor a gás e serviço de gasista em Duque de Caxias, Nova Iguaçu, São João de Meriti, Nilópolis, Belford Roxo e Mesquita.",
+        "baseTexto": "Rua Candido Benício 1381, sala 205, Praça Seca. Atendemos a Baixada Fluminense em domicílio.",
+        "h2": "Aquecedor a gás na Baixada Fluminense: conserto, manutenção e gasista em domicílio",
+        "p1": "Atendemos a Baixada Fluminense em domicílio: Duque de Caxias, Nova Iguaçu, São João de Meriti, Nilópolis, Belford Roxo e Mesquita. O <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a> é feito na sua casa, com o diagnóstico antes do orçamento e peça original quando o aparelho é Rinnai, de que somos <a href=\"/assistencia-tecnica-rinnai/\">assistência técnica autorizada</a>.",
+        "p2": "A <a href=\"/manutencao-de-aquecedor-a-gas/\">manutenção de aquecedor a gás</a> anual evita a maior parte das falhas: limpeza do queimador e do trocador de calor, regulagem da chama, medição da pressão de gás e de água e verificação da exaustão. Quando o aparelho está no fim da vida, apresentamos o orçamento do reparo e o de um aparelho novo, com instalação pela mesma equipe.",
+        "p3": "Na rede de gás, o <a href=\"/gasista/\">gasista na Baixada Fluminense</a> faz teste de vazamento quando há cheiro de gás, teste de estanqueidade com laudo, conversão de fogão entre botijão e gás encanado, remanejamento de ponto e ligação de fogão e cooktop. Atendemos também Lorenzetti, Komeco e Rheem como integrantes das redes das marcas, além de Bosch e Orbis.",
+        "checklist": [
+          "Conserto de aquecedor a gás",
+          "Diagnóstico antes de trocar peça",
+          "Manutenção preventiva anual",
+          "Instalação e troca de aparelho",
+          "Consertar ou trocar: avaliação na visita",
+          "Emergência de cheiro de gás",
+          "Teste de estanqueidade com laudo",
+          "Conversão de fogão",
+          "Remanejamento de ponto de gás",
+          "Pressurizador de água",
+          "Assistência autorizada Rinnai",
+          "Garantia de 90 dias no serviço"
+        ],
+        "introCobertura": "Atendemos as cidades da Baixada Fluminense em domicílio, com visita técnica em até 24 horas.",
+        "cobertura": [
+          "Duque de Caxias",
+          "Nova Iguaçu",
+          "São João de Meriti",
+          "Nilópolis",
+          "Belford Roxo",
+          "Mesquita"
+        ],
+        "tituloServicos": "Serviços mais pedidos na Baixada Fluminense",
+        "servicos": [
+          {
+            "icon": "thermometer",
+            "title": "Conserto de aquecedor",
+            "description": "Aquecedor que não acende, água fria ou temperatura oscilando."
+          },
+          {
+            "icon": "gauge",
+            "title": "Manutenção preventiva",
+            "description": "Revisão anual com limpeza do queimador e checagem da exaustão."
+          },
+          {
+            "icon": "flame-kindling",
+            "title": "Conversão de fogão",
+            "description": "De botijão para gás encanado e o contrário."
+          },
+          {
+            "icon": "wrench",
+            "title": "Gasista",
+            "description": "Tubulação, remanejamento de ponto e reparo de rede."
+          }
+        ],
+        "tituloFaq": "Dúvidas sobre atendimento na Baixada Fluminense",
+        "faq": [
+          {
+            "q": "Vocês atendem na Baixada Fluminense?",
+            "a": "Sim. Atendemos em domicílio em Duque de Caxias, Nova Iguaçu, São João de Meriti, Nilópolis, Belford Roxo e Mesquita, para aquecedor a gás e serviço de gasista."
+          },
+          {
+            "q": "Em quanto tempo o técnico chega na Baixada Fluminense?",
+            "a": "Visita técnica em até 24 horas, com dia e horário combinados pelo WhatsApp. A equipe sai da Praça Seca, no Rio."
+          },
+          {
+            "q": "A visita na Baixada Fluminense é cobrada?",
+            "a": "A visita técnica com diagnóstico custa R$ 160 e não é cobrada se você aprovar o orçamento e o serviço for executado na mesma visita."
+          },
+          {
+            "q": "Quais marcas de aquecedor vocês atendem na Baixada Fluminense?",
+            "a": "Todas as principais: Rinnai (assistência técnica autorizada), Lorenzetti, Komeco e Rheem (integrados às redes das marcas), Bosch e Orbis. Se não souber a marca, mande uma foto do aparelho pelo WhatsApp."
+          }
+        ],
+        "ctaTitulo": "Aquecedor ou gás na Baixada? Fale conosco.",
+        "atualizado": "2026-11-12",
+        "fotos": {
+          "olho": "Serviços recentes",
+          "titulo": "Troca de aparelho e manutenção de pressurizador feitas pela nossa equipe",
+          "intro": "Fotos de atendimentos nossos no Rio de Janeiro, publicadas no nosso perfil do Google.",
+          "itens": [
+            {
+              "src": "/assets/obras/troca-aquecedor-lorenzetti-lz750bp.webp",
+              "alt": "Aquecedor a gás Lorenzetti LZ 750 BP novo instalado em banheiro, com duto de exaustão refeito",
+              "legenda": "Troca por um Lorenzetti LZ 750 BP, com a exaustão refeita",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/pressurizador-komeco-tp40-rotor-corroido.webp",
+              "alt": "Rotor de pressurizador Komeco TP 40 com incrustação e corrosão, antes da limpeza",
+              "legenda": "Pressurizador Komeco TP 40: rotor travado por incrustação",
+              "retrato": true
+            },
+            {
+              "src": "/assets/obras/pressurizador-komeco-tp40-rotor-limpo.webp",
+              "alt": "Rotor do pressurizador Komeco TP 40 limpo, pronto para remontagem",
+              "legenda": "O mesmo rotor depois da limpeza: voltou a funcionar sem troca",
+              "retrato": true
+            }
+          ]
         }
       }
     },
@@ -2870,6 +3424,96 @@
             "nome": "Marcelo Mendonça"
           }
         ]
+      },
+      "copacabana": {
+        "titulo": "O que dizem nossos clientes",
+        "itens": [
+          {
+            "texto": "Depois de ter chamado 3 empresas diferentes e não ter resolvido meu problema, recebi a indicação da Técnico Daniels, onde fui atendido e resolveram meu problema com aquecedor. Indico a todos.",
+            "nome": "LeO Nardo"
+          },
+          {
+            "texto": "Só tenho elogios a fazer! Fui indicada por um cliente e agora faz parte dos meus profissionais prediletos. Competentes, responsáveis e honestos. Gostei muito.",
+            "nome": "Mariza Facadio",
+            "quando": "2025"
+          },
+          {
+            "texto": "Experiências sempre positivas. Atendimento pontual e assertivo.",
+            "nome": "Marcelo Mendonça"
+          }
+        ]
+      },
+      "meier": {
+        "titulo": "Avaliações de quem já chamou a TecDaniel's",
+        "itens": [
+          {
+            "texto": "Fui bem atendido, com rapidez e eficiência, serviço realizado com garantia!",
+            "nome": "Roberto Fartura"
+          },
+          {
+            "texto": "Ótimo atendimento. Me atenderam super rápido e o serviço de ótima qualidade. Já sou cliente há tempos e não troco por outro.",
+            "nome": "Michelle Ferreira"
+          },
+          {
+            "texto": "Posso resumir o excelente serviço com a palavra COMPETÊNCIA! Parabéns ao técnico Patrick, e a Tecdaniels!",
+            "nome": "Luciane Caruso",
+            "quando": "2025"
+          }
+        ]
+      },
+      "campo-grande": {
+        "titulo": "O que dizem nossos clientes no Google",
+        "itens": [
+          {
+            "texto": "Fiz contato por telefone, muito receptivo, esclareceu o que poderia ser o problema. Vieram em casa e resolveu imediatamente o problema, preço justo e com facilidade no pagto.",
+            "nome": "Fernando Bidu"
+          },
+          {
+            "texto": "Depois de ter chamado 3 empresas diferentes e não ter resolvido meu problema, recebi a indicação da Técnico Daniels, onde fui atendido e resolveram meu problema com aquecedor. Indico a todos.",
+            "nome": "LeO Nardo"
+          },
+          {
+            "texto": "Excelente profissional. Pontual, honesto e com orçamentos justos. Recomendo!",
+            "nome": "Eder Silva"
+          }
+        ]
+      },
+      "niteroi": {
+        "titulo": "Avaliações de quem já chamou a TecDaniel's",
+        "itens": [
+          {
+            "texto": "Posso resumir o excelente serviço com a palavra COMPETÊNCIA! Parabéns ao técnico Patrick, e a Tecdaniels!",
+            "nome": "Luciane Caruso",
+            "quando": "2025"
+          },
+          {
+            "texto": "Atendimento personalizado com muita competência. Minha experiência com a empresa tem mais de 5 anos e sempre com presteza quando solicitado.",
+            "nome": "Edson Reis Da Silva",
+            "quando": "Cliente há mais de 5 anos"
+          },
+          {
+            "texto": "Só tenho elogios a fazer! Fui indicada por um cliente e agora faz parte dos meus profissionais prediletos. Competentes, responsáveis e honestos. Gostei muito.",
+            "nome": "Mariza Facadio",
+            "quando": "2025"
+          }
+        ]
+      },
+      "baixada-fluminense": {
+        "titulo": "O que dizem nossos clientes",
+        "itens": [
+          {
+            "texto": "Ótimo atendimento. Me atenderam super rápido e o serviço de ótima qualidade. Já sou cliente há tempos e não troco por outro.",
+            "nome": "Michelle Ferreira"
+          },
+          {
+            "texto": "Fui bem atendido, com rapidez e eficiência, serviço realizado com garantia!",
+            "nome": "Roberto Fartura"
+          },
+          {
+            "texto": "Experiências sempre positivas. Atendimento pontual e assertivo.",
+            "nome": "Marcelo Mendonça"
+          }
+        ]
       }
     },
     "VIZINHOS": {
@@ -2877,7 +3521,8 @@
         "Recreio dos Bandeirantes",
         "Jacarepaguá",
         "Freguesia",
-        "Taquara e Tanque"
+        "Taquara e Tanque",
+        "Campo Grande"
       ],
       "jacarepagua": [
         "Freguesia",
@@ -2889,7 +3534,8 @@
         "Barra da Tijuca",
         "Jacarepaguá",
         "Taquara e Tanque",
-        "Freguesia"
+        "Freguesia",
+        "Campo Grande"
       ],
       "freguesia": [
         "Jacarepaguá",
@@ -2910,10 +3556,36 @@
         "Tijuca"
       ],
       "tijuca": [
+        "Méier",
+        "Copacabana",
         "Vila Valqueire",
         "Jacarepaguá",
+        "Barra da Tijuca"
+      ],
+      "copacabana": [
+        "Tijuca",
+        "Méier",
+        "Barra da Tijuca"
+      ],
+      "meier": [
+        "Tijuca",
+        "Copacabana",
+        "Vila Valqueire"
+      ],
+      "campo-grande": [
         "Barra da Tijuca",
-        "Freguesia"
+        "Recreio dos Bandeirantes",
+        "Jacarepaguá"
+      ],
+      "niteroi": [
+        "Baixada Fluminense",
+        "Tijuca",
+        "Copacabana"
+      ],
+      "baixada-fluminense": [
+        "Niterói",
+        "Jacarepaguá",
+        "Tijuca"
       ]
     },
     "MAPA_SERVICOS": {
@@ -2937,6 +3609,143 @@
       "Pressurizador de água": "pressurizador-de-agua",
       "Manutenção de condomínio": "manutencao-para-condominios",
       "Assistência Rinnai": "assistencia-tecnica-rinnai"
+    },
+    "RASCUNHOS": {
+      "_nota": "Páginas escritas mas não publicadas (decisão do cliente sobre Praça Seca e Madureira ainda não revista). Para publicar: mover a entrada para BAIRROS, AVALIACOES e VIZINHOS, criar src/pages/aquecedor-a-gas-<slug>/index.astro e incluir em site.js, área de atendimento, home, llms.txt, llms-full.txt e public/ai/summary.json.",
+      "praca-seca": {
+        "bairro": {
+          "seoTitulo": "Aquecedor a gás e gasista na Praça Seca | TecDaniel's",
+          "seoDescricao": "Conserto, manutenção e instalação de aquecedor a gás e gasista na Praça Seca, bairro da nossa loja. Visita em até 24h e 90 dias de garantia. Chame no WhatsApp.",
+          "nome": "Praça Seca",
+          "promessa": "Atendimento no mesmo dia na região",
+          "nomeCom": "na Praça Seca",
+          "nomeDe": "da Praça Seca",
+          "rotulo": "Praça Seca",
+          "h1": "Aquecedor a gás e gasista na Praça Seca",
+          "resumo": "A loja da TecDaniel's fica na Praça Seca, com aquecedores em estoque. Conserto, manutenção, instalação e serviço de gasista com técnico saindo daqui.",
+          "baseTexto": "Rua Candido Benício 1381, sala 205 — na própria Praça Seca.",
+          "h2": "Aquecedor a gás na Praça Seca: a loja fica aqui, com aparelho em estoque",
+          "p1": "A Praça Seca é a base da TecDaniel's desde 2003. A loja fica na Rua Cândido Benício, 1381, sala 205, com aquecedores a gás em estoque: quando o aparelho não tem mais conserto, a troca não depende de encomenda. O <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a> começa pelo diagnóstico na visita, com o orçamento fechado antes de qualquer peça.",
+          "p2": "Por ser o nosso bairro, é a região em que o deslocamento é mais curto e a visita costuma sair no mesmo dia. Fazemos a <a href=\"/manutencao-de-aquecedor-a-gas/\">manutenção de aquecedor a gás</a> anual, a instalação e a troca de aparelho, e somos <a href=\"/assistencia-tecnica-rinnai/\">assistência técnica autorizada Rinnai</a>, com peça original.",
+          "p3": "O mesmo técnico faz o serviço de <a href=\"/gasista/\">gasista na Praça Seca</a>: teste de vazamento quando há cheiro de gás, teste de estanqueidade com laudo, remanejamento de ponto e ligação de fogão e cooktop. Atendemos também Campinho, Tanque, Vila Valqueire e Taquara.",
+          "checklist": [
+            "Loja e estoque no bairro",
+            "Atendimento no mesmo dia",
+            "Conserto de aquecedor a gás",
+            "Manutenção preventiva anual",
+            "Instalação e troca de aparelho",
+            "Venda de aquecedor com instalação",
+            "Emergência de cheiro de gás",
+            "Teste de estanqueidade com laudo",
+            "Conversão de fogão",
+            "Remanejamento de ponto de gás",
+            "Assistência autorizada Rinnai",
+            "Garantia de 90 dias no serviço"
+          ],
+          "introCobertura": "A loja fica na Praça Seca. Atendemos o bairro e os vizinhos imediatos.",
+          "cobertura": [
+            "Praça Seca",
+            "Campinho",
+            "Tanque",
+            "Vila Valqueire",
+            "Taquara",
+            "Jacarepaguá"
+          ],
+          "tituloServicos": "Serviços mais pedidos na Praça Seca",
+          "servicos": [
+            {
+              "icon": "thermometer",
+              "title": "Conserto de aquecedor",
+              "description": "Aquecedor que não acende, água fria ou temperatura oscilando."
+            },
+            {
+              "icon": "gauge",
+              "title": "Manutenção preventiva",
+              "description": "Revisão anual com limpeza do queimador e checagem da exaustão."
+            },
+            {
+              "icon": "flame",
+              "title": "Venda de aquecedor",
+              "description": "Aparelho em estoque na loja, dimensionado e instalado pela mesma equipe."
+            },
+            {
+              "icon": "wrench",
+              "title": "Gasista",
+              "description": "Tubulação, remanejamento de ponto e reparo de rede."
+            }
+          ],
+          "tituloFaq": "Dúvidas sobre atendimento na Praça Seca",
+          "faq": [
+            {
+              "q": "Vocês atendem na Praça Seca?",
+              "a": "Sim. A nossa loja fica na Praça Seca, na Rua Cândido Benício, 1381, sala 205. O atendimento é em domicílio: o técnico sai daqui para a sua casa."
+            },
+            {
+              "q": "Em quanto tempo o técnico chega na Praça Seca?",
+              "a": "Por ser o bairro da loja, na maior parte dos casos conseguimos atender no mesmo dia, conforme a agenda. O compromisso é a visita técnica em até 24 horas."
+            },
+            {
+              "q": "A visita na Praça Seca é cobrada?",
+              "a": "A visita técnica com diagnóstico custa R$ 160 e não é cobrada se você aprovar o orçamento e o serviço for executado na mesma visita."
+            },
+            {
+              "q": "Quais marcas de aquecedor vocês atendem na Praça Seca?",
+              "a": "Rinnai, como assistência técnica autorizada e com peça original em estoque na loja. Também Lorenzetti, Komeco e Rheem, redes das quais somos integrantes, além de Bosch e Orbis."
+            }
+          ],
+          "ctaTitulo": "Aquecedor ou gás na Praça Seca? Fale conosco.",
+          "atualizado": "2026-11-12",
+          "fotos": {
+            "olho": "Serviços recentes",
+            "titulo": "Trabalhos da nossa equipe, com a loja na Praça Seca",
+            "intro": "Fotos de atendimentos nossos, publicadas no nosso perfil do Google.",
+            "itens": [
+              {
+                "src": "/assets/obras/estoque-aquecedores-rinnai-lorenzetti.webp",
+                "alt": "Aquecedores a gás Rinnai e Lorenzetti em caixas, no estoque da loja da TecDaniel's na Praça Seca",
+                "legenda": "Aquecedores em estoque na loja, na Praça Seca",
+                "retrato": true
+              },
+              {
+                "src": "/assets/obras/aquecedor-rinnai-jacarepagua-instalado.webp",
+                "alt": "Aquecedor a gás Rinnai instalado ao lado de uma janela, com duto de exaustão e ligações em flexível",
+                "legenda": "Instalação de Rinnai em Jacarepaguá, com exaustão dimensionada",
+                "retrato": true
+              },
+              {
+                "src": "/assets/obras/remanejamento-ponto-de-gas-cooktop.webp",
+                "alt": "Cooktop a gás com a ligação de gás levada para a lateral, com registro novo de fácil acesso",
+                "legenda": "Remanejamento do ponto de gás do fogão, com registro ao lado",
+                "retrato": true
+              }
+            ]
+          }
+        },
+        "avaliacoes": {
+          "titulo": "O que dizem nossos clientes no Google",
+          "itens": [
+            {
+              "texto": "Atendimento personalizado com muita competência. Minha experiência com a empresa tem mais de 5 anos e sempre com presteza quando solicitado.",
+              "nome": "Edson Reis Da Silva",
+              "quando": "Cliente há mais de 5 anos"
+            },
+            {
+              "texto": "Excelente profissional. Pontual, honesto e com orçamentos justos. Recomendo!",
+              "nome": "Eder Silva"
+            },
+            {
+              "texto": "Fiz contato por telefone, muito receptivo, esclareceu o que poderia ser o problema. Vieram em casa e resolveu imediatamente o problema, preço justo e com facilidade no pagto.",
+              "nome": "Fernando Bidu"
+            }
+          ]
+        },
+        "vizinhos": [
+          "Vila Valqueire",
+          "Taquara e Tanque",
+          "Jacarepaguá",
+          "Freguesia"
+        ]
+      }
     }
   },
   "marca": {
@@ -3761,7 +4570,7 @@
       },
       "area-de-atendimento": {
         "seoTitulo": "Área de atendimento no Rio e Grande Rio | TecDaniel's",
-        "seoDescricao": "Área de atendimento da TecDaniel's no Rio: Barra da Tijuca, Recreio, Freguesia, Taquara, Vila Valqueire, Tijuca e Grande Rio. Visita em até 24h.",
+        "seoDescricao": "Área de atendimento da TecDaniel's: Zona Oeste, Zona Norte, Zona Sul, Niterói e Baixada Fluminense, com uma página para cada região. Visita em até 24h.",
         "menuAtivo": "Área de atendimento",
         "rotulo": "Área de atendimento",
         "h1": "Área de atendimento no Rio, Grande Rio e Baixada",
@@ -3774,7 +4583,7 @@
         "h2": "Atendimento em domicílio em toda a cidade",
         "p1": "Atendemos em domicílio no Rio de Janeiro, Grande Rio e Baixada Fluminense, com visita técnica em até 24 horas. O atendimento é direcionado para serviços em aquecedores a gás e instalações relacionadas à rede de gás. A maior parte dos chamados vem da Zona Oeste, perto da nossa base: veja o atendimento de <a href=\"/aquecedor-a-gas-jacarepagua/\">aquecedor a gás em Jacarepaguá</a> e da <a href=\"/aquecedor-a-gas-barra-da-tijuca/\">Barra da Tijuca</a>.",
         "p2": "Nossa base fica em Jacarepaguá. Por isso, no eixo de Jacarepaguá, <a href=\"/aquecedor-a-gas-taquara/\">Taquara</a>, Tanque, <a href=\"/aquecedor-a-gas-freguesia/\">Freguesia</a> e Barra da Tijuca a visita costuma ser realizada no mesmo dia, conforme a agenda. Nos demais bairros, o compromisso é a visita em até 24 horas.",
-        "p3": "Não encontrou sua região na lista? Entre em contato. A cobertura pode variar conforme o endereço e a agenda do dia, mas atendemos diversas outras áreas do Rio, Grande Rio e Baixada.",
+        "p3": "Também temos páginas próprias para <a href=\"/aquecedor-a-gas-copacabana/\">Copacabana e Zona Sul</a>, <a href=\"/aquecedor-a-gas-meier/\">Méier e Zona Norte</a>, <a href=\"/aquecedor-a-gas-campo-grande/\">Campo Grande e Zona Oeste</a>, <a href=\"/aquecedor-a-gas-niteroi/\">Niterói</a> e <a href=\"/aquecedor-a-gas-baixada-fluminense/\">Baixada Fluminense</a>. Não encontrou sua região na lista? Entre em contato. A cobertura pode variar conforme o endereço e a agenda do dia, mas atendemos diversas outras áreas do Rio, Grande Rio e Baixada.",
         "tituloLista": "Como funciona a visita",
         "lista": [
           "Atendimento em domicílio",
@@ -3811,7 +4620,7 @@
           }
         ],
         "ctaTitulo": "Atendemos o seu bairro. Fale conosco.",
-        "atualizado": "2026-10-21"
+        "atualizado": "2026-11-12"
       }
     },
     "DADOS": [
@@ -3852,6 +4661,18 @@
         "nome": "Jacarepaguá"
       },
       {
+        "slug": "taquara",
+        "nome": "Taquara e Tanque"
+      },
+      {
+        "slug": "freguesia",
+        "nome": "Freguesia"
+      },
+      {
+        "slug": "vila-valqueire",
+        "nome": "Vila Valqueire"
+      },
+      {
         "slug": "barra-da-tijuca",
         "nome": "Barra da Tijuca"
       },
@@ -3860,26 +4681,31 @@
         "nome": "Recreio dos Bandeirantes"
       },
       {
-        "slug": "freguesia",
-        "nome": "Freguesia"
-      },
-      {
-        "slug": "taquara",
-        "nome": "Taquara e Tanque"
-      },
-      {
-        "slug": "vila-valqueire",
-        "nome": "Vila Valqueire"
+        "slug": "campo-grande",
+        "nome": "Campo Grande e Zona Oeste"
       },
       {
         "slug": "tijuca",
         "nome": "Tijuca"
+      },
+      {
+        "slug": "meier",
+        "nome": "Méier e Zona Norte"
+      },
+      {
+        "slug": "copacabana",
+        "nome": "Copacabana e Zona Sul"
+      },
+      {
+        "slug": "niteroi",
+        "nome": "Niterói e São Gonçalo"
+      },
+      {
+        "slug": "baixada-fluminense",
+        "nome": "Baixada Fluminense"
       }
     ],
     "OUTRAS": [
-      "Zona Sul",
-      "Zona Norte",
-      "Zona Oeste",
       "Centro",
       "Anil",
       "Pechincha",
@@ -3887,14 +4713,99 @@
       "Gardênia Azul",
       "Campinho",
       "Sulacap",
-      "Niterói",
+      "Leme",
+      "Botafogo",
+      "Flamengo",
+      "Laranjeiras",
+      "Ipanema",
+      "Leblon",
+      "Cachambi",
+      "Engenho de Dentro",
+      "Bangu",
+      "Realengo",
+      "Santa Cruz",
       "São Gonçalo",
       "Duque de Caxias",
       "Nova Iguaçu",
-      "Nilópolis",
       "São João de Meriti",
+      "Nilópolis",
       "Belford Roxo",
       "Mesquita"
+    ],
+    "GRUPOS": [
+      {
+        "zona": "Zona Oeste",
+        "itens": [
+          {
+            "slug": "jacarepagua",
+            "nome": "Jacarepaguá"
+          },
+          {
+            "slug": "taquara",
+            "nome": "Taquara e Tanque"
+          },
+          {
+            "slug": "freguesia",
+            "nome": "Freguesia"
+          },
+          {
+            "slug": "vila-valqueire",
+            "nome": "Vila Valqueire"
+          },
+          {
+            "slug": "barra-da-tijuca",
+            "nome": "Barra da Tijuca"
+          },
+          {
+            "slug": "recreio-dos-bandeirantes",
+            "nome": "Recreio dos Bandeirantes"
+          },
+          {
+            "slug": "campo-grande",
+            "nome": "Campo Grande e Zona Oeste"
+          }
+        ]
+      },
+      {
+        "zona": "Zona Norte",
+        "itens": [
+          {
+            "slug": "tijuca",
+            "nome": "Tijuca"
+          },
+          {
+            "slug": "meier",
+            "nome": "Méier e Zona Norte"
+          }
+        ]
+      },
+      {
+        "zona": "Zona Sul",
+        "itens": [
+          {
+            "slug": "copacabana",
+            "nome": "Copacabana e Zona Sul"
+          }
+        ]
+      },
+      {
+        "zona": "Niterói",
+        "itens": [
+          {
+            "slug": "niteroi",
+            "nome": "Niterói e São Gonçalo"
+          }
+        ]
+      },
+      {
+        "zona": "Baixada Fluminense",
+        "itens": [
+          {
+            "slug": "baixada-fluminense",
+            "nome": "Baixada Fluminense"
+          }
+        ]
+      }
     ]
   }
 }

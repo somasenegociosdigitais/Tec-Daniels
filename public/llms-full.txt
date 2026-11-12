@@ -83,7 +83,12 @@ Manutenção programada de aquecedor por unidade, laudo de estanqueidade da prum
 ## Área de atendimento
 URL: https://www.tecdaniels.com.br/area-de-atendimento/
 
-Rio de Janeiro (Zona Oeste, Zona Sul, Zona Norte e Centro), com páginas específicas para Jacarepaguá, Taquara e Tanque, Freguesia, Vila Valqueire, Barra da Tijuca, Recreio dos Bandeirantes e Tijuca. Grande Rio e Baixada: Niterói, São Gonçalo, Duque de Caxias, Nova Iguaçu, Nilópolis, São João de Meriti, Belford Roxo e Mesquita.
+Rio de Janeiro (Zona Oeste, Zona Sul, Zona Norte e Centro), Niterói, São Gonçalo e Baixada Fluminense, com atendimento em domicílio e visita técnica em até 24 horas. Páginas por região:
+- Zona Oeste: Jacarepaguá, Taquara e Tanque, Freguesia, Vila Valqueire, Barra da Tijuca, Recreio dos Bandeirantes e Campo Grande (com Bangu, Realengo e Santa Cruz) https://www.tecdaniels.com.br/aquecedor-a-gas-campo-grande/
+- Zona Norte: Tijuca e Méier (com Cachambi, Engenho de Dentro, Todos os Santos e Lins de Vasconcelos) https://www.tecdaniels.com.br/aquecedor-a-gas-meier/
+- Zona Sul: Copacabana, Leme, Botafogo, Flamengo, Laranjeiras, Ipanema e Leblon https://www.tecdaniels.com.br/aquecedor-a-gas-copacabana/
+- Niterói (Icaraí, Santa Rosa, Ingá, Centro e São Francisco) e São Gonçalo https://www.tecdaniels.com.br/aquecedor-a-gas-niteroi/
+- Baixada Fluminense: Duque de Caxias, Nova Iguaçu, São João de Meriti, Nilópolis, Belford Roxo e Mesquita https://www.tecdaniels.com.br/aquecedor-a-gas-baixada-fluminense/
 
 ## Perguntas frequentes
 
