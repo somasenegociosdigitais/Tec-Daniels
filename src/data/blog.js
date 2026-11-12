@@ -102,7 +102,7 @@ export const ARTIGOS = [
     resumo: 'O passo a passo para agir com segurança, as causas mais comuns do vazamento de gás e o que fazer antes de abrir o registro de novo.',
     imagem: '/assets/obras/rede-de-gas-tubulacao-registro.webp',
     publicado: '2026-10-20',
-    atualizado: '2026-10-21',
+    atualizado: '2026-11-12',
     leitura: '5 min de leitura',
     sumario: [
       { id: 'o-que-fazer', nome: 'O que fazer agora' },
@@ -144,7 +144,7 @@ export const ARTIGOS = [
     resumo: 'Abriu a água quente e o aquecedor não fez nada? Veja como descobrir se é pressão de água, pilha, energia, gás ou defeito interno.',
     imagem: '/assets/obras/aquecedor-lz750bp-antes-depois.webp',
     publicado: '2026-10-28',
-    atualizado: '2026-11-09',
+    atualizado: '2026-11-12',
     leitura: '6 min de leitura',
     sumario: [
       { id: 'como-liga', nome: 'Como o aquecedor liga' },
@@ -186,7 +186,7 @@ export const ARTIGOS = [
     resumo: 'A membrana da válvula de água é a peça que mais estraga nos aquecedores mecânicos. Veja os sinais, por que ela resseca e como é a troca.',
     imagem: '/assets/obras/aquecedor-rinnai-instalado.webp',
     publicado: '2026-10-28',
-    atualizado: '2026-10-28',
+    atualizado: '2026-11-12',
     leitura: '5 min de leitura',
     sumario: [
       { id: 'o-que-e', nome: 'O que é o diafragma' },
@@ -229,7 +229,7 @@ export const ARTIGOS = [
     resumo: 'Apareceu água embaixo do aquecedor? Veja o que fazer na hora, como descobrir de onde vem o vazamento e quando o conserto compensa.',
     imagem: '/assets/obras/aquecedor-lorenzetti-lz1600n-banheiro-instalado.webp',
     publicado: '2026-10-28',
-    atualizado: '2026-10-28',
+    atualizado: '2026-11-12',
     leitura: '5 min de leitura',
     sumario: [
       { id: 'primeiro', nome: 'O que fazer na hora' },
@@ -271,7 +271,7 @@ export const ARTIGOS = [
     resumo: 'O aquecedor Lorenzetti digital mostrou um código no display e apitou? Veja o que significa cada erro, de E1 a E8, o que você pode fazer e quando chamar o técnico.',
     imagem: '/assets/obras/troca-aquecedor-depois-lorenzetti-lz1600de.webp',
     publicado: '2026-11-09',
-    atualizado: '2026-11-09',
+    atualizado: '2026-11-12',
     leitura: '4 min de leitura',
     sumario: [
       { id: 'o-que-fazer', nome: 'O que fazer assim que aparecer um código' },
