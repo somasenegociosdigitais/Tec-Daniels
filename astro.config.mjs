@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { execSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
+import { ARTIGOS } from './src/data/blog.js';
 
 // O texto de 35 páginas fica em src/data/conteudo.json, não no arquivo da página.
 // Cada página tem ali o campo "atualizado" (AAAA-MM-DD): ao mudar o texto de uma
@@ -13,6 +14,8 @@ for (const [k, p] of Object.entries(conteudo.servico.PAGINAS)) ATUALIZADO[k] = p
 for (const [k, p] of Object.entries(conteudo.bairro.BAIRROS)) ATUALIZADO['aquecedor-a-gas-' + k] = p.atualizado;
 for (const [k, p] of Object.entries(conteudo.marca.MARCAS)) ATUALIZADO['assistencia-tecnica-' + k] = p.atualizado;
 for (const [k, p] of Object.entries(conteudo.institucional.PAGINAS)) ATUALIZADO[k] = p.atualizado;
+// Posts do blog: o campo "atualizado" fica em src/data/blog.js.
+for (const a of ARTIGOS) ATUALIZADO['blog/' + a.slug] = a.atualizado;
 
 // Data real da última alteração de cada página, tirada do histórico do git.
 function dataDoGit(slug) {
