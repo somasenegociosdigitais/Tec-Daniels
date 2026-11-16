@@ -40,6 +40,8 @@ const artigoLd = JSON.stringify({
   publisher: { '@id': NEGOCIO.site + '/#empresa' },
   about: a.palavraChave,
   ...(a.imagem ? { image: new URL(a.imagem, NEGOCIO.site).href } : {}),
+  // Fontes citadas no artigo (manuais dos fabricantes), quando houver.
+  ...(a.fontes.length ? { citation: a.fontes.map((f) => ({ '@type': 'CreativeWork', name: f.nome, ...(f.href ? { url: f.href } : {}) })) } : {}),
 });
 ---
 <Base titulo={a.seoTitulo} descricao={a.seoDescricao} trilha={trilha} faq={a.faq} atualizado={a.atualizado}>
@@ -83,7 +85,7 @@ const artigoLd = JSON.stringify({
 <div class="fontes" style="max-width:68ch">
 <b>Fontes</b>
 <ul>
-{a.fontes.map((f) => (<li><a href={f.href} target="_blank" rel="noopener">{f.nome}</a></li>))}
+{a.fontes.map((f) => (<li>{f.href ? (<a href={f.href} target="_blank" rel="noopener">{f.nome}</a>) : f.nome}</li>))}
 </ul>
 </div>
 </div>)}

@@ -65,7 +65,7 @@
         "h1": "Manutenção de aquecedor a gás no Rio de Janeiro",
         "resumo": "Limpeza, regulagem e revisão dos principais componentes para manter o aquecedor funcionando corretamente, reduzir o consumo de gás e diminuir riscos relacionados à combustão. A recomendação é fazer a revisão uma vez por ano.",
         "h2": "Aquecedor revisado trabalha melhor e evita problemas maiores",
-        "p1": "Na manutenção, limpamos queimadores e trocador de calor, medimos a pressão de gás e de água, testamos o sensor de fluxo e verificamos a exaustão e a ventilação. A limpeza adequada ajuda o aparelho a transferir calor com mais eficiência e evita que sujeira comprometa o funcionamento.",
+        "p1": "Na manutenção, limpamos queimadores e trocador de calor, medimos a pressão de gás e de água, testamos o sensor de fluxo e verificamos a exaustão e a ventilação. A limpeza adequada ajuda o aparelho a transferir calor com mais eficiência e evita que sujeira comprometa o funcionamento. Exaustão obstruída e sensor sujo estão entre as causas do <a href=\"/blog/aquecedor-a-gas-apaga-durante-o-banho/\">aquecedor a gás que apaga durante o banho</a>, e os dois são conferidos na revisão.",
         "p2": "A manutenção preventiva também permite identificar desgaste antes que ele vire uma falha mais cara. Sujeira no trocador prejudica a transferência de calor e pode aumentar o esforço do equipamento. Em locais com uso intenso, como prédios e academias, a revisão pode ser necessária a cada seis meses. Se o aparelho já está com defeito, o caminho é o <a href=\"/conserto-de-aquecedor-a-gas/\">conserto de aquecedor a gás</a>; a manutenção é para o aquecedor que ainda funciona e precisa continuar assim.",
         "p3": "Quem procura manutenção de aquecedor no Rio encontra empresas que atendem também solar e elétrico. Aqui é só gás: fazemos manutenção de aquecedores Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem. Para condomínios e administradoras, também oferecemos contrato de <a href=\"/manutencao-para-condominios/\">manutenção programada</a> e acompanhamento dos aparelhos.",
         "checklist": [
@@ -143,7 +143,7 @@
           }
         ],
         "notaPrecos": "Quem faz a manutenção não paga a visita técnica. Se a revisão encontrar peça com defeito, a troca é orçada à parte, com preço fechado antes da execução.",
-        "atualizado": "2026-10-21"
+        "atualizado": "2026-11-16"
       },
       "instalacao-de-aquecedor-a-gas": {
         "seoTitulo": "Instalação de aquecedor a gás no Rio | TecDaniel's",
@@ -986,7 +986,7 @@
         "h2": "Cinco causas para o aquecedor não esquentar, e como identificar cada uma",
         "p1": "Comece pelo teste mais simples: abra apenas um chuveiro. Se a água esquenta com um ponto aberto e esfria quando outra torneira é aberta, pode haver falta de vazão ou o aparelho pode estar subdimensionado. Se a chama não acende em nenhum ponto, verifique o registro de gás e o fornecimento. Se a chama acende, mas a água continua fria, o problema pode estar no queimador, sensor de fluxo, membrana ou placa eletrônica.",
         "p2": "Uma causa frequente é a incrustação no trocador de calor. Com o tempo, depósitos podem dificultar a transferência de calor para a água. Em aparelhos que estão há mais de dois anos sem revisão, o trocador merece atenção. Outra possibilidade é o sensor de fluxo não acionar por causa da baixa vazão de água — nesse caso, o problema pode estar na pressão e não no aquecedor.",
-        "p3": "Se a temperatura oscila durante o banho, a causa pode ser pressão de gás irregular, modulação da chama ou problema na exaustão. Água morna acompanhada de chama amarela também merece avaliação, pois pode indicar queimador sujo ou configuração inadequada para o tipo de gás. Isso pode acontecer após mudanças ou conversões feitas no sistema de gás.",
+        "p3": "Se a temperatura oscila durante o banho, a causa pode ser pressão de gás irregular, modulação da chama ou problema na exaustão. Água morna acompanhada de chama amarela também merece avaliação, pois pode indicar queimador sujo ou configuração inadequada para o tipo de gás. Isso pode acontecer após mudanças ou conversões feitas no sistema de gás. Se o aparelho chega a desligar, veja <a href=\"/blog/aquecedor-a-gas-apaga-durante-o-banho/\">por que o aquecedor apaga no meio do banho</a>.",
         "checklist": [
           "Chama acende mas a água não esquenta",
           "Água esquenta em um ponto e esfria em dois",
@@ -1035,7 +1035,7 @@
             "a": "A visita técnica é feita em até 24 horas no Rio, Grande Rio e Baixada Fluminense e custa R$ 160. Se você aprovar o orçamento e o serviço for executado na mesma visita, essa taxa não é cobrada. A manutenção preventiva sai por R$ 220 no aparelho mecânico e R$ 290 no eletrônico. Havendo troca de peça, o valor depende da peça e é informado com preço fechado antes da execução."
           }
         ],
-        "atualizado": "2026-10-21"
+        "atualizado": "2026-11-16"
       },
       "pressurizador-de-agua": {
         "seoTitulo": "Pressurizador de água no Rio de Janeiro | TecDaniel's",

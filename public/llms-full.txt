@@ -49,6 +49,36 @@ URL: https://www.tecdaniels.com.br/aquecedor-nao-esquenta-a-agua/
 
 Causas mais comuns: pouca pressão de água, sensor com defeito, queimador sujo ou pilhas fracas no acendimento. Algumas são simples de resolver; outras precisam de técnico.
 
+## Aquecedor a gás apaga durante o banho
+URL: https://www.tecdaniels.com.br/blog/aquecedor-a-gas-apaga-durante-o-banho/
+
+Resposta rápida: o aquecedor a gás apaga durante o banho, na maioria das vezes, porque a vazão de água caiu abaixo do mínimo, o gás ficou insuficiente ou um sensor de segurança cortou o gás por exaustão obstruída ou temperatura alta. Abrir só a água quente e conferir o gás resolve parte dos casos; se continuar apagando, é preciso técnico.
+
+As 7 causas:
+1. Vazão de água baixa: no manual do Rinnai REU2402FEC1, o aparelho precisa de 3 L/min para acender e desliga abaixo de 2,7 L/min. Misturar água fria reduz o fluxo.
+2. Falta de gás ou pressão de gás baixa: no Komeco KO 26D Home, 280 a 330 mmca no GLP e 200 a 220 mmca no gás natural.
+3. Exaustão obstruída ou pouca ventilação: o aparelho se protege e desliga; não deve ser usado nessa condição.
+4. Superaquecimento: no Komeco KO 26D Home, o sensor atua para a água não sair a 80 ºC ou mais.
+5. Temporizador: alguns Rinnai digitais desligam após 60 minutos de funcionamento contínuo; basta fechar e abrir a água quente.
+6. Queda de energia (eletrônico) ou pilha fraca (mecânico).
+7. Sensor de chama sujo ou defeito interno: exige técnico.
+
+O que fazer: fechar a água quente e esperar alguns segundos; abrir só a água quente, toda; anotar o código do visor; conferir o gás (fogão e registro); conferir energia ou pilhas; baixar a temperatura no painel; se apagar de novo, parar de religar e chamar um técnico.
+
+| Marca (modelo do manual) | Código | Significado |
+|---|---|---|
+| Rinnai (REU2402FEC1, REUE351FEA e FEC) | 12 | Em uso, desliga por falta de gás |
+| Rinnai | 02 | Desligamento pelo temporizador (60 minutos) |
+| Rinnai | 16 | Água acima de 97 ºC |
+| Rinnai | 72 | Sensor de chama com problema |
+| Komeco (KO 26D Home) | E2 | Chama apagou durante o uso |
+| Komeco (KO 26D Home) | E3 | Superaquecimento (acima de 80 ºC) |
+| Lorenzetti (LZ 1600DE) | E1 | Falha de combustão: a chama não acendeu ou não se manteve |
+| Lorenzetti (LZ 1600DE) | E2 e E8 | Corrente de ar excessiva na chaminé, problema na exaustão ou atuação da chaminé inteligente |
+| Lorenzetti (LZ 1600DE) | E3 e E5 | Temperatura alta no trocador de calor ou na água quente |
+
+Os códigos variam entre modelos. Fontes: manuais Rinnai REU2402FEC1 e REUE351FEA/FEC, Komeco KO 26D Home e KO 12M, Lorenzetti LZ 1600DE.
+
 ## Aquecedor de fluxo balanceado
 URL: https://www.tecdaniels.com.br/aquecedor-de-fluxo-balanceado/
 

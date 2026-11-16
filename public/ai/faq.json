@@ -27,6 +27,18 @@
       "a": "Em todo o Rio de Janeiro, no Grande Rio e na Baixada Fluminense, com base na Praça Seca, em Jacarepaguá."
     },
     {
+      "q": "Por que meu aquecedor a gás apaga durante o banho?",
+      "a": "As causas mais comuns são vazão de água baixa, falta de gás, exaustão obstruída e superaquecimento. Em todas elas o aquecedor corta o gás por segurança. Abra só a água quente e confira o gás; se ele continuar apagando, chame um técnico."
+    },
+    {
+      "q": "Por que o aquecedor desliga quando abro a água fria?",
+      "a": "Porque misturar água fria reduz a quantidade de água que passa pelo aparelho. Quando o fluxo cai abaixo do mínimo, ele apaga: no Rinnai REU2402FEC1, por exemplo, abaixo de 2,7 litros por minuto. Regule a temperatura no próprio aparelho e abra só a água quente."
+    },
+    {
+      "q": "Meu Rinnai desliga depois de uma hora ligado. É defeito?",
+      "a": "Não. Alguns Rinnai digitais têm um temporizador de 60 minutos de funcionamento contínuo. Basta fechar e abrir a água quente para ele voltar a funcionar."
+    },
+    {
       "q": "Como pedir orçamento?",
       "a": "Pelo WhatsApp (21) 98617-1050 ou pelo formulário do site, que abre o WhatsApp com a mensagem pronta."
     }
