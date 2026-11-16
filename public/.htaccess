@@ -38,6 +38,9 @@ AddType text/markdown .md
   RewriteRule ^remanejamento-do-ponto-de-gas-do-fogao(\.html)?/?$ /remanejamento-de-ponto-de-gas/ [R=301,L]
   RewriteRule ^index/?$ / [R=301,L]
 
+  # Post renomeado em 16/11/2026
+  RewriteRule ^blog/aquecedor-a-gas-apaga-durante-o-banho/?$ /blog/aquecedor-apaga-durante-o-banho/ [R=301,L]
+
   # URL antiga com acento (%C3%A1 = á). Pendência de 25/09.
   RewriteCond %{THE_REQUEST} \s/aquecedor-nao-esquenta-a-(%C3%A1|%c3%a1|á)gua-causas/?[\s?] [NC]
   RewriteRule ^ /aquecedor-nao-esquenta-a-agua/ [R=301,L]

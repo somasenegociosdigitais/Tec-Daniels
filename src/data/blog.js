@@ -303,7 +303,7 @@ export const ARTIGOS = [
     ],
   },
   {
-    slug: 'aquecedor-a-gas-apaga-durante-o-banho',
+    slug: 'aquecedor-apaga-durante-o-banho',
     palavraChave: 'aquecedor a gás apaga durante o banho',
     volume: 'não medido',
     seoTitulo: "Aquecedor a gás apaga durante o banho: causas | TecDaniel's",

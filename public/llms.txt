@@ -81,5 +81,5 @@ Fatos principais:
 - [Diafragma do aquecedor Rinnai](https://www.tecdaniels.com.br/blog/diafragma-aquecedor-rinnai/): sinais de membrana ressecada ou furada e como é a troca.
 - [Aquecedor vazando água](https://www.tecdaniels.com.br/blog/aquecedor-vazando-agua/): o que fazer na hora e de onde vem o vazamento.
 - [Erro E1, E2, E3 e outros códigos no aquecedor Lorenzetti](https://www.tecdaniels.com.br/blog/erro-aquecedor-lorenzetti/): o que significa cada código (E1 a E8) do Lorenzetti digital e o que fazer.
-- [Aquecedor a gás apaga durante o banho](https://www.tecdaniels.com.br/blog/aquecedor-a-gas-apaga-durante-o-banho/): 7 causas, o que testar em casa, códigos por marca (Rinnai, Komeco, Lorenzetti) e quando chamar o técnico.
+- [Aquecedor a gás apaga durante o banho](https://www.tecdaniels.com.br/blog/aquecedor-apaga-durante-o-banho/): 7 causas, o que testar em casa, códigos por marca (Rinnai, Komeco, Lorenzetti) e quando chamar o técnico.
 - [Feed RSS do blog](https://www.tecdaniels.com.br/rss.xml)
