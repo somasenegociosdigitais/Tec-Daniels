@@ -294,7 +294,10 @@ export const ARTIGOS = [
       { q: 'O erro E5 é defeito?', a: 'Nem sempre. Ele indica água quente com temperatura elevada; baixar a temperatura no display costuma resolver.' },
       { q: 'Vocês consertam aquecedor Lorenzetti no Rio de Janeiro?', a: "Sim. A TecDaniel's é integrada à rede Lorenzetti e atende todo o Rio de Janeiro e o Grande Rio, com visita em até 24 horas e 90 dias de garantia." },
     ],
-    fontes: [],
+    fontes: [
+      { nome: 'Lorenzetti. Manual de instruções LZ 1600DE, LZ 2000DE, LZ 2500DE e LZ 3700DE (393712 rev. E)', href: 'https://www.lorenzetti.com.br/docs/default-source/manual-de-instala%C3%A7%C3%A3o/393712-rev-e-manual-instalacao.pdf' },
+      { nome: 'Lorenzetti. Manual de instruções LZ 2000DE (393519 rev. B)', href: 'https://www.lorenzetti.com.br/docs/default-source/manual-de-instala%C3%A7%C3%A3o/393519-rev-b-manual-instru%C3%A7%C3%B5es-lz-2000de-b-curvas.pdf' },
+    ],
     relacionados: [
       { icone: 'wrench', titulo: 'Assistência técnica Lorenzetti', texto: 'Integrada à rede Lorenzetti.', href: '/assistencia-tecnica-lorenzetti/' },
       { icone: 'flame', titulo: 'Conserto de aquecedor a gás', texto: 'Diagnóstico e conserto de todas as marcas.', href: '/conserto-de-aquecedor-a-gas/' },
