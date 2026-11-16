@@ -345,6 +345,7 @@ export const ARTIGOS = [
       { nome: 'Rinnai. Manual dos aquecedores REUE351FEA e REUE351FEC (Rev. 24362 - D08128 - RA04146)' },
       { nome: 'Komeco. Manual do Usuário KO 26D Home (versão 11.08.23)', href: 'https://www.komeco.com.br/arquivos/manuais/aquecimento-gas/home/manual-aquecimento-gas-linha-home-26.pdf' },
       { nome: 'Komeco. Manual da linha Slim KO 12M (versão 23.04.15)', href: 'https://www.komeco.com.br/arquivos/manuais/aquecimento-gas/slim/manual-aquecimento-gas-linha-slim-12m.pdf' },
+      { nome: 'Rinnai. Manual dos aquecedores REU-M070, M090, M150, M071, M110 e M200 CFH', href: 'https://www.rinnai.com.br/content/uploads/manual/192.pdf' },
       { nome: 'Lorenzetti. Manual do aquecedor LZ 1600DE (cód. 393567, rev. A)' },
     ],
     relacionados: [
