@@ -271,7 +271,7 @@ export const ARTIGOS = [
     resumo: 'O aquecedor Lorenzetti digital mostrou um código no display e apitou? Veja o que significa cada erro, de E1 a E8, o que você pode fazer e quando chamar o técnico.',
     imagem: '/assets/obras/troca-aquecedor-depois-lorenzetti-lz1600de.webp',
     publicado: '2026-11-09',
-    atualizado: '2026-11-12',
+    atualizado: '2026-11-16',
     leitura: '4 min de leitura',
     sumario: [
       { id: 'o-que-fazer', nome: 'O que fazer assim que aparecer um código' },
@@ -304,9 +304,9 @@ export const ARTIGOS = [
   },
   {
     slug: 'aquecedor-apaga-durante-o-banho',
-    palavraChave: 'aquecedor a gás apaga durante o banho',
+    palavraChave: 'aquecedor apaga durante o banho',
     volume: 'não medido',
-    seoTitulo: "Aquecedor a gás apaga durante o banho: causas | TecDaniel's",
+    seoTitulo: "Aquecedor apaga durante o banho: 7 causas | TecDaniel's",
     seoDescricao: 'Aquecedor a gás apaga ou desliga sozinho no meio do banho? Veja as 7 causas, o que testar em casa e quando chamar o técnico no Rio de Janeiro.',
     h1: 'Aquecedor a gás apaga durante o banho: 7 causas e o que fazer',
     rotulo: 'Aquecedor apaga durante o banho',
