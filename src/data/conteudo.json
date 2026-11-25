@@ -154,14 +154,14 @@
         "resumo": "O aparelho precisa ser dimensionado de acordo com os pontos de água utilizados ao mesmo tempo. Fazemos a instalação, tubulação, adequação da exaustão, teste de vazamento e regulagem final, seguindo as normas e os padrões exigidos pela Naturgy.",
         "h2": "Aquecedor seguro começa com o dimensionamento correto",
         "p1": "Antes de instalar, avaliamos quantos pontos de água serão utilizados simultaneamente e qual tipo de gás está disponível. Um aquecedor pequeno pode não atender dois chuveiros ao mesmo tempo; um modelo maior que o necessário significa pagar mais por uma capacidade que não será aproveitada.",
-        "p2": "Executamos a tubulação de gás e água, fazemos a ligação na pressão correta, adequamos a exaustão, realizamos o <a href=\"/teste-de-vazamento-de-gas/\">teste de vazamento</a> e regulamos a chama. O serviço segue as normas técnicas e as exigências da Naturgy, incluindo os cuidados necessários para preservar a garantia de fábrica.",
+        "p2": "Executamos a tubulação de gás e água, fazemos a ligação na pressão correta, instalamos a chaminé (duto de exaustão) no diâmetro pedido pelo fabricante, realizamos o <a href=\"/teste-de-vazamento-de-gas/\">teste de vazamento</a> e regulamos a chama. As medidas por modelo estão no guia <a href=\"/blog/chamine-para-aquecedor/\">chaminé para aquecedor a gás</a>. O serviço segue as normas técnicas e as exigências da Naturgy, incluindo os cuidados necessários para preservar a garantia de fábrica.",
         "p3": "Instalamos aquecedores residenciais e comerciais, de passagem, digitais e para condomínio das marcas Rinnai, Lorenzetti, Komeco, Bosch, Orbis e Rheem. Quando necessário, também fazemos a substituição do aparelho antigo e o <a href=\"/remanejamento-de-ponto-de-gas/\">remanejamento do ponto de gás</a>.",
         "checklist": [
           "Dimensionamento por pontos de água",
           "Instalação de aquecedor de passagem",
           "Instalação de aquecedor digital",
           "Tubulação de gás em cobre",
-          "Adequação da exaustão e ventilação",
+          "Chaminé (duto de exaustão) e ventilação adequadas",
           "Ligação na pressão correta",
           "Teste de vazamento",
           "Regulagem da chama",
@@ -191,7 +191,7 @@
             "a": "Sim. Trabalhamos com as principais marcas e fazemos a venda com instalação, indicando o modelo dimensionado para o seu consumo."
           }
         ],
-        "atualizado": "2026-10-21"
+        "atualizado": "2026-11-25"
       },
       "teste-de-estanqueidade": {
         "seoTitulo": "Teste de estanqueidade de gás no Rio | TecDaniel's",
