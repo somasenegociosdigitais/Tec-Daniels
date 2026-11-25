@@ -11,7 +11,7 @@ export const ARTIGOS = [
     rotulo: 'Melhor aquecedor a gás',
     olho: 'Guia de compra',
     resumo: 'Litragem, local de instalação, mecânico ou digital, tipo de gás, pressão de água e marca: o guia completo para escolher, com fotos de instalações reais.',
-    imagem: '/assets/obras/aquecedor-rinnai-varanda-exaustao-instalado.jpg',
+    imagem: '/assets/obras/aquecedor-lorenzetti-lz1600de-instalado.jpeg',
     publicado: '2026-10-20',
     atualizado: '2026-11-25',
     leitura: '8 min de leitura',
