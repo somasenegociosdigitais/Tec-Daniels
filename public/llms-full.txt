@@ -79,6 +79,31 @@ O que fazer: fechar a água quente e esperar alguns segundos; abrir só a água 
 
 Os códigos variam entre modelos. Fontes: manuais Rinnai REU2402FEC1 e REUE351FEA/FEC, Komeco KO 26D Home e KO 12M, Lorenzetti LZ 1600DE.
 
+## Chaminé para aquecedor a gás
+URL: https://www.tecdaniels.com.br/blog/chamine-para-aquecedor/
+
+Resposta rápida: a chaminé certa para o aquecedor a gás tem o mesmo diâmetro da saída do aparelho, de 60 a 130 mm conforme o modelo, e nunca pode ser menor. O manual de cada aparelho também limita o comprimento e o número de curvas. Chaminé amassada, furada, solta ou com curvas demais deve ser trocada por um técnico.
+
+| Diâmetro da chaminé | Marca | Modelos (manual do fabricante) |
+|---|---|---|
+| 60 mm | Lorenzetti | LZ 1600DE (diâmetro interno mínimo) |
+| 60 mm | Komeco | Linha Decor, KO 16 e KO 21 (acompanha adaptador de 60 para 80 mm) |
+| 80 mm | Komeco | KO 26D Home |
+| 90 mm | Rinnai | REU-M070, REU-M071 e REU-M090 CFH |
+| 90 mm | Komeco | KO 07M BP Slim |
+| 100 mm | Rinnai | REU-M110 CFH e REU2402FEC1 |
+| 110 mm | Komeco | KO 15M Slim |
+| 125 mm | Rinnai | REU-M150 CFH |
+| 130 mm | Rinnai | REU-M200 CFH |
+
+Comprimento máximo e curvas: Rinnai REU-M CFH, 2 m com no máximo 2 curvas e trecho vertical de 35 a 100 cm antes da primeira curva; Komeco KO 26D Home, 3,5 m; Komeco Decor, 4,5 m com 2 curvas; Rinnai REU2402FEC1, 7 m com no máximo 3 curvas de 90º; Lorenzetti LZ 1600DE, até 3 curvas, com 1 m a menos a cada curva adicional.
+
+O que a chaminé não pode ter: diâmetro menor que o indicado; emendas fora das conexões; curva para baixo no trecho vertical; ligação no duto de fogão, coifa, churrasqueira ou secadora; passagem por quarto; saída dentro de casa. Os manuais consultados proíbem a instalação desses aquecedores em banheiros e dormitórios.
+
+Quando trocar: chaminé furada, rachada, amassada, solta, com curvas demais ou com diâmetro diferente do pedido pelo aparelho. A TecDaniel's troca e instala chaminé de aquecedor a gás no Rio de Janeiro, no Grande Rio e na Baixada Fluminense, inclusive só a chaminé, sem trocar o aparelho.
+
+Fontes: manuais Rinnai REU-M CFH e REU2402FEC1, Komeco KO 26D Home, Slim e Decor, Lorenzetti LZ 1600DE.
+
 ## Aquecedor de fluxo balanceado
 URL: https://www.tecdaniels.com.br/aquecedor-de-fluxo-balanceado/
 
